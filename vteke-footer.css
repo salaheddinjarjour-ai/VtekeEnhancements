@@ -172,7 +172,7 @@
             box-shadow: 0 4px 12px rgba(226, 6, 18, 0.18);
             flex-shrink: 0;
             border: 2.5px solid rgba(226, 6, 18, 0.12);
-            background: linear-gradient(135deg, #E20612, #cc0000);
+            background: linear-gradient(135deg, #E10600, #C40000);
             animation: vteke-footer-pulse 2.5s infinite;
         }
         
@@ -325,7 +325,7 @@
         }
         
         .vteke-footer-contact-link:hover {
-            color: #E20612;
+            color: #C40000;
             transform: translateX(3px);
             text-decoration: underline;
             text-underline-offset: 3px;

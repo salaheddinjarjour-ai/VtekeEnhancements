@@ -10,9 +10,9 @@ body {
     background-color: #ffffff;
 }
 :root {
-    --red: #ff3131;
-    --red-dark: #cc0000;
-    --red-light: #ff5a5a;
+    --red: #E10600;
+    --red-dark: #C40000;
+    --red-light: #ff4d4d;
     --red-bg: #fff5f5;
     --gray-100: #f8f9fa;
     --gray-200: #e9ecef;
@@ -20,9 +20,9 @@ body {
     --gray-900: #212529;
     --white: #ffffff;
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    --theme-primary: #ff3131;
-    --theme-secondary: #cc0000;
-    --theme-accent: #ff5a5a;
+    --theme-primary: #E10600;
+    --theme-secondary: #C40000;
+    --theme-accent: #ff4d4d;
     --theme-dark: #990000;
 }
 
