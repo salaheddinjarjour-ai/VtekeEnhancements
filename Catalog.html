@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTEKE - Product Catalog</title>
+    <meta name="description" content="VTEKE - Industrial Electrical Products Catalog with Technical Datasheets">
+    
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Header & Footer CSS (Original Files) -->
+    <link rel="stylesheet" href="vteke-header-styles.css">
+    <link rel="stylesheet" href="vteke-footer.css">
+    
+    <style>
+        /* ========================================
+           LANGUAGE DROPDOWN STYLES (FROM ABOUT US)
+           ======================================== */
+        .lang-dropdown-wrapper {
+            position: relative;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .lang-dropdown-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid rgba(231, 0, 18, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1a1a1a;
+            backdrop-filter: blur(5px);
+        }
+        .lang-dropdown-btn:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #E70012;
+            box-shadow: 0 4px 12px rgba(231, 0, 18, 0.15);
+            transform: translateY(-1px);
+        }
+        .lang-dropdown-btn i {
+            font-size: 0.75rem;
+            transition: transform 0.3s ease;
+        }
+        .lang-dropdown-wrapper.active .lang-dropdown-btn i {
+            transform: rotate(180deg);
+        }
+        .lang-dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #ffffff;
+            border: 1px solid rgba(231, 0, 18, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            min-width: 160px;
+            z-index: 1000;
+            padding: 8px;
+            margin-top: 8px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .lang-dropdown-wrapper.active .lang-dropdown-menu {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .lang-dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 6px;
+            text-align: left;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            width: 100%;
+        }
+        .lang-dropdown-item:hover {
+            background: linear-gradient(135deg, rgba(231, 0, 18, 0.05), rgba(192, 5, 0, 0.05));
+            color: #E70012;
+            padding-left: 16px;
+        }
+        .lang-dropdown-item.active {
+            background: rgba(231, 0, 18, 0.1);
+            color: #E70012;
+            font-weight: 600;
+        }
+        .language-flag {
+            font-size: 1.1rem;
+        }
+        .language-code {
+            font-weight: 700;
+            min-width: 28px;
+        }
+        [dir="rtl"] .lang-dropdown-wrapper {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+        [dir="rtl"] .lang-dropdown-menu {
+            right: auto;
+            left: 0;
+        }
+        .lang-select-mobile {
+            display: none;
+            padding: 1rem;
+            background: #F9FAFB;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .lang-select-mobile select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 2px solid #E70012;
+            border-radius: 8px;
+            font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+            font-size: 0.9rem;
+            background: #ffffff;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .lang-dropdown-wrapper {
+                display: none;
+            }
+            .lang-select-mobile {
+                display: block;
+            }
+        }
+        @keyframes languageFadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .lang-animating {
+            animation: languageFadeIn 0.4s ease-out;
+        }
+
+        /* ========================================
+           PRODUCT PAGE STYLES (NEW)
+           ======================================== */
+        :root {
+            --primary: #E70012;
+            --primary-dark: #c0392b;
+            --primary-light: #ff4757;
+            --gray-50: #F9FAFB;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-300: #D1D5DB;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --gray-800: #1F2937;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --border-radius-md: 16px;
+            --border-radius-lg: 24px;
+            --border-radius-xl: 32px;
+        }
+
+        .product-details-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 20px 4rem;
+        }
+
+        /* Category Navigation */
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: #ffffff;
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--gray-200);
+        }
+
+        .cat-btn {
+            padding: 0.7rem 1.4rem;
+            background: var(--gray-50);
+            border: 2px solid var(--gray-200);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--gray-700);
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+        }
+
+        .cat-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(231, 0, 18, 0.05);
+        }
+
+        .cat-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(231, 0, 18, 0.3);
+        }
+
+        /* Product Header */
+        .product-header {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #ffffff 0%, var(--gray-50) 100%);
+            border-radius: var(--border-radius-xl);
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--gray-200);
+        }
+
+        .product-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light), var(--primary));
+        }
+
+        .product-title {
+            font-family: 'Manrope', 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        .product-description {
+            font-size: 1.2rem;
+            color: var(--gray-600);
+            max-width: 900px;
+            margin: 1.5rem auto 2rem;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .product-reference {
+            display: inline-block;
+            padding: 0.6rem 1.8rem;
+            background: rgba(231, 0, 18, 0.1);
+            color: var(--primary);
+            font-weight: 700;
+            border-radius: 50px;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.05em;
+            font-size: 0.95rem;
+            border: 2px solid rgba(231, 0, 18, 0.2);
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+            align-items: start;
+        }
+
+        /* Image Section */
+        .main-image-wrapper {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            background: #ffffff;
+            cursor: pointer;
+            border: 1px solid var(--gray-200);
+            height: 550px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .main-image-wrapper:hover {
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-main-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+
+        .main-image-wrapper:hover .product-main-image {
+            transform: scale(1.05);
+        }
+
+        .zoom-hint {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: rgba(231, 0, 18, 0.95);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            z-index: 10;
+        }
+
+        .main-image-wrapper:hover .zoom-hint {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Info Section */
+        .product-info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .product-specifications,
+        .datasheet-section,
+        .product-actions-section {
+            background: #ffffff;
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-200);
+            transition: var(--transition);
+        }
+
+        .product-specifications:hover,
+        .datasheet-section:hover,
+        .product-actions-section:hover {
+            box-shadow: var(--shadow-xl);
+        }
+
+        .specs-title, .datasheet-title {
+            font-family: 'Manrope', 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: var(--gray-800);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 3px solid var(--gray-200);
+            padding-bottom: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .specs-title i, .datasheet-title i {
+            color: var(--primary);
+            font-size: 1.6rem;
+        }
+
+        /* Datasheet List */
+        .datasheet-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .datasheet-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2rem 1.5rem;
+            background: var(--gray-50);
+            border-radius: var(--border-radius-md);
+            border-left: 5px solid var(--primary);
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--gray-800);
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        }
+
+        .datasheet-item:hover {
+            background: rgba(231, 0, 18, 0.08);
+            transform: translateX(8px);
+            border-left-color: var(--primary-dark);
+        }
+
+        .ds-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .ds-icon {
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+
+        /* Table */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .spec-table tr {
+            border-bottom: 1px solid var(--gray-200);
+            transition: var(--transition);
+        }
+
+        .spec-table tr:hover {
+            background-color: rgba(231, 0, 18, 0.05);
+        }
+
+        .spec-table td {
+            padding: 1.2rem 0.8rem;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .spec-label {
+            font-weight: 700;
+            color: var(--primary);
+            width: 40%;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .spec-value {
+            color: var(--gray-700);
+            font-weight: 500;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .action-btn {
+            padding: 1.2rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            border: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .primary-action {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 8px 20px rgba(231, 0, 18, 0.3);
+        }
+
+        .primary-action:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(231, 0, 18, 0.4);
+        }
+
+        .secondary-action {
+            background: #ffffff;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .secondary-action:hover {
+            background: var(--primary);
+            color: #ffffff;
+            transform: translateY(-4px);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .product-grid { grid-template-columns: 1fr; }
+            .main-image-wrapper { height: 450px; }
+        }
+
+        @media (max-width: 768px) {
+            .product-details-wrapper { padding: 2rem 15px 3rem; }
+            .product-title { font-size: 2.2rem; }
+            .main-image-wrapper { height: 350px; }
+            .category-nav { padding: 1rem; }
+            .cat-btn { font-size: 0.8rem; padding: 0.6rem 1rem; }
+            .spec-label { width: 100%; display: block; margin-bottom: 0.3rem; }
+            .spec-table td { display: block; padding: 0.8rem 0; }
+            .product-specifications, .datasheet-section, .product-actions-section { padding: 1.8rem; }
+        }
+
+        @media (max-width: 480px) {
+            .product-header { padding: 2rem 1rem; }
+            .main-image-wrapper { height: 280px; }
+            .product-title { font-size: 1.8rem; }
+            .action-btn { width: 100%; }
+        }
+
+        /* RTL */
+        [dir="rtl"] .datasheet-item {
+            border-left: none;
+            border-right: 5px solid var(--primary);
+        }
+        [dir="rtl"] .datasheet-item:hover {
+            padding-left: 1.5rem;
+            padding-right: 1.8rem;
+        }
+        [dir="rtl"] .spec-label {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================================
+         HEADER (SAME AS ABOUT US PAGE)
+         ======================================== -->
+    <header class="vteke-pro-header-main-container">
+<div class="vteke-pro-header-inner-container">
+<div class="vteke-pro-logo-main-wrapper">
+<div class="vteke-pro-logo-glow-effect"></div>
+<a href="index.html" class="vteke-pro-logo-3d-transform" aria-label="VTEKE Home - Industrial Electrical Solutions">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Professional Electric Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</a>
+</div>
+<button class="vteke-pro-mobile-menu-toggle-btn vteke-touch-optimized-element" id="vtekeMenuToggleBtn" aria-label="Open main menu">
+<span>☰</span>
+</button>
+<div class="vteke-pro-navigation-container">
+<nav aria-label="Main navigation">
+<ul class="vteke-pro-main-navigation-list">
+<li class="vteke-pro-nav-list-item">
+<a href="index.html" class="vteke-pro-nav-link-element" data-lang-en="HOME" data-lang-tr="ANA SAYFA">HOME</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="aboutus.html" class="vteke-pro-nav-link-element" data-lang-en="ABOUT US" data-lang-tr="HAKKIMIZDA">ABOUT US</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="News.html" class="vteke-pro-nav-link-element" data-lang-en="NEWS" data-lang-tr="HABERLER">NEWS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Catalog.html" class="vteke-pro-nav-link-element vteke-active-link" aria-current="page" data-lang-en="CATALOG" data-lang-tr="KATALOG">CATALOG</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Products.html" class="vteke-pro-nav-link-element" data-lang-en="PRODUCTS" data-lang-tr="ÜRÜNLER">PRODUCTS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Certificates.html" class="vteke-pro-nav-link-element" data-lang-en="CERTIFICATES" data-lang-tr="SERTİFİKALAR">CERTIFICATES</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="ContactUs.html" class="vteke-pro-nav-link-element" data-lang-en="CONTACT" data-lang-tr="İLETİŞİM">CONTACT</a>
+</li>
+</ul>
+</nav>
+<!-- Language Switcher - Desktop -->
+<div class="lang-dropdown-wrapper" id="langDropdown">
+<button class="lang-dropdown-btn" onclick="toggleLanguageDropdown()" aria-label="Switch Language" aria-expanded="false">
+<span class="language-flag" id="currentLangFlag">🇬🇧</span>
+<span class="language-text" id="currentLangText">EN</span>
+<i class="bi bi-chevron-down"></i>
+</button>
+<div class="lang-dropdown-menu" role="menu">
+<button class="lang-dropdown-item" onclick="setLanguage('en')" role="menuitem">
+<span class="language-flag">🇬🇧</span> English
+</button>
+<button class="lang-dropdown-item" onclick="setLanguage('tr')" role="menuitem">
+<span class="language-flag">🇹🇷</span> Türkçe
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="vteke-pro-mobile-menu-overlay-bg" id="vtekeMobileMenuOverlay" aria-hidden="true"></div>
+<div class="vteke-pro-mobile-menu-sliding-container" id="vtekeMobileMenuContainer" aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
+<div class="vteke-pro-mobile-menu-header-section">
+<div class="vteke-pro-mobile-logo-container">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</div>
+<button type="button" class="vteke-pro-close-mobile-menu-btn vteke-touch-optimized-element" id="vtekeCloseMenuBtn" aria-label="Close menu">×</button>
+</div>
+<!-- Language Switcher - Mobile -->
+<div class="vteke-pro-mobile-language-container">
+<button class="vteke-pro-mobile-language-btn active" id="mobileLangEN" onclick="setLanguage('en')" aria-label="Switch to English">
+<span class="language-flag">🇬🇧</span>
+<span class="language-text">English</span>
+</button>
+<button class="vteke-pro-mobile-language-btn" id="mobileLangTR" onclick="setLanguage('tr')" aria-label="Türkçe'ye geç">
+<span class="language-flag">🇹🇷</span>
+<span class="language-text">Türkçe</span>
+</button>
+</div>
+<nav class="vteke-pro-mobile-navigation-container" aria-label="Mobile navigation">
+<div class="vteke-pro-mobile-nav-item">
+<a href="index.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="aboutus.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="About Us" data-lang-tr="Hakkımızda">About Us</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="News.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="News" data-lang-tr="Haberler">News</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Catalog.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Catalog" data-lang-tr="Katalog">Catalog</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Products.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Products" data-lang-tr="Ürünler">Products</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Certificates.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Certificates" data-lang-tr="Sertifikalar">Certificates</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="ContactUs.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a>
+</div>
+</nav>
+<div class="vteke-pro-mobile-menu-footer">
+<p class="vteke-pro-copyright-text">© 2026 VTEKE Professional Electric. All Rights Reserved.</p>
+</div>
+</div>
+</header>
+    <div class="vteke-header-space-reserver"></div>
+
+    <!-- ========================================
+         MAIN PRODUCT CONTENT
+         ======================================== -->
+    <main class="product-details-wrapper">
+        
+        <!-- Category Navigation -->
+        <nav class="category-nav" id="categoryNav" aria-label="Product Categories">
+            <button class="cat-btn active" onclick="loadCategory('AnalogMeters')" aria-pressed="true">Analog Meters</button>
+            <button class="cat-btn" onclick="loadCategory('BatteryCharger')" aria-pressed="false">Battery Charger</button>
+            <button class="cat-btn" onclick="loadCategory('ControlRelay')" aria-pressed="false">Control Relay</button>
+            <button class="cat-btn" onclick="loadCategory('CurrentTransformer')" aria-pressed="false">Current Transformer</button>
+            <button class="cat-btn" onclick="loadCategory('DigitalMeters')" aria-pressed="false">Digital Meters</button>
+            <button class="cat-btn" onclick="loadCategory('EnergyAnalyzer')" aria-pressed="false">Energy Analyzer</button>
+            <button class="cat-btn" onclick="loadCategory('PowerFactorController')" aria-pressed="false">Power Factor Controller</button>
+            <button class="cat-btn" onclick="loadCategory('PowerSupply')" aria-pressed="false">Power Supply</button>
+            <button class="cat-btn" onclick="loadCategory('ProtectionRelay')" aria-pressed="false">Protection Relay</button>
+            <button class="cat-btn" onclick="loadCategory('Timers')" aria-pressed="false">Timers</button>
+        </nav>
+
+        <!-- Product Header -->
+        <header class="vteke-pro-header-main-container">
+<div class="vteke-pro-header-inner-container">
+<div class="vteke-pro-logo-main-wrapper">
+<div class="vteke-pro-logo-glow-effect"></div>
+<a href="index.html" class="vteke-pro-logo-3d-transform" aria-label="VTEKE Home - Industrial Electrical Solutions">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Professional Electric Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</a>
+</div>
+<button class="vteke-pro-mobile-menu-toggle-btn vteke-touch-optimized-element" id="vtekeMenuToggleBtn" aria-label="Open main menu">
+<span>☰</span>
+</button>
+<div class="vteke-pro-navigation-container">
+<nav aria-label="Main navigation">
+<ul class="vteke-pro-main-navigation-list">
+<li class="vteke-pro-nav-list-item">
+<a href="index.html" class="vteke-pro-nav-link-element" data-lang-en="HOME" data-lang-tr="ANA SAYFA">HOME</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="aboutus.html" class="vteke-pro-nav-link-element" data-lang-en="ABOUT US" data-lang-tr="HAKKIMIZDA">ABOUT US</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="News.html" class="vteke-pro-nav-link-element" data-lang-en="NEWS" data-lang-tr="HABERLER">NEWS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Catalog.html" class="vteke-pro-nav-link-element vteke-active-link" aria-current="page" data-lang-en="CATALOG" data-lang-tr="KATALOG">CATALOG</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Products.html" class="vteke-pro-nav-link-element" data-lang-en="PRODUCTS" data-lang-tr="ÜRÜNLER">PRODUCTS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Certificates.html" class="vteke-pro-nav-link-element" data-lang-en="CERTIFICATES" data-lang-tr="SERTİFİKALAR">CERTIFICATES</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="ContactUs.html" class="vteke-pro-nav-link-element" data-lang-en="CONTACT" data-lang-tr="İLETİŞİM">CONTACT</a>
+</li>
+</ul>
+</nav>
+<!-- Language Switcher - Desktop -->
+<div class="lang-dropdown-wrapper" id="langDropdown">
+<button class="lang-dropdown-btn" onclick="toggleLanguageDropdown()" aria-label="Switch Language" aria-expanded="false">
+<span class="language-flag" id="currentLangFlag">🇬🇧</span>
+<span class="language-text" id="currentLangText">EN</span>
+<i class="bi bi-chevron-down"></i>
+</button>
+<div class="lang-dropdown-menu" role="menu">
+<button class="lang-dropdown-item" onclick="setLanguage('en')" role="menuitem">
+<span class="language-flag">🇬🇧</span> English
+</button>
+<button class="lang-dropdown-item" onclick="setLanguage('tr')" role="menuitem">
+<span class="language-flag">🇹🇷</span> Türkçe
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="vteke-pro-mobile-menu-overlay-bg" id="vtekeMobileMenuOverlay" aria-hidden="true"></div>
+<div class="vteke-pro-mobile-menu-sliding-container" id="vtekeMobileMenuContainer" aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
+<div class="vteke-pro-mobile-menu-header-section">
+<div class="vteke-pro-mobile-logo-container">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</div>
+<button type="button" class="vteke-pro-close-mobile-menu-btn vteke-touch-optimized-element" id="vtekeCloseMenuBtn" aria-label="Close menu">×</button>
+</div>
+<!-- Language Switcher - Mobile -->
+<div class="vteke-pro-mobile-language-container">
+<button class="vteke-pro-mobile-language-btn active" id="mobileLangEN" onclick="setLanguage('en')" aria-label="Switch to English">
+<span class="language-flag">🇬🇧</span>
+<span class="language-text">English</span>
+</button>
+<button class="vteke-pro-mobile-language-btn" id="mobileLangTR" onclick="setLanguage('tr')" aria-label="Türkçe'ye geç">
+<span class="language-flag">🇹🇷</span>
+<span class="language-text">Türkçe</span>
+</button>
+</div>
+<nav class="vteke-pro-mobile-navigation-container" aria-label="Mobile navigation">
+<div class="vteke-pro-mobile-nav-item">
+<a href="index.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="aboutus.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="About Us" data-lang-tr="Hakkımızda">About Us</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="News.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="News" data-lang-tr="Haberler">News</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Catalog.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Catalog" data-lang-tr="Katalog">Catalog</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Products.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Products" data-lang-tr="Ürünler">Products</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Certificates.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Certificates" data-lang-tr="Sertifikalar">Certificates</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="ContactUs.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a>
+</div>
+</nav>
+<div class="vteke-pro-mobile-menu-footer">
+<p class="vteke-pro-copyright-text">© 2026 VTEKE Professional Electric. All Rights Reserved.</p>
+</div>
+</div>
+</header>
+
+        <!-- Dynamic product heading set by loadCategory() -->
+        <div style="padding: 1.5rem 0 0.5rem;">
+            <h2 id="pageTitle" style="font-size:1.8rem;font-weight:800;color:#212529;margin-bottom:0.5rem;">Analog Meters</h2>
+            <p id="pageDesc" style="color:#6c757d;font-size:1rem;margin:0;">High precision analog measurement instruments for industrial applications.</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Image Section -->
+            <figure class="main-image-wrapper" id="imageWrapper">
+                <img src="" alt="Product Image" class="product-main-image" id="mainImage" loading="lazy"
+                     style="background:#f8f9fa; min-height:200px;"
+                     onerror="this.style.display='none'">
+                <figcaption class="zoom-hint">
+                    <i class="fas fa-search-plus"></i> Zoom
+                </figcaption>
+            </figure>
+
+            <!-- Info Section -->
+            <section class="product-info-section">
+                
+                <!-- Downloads / Datasheets Section -->
+                <article class="datasheet-section">
+                    <h3 class="datasheet-title"><i class="fas fa-file-pdf"></i> Technical Datasheets</h3>
+                    <ul class="datasheet-list" id="datasheetList" aria-live="polite">
+                        <li class="datasheet-item">
+                            <span class="ds-name">Select a category to view datasheets</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Specifications -->
+                <article class="product-specifications">
+                    <h3 class="specs-title"><i class="fas fa-cogs"></i> Specifications</h3>
+                    <table class="spec-table">
+                        <tbody id="specTableBody">
+                            <tr>
+                                <td class="spec-label">Standard</td>
+                                <td class="spec-value">IEC 60051</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Accuracy</td>
+                                <td class="spec-value">Class 1.5 / 2.5</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Material</td>
+                                <td class="spec-value">ABS Plastic Case</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Warranty</td>
+                                <td class="spec-value">2 Years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <!-- Action Buttons -->
+                <section class="product-actions-section">
+                    <div class="action-buttons">
+                        <a href="ContactUs.html" class="action-btn primary-action">
+                            <i class="fas fa-envelope"></i> Request Quote
+                        </a>
+                        <a href="ContactUs.html" class="action-btn secondary-action">
+                            <i class="fas fa-phone"></i> Contact Support
+                        </a>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- ========================================
+         FOOTER (SAME AS ABOUT US PAGE)
+         ======================================== -->
+    <footer class="vteke-footer-main-container">
+        <div class="vteke-footer-grid-container">
+            <div class="vteke-footer-grid-inner">
+                <!-- Column 1: Company Info -->
+                <div class="vteke-footer-column-wrapper">
+                    <div class="vteke-footer-company-info">
+                        <img src="vtekeimg/VTEKE1.png" alt="VTEKE Logo" class="vteke-footer-company-logo">
+                        <p class="vteke-footer-company-desc" data-i18n="footer.desc">Leading provider of innovative electrical solutions with excellence in quality.</p>
+                        <div class="vteke-footer-social-container">
+                            <a href="https://wa.me/+902125440004" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="WhatsApp">
+                                <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.199.05-.372-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.226 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.491h.004c-2.255-.001-4.323-1.176-5.527-3.039l-.003-.004c-.564-.896-.987-1.853-1.263-2.839-.575-2.058-.324-4.17.716-5.92.384-.647.853-1.22 1.389-1.709.893-.813 1.923-1.427 3.039-1.78.366-.116.744-.173 1.123-.171.422.002.851.067 1.272.193.839.252 1.624.706 2.326 1.329.683.606 1.268 1.365 1.728 2.242.909 1.738 1.197 3.692.826 5.509-.366 1.792-1.272 3.407-2.582 4.649-1.364 1.293-3.012 2.109-4.754 2.354-.439.062-.887.092-1.335.091z"/>
+                                </svg>
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="Facebook">
+                                <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="LinkedIn">
+                                <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Useful Links -->
+                <div class="vteke-footer-column-wrapper">
+                    <h4 class="vteke-footer-column-title" data-i18n="footer.links">Useful Links</h4>
+                    <ul class="vteke-footer-links-list">
+                        <li class="vteke-footer-link-item"><a href="index.html" class="vteke-footer-link-anchor" data-i18n="footer.home">Home</a></li>
+                        <li class="vteke-footer-link-item"><a href="aboutus.html" class="vteke-footer-link-anchor" data-i18n="footer.about">About Us</a></li>
+                        <li class="vteke-footer-link-item"><a href="ContactUs.html" class="vteke-footer-link-anchor" data-i18n="footer.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Projects & News -->
+                <div class="vteke-footer-column-wrapper">
+                    <h4 class="vteke-footer-column-title" data-i18n="footer.products">Products & News</h4>
+                    <ul class="vteke-footer-links-list">
+                        <li class="vteke-footer-link-item"><a href="News.html" class="vteke-footer-link-anchor" rel="noopener" data-i18n="footer.news">News</a></li>
+                        <li class="vteke-footer-link-item"><a href="Products.html" class="vteke-footer-link-anchor" target="_blank" rel="noopener" data-i18n="footer.products2">Products</a></li>
+                        <li class="vteke-footer-link-item"><a href="Certificates.html" class="vteke-footer-link-anchor" data-i18n="footer.certs">Certificates</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Contact & Support -->
+                <div class="vteke-footer-column-wrapper">
+                    <h4 class="vteke-footer-column-title" data-i18n="footer.support">Contact & Support</h4>
+                    <div class="vteke-footer-contact-container">
+                        <div class="vteke-footer-contact-item">
+                            <div class="vteke-footer-contact-icon-box">
+                                <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="vteke-footer-contact-text-box">
+                                <a href="tel:+902125440004" class="vteke-footer-contact-link">+90 2125440004</a>
+                            </div>
+                        </div>
+                        <div class="vteke-footer-contact-item">
+                            <div class="vteke-footer-contact-icon-box">
+                                <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6l-10 7L2 6" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="vteke-footer-contact-text-box">
+                                <a href="mailto:Info@vteke.com.tr" class="vteke-footer-contact-link">Info@vteke.com.tr</a>
+                            </div>
+                        </div>
+                        <div class="vteke-footer-contact-item">
+                            <div class="vteke-footer-contact-icon-box">
+                                <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="vteke-footer-contact-text-box">
+                                <span class="vteke-footer-contact-text" data-i18n="footer.location">Istanbul Turkey</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vteke-footer-newsletter-box">
+                        <p class="vteke-footer-newsletter-text" data-i18n="footer.newsletter">Subscribe to our newsletter for updates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vteke-footer-copyright-box">
+                <p class="vteke-footer-copyright-text">&copy; 2026 Vteke. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JAVASCRIPT
+         ======================================== -->
+    <script src="vteke-header.js"></script>
+    <script>
+        // ========================================
+        // LANGUAGE SWITCHER (SAME AS ABOUT US)
+        // ========================================
+        const rtlLanguages = ['ar'];
+        const translations = {
+            en: {
+                pageTitle: { AnalogMeters: 'Analog Meters', CurrentTransformer: 'Current Transformer', EnergyAnalyzer: 'Energy Analyzer', PowerFactorController: 'Power Factor Controller' },
+                pageDesc: { AnalogMeters: 'High precision analog measurement instruments for industrial applications.', CurrentTransformer: 'High accuracy current transformers for metering and protection.', EnergyAnalyzer: 'Comprehensive power quality and energy analysis tools.', PowerFactorController: 'Automatic power factor correction controllers for efficiency.' },
+                specs: { standard: 'Standard', accuracy: 'Accuracy', material: 'Material', warranty: 'Warranty' },
+                actions: { quote: 'Request Quote', support: 'Contact Support' },
+                datasheet: 'Technical Datasheets',
+                noDatasheets: 'No datasheets available for this category yet.'
+            },
+            tr: {
+                pageTitle: { AnalogMeters: 'Analog Ölçerler', CurrentTransformer: 'Akım Transformatörü', EnergyAnalyzer: 'Enerji Analizörü', PowerFactorController: 'Güç Faktörü Kontrolörü' },
+                pageDesc: { AnalogMeters: 'Endüstriyel uygulamalar için yüksek hassasiyetli analog ölçüm cihazları.', CurrentTransformer: 'Ölçüm ve koruma için yüksek doğrulukta akım transformatörleri.', EnergyAnalyzer: 'Kapsamlı güç kalitesi ve enerji analiz araçları.', PowerFactorController: 'Verimlilik için otomatik güç faktörü düzeltme kontrolörleri.' },
+                specs: { standard: 'Standart', accuracy: 'Doğruluk', material: 'Malzeme', warranty: 'Garanti' },
+                actions: { quote: 'Teklif İste', support: 'Destek Al' },
+                datasheet: 'Teknik Veri Sayfaları',
+                noDatasheets: 'Bu kategori için henüz veri sayfası bulunmamaktadır.'
+            },
+            ru: {
+                pageTitle: { AnalogMeters: 'Аналоговые Счетчики', CurrentTransformer: 'Трансформатор Тока', EnergyAnalyzer: 'Анализатор Энергии', PowerFactorController: 'Контроллер Коэффициента Мощности' },
+                pageDesc: { AnalogMeters: 'Высокоточные аналоговые измерительные приборы для промышленных применений.', CurrentTransformer: 'Высокоточные трансформаторы тока для учета и защиты.', EnergyAnalyzer: 'Комплексные инструменты анализа качества электроэнергии и энергии.', PowerFactorController: 'Автоматические контроллеры коррекции коэффициента мощности для эффективности.' },
+                specs: { standard: 'Стандарт', accuracy: 'Точность', material: 'Материал', warranty: 'Гарантия' },
+                actions: { quote: 'Запросить Предложение', support: 'Связаться с Поддержкой' },
+                datasheet: 'Технические Паспорта',
+                noDatasheets: 'Для этой категории пока нет технических паспортов.'
+            },
+            fr: {
+                pageTitle: { AnalogMeters: 'Compteurs Analogiques', CurrentTransformer: 'Transformateur de Courant', EnergyAnalyzer: 'Analyseur d\'Énergie', PowerFactorController: 'Contrôleur de Facteur de Puissance' },
+                pageDesc: { AnalogMeters: 'Instruments de mesure analogique de haute précision pour applications industrielles.', CurrentTransformer: 'Transformateurs de courant haute précision pour mesure et protection.', EnergyAnalyzer: 'Outils complets d\'analyse de la qualité de l\'énergie et de l\'énergie.', PowerFactorController: 'Contrôleurs de correction automatique du facteur de puissance pour l\'efficacité.' },
+                specs: { standard: 'Norme', accuracy: 'Précision', material: 'Matériau', warranty: 'Garantie' },
+                actions: { quote: 'Demander un Devis', support: 'Contacter le Support' },
+                datasheet: 'Fiches Techniques',
+                noDatasheets: 'Aucune fiche technique disponible pour cette catégorie.'
+            },
+            ar: {
+                pageTitle: { AnalogMeters: 'عدادات تناظرية', CurrentTransformer: 'محول التيار', EnergyAnalyzer: 'محلل الطاقة', PowerFactorController: 'متحكم معامل القدرة' },
+                pageDesc: { AnalogMeters: 'أدوات قياس تناظرية عالية الدقة للتطبيقات الصناعية.', CurrentTransformer: 'محولات تيار عالية الدقة للقياس والحماية.', EnergyAnalyzer: 'أدوات شاملة لتحليل جودة الطاقة والطاقة.', PowerFactorController: 'أجهزة تحكم تلقائية لتصحيح معامل القدرة للكفاءة.' },
+                specs: { standard: 'المعيار', accuracy: 'الدقة', material: 'المادة', warranty: 'الضمان' },
+                actions: { quote: 'طلب عرض سعر', support: 'الاتصال بالدعم' },
+                datasheet: 'البيانات الفنية',
+                noDatasheets: 'لا توجد بيانات فنية متاحة لهذه الفئة حالياً.'
+            },
+            zh: {
+                pageTitle: { AnalogMeters: '模拟仪表', CurrentTransformer: '电流互感器', EnergyAnalyzer: '能源分析仪', PowerFactorController: '功率因数控制器' },
+                pageDesc: { AnalogMeters: '用于工业应用的高精度模拟测量仪器。', CurrentTransformer: '用于计量和保护的高精度电流互感器。', EnergyAnalyzer: '全面的电能质量和能源分析工具。', PowerFactorController: '用于提高效率的自动功率因数校正控制器。' },
+                specs: { standard: '标准', accuracy: '精度', material: '材料', warranty: '保修' },
+                actions: { quote: '请求报价', support: '联系支持' },
+                datasheet: '技术数据表',
+                noDatasheets: '此类别暂无数据表。'
+            }
+        };
+
+        let currentLanguage = localStorage.getItem('vteke_language') || 'en';
+
+        function toggleLanguageDropdown() {
+            const dropdown = document.getElementById('langDropdown');
+            dropdown.classList.toggle('active');
+        }
+
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('vteke_language', lang);
+            document.documentElement.lang = lang;
+            
+            // Update direction
+            if (rtlLanguages.includes(lang)) {
+                document.documentElement.dir = 'rtl';
+                document.body.setAttribute('dir', 'rtl');
+            } else {
+                document.documentElement.dir = 'ltr';
+                document.body.setAttribute('dir', 'ltr');
+            }
+            
+            // Update dropdown display
+            updateDropdownDisplay(lang);
+            
+            // Translate content
+            translatePageContent(lang);
+            
+            // Close dropdown
+            document.getElementById('langDropdown').classList.remove('active');
+            
+            // Animation
+            document.body.classList.add('lang-animating');
+            setTimeout(() => document.body.classList.remove('lang-animating'), 400);
+        }
+
+        function updateDropdownDisplay(lang) {
+            const currentLangFlag = document.getElementById('currentLangFlag');
+            const currentLangCode = document.getElementById('currentLangCode');
+            const dropdownItems = document.querySelectorAll('.lang-dropdown-item');
+            const langInfo = {
+                'en': { flag: '🇬🇧', code: 'EN' },
+                'tr': { flag: '🇹🇷', code: 'TR' },
+                'ru': { flag: '🇷🇺', code: 'RU' },
+                'fr': { flag: '🇫🇷', code: 'FR' },
+                'ar': { flag: '🇸🇦', code: 'AR' },
+                'zh': { flag: '🇨🇳', code: 'ZH' }
+            };
+            
+            if (currentLangFlag && currentLangCode && langInfo[lang]) {
+                currentLangFlag.textContent = langInfo[lang].flag;
+                currentLangCode.textContent = langInfo[lang].code;
+            }
+            
+            dropdownItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('onclick').includes(`'${lang}'`)) {
+                    item.classList.add('active');
+                }
+            });
+            
+            const mobileLangSelect = document.getElementById('mobileLangSelect');
+            if (mobileLangSelect) mobileLangSelect.value = lang;
+        }
+
+        function translatePageContent(lang) {
+            const t = translations[lang] || translations.en;
+            const activeBtn = document.querySelector('.cat-btn.active');
+            const categoryKey = activeBtn?.getAttribute('onclick')?.match(/'([^']+)'/)?.[1] || 'AnalogMeters';
+            
+            if (t.pageTitle[categoryKey]) document.getElementById('pageTitle').textContent = t.pageTitle[categoryKey];
+            if (t.pageDesc[categoryKey]) document.getElementById('pageDesc').textContent = t.pageDesc[categoryKey];
+            
+            document.querySelectorAll('.spec-label').forEach((el, i) => {
+                const keys = ['standard', 'accuracy', 'material', 'warranty'];
+                if (t.specs[keys[i]]) el.textContent = t.specs[keys[i]];
+            });
+            
+            const actionBtns = document.querySelectorAll('.action-btn');
+            if (actionBtns[0] && t.actions.quote) actionBtns[0].innerHTML = `<i class="fas fa-envelope"></i> ${t.actions.quote}`;
+            if (actionBtns[1] && t.actions.support) actionBtns[1].innerHTML = `<i class="fas fa-phone"></i> ${t.actions.support}`;
+            
+            const datasheetTitle = document.querySelector('.datasheet-title');
+            if (datasheetTitle && t.datasheet) datasheetTitle.innerHTML = `<i class="fas fa-file-pdf"></i> ${t.datasheet}`;
+            
+            // Translate navigation
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const key = 'data-' + lang;
+                if (el.getAttribute(key)) el.textContent = el.getAttribute(key);
+            });
+        }
+
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('langDropdown');
+            if (dropdown && !dropdown.contains(event.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // ========================================
+        // PRODUCT CATEGORY & DATASHEET
+        // ========================================
+        const productData = {
+            'AnalogMeters': { title: 'Analog Meters', desc: 'High precision analog measurement instruments for industrial applications.', files: [] },
+            'BatteryCharger': { title: 'Battery Charger', desc: 'Reliable battery charging solutions for backup power systems.', files: [] },
+            'ControlRelay': { title: 'Control Relay', desc: 'Precision control relays for automation and switching applications.', files: [] },
+            'CurrentTransformer': {
+                title: 'Current Transformer',
+                desc: 'High accuracy current transformers for metering and protection.',
+                files: [
+                    { name: 'BK1C.pdf', path: '/vtekeimg/DataSheet/Current Transformer/BK1C.pdf' },
+                    { name: 'CK20.pdf', path: '/vtekeimg/DataSheet/Current Transformer/CK20.pdf' },
+                    { name: 'DK125.pdf', path: '/vtekeimg/DataSheet/Current Transformer/DK125.pdf' },
+                    { name: 'MSK24,36,50.pdf', path: '/vtekeimg/DataSheet/Current Transformer/MSK24,36,50.pdf' },
+                    { name: 'SK 58, 88, 812, 816, 820.pdf', path: '/vtekeimg/DataSheet/Current Transformer/SK 58, 88, 812, 816, 820.pdf' },
+                    { name: 'TK100.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK100.pdf' },
+                    { name: 'TK120.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK120.pdf' },
+                    { name: 'TK30.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK30.pdf' },
+                    { name: 'TK30A.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK30A.pdf' },
+                    { name: 'TK30N.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK30N.pdf' },
+                    { name: 'TK40.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK40.pdf' },
+                    { name: 'TK40A.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK40A.pdf' },
+                    { name: 'TK60.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK60.pdf' },
+                    { name: 'TK60D.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK60D.pdf' },
+                    { name: 'TK80.pdf', path: '/vtekeimg/DataSheet/Current Transformer/TK80.pdf' }
+                ]
+            },
+            'DigitalMeters': { title: 'Digital Meters', desc: 'Advanced digital panel meters with LED/LCD displays.', files: [] },
+            'EnergyAnalyzer': {
+                title: 'Energy Analyzer',
+                desc: 'Comprehensive power quality and energy analysis tools.',
+                files: [
+                    { name: 'EA-C1.pdf', path: '/vtekeimg/DataSheet/Energy Analyzer/EA-C1.pdf' },
+                    { name: 'EA-C4.pdf', path: '/vtekeimg/DataSheet/Energy Analyzer/EA-C4.pdf' },
+                    { name: 'EA-C5.pdf', path: '/vtekeimg/DataSheet/Energy Analyzer/EA-C5.pdf' }
+                ]
+            },
+            'PowerFactorController': {
+                title: 'Power Factor Controller',
+                desc: 'Automatic power factor correction controllers for efficiency.',
+                files: [
+                    { name: 'PFC-07.pdf', path: '/vtekeimg/DataSheet/Power Factor/PFC-07.pdf' },
+                    { name: 'PFC-12S.pdf', path: '/vtekeimg/DataSheet/Power Factor/PFC-12S.pdf' }
+                ]
+            },
+            'PowerSupply': { title: 'Power Supply', desc: 'Stable DC power supplies for industrial control systems.', files: [] },
+            'ProtectionRelay': { title: 'Protection Relay', desc: 'Critical protection relays for electrical safety.', files: [] },
+            'Timers': { title: 'Timers', desc: 'Programmable timing relays for process control.', files: [] }
+        };
+
+        function loadCategory(categoryKey) {
+            const data = productData[categoryKey];
+            if (!data) return;
+            
+            document.getElementById('pageTitle').textContent = data.title;
+            document.getElementById('pageDesc').textContent = data.desc;
+            
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.setAttribute('aria-pressed', 'false');
+                btn.classList.remove('active');
+            });
+            event.currentTarget.setAttribute('aria-pressed', 'true');
+            event.currentTarget.classList.add('active');
+            
+            const listContainer = document.getElementById('datasheetList');
+            listContainer.innerHTML = '';
+
+            if (data.files && data.files.length > 0) {
+                data.files.forEach(file => {
+                    const li = document.createElement('li');
+                    li.className = 'datasheet-item';
+                    li.setAttribute('role', 'button');
+                    li.setAttribute('tabindex', '0');
+                    li.innerHTML = `<span class="ds-name">${file.name}</span><i class="fas fa-download ds-icon" aria-hidden="true"></i>`;
+                    li.addEventListener('click', () => window.open(file.path, '_blank'));
+                    li.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            window.open(file.path, '_blank');
+                        }
+                    });
+                    listContainer.appendChild(li);
+                });
+            } else {
+                const t = translations[currentLanguage] || translations.en;
+                listContainer.innerHTML = `<li class="datasheet-item"><span class="ds-name">${t.noDatasheets}</span></li>`;
+            }
+
+            const mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.src = `https://via.placeholder.com/600x500/ffffff/E70012?text=${encodeURIComponent(data.title)}`;
+                mainImage.alt = `${data.title} - VTEKE Product`;
+            }
+            
+            if (currentLanguage !== 'en') translatePageContent(currentLanguage);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                const savedLang = localStorage.getItem('vteke_language');
+                if (savedLang && savedLang !== 'en') setLanguage(savedLang);
+            } catch(e) {}
+            
+            const defaultBtn = document.querySelector('.cat-btn.active');
+            if (defaultBtn) defaultBtn.click();
+            
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.getElementById('langDropdown')?.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

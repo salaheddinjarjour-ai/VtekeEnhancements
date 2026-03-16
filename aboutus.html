@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About VTEKE | Industrial Electrical Solutions & Manufacturing</title>
+<meta name="description" content="VTEKE - Leading industrial electrical manufacturer with global presence. Premium electrical solutions, international certifications, and engineering excellence since 2016.">
+<meta name="keywords" content="industrial electrical solutions, electrical manufacturing, power systems, international certifications, engineering excellence, global export network, VTEKE">
+<meta name="author" content="VTEKE">
+<meta property="og:title" content="About VTEKE | Industrial Electrical Solutions">
+<meta property="og:description" content="Leading manufacturer of industrial electrical products with global export network and international certifications.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://vteke.com/about">
+<link rel="icon" type="image/png" href="vtekeimg/favicon.png" >
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vteke-header-styles.css">
+<link rel="stylesheet" href="vteke-footer.css">
+<!-- ========================================
+LANGUAGE DROPDOWN STYLES (HEADER INTEGRATION)
+======================================== -->
+<style>
+/* Language Dropdown in Header */
+.lang-dropdown-wrapper {
+    position: relative;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.lang-dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(231, 0, 18, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #1a1a1a;
+    backdrop-filter: blur(5px);
+}
+
+.lang-dropdown-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: #E70012;
+    box-shadow: 0 4px 12px rgba(231, 0, 18, 0.15);
+    transform: translateY(-1px);
+}
+
+.lang-dropdown-btn i {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.lang-dropdown-wrapper.active .lang-dropdown-btn i {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid rgba(231, 0, 18, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 1000;
+    padding: 8px;
+    margin-top: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-dropdown-wrapper.active .lang-dropdown-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lang-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    width: 100%;
+}
+
+.lang-dropdown-item:hover {
+    background: linear-gradient(135deg, rgba(231, 0, 18, 0.05), rgba(192, 5, 0, 0.05));
+    color: #E70012;
+    padding-left: 16px;
+}
+
+.lang-dropdown-item.active {
+    background: rgba(231, 0, 18, 0.1);
+    color: #E70012;
+    font-weight: 600;
+}
+
+.language-flag {
+    font-size: 1.1rem;
+}
+
+.language-code {
+    font-weight: 700;
+    min-width: 28px;
+}
+
+/* RTL Support */
+[dir="rtl"] .lang-dropdown-wrapper {
+    margin-left: 0;
+    margin-right: 20px;
+}
+[dir="rtl"] .lang-dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+/* Mobile Language Selector */
+.lang-select-mobile {
+    display: none;
+    padding: 1rem;
+    background: #F9FAFB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.lang-select-mobile select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #E70012;
+    border-radius: 8px;
+    font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+    font-size: 0.9rem;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .lang-dropdown-wrapper {
+        display: none;
+    }
+    .lang-select-mobile {
+        display: block;
+    }
+}
+
+/* Language Change Animation */
+@keyframes languageFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.lang-animating {
+    animation: languageFadeIn 0.4s ease-out;
+}
+</style>
+</head>
+<body>
+<header class="vteke-pro-header-main-container">
+<div class="vteke-pro-header-inner-container">
+<div class="vteke-pro-logo-main-wrapper">
+<div class="vteke-pro-logo-glow-effect"></div>
+<a href="index.html" class="vteke-pro-logo-3d-transform" aria-label="VTEKE Home - Industrial Electrical Solutions">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Professional Electric Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</a>
+</div>
+<button class="vteke-pro-mobile-menu-toggle-btn vteke-touch-optimized-element" id="vtekeMenuToggleBtn" aria-label="Open main menu">
+<span>☰</span>
+</button>
+<div class="vteke-pro-navigation-container">
+<nav aria-label="Main navigation">
+<ul class="vteke-pro-main-navigation-list">
+<li class="vteke-pro-nav-list-item">
+<a href="index.html" class="vteke-pro-nav-link-element" data-lang-en="HOME" data-lang-tr="ANA SAYFA">HOME</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="aboutus.html" class="vteke-pro-nav-link-element vteke-active-link" aria-current="page" data-lang-en="ABOUT US" data-lang-tr="HAKKIMIZDA">ABOUT US</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="News.html" class="vteke-pro-nav-link-element" data-lang-en="NEWS" data-lang-tr="HABERLER">NEWS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Catalog.html" class="vteke-pro-nav-link-element" data-lang-en="CATALOG" data-lang-tr="KATALOG">CATALOG</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Products.html" class="vteke-pro-nav-link-element" data-lang-en="PRODUCTS" data-lang-tr="ÜRÜNLER">PRODUCTS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Certificates.html" class="vteke-pro-nav-link-element" data-lang-en="CERTIFICATES" data-lang-tr="SERTİFİKALAR">CERTIFICATES</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="ContactUs.html" class="vteke-pro-nav-link-element" data-lang-en="CONTACT" data-lang-tr="İLETİŞİM">CONTACT</a>
+</li>
+</ul>
+</nav>
+<!-- Language Switcher - Desktop -->
+<div class="lang-dropdown-wrapper" id="langDropdown">
+<button class="lang-dropdown-btn" onclick="toggleLanguageDropdown()" aria-label="Switch Language" aria-expanded="false">
+<span class="language-flag" id="currentLangFlag">🇬🇧</span>
+<span class="language-text" id="currentLangText">EN</span>
+<i class="bi bi-chevron-down"></i>
+</button>
+<div class="lang-dropdown-menu" role="menu">
+<button class="lang-dropdown-item" onclick="setLanguage('en')" role="menuitem">
+<span class="language-flag">🇬🇧</span> English
+</button>
+<button class="lang-dropdown-item" onclick="setLanguage('tr')" role="menuitem">
+<span class="language-flag">🇹🇷</span> Türkçe
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="vteke-pro-mobile-menu-overlay-bg" id="vtekeMobileMenuOverlay" aria-hidden="true"></div>
+<div class="vteke-pro-mobile-menu-sliding-container" id="vtekeMobileMenuContainer" aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
+<div class="vteke-pro-mobile-menu-header-section">
+<div class="vteke-pro-mobile-logo-container">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</div>
+<button type="button" class="vteke-pro-close-mobile-menu-btn vteke-touch-optimized-element" id="vtekeCloseMenuBtn" aria-label="Close menu">×</button>
+</div>
+<!-- Language Switcher - Mobile -->
+<div class="vteke-pro-mobile-language-container">
+<button class="vteke-pro-mobile-language-btn active" id="mobileLangEN" onclick="setLanguage('en')" aria-label="Switch to English">
+<span class="language-flag">🇬🇧</span>
+<span class="language-text">English</span>
+</button>
+<button class="vteke-pro-mobile-language-btn" id="mobileLangTR" onclick="setLanguage('tr')" aria-label="Türkçe'ye geç">
+<span class="language-flag">🇹🇷</span>
+<span class="language-text">Türkçe</span>
+</button>
+</div>
+<nav class="vteke-pro-mobile-navigation-container" aria-label="Mobile navigation">
+<div class="vteke-pro-mobile-nav-item">
+<a href="index.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="aboutus.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="About Us" data-lang-tr="Hakkımızda">About Us</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="News.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="News" data-lang-tr="Haberler">News</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Catalog.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Catalog" data-lang-tr="Katalog">Catalog</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Products.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Products" data-lang-tr="Ürünler">Products</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Certificates.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Certificates" data-lang-tr="Sertifikalar">Certificates</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="ContactUs.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a>
+</div>
+</nav>
+<div class="vteke-pro-mobile-menu-footer">
+<p class="vteke-pro-copyright-text">© 2026 VTEKE Professional Electric. All Rights Reserved.</p>
+</div>
+</div>
+</header>
+<div class="vteke-header-space-reserver"></div>
+<script src="vteke-header.js"></script>
+
+<!-- Removed floating lang-toggle, now integrated in header -->
+
+<style>
+/* Global Section Title Style */
+.section-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.section-title-line {
+    flex: 1;
+    max-width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    position: relative;
+}
+.section-title-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+    opacity: 0.5;
+}
+.section-title-main {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--gray-800);
+    text-align: center;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    position: relative;
+}
+.section-subtitle-main {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--gray-600);
+    max-width: 800px;
+    margin: -30px auto 50px;
+    line-height: 1.7;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-header-wrapper {
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+    .section-title-line {
+        max-width: 100px;
+    }
+    .section-title-main {
+        font-size: 2.2rem;
+    }
+    .section-subtitle-main {
+        font-size: 1rem;
+        margin-top: -20px;
+        margin-bottom: 35px;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 480px) {
+    .section-title-main {
+        font-size: 1.8rem;
+    }
+    .section-title-line {
+        max-width: 60px;
+    }
+}
+/* Keep existing styles but update section titles */
+:root {
+    --primary: #E70012;
+    --primary-dark: #c0392b;
+    --primary-light: #ff4757;
+    --primary-gradient: linear-gradient(135deg, #E70012 0%, #c0392b 100%);
+    --secondary: #2C3E50;
+    --dark: #1F2937;
+    --light: #F5F5F5;
+    --gray-50: #F9FAFB;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --gray-300: #D1D5DB;
+    --gray-400: #9CA3AF;
+    --gray-500: #6B7280;
+    --gray-600: #4B5563;
+    --gray-700: #374151;
+    --gray-800: #1F2937;
+    --gray-900: #111827;
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --transition-fast: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --border-radius-xl: 32px;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --spacing-2xl: 64px;
+    --spacing-3xl: 80px;
+    --spacing-4xl: 100px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', 'Noto Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--gray-800);
+    background-color: var(--light);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    transition: direction 0.3s ease;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+section {
+    padding: var(--spacing-4xl) var(--spacing-sm);
+    position: relative;
+    overflow: hidden;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 16px 48px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+}
+.btn-primary {
+    background: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 10px 25px -5px rgba(231, 0, 18, 0.3);
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px -5px rgba(231, 0, 18, 0.4);
+    background: var(--primary-dark);
+    color: #ffffff;
+}
+/* RTL Support */
+[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
+/* Hero Section */
+.hero {
+    background: var(--primary-gradient);
+    color: #ffffff;
+    padding: 160px 20px 120px;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.06) 0%, transparent 30%);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    padding: 8px 28px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 24px;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.03em;
+    color: #ffffff;
+}
+.hero p {
+    font-size: 1.35rem;
+    opacity: 0.95;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.95);
+}
+.hero-cta {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+/* Company Overview */
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.overview-content {
+    max-width: 650px;
+}
+.overview-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 28px;
+    position: relative;
+    display: inline-block;
+    color: var(--gray-800);
+}
+.overview-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+.overview-content p {
+    font-size: 1.15rem;
+    color: var(--gray-700);
+    margin-bottom: 24px;
+}
+.overview-image {
+    position: relative;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-2xl);
+    height: 100%;
+    min-height: 500px;
+    background: var(--primary-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 35%);
+}
+.overview-image-content {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 85%;
+}
+.overview-image-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+.overview-image-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.95;
+    color: rgba(255, 255, 255, 0.95);
+}
+/* Stats Section */
+.stats-bg {
+    background: var(--gray-50);
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+}
+.stat-card {
+    background: #ffffff;
+    border-radius: var(--border-radius-lg);
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-light);
+}
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 16px;
+}
+.stat-label {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--gray-700);
+}
+/* Gallery Section */
+.gallery-section {
+    background: var(--gray-50);
+    position: relative;
+    overflow: hidden;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+.gallery-item {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 300px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #ffffff;
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+.gallery-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+.gallery-desc {
+    font-size: 0.9rem;
+    opacity: 0.95;
+    color: rgba(255, 255, 255, 0.95);
+}
+/* Video Section */
+.video-section {
+    background: var(--gray-50);
+    position: relative;
+    overflow: hidden;
+}
+.video-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+    radial-gradient(circle at 15% 30%, rgba(231, 0, 18, 0.03) 0%, transparent 30%),
+    radial-gradient(circle at 85% 70%, rgba(231, 0, 18, 0.02) 0%, transparent 35%);
+    z-index: 1;
+}
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-2xl);
+    background: var(--gray-200);
+    aspect-ratio: 16/9;
+}
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.video-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 35%);
+}
+.play-button {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    transition: var(--transition);
+    box-shadow: var(--shadow-xl);
+}
+.play-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--primary);
+    opacity: 0;
+    transition: var(--transition);
+}
+.play-button:hover::after {
+    opacity: 0.1;
+    transform: scale(1.2);
+}
+.play-icon {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid var(--primary);
+    margin-left: 4px;
+}
+.video-text {
+    margin-top: 32px;
+    color: var(--gray-700);
+    font-size: 1.1rem;
+}
+/* Values Section */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+}
+.value-card {
+    background: #ffffff;
+    border-radius: var(--border-radius-lg);
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+.value-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(231, 0, 18, 0.08) 0%, transparent 70%);
+    z-index: 0;
+    transition: var(--transition);
+    opacity: 0;
+}
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: transparent;
+}
+.value-card:hover::before {
+    opacity: 1;
+    top: -20%;
+    left: -20%;
+}
+.value-card-content {
+    position: relative;
+    z-index: 1;
+}
+.value-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(231, 0, 18, 0.08);
+    border-radius: 20px;
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+.value-card:hover .value-icon {
+    background: var(--primary);
+    color: #ffffff;
+    transform: scale(1.1) rotate(5deg);
+}
+.value-icon svg {
+    width: 32px;
+    height: 32px;
+}
+.value-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--gray-800);
+}
+.value-desc {
+    color: var(--gray-600);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3.8rem;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+    .video-wrapper {
+        max-width: 100%;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 992px) {
+    section {
+        padding: 80px 20px;
+    }
+    .hero {
+        padding: 120px 20px 100px;
+    }
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .overview-content h2 {
+        font-size: 2.5rem;
+    }
+    .stat-number {
+        font-size: 3rem;
+    }
+    .overview-image {
+        min-height: 450px;
+    }
+    .overview-image-title {
+        font-size: 3.8rem;
+    }
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+    .btn {
+        width: 100%;
+        padding: 16px;
+    }
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stats-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    .overview-content h2 {
+        font-size: 2.3rem;
+    }
+    .stat-number {
+        font-size: 2.8rem;
+    }
+    .value-title {
+        font-size: 1.4rem;
+    }
+    .overview-image {
+        min-height: 400px;
+    }
+    .overview-image-title {
+        font-size: 3.2rem;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-item {
+        height: 250px;
+    }
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+    .play-icon {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 16px solid var(--primary);
+    }
+}
+@media (max-width: 480px) {
+    section {
+        padding: 60px 15px;
+    }
+    .hero {
+        padding: 100px 15px 80px;
+    }
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    .overview-image {
+        min-height: 350px;
+    }
+    .overview-image-title {
+        font-size: 2.8rem;
+    }
+    .overview-image-text {
+        font-size: 1.3rem;
+    }
+    .play-button {
+        width: 45px;
+        height: 45px;
+    }
+    .play-icon {
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 14px solid var(--primary);
+    }
+}
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cert-card {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+.cert-card:nth-child(1) { --i: 1; }
+.cert-card:nth-child(2) { --i: 2; }
+.cert-card:nth-child(3) { --i: 3; }
+.cert-card:nth-child(4) { --i: 4; }
+.cert-card:nth-child(5) { --i: 5; }
+.cert-card:nth-child(6) { --i: 6; }
+</style>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero.badge">Engineering Excellence Since 2016</div>
+            <h1 data-i18n="hero.title">Powering Industries with Precision Engineering</h1>
+            <p data-i18n="hero.p">VTEKE is a leading manufacturer of industrial electrical solutions, delivering reliable power systems to 30 countries worldwide with uncompromising quality and innovation.</p>
+            <div class="hero-cta">
+                <a href="ContactUs.html" class="btn btn-primary" data-i18n="hero.cta">Contact Our Team</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Overview -->
+<section id="overview">
+    <div class="container">
+        <div class="overview-grid">
+            <div class="overview-content">
+                <div class="section-header-wrapper">
+                    <div class="section-title-line"></div>
+                    <h2 class="section-title-main" data-i18n="overview.title">Who We Are</h2>
+                    <div class="section-title-line"></div>
+                </div>
+                <p data-i18n="overview.p1">VTEKE is a certified manufacturer of industrial low-voltage electrical equipment, delivering precision-engineered solutions to more than 35 countries worldwide. Specializing in current transformers (CTs), electronic protection relays, digital panel meters, and energy analyzers, VTEKE serves electrical panel builders, distributors, and industrial automation professionals who require accuracy, reliability, and long-term performance. Our production is certified under ISO 9001:2015 and all products carry the CE mark, with independent TÜV testing to ensure compliance, safety, and consistent quality. We also hold TSE certification, comply with EAC requirements, and are registered under SABER/SASO for the Saudi market. Driven by continuous research and development, VTEKE focuses on improving measurement precision, durability, and overall product performance, supporting safe operation, energy efficiency, and stable electrical systems in modern industrial installations.</p>
+            </div>
+                    <!-- Video Section -->
+<section class="video-section" id="video">
+    <div class="container">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <div class="video-placeholder" onclick="playVideo()">
+                    <div class="play-button">
+                        <div class="play-icon"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="video-text" data-i18n="video.text">Watch our story: Engineering excellence and global impact</p>
+        </div>
+    </div>
+</section>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Global Impact / Statistics -->
+<section class="stats-bg" id="statistics">
+    <div class="container">
+        <div class="section-header-wrapper">
+            <div class="section-title-line"></div>
+            <h2 class="section-title-main" data-i18n="statistics.title">Global Impact</h2>
+            <div class="section-title-line"></div>
+        </div>
+        <p class="section-subtitle-main" data-i18n="statistics.subtitle">VTEKE products are installed in utility distribution networks, industrial facilities, and large-scale infrastructure projects across international markets. Through collaboration with panel builders, contractors, and system integrators, we deliver reliable low-voltage solutions that support safe, efficient, and long term electrical performance</p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">35+</div>
+                <div class="stat-label" data-i18n="statistics.stat1">Countries Worldwide</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">70+</div>
+                <div class="stat-label" data-i18n="statistics.stat2">Industrial Products</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label" data-i18n="statistics.stat3">Engineering Experts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">+500</div>
+                <div class="stat-label" data-i18n="statistics.stat4">Industrial Project Installations</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Gallery Section -->
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <div class="section-header-wrapper">
+            <div class="section-title-line"></div>
+            <h2 class="section-title-main" data-i18n="gallery.title">Our Facilities</h2>
+            <div class="section-title-line"></div>
+        </div>
+        <p class="section-subtitle-main" data-i18n="gallery.subtitle">Explore our state-of-the-art manufacturing facilities, advanced production lines, and dedicated engineering teams that make VTEKE a global leader in industrial electrical solutions.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/vtekeimg/1.webp" alt="VTEKE Manufacturing Plant">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Manufacturing Plant</div>
+                    <div class="gallery-desc">Advanced production facility</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/vtekeimg/2.webp" alt="VTEKE Quality Control">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Quality Control</div>
+                    <div class="gallery-desc">Rigorous testing procedures</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/vtekeimg/3.webp" alt="VTEKE Engineering Team">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Engineering Team</div>
+                    <div class="gallery-desc">Expert professionals</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/vtekeimg/2.webp" alt="VTEKE R&D Center">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">R&D Center</div>
+                    <div class="gallery-desc">Innovation and development</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Core Values -->
+<section id="values">
+    <div class="container">
+        <div class="section-header-wrapper">
+            <div class="section-title-line"></div>
+            <h2 class="section-title-main" data-i18n="values.title">Our Core Values</h2>
+            <div class="section-title-line"></div>
+        </div>
+        <p class="section-subtitle-main" data-i18n="values.subtitle">The principles that guide our operations and define our commitment to quality, innovation, and customer satisfaction in every project we undertake.</p>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-card-content">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title" data-i18n="values.v1.title">Engineering Precision</h3>
+                    <p class="value-desc" data-i18n="values.v1.desc">Commitment to accuracy, measurement reliability, and strict technical standards in every product.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-card-content">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title" data-i18n="values.v2.title">Certified Quality</h3>
+                    <p class="value-desc" data-i18n="values.v2.desc">Compliance with international standards and consistent testing across all production stages.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-card-content">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title" data-i18n="values.v3.title">Long-Term Partnership</h3>
+                    <p class="value-desc" data-i18n="values.v3.desc">Building stable relationships with distributors, panel builders, and industrial clients worldwide.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-card-content">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title" data-i18n="values.v4.title">Manufacturing Discipline</h3>
+                    <p class="value-desc" data-i18n="values.v4.desc">Controlled processes, traceable production, and continuous improvement.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-card-content">
+                    <div class="value-icon">✓</div>
+                    <h3 class="value-title" data-i18n="values.v5.title">Technical Innovation</h3>
+                    <p class="value-desc" data-i18n="values.v5.desc">Ongoing R&D to enhance performance, safety, and efficiency in LV electrical systems.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-card-content">
+                    <div class="value-icon">✓</div>
+                    <h3 class="value-title" data-i18n="values.v6.title">Operational Reliability</h3>
+                    <p class="value-desc" data-i18n="values.v6.desc">Designing products that ensure stable performance in demanding industrial environments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Certifications Section - Professional Industrial Design */
+.certifications-section {
+    background: #F5F5F5;
+    padding: 80px 0 60px;
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid #FF3131;
+    border-bottom: 4px solid #FF3131;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+.certifications-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 10;
+}
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.cert-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(200, 13, 44, 0.15);
+    padding: 25px 20px;
+    text-align: center;
+}
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #C80D2C, #FF3131, #E70012, #FF3131, #C80D2C);
+    background-size: 300% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+    z-index: 20;
+}
+@keyframes shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+.cert-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(200, 13, 44, 0.25);
+    z-index: 30;
+    border-color: rgba(200, 13, 44, 0.4);
+}
+.cert-logo-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.4s ease;
+}
+.cert-card:hover .cert-logo-container {
+    background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%);
+}
+.cert-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    max-width: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.12));
+}
+.cert-card:hover .cert-logo-img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 15px 30px rgba(200, 13, 44, 0.25));
+}
+.cert-name {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin: 0 0 15px;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cert-card:hover .cert-name {
+    color: #C80D2C;
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #C80D2C, transparent);
+    margin: 0 auto 15px;
+    border-radius: 2px;
+}
+.cert-description {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Card entrance animation */
+@keyframes cert-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.cert-card {
+    animation: cert-fade-in 0.6s ease-out backwards;
+}
+.cert-card:nth-child(1) { animation-delay: 0.1s; }
+.cert-card:nth-child(2) { animation-delay: 0.15s; }
+.cert-card:nth-child(3) { animation-delay: 0.2s; }
+.cert-card:nth-child(4) { animation-delay: 0.25s; }
+.cert-card:nth-child(5) { animation-delay: 0.3s; }
+.cert-card:nth-child(6) { animation-delay: 0.35s; }
+/* Responsive Design */
+@media (max-width: 1300px) {
+    .certifications-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+    }
+    .cert-logo-container {
+        height: 90px;
+    }
+}
+@media (max-width: 1000px) {
+    .certifications-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    .cert-logo-container {
+        height: 85px;
+    }
+    .cert-name {
+        font-size: 1.15rem;
+    }
+}
+@media (max-width: 768px) {
+    .certifications-section {
+        padding: 50px 0 40px;
+    }
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    .cert-logo-container {
+        height: 90px;
+    }
+    .cert-name {
+        font-size: 1.2rem;
+    }
+    .cert-card {
+        padding: 20px 15px;
+    }
+}
+@media (max-width: 480px) {
+    .certifications-section {
+        padding: 40px 0 30px;
+    }
+    .certifications-section .container {
+        padding: 0 15px;
+    }
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .cert-logo-container {
+        height: 100px;
+    }
+    .cert-name {
+        font-size: 1.25rem;
+    }
+    .cert-description {
+        font-size: 0.9rem;
+    }
+}
+</style>
+
+<!-- Certifications Section - Professional Industrial -->
+<section class="certifications-section" id="certifications">
+    <div class="container">
+        <div style="text-align:center; margin-bottom:16px; padding-bottom:8px;">
+            <h2 class="section-title-main" data-i18n="certifications.title" style="font-size:clamp(1.6rem,3vw,2.2rem); font-weight:800; color:#111; margin:0 0 12px; letter-spacing:-0.01em;">International Certifications</h2>
+        </div>
+        <p class="section-subtitle-main" data-i18n="certifications.subtitle" style="margin-bottom:40px;">Global standards ensuring quality, safety, and compliance</p>
+        <div class="certifications-grid">
+            <!-- CE Certification -->
+            <div class="cert-card">
+                <div class="cert-logo-container">
+                    <img src="/vtekeimg/WebSite Certification/CE.jpg" alt="CE Certification" class="cert-logo-img">
+                </div>
+                <h3 class="cert-name">CE</h3>
+                <div class="divider"></div>
+                <p class="cert-description">European Conformity</p>
+            </div>
+            <!-- ISO Certification -->
+            <div class="cert-card">
+                <div class="cert-logo-container">
+                    <img src="/vtekeimg/WebSite Certification/ISO.jpg" alt="ISO Certification" class="cert-logo-img">
+                </div>
+                <h3 class="cert-name">ISO 9001:2015</h3>
+                <div class="divider"></div>
+                <p class="cert-description">Quality Management Systems</p>
+            </div>
+            <!-- TÜV Certification -->
+            <div class="cert-card">
+                <div class="cert-logo-container">
+                    <img src="/vtekeimg/WebSite Certification/TUV.jpg" alt="TÜV Certification" class="cert-logo-img">
+                </div>
+                <h3 class="cert-name">TÜV</h3>
+                <div class="divider"></div>
+                <p class="cert-description">Independent Product Testing & Certification</p>
+            </div>
+            <!-- EAC Certification -->
+            <div class="cert-card">
+                <div class="cert-logo-container">
+                    <img src="/vtekeimg/WebSite Certification/EAC.jpg" alt="EAC Certification" class="cert-logo-img">
+                </div>
+                <h3 class="cert-name">EAC</h3>
+                <div class="divider"></div>
+                <p class="cert-description">Eurasian Conformity Certification</p>
+            </div>
+            <!-- SABER Certification -->
+            <div class="cert-card">
+                <div class="cert-logo-container">
+                    <img src="/vtekeimg/WebSite Certification/SASO.jpg" alt="SABER Certification" class="cert-logo-img">
+                </div>
+                <h3 class="cert-name">SABER</h3>
+                <div class="divider"></div>
+                <p class="cert-description">Saudi Product Conformity Certification</p>
+            </div>
+            <!-- TSE Certification -->
+            <div class="cert-card">
+                <div class="cert-logo-container">
+                    <img src="/vtekeimg/WebSite Certification/TSE.jpg" alt="TSE Certification" class="cert-logo-img">
+                </div>
+                <h3 class="cert-name">TSE</h3>
+                <div class="divider"></div>
+                <p class="cert-description">Turkish Standards Institute Certification</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Play Video Function
+function playVideo() {
+    alert('Video will play here. Replace with actual video embed or modal.');
+}
+
+// Toggle Dropdown
+function toggleLanguageDropdown() {
+    const dropdown = document.getElementById('langDropdown');
+    dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('langDropdown');
+    if (dropdown && !dropdown.contains(event.target)) {
+        dropdown.classList.remove('active');
+    }
+});
+
+// RTL languages
+const rtlLanguages = ['ar'];
+
+// Translations
+const translations = {
+    en: {
+        hero: {
+            badge: "Engineering Excellence Since 2016",
+            title: "Powering Industries with Precision Engineering",
+            p: "VTEKE is a leading manufacturer of industrial electrical solutions, delivering reliable power systems to 30 countries worldwide with uncompromising quality and innovation.",
+            cta: "Contact Our Team"
+        },
+        overview: {
+            title: "Who We Are",
+            p1: "VTEKE is a certified manufacturer of industrial low-voltage electrical equipment, delivering precision-engineered solutions to more than 35 countries worldwide. Specializing in current transformers (CTs), electronic protection relays, digital panel meters, and energy analyzers, VTEKE serves electrical panel builders, distributors, and industrial automation professionals who require accuracy, reliability, and long-term performance. Our production is certified under ISO 9001:2015 and all products carry the CE mark, with independent TÜV testing to ensure compliance, safety, and consistent quality. We also hold TSE certification, comply with EAC requirements, and are registered under SABER/SASO for the Saudi market. Driven by continuous research and development, VTEKE focuses on improving measurement precision, durability, and overall product performance, supporting safe operation, energy efficiency, and stable electrical systems in modern industrial installations."
+        },
+        statistics: {
+            title: "Global Impact",
+            subtitle: "VTEKE products are installed in utility distribution networks, industrial facilities, and large-scale infrastructure projects across international markets. Through collaboration with panel builders, contractors, and system integrators, we deliver reliable low-voltage solutions that support safe, efficient, and long term electrical performance",
+            stat1: "Countries Worldwide",
+            stat2: "Industrial Products",
+            stat3: "Engineering Experts",
+            stat4: "Industrial Project Installations"
+        },
+        gallery: {
+            title: "Our Facilities",
+            subtitle: "Explore our state-of-the-art manufacturing facilities, advanced production lines, and dedicated engineering teams that make VTEKE a global leader in industrial electrical solutions."
+        },
+        video: {
+            text: "Watch our story: Engineering excellence and global impact"
+        },
+        values: {
+            title: "Our Core Values",
+            subtitle: "The principles that guide our operations and define our commitment to quality, innovation, and customer satisfaction in every project we undertake.",
+            v1: { title: "Engineering Precision", desc: "Commitment to accuracy, measurement reliability, and strict technical standards in every product." },
+            v2: { title: "Certified Quality", desc: "Compliance with international standards and consistent testing across all production stages." },
+            v3: { title: "Long-Term Partnership", desc: "Building stable relationships with distributors, panel builders, and industrial clients worldwide." },
+            v4: { title: "Manufacturing Discipline", desc: "Controlled processes, traceable production, and continuous improvement." },
+            v5: { title: "Technical Innovation", desc: "Ongoing R&D to enhance performance, safety, and efficiency in LV electrical systems." },
+            v6: { title: "Operational Reliability", desc: "Designing products that ensure stable performance in demanding industrial environments." }
+        },
+        certifications: {
+            title: "International Certifications",
+            subtitle: "Global standards ensuring quality, safety, and compliance"
+        }
+    },
+    tr: {
+        hero: {
+            badge: "2016'dan Beri Mühendislik Mükemmelliği",
+            title: "Hassas Mühendislikle Endüstrilere Güç Sağlıyoruz",
+            p: "VTEKE, dünya çapında 30 ülkeye uzlaşmasız kalite ve yenilikle güvenilir güç sistemleri sunan endüstriyel elektrik çözümlerinin önde gelen üreticisidir.",
+            cta: "Ekibimizle İletişime Geçin"
+        },
+        overview: {
+            title: "Biz Kimiz",
+            p1: "VTEKE, dünya çapında 35'ten fazla ülkeye hassas mühendislik çözümleri sunan endüstriyel düşük voltajlı elektrik ekipmanlarının sertifikalı bir üreticisidir. Akım transformatörleri (CT'ler), elektronik koruma röleleri, dijital panel metreler ve enerji analizörleri konusunda uzmanlaşan VTEKE, doğruluk, güvenilirlik ve uzun vadeli performans gerektiren elektrik panosu üreticilerine, distribütörlere ve endüstriyel otomasyon profesyonellerine hizmet vermektedir."
+        },
+        statistics: {
+            title: "Küresel Etki",
+            subtitle: "VTEKE ürünleri, uluslararası pazarlarda elektrik dağıtım şebekelerinde, endüstriyel tesislerde ve büyük ölçekli altyapı projelerinde kullanılmaktadır.",
+            stat1: "Küresel Pazar",
+            stat2: "Endüstriyel Ürün",
+            stat3: "Mühendis Uzman",
+            stat4: "Endüstriyel Proje Kurulumu"
+        },
+        gallery: {
+            title: "Tesislerimiz",
+            subtitle: "VTEKE'yi endüstriyel elektrik çözümlerinde küresel bir lider yapan en son teknoloji üretim tesislerimizi, gelişmiş üretim hatlarını ve özel mühendislik ekiplerini keşfedin."
+        },
+        video: {
+            text: "Hikayemizi izleyin: Mühendislik mükemmelliği ve küresel etki"
+        },
+        values: {
+            title: "Temel Değerlerimiz",
+            subtitle: "Operasyonlarımızı yönlendiren ve her projede kalite, yenilik ve müşteri memnuniyetine olan bağlılığımızı tanımlayan ilkeler.",
+            v1: { title: "Mühendislik Hassasiyeti", desc: "Her üründe doğruluk, ölçüm güvenilirliği ve sıkı teknik standartlara bağlılık." },
+            v2: { title: "Sertifikalı Kalite", desc: "Uluslararası standartlara uyum ve tüm üretim aşamalarında tutarlı test." },
+            v3: { title: "Uzun Vadeli Ortaklık", desc: "Distribütörler, pano üreticileri ve endüstriyel müşterilerle dünya çapında istikrarlı ilişkiler kurmak." },
+            v4: { title: "Üretim Disiplini", desc: "Kontrollü süreçler, izlenebilir üretim ve sürekli iyileştirme." },
+            v5: { title: "Teknik Yenilik", desc: "LV elektrik sistemlerinde performans, güvenlik ve verimliliği artırmak için sürekli Ar-Ge." },
+            v6: { title: "Operasyonel Güvenilirlik", desc: "Talepkar endüstriyel ortamlarda istikrarlı performans sağlayan ürünler tasarlamak." }
+        },
+        certifications: {
+            title: "Uluslararası Sertifikalar",
+            subtitle: "Kalite, güvenlik ve uyumu sağlayan küresel standartlar"
+        }
+    },
+    ru: {
+        hero: {
+            badge: "Инженерное совершенство с 2016 года",
+            title: "Энергоснабжение отраслей с точной инженерией",
+            p: "VTEKE является ведущим производителем промышленных электрических решений, поставляя надежные энергосистемы в 30 стран мира с непревзойденным качеством и инновациями.",
+            cta: "Свяжитесь с нашей командой"
+        },
+        overview: {
+            title: "Кто мы",
+            p1: "VTEKE является сертифицированным производителем промышленного низковольтного электрического оборудования, поставляя точно разработанные решения более чем в 35 стран мира."
+        },
+        statistics: {
+            title: "Глобальное влияние",
+            subtitle: "Продукция VTEKE установлена в сетях распределения электроэнергии, промышленных объектах и крупномасштабных инфраструктурных проектах на международных рынках.",
+            stat1: "Стран по всему миру",
+            stat2: "Промышленных продуктов",
+            stat3: "Инженеров-экспертов",
+            stat4: "Промышленных установок"
+        },
+        gallery: {
+            title: "Наши объекты",
+            subtitle: "Изучите наши современные производственные мощности, передовые производственные линии и специализированные инженерные команды."
+        },
+        video: {
+            text: "Посмотрите нашу историю: Инженерное совершенство и глобальное влияние"
+        },
+        values: {
+            title: "Наши основные ценности",
+            subtitle: "Принципы, которые направляют наши операции и определяют нашу приверженность качеству, инновациям и удовлетворенности клиентов.",
+            v1: { title: "Инженерная точность", desc: "Приверженность точности, надежности измерений и строгим техническим стандартам." },
+            v2: { title: "Сертифицированное качество", desc: "Соответствие международным стандартам и последовательное тестирование." },
+            v3: { title: "Долгосрочное партнерство", desc: "Построение стабильных отношений с дистрибьюторами и промышленными клиентами." },
+            v4: { title: "Производственная дисциплина", desc: "Контролируемые процессы, отслеживаемое производство и непрерывное улучшение." },
+            v5: { title: "Технические инновации", desc: "Постоянные НИОКР для повышения производительности, безопасности и эффективности." },
+            v6: { title: "Операционная надежность", desc: "Проектирование продуктов, обеспечивающих стабильную работу в промышленных условиях." }
+        },
+        certifications: {
+            title: "Международные сертификаты",
+            subtitle: "Глобальные стандарты, обеспечивающие качество, безопасность и соответствие"
+        }
+    },
+    fr: {
+        hero: {
+            badge: "Excellence en ingénierie depuis 2016",
+            title: "Alimenter les industries avec une ingénierie de précision",
+            p: "VTEKE est un fabricant leader de solutions électriques industrielles, livrant des systèmes d'alimentation fiables à 30 pays dans le monde avec une qualité et une innovation sans compromis.",
+            cta: "Contactez notre équipe"
+        },
+        overview: {
+            title: "Qui sommes-nous",
+            p1: "VTEKE est un fabricant certifié d'équipements électriques industriels basse tension, livrant des solutions d'ingénierie de précision à plus de 35 pays dans le monde."
+        },
+        statistics: {
+            title: "Impact mondial",
+            subtitle: "Les produits VTEKE sont installés dans les réseaux de distribution d'électricité, les installations industrielles et les projets d'infrastructure à grande échelle.",
+            stat1: "Pays dans le monde",
+            stat2: "Produits industriels",
+            stat3: "Experts en ingénierie",
+            stat4: "Installations de projets industriels"
+        },
+        gallery: {
+            title: "Nos installations",
+            subtitle: "Découvrez nos installations de fabrication de pointe, nos lignes de production avancées et nos équipes d'ingénierie dédiées."
+        },
+        video: {
+            text: "Regardez notre histoire: Excellence en ingénierie et impact mondial"
+        },
+        values: {
+            title: "Nos valeurs fondamentales",
+            subtitle: "Les principes qui guident nos opérations et définissent notre engagement envers la qualité, l'innovation et la satisfaction client.",
+            v1: { title: "Précision d'ingénierie", desc: "Engagement envers la précision, la fiabilité des mesures et les normes techniques strictes." },
+            v2: { title: "Qualité certifiée", desc: "Conformité aux normes internationales et tests cohérents." },
+            v3: { title: "Partenariat à long terme", desc: "Établir des relations stables avec les distributeurs et clients industriels." },
+            v4: { title: "Discipline de fabrication", desc: "Processus contrôlés, production traçable et amélioration continue." },
+            v5: { title: "Innovation technique", desc: "R&D continue pour améliorer les performances, la sécurité et l'efficacité." },
+            v6: { title: "Fiabilité opérationnelle", desc: "Conception de produits assurant des performances stables dans les environnements industriels." }
+        },
+        certifications: {
+            title: "Certifications internationales",
+            subtitle: "Normes mondiales assurant qualité, sécurité et conformité"
+        }
+    },
+    ar: {
+        hero: {
+            badge: "التميز الهندسي منذ 2016",
+            title: "تمكين الصناعات بالهندسة الدقيقة",
+            p: "VTEKE هي شركة رائدة في تصنيع الحلول الكهربائية الصناعية، تقدم أنظمة طاقة موثوقة لـ 30 دولة حول العالم بجودة وابتكار لا مثيل لهما.",
+            cta: "تواصل مع فريقنا"
+        },
+        overview: {
+            title: "من نحن",
+            p1: "VTEKE هي شركة مصنعة معتمدة للمعدات الكهربائية الصناعية منخفضة الجهد، تقدم حلولاً هندسية دقيقة لأكثر من 35 دولة حول العالم. متخصصة في محولات التيار، مرحلات الحماية الإلكترونية، العدادات الرقمية، ومحللات الطاقة."
+        },
+        statistics: {
+            title: "التأثير العالمي",
+            subtitle: "تم تثبيت منتجات VTEKE في شبكات توزيع المرافق والمرافق الصناعية ومشاريع البنية التحتية واسعة النطاق عبر الأسواق الدولية.",
+            stat1: "دولة حول العالم",
+            stat2: "منتج صناعي",
+            stat3: "خبير هندسي",
+            stat4: "تركيب مشروع صناعي"
+        },
+        gallery: {
+            title: "مرافقنا",
+            subtitle: "استكشف مرافق التصنيع الحديثة وخطوط الإنتاج المتقدمة وفرق الهندسة المخصصة التي تجعل VTEKE رائدة عالمياً."
+        },
+        video: {
+            text: "شاهد قصتنا: التميز الهندسي والتأثير العالمي"
+        },
+        values: {
+            title: "قيمنا الأساسية",
+            subtitle: "المبادئ التي توجه عملياتنا وتحدد التزامنا بالجودة والابتكار ورضا العملاء في كل مشروع.",
+            v1: { title: "الدقة الهندسية", desc: "الالتزام بالدقة وموثوقية القياس والمعايير التقنية الصارمة." },
+            v2: { title: "الجودة المعتمدة", desc: "الامتثال للمعايير الدولية والاختبار المتسق." },
+            v3: { title: "الشراكة طويلة الأمد", desc: "بناء علاقات مستقرة مع الموزعين والعملاء الصناعيين." },
+            v4: { title: "انضباط التصنيع", desc: "عمليات خاضعة للرقابة وإنتاج قابل للتتبع وتحسين مستمر." },
+            v5: { title: "الابتكار التقني", desc: "بحث وتطوير مستمر لتعزيز الأداء والسلامة والكفاءة." },
+            v6: { title: "الموثوقية التشغيلية", desc: "تصميم منتجات تضمن أداءً مستقراً في البيئات الصناعية." }
+        },
+        certifications: {
+            title: "الشهادات الدولية",
+            subtitle: "معايير عالمية تضمن الجودة والسلامة والامتثال"
+        }
+    },
+    zh: {
+        hero: {
+            badge: "自 2016 年以来的工程卓越",
+            title: "以精密工程为工业提供动力",
+            p: "VTEKE 是工业电气解决方案的领先制造商，以无与伦比的质量和创新向全球 30 个国家提供可靠的电力系统。",
+            cta: "联系我们的团队"
+        },
+        overview: {
+            title: "我们是谁",
+            p1: "VTEKE 是经认证的工业低压电气设备制造商，向全球 35 多个国家提供精密工程解决方案。专门从事电流互感器、电子保护继电器、数字面板仪表和能源分析仪。"
+        },
+        statistics: {
+            title: "全球影响",
+            subtitle: "VTEKE 产品安装在国际市场的公用事业配电网络、工业设施和大型基础设施项目中。",
+            stat1: "全球国家",
+            stat2: "工业产品",
+            stat3: "工程专家",
+            stat4: "工业项目安装"
+        },
+        gallery: {
+            title: "我们的设施",
+            subtitle: "探索我们最先进的制造设施、先进的生产线和专门的工程团队。"
+        },
+        video: {
+            text: "观看我们的故事：工程卓越和全球影响"
+        },
+        values: {
+            title: "我们的核心价值观",
+            subtitle: "指导我们运营并定义我们对质量、创新和客户满意度承诺的原则。",
+            v1: { title: "工程精度", desc: "致力于准确性、测量可靠性和严格的技术标准。" },
+            v2: { title: "认证质量", desc: "符合国际标准并在所有生产阶段进行一致测试。" },
+            v3: { title: "长期合作伙伴关系", desc: "与分销商和工业客户建立稳定的关系。" },
+            v4: { title: "制造纪律", desc: "受控流程、可追溯生产和持续改进。" },
+            v5: { title: "技术创新", desc: "持续研发以提高性能、安全性和效率。" },
+            v6: { title: "运营可靠性", desc: "设计确保在工业环境中稳定性能的产品。" }
+        },
+        certifications: {
+            title: "国际认证",
+            subtitle: "确保质量、安全和合规性的全球标准"
+        }
+    }
+};
+
+let currentLanguage = localStorage.getItem('vteke_language') || 'en';
+
+document.addEventListener('DOMContentLoaded', function() {
+    setLanguage(currentLanguage);
+    
+    // Mobile language selector
+    const mobileLangSelect = document.getElementById('mobileLangSelect');
+    if (mobileLangSelect) {
+        mobileLangSelect.addEventListener('change', function() {
+            const selectedLang = this.value;
+            setLanguage(selectedLang);
+        });
+    }
+    
+    // Fade-in animation on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all sections and cards
+    document.querySelectorAll('section, .stat-card, .value-card, .cert-card, .gallery-item').forEach(element => {
+        element.style.opacity = 0;
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(element);
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if(targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            if(targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+function updateLanguageDirection(lang) {
+    if (rtlLanguages.includes(lang)) {
+        document.documentElement.dir = 'rtl';
+        document.body.setAttribute('dir', 'rtl');
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.setAttribute('dir', 'ltr');
+    }
+}
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('vteke_language', lang);
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    const t = translations[lang];
+    
+    // Update all elements with data-i18n attributes
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = t;
+        for (const k of keys) {
+            if (value == null || value[k] === undefined) { value = null; break; }
+            value = value[k];
+        }
+        if (value && typeof value === 'string') {
+            element.classList.add('lang-animating');
+            element.textContent = value;
+            setTimeout(() => {
+                element.classList.remove('lang-animating');
+            }, 400);
+        }
+    });
+    
+    // Update language direction
+    updateLanguageDirection(lang);
+    
+    // Update dropdown display
+    updateDropdownDisplay(lang);
+    
+    // Update page title
+    updatePageTitle(lang);
+    
+    // Close dropdown
+    document.getElementById('langDropdown').classList.remove('active');
+}
+
+function updateDropdownDisplay(lang) {
+    const currentLangFlag = document.getElementById('currentLangFlag');
+    const currentLangCode = document.getElementById('currentLangCode');
+    const dropdownItems = document.querySelectorAll('.lang-dropdown-item');
+    
+    const langInfo = {
+        'en': { flag: '🇬🇧', code: 'EN' },
+        'tr': { flag: '🇹🇷', code: 'TR' },
+        'ru': { flag: '🇷🇺', code: 'RU' },
+        'fr': { flag: '🇫🇷', code: 'FR' },
+        'ar': { flag: '🇸🇦', code: 'AR' },
+        'zh': { flag: '🇨🇳', code: 'ZH' }
+    };
+    
+    if (currentLangFlag && currentLangCode && langInfo[lang]) {
+        currentLangFlag.textContent = langInfo[lang].flag;
+        currentLangCode.textContent = langInfo[lang].code;
+    }
+    
+    dropdownItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('onclick').includes(`'${lang}'`)) {
+            item.classList.add('active');
+        }
+    });
+    
+    // Update mobile selector
+    const mobileLangSelect = document.getElementById('mobileLangSelect');
+    if (mobileLangSelect) {
+        mobileLangSelect.value = lang;
+    }
+}
+
+function updatePageTitle(lang) {
+    const titleElement = document.querySelector('title');
+    if (titleElement) {
+        const titleTranslations = {
+            'en': 'About VTEKE | Industrial Electrical Solutions & Manufacturing',
+            'tr': 'VTEKE Hakkında | Endüstriyel Elektrik Çözümleri ve Üretim',
+            'ru': 'О VTEKE | Промышленные электрические решения и производство',
+            'fr': 'À propos de VTEKE | Solutions électriques industrielles et fabrication',
+            'ar': 'عن VTEKE | الحلول الكهربائية الصناعية والتصنيع',
+            'zh': '关于 VTEKE | 工业电气解决方案和制造'
+        };
+        if (titleTranslations[lang]) {
+            titleElement.textContent = titleTranslations[lang];
+        }
+    }
+}
+</script>
+
+<footer class="vteke-footer-main-container">
+    <div class="vteke-footer-grid-container">
+        <div class="vteke-footer-grid-inner">
+            <!-- Column 1: Company Info -->
+            <div class="vteke-footer-column-wrapper">
+                <div class="vteke-footer-company-info">
+                    <img src="vtekeimg/VTEKE1.png" alt="VTEKE Logo" class="vteke-footer-company-logo">
+                    <p class="vteke-footer-company-desc" data-i18n="footer.desc">Leading provider of innovative electrical solutions with excellence in quality.</p>
+                    <div class="vteke-footer-social-container">
+                        <a href="https://wa.me/+902125440004" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="WhatsApp">
+                            <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.199.05-.372-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.226 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.491h.004c-2.255-.001-4.323-1.176-5.527-3.039l-.003-.004c-.564-.896-.987-1.853-1.263-2.839-.575-2.058-.324-4.17.716-5.92.384-.647.853-1.22 1.389-1.709.893-.813 1.923-1.427 3.039-1.78.366-.116.744-.173 1.123-.171.422.002.851.067 1.272.193.839.252 1.624.706 2.326 1.329.683.606 1.268 1.365 1.728 2.242.909 1.738 1.197 3.692.826 5.509-.366 1.792-1.272 3.407-2.582 4.649-1.364 1.293-3.012 2.109-4.754 2.354-.439.062-.887.092-1.335.091z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="Facebook">
+                            <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="LinkedIn">
+                            <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2: Useful Links -->
+            <div class="vteke-footer-column-wrapper">
+                <h4 class="vteke-footer-column-title" data-i18n="footer.links">Useful Links</h4>
+                <ul class="vteke-footer-links-list">
+                    <li class="vteke-footer-link-item"><a href="index.html" class="vteke-footer-link-anchor" data-i18n="footer.home">Home</a></li>
+                    <li class="vteke-footer-link-item"><a href="aboutus.html" class="vteke-footer-link-anchor" data-i18n="footer.about">About Us</a></li>
+                    <li class="vteke-footer-link-item"><a href="ContactUs.html" class="vteke-footer-link-anchor" data-i18n="footer.contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Projects & News -->
+            <div class="vteke-footer-column-wrapper">
+                <h4 class="vteke-footer-column-title" data-i18n="footer.products">Products & News</h4>
+                <ul class="vteke-footer-links-list">
+                    <li class="vteke-footer-link-item"><a href="News.html" class="vteke-footer-link-anchor" rel="noopener" data-i18n="footer.news">News</a></li>
+                    <li class="vteke-footer-link-item"><a href="Products.html" class="vteke-footer-link-anchor" target="_blank" rel="noopener" data-i18n="footer.products2">Products</a></li>
+                    <li class="vteke-footer-link-item"><a href="Certificates.html" class="vteke-footer-link-anchor" data-i18n="footer.certs">Certificates</a></li>
+                </ul>
+            </div>
+            <!-- Column 4: Contact & Support -->
+            <div class="vteke-footer-column-wrapper">
+                <h4 class="vteke-footer-column-title" data-i18n="footer.support">Contact & Support</h4>
+                <div class="vteke-footer-contact-container">
+                    <div class="vteke-footer-contact-item">
+                        <div class="vteke-footer-contact-icon-box">
+                            <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="vteke-footer-contact-text-box">
+                            <a href="tel:+902125440004" class="vteke-footer-contact-link">+90 2125440004</a>
+                        </div>
+                    </div>
+                    <div class="vteke-footer-contact-item">
+                        <div class="vteke-footer-contact-icon-box">
+                            <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6l-10 7L2 6" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="vteke-footer-contact-text-box">
+                            <a href="mailto:Info@vteke.com.tr" class="vteke-footer-contact-link">Info@vteke.com.tr</a>
+                        </div>
+                    </div>
+                    <div class="vteke-footer-contact-item">
+                        <div class="vteke-footer-contact-icon-box">
+                            <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="10" r="3" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="vteke-footer-contact-text-box">
+                            <span class="vteke-footer-contact-text" data-i18n="footer.location">Istanbul Turkey</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vteke-footer-newsletter-box">
+                    <p class="vteke-footer-newsletter-text" data-i18n="footer.newsletter">Subscribe to our newsletter for updates</p>
+                </div>
+            </div>
+        </div>
+        <div class="vteke-footer-copyright-box">
+            <p class="vteke-footer-copyright-text">&copy; 2026 Vteke. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate footer links on load
+    const footerLinks = document.querySelectorAll('.vteke-footer-link-item');
+    footerLinks.forEach(link => {
+        link.style.opacity = '0';
+        link.style.transform = 'translateY(15px)';
+        link.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+    });
+    setTimeout(() => {
+        footerLinks.forEach((link, index) => {
+            setTimeout(() => {
+                link.style.opacity = '1';
+                link.style.transform = 'translateY(0)';
+            }, 200 + (index * 120));
+        });
+    }, 300);
+    
+    // Enhanced logo animation on hover
+    const logo = document.querySelector('.vteke-footer-company-logo');
+    if (logo) {
+        logo.addEventListener('mouseenter', () => {
+            logo.style.animation = 'none';
+            setTimeout(() => {
+                logo.style.animation = 'vteke-footer-float 28s ease-in-out infinite';
+            }, 10);
+        });
+    }
+    
+    // Add subtle hover effect to column titles
+    const columnTitles = document.querySelectorAll('.vteke-footer-column-title');
+    columnTitles.forEach(title => {
+        title.addEventListener('mouseenter', () => {
+            title.style.transform = 'scale(1.03)';
+            title.style.transition = 'transform 0.3s ease';
+        });
+        title.addEventListener('mouseleave', () => {
+            title.style.transform = 'scale(1)';
+        });
+    });
+});
+</script>
+</body>
+</html>

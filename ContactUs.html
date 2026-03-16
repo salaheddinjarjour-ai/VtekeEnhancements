@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="vtekeimg/favicon.png" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us – VTEKE | Advanced Electrical Innovation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="vteke-header-styles.css" />
+<link rel="stylesheet" href="vteke-footer.css">
+<!-- ========================================
+LANGUAGE DROPDOWN STYLES (HEADER INTEGRATION)
+======================================== -->
+<style>
+/* Language Dropdown in Header */
+.lang-dropdown-wrapper {
+    position: relative;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.lang-dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(231, 0, 18, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #1a1a1a;
+    backdrop-filter: blur(5px);
+}
+
+.lang-dropdown-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: #E70012;
+    box-shadow: 0 4px 12px rgba(231, 0, 18, 0.15);
+    transform: translateY(-1px);
+}
+
+.lang-dropdown-btn i {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.lang-dropdown-wrapper.active .lang-dropdown-btn i {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid rgba(231, 0, 18, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 1000;
+    padding: 8px;
+    margin-top: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-dropdown-wrapper.active .lang-dropdown-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lang-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    width: 100%;
+}
+
+.lang-dropdown-item:hover {
+    background: linear-gradient(135deg, rgba(231, 0, 18, 0.05), rgba(192, 5, 0, 0.05));
+    color: #E70012;
+    padding-left: 16px;
+}
+
+.lang-dropdown-item.active {
+    background: rgba(231, 0, 18, 0.1);
+    color: #E70012;
+    font-weight: 600;
+}
+
+.language-flag {
+    font-size: 1.1rem;
+}
+
+.language-code {
+    font-weight: 700;
+    min-width: 28px;
+}
+
+/* RTL Support */
+[dir="rtl"] .lang-dropdown-wrapper {
+    margin-left: 0;
+    margin-right: 20px;
+}
+[dir="rtl"] .lang-dropdown-menu {
+    right: auto;
+    left: 0;
+}
+[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Mobile Language Selector */
+.lang-select-mobile {
+    display: none;
+    padding: 1rem;
+    background: #F9FAFB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.lang-select-mobile select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #E70012;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .lang-dropdown-wrapper {
+        display: none;
+    }
+    .lang-select-mobile {
+        display: block;
+    }
+}
+
+/* Language Change Animation */
+@keyframes languageFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.lang-animating {
+    animation: languageFadeIn 0.4s ease-out;
+}
+</style>
+</head>
+<body>
+<header class="vteke-pro-header-main-container">
+<div class="vteke-pro-header-inner-container">
+<div class="vteke-pro-logo-main-wrapper">
+<div class="vteke-pro-logo-glow-effect"></div>
+<a href="index.html" class="vteke-pro-logo-3d-transform" aria-label="VTEKE Home - Industrial Electrical Solutions">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Professional Electric Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</a>
+</div>
+<button class="vteke-pro-mobile-menu-toggle-btn vteke-touch-optimized-element" id="vtekeMenuToggleBtn" aria-label="Open main menu">
+<span>☰</span>
+</button>
+<div class="vteke-pro-navigation-container">
+<nav aria-label="Main navigation">
+<ul class="vteke-pro-main-navigation-list">
+<li class="vteke-pro-nav-list-item">
+<a href="index.html" class="vteke-pro-nav-link-element" data-lang-en="HOME" data-lang-tr="ANA SAYFA">HOME</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="aboutus.html" class="vteke-pro-nav-link-element" data-lang-en="ABOUT US" data-lang-tr="HAKKIMIZDA">ABOUT US</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="News.html" class="vteke-pro-nav-link-element" data-lang-en="NEWS" data-lang-tr="HABERLER">NEWS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Catalog.html" class="vteke-pro-nav-link-element" data-lang-en="CATALOG" data-lang-tr="KATALOG">CATALOG</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Products.html" class="vteke-pro-nav-link-element" data-lang-en="PRODUCTS" data-lang-tr="ÜRÜNLER">PRODUCTS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Certificates.html" class="vteke-pro-nav-link-element" data-lang-en="CERTIFICATES" data-lang-tr="SERTİFİKALAR">CERTIFICATES</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="ContactUs.html" class="vteke-pro-nav-link-element vteke-active-link" aria-current="page" data-lang-en="CONTACT" data-lang-tr="İLETİŞİM">CONTACT</a>
+</li>
+</ul>
+</nav>
+<!-- Language Switcher - Desktop -->
+<div class="lang-dropdown-wrapper" id="langDropdown">
+<button class="lang-dropdown-btn" onclick="toggleLanguageDropdown()" aria-label="Switch Language" aria-expanded="false">
+<span class="language-flag" id="currentLangFlag">🇬🇧</span>
+<span class="language-text" id="currentLangText">EN</span>
+<i class="bi bi-chevron-down"></i>
+</button>
+<div class="lang-dropdown-menu" role="menu">
+<button class="lang-dropdown-item" onclick="setLanguage('en')" role="menuitem">
+<span class="language-flag">🇬🇧</span> English
+</button>
+<button class="lang-dropdown-item" onclick="setLanguage('tr')" role="menuitem">
+<span class="language-flag">🇹🇷</span> Türkçe
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="vteke-pro-mobile-menu-overlay-bg" id="vtekeMobileMenuOverlay" aria-hidden="true"></div>
+<div class="vteke-pro-mobile-menu-sliding-container" id="vtekeMobileMenuContainer" aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
+<div class="vteke-pro-mobile-menu-header-section">
+<div class="vteke-pro-mobile-logo-container">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</div>
+<button type="button" class="vteke-pro-close-mobile-menu-btn vteke-touch-optimized-element" id="vtekeCloseMenuBtn" aria-label="Close menu">×</button>
+</div>
+<!-- Language Switcher - Mobile -->
+<div class="vteke-pro-mobile-language-container">
+<button class="vteke-pro-mobile-language-btn active" id="mobileLangEN" onclick="setLanguage('en')" aria-label="Switch to English">
+<span class="language-flag">🇬🇧</span>
+<span class="language-text">English</span>
+</button>
+<button class="vteke-pro-mobile-language-btn" id="mobileLangTR" onclick="setLanguage('tr')" aria-label="Türkçe'ye geç">
+<span class="language-flag">🇹🇷</span>
+<span class="language-text">Türkçe</span>
+</button>
+</div>
+<nav class="vteke-pro-mobile-navigation-container" aria-label="Mobile navigation">
+<div class="vteke-pro-mobile-nav-item">
+<a href="index.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="aboutus.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="About Us" data-lang-tr="Hakkımızda">About Us</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="News.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="News" data-lang-tr="Haberler">News</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Catalog.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Catalog" data-lang-tr="Katalog">Catalog</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Products.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Products" data-lang-tr="Ürünler">Products</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Certificates.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Certificates" data-lang-tr="Sertifikalar">Certificates</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="ContactUs.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a>
+</div>
+</nav>
+<div class="vteke-pro-mobile-menu-footer">
+<p class="vteke-pro-copyright-text">© 2026 VTEKE Professional Electric. All Rights Reserved.</p>
+</div>
+</div>
+</header>
+<div class="vteke-header-space-reserver"></div>
+<script src="vteke-header.js"></script>
+
+<style>
+:root {
+--primary-red: #E70012;
+--primary-red-dark: #E70012;
+--primary-red-light: #E70012;
+--white: #ffffff;
+--off-white: #E70012;
+--light-gray: #f8f9fa;
+--gray: #e9ecef;
+--dark-gray: #6c757d;
+--text-dark: #1a1a1a;
+--text-light: #495057;
+--shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.06);
+--shadow-md: 0 8px 20px rgba(0, 0, 0, 0.08);
+--shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.12);
+--transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Inter', sans-serif;
+background-color: #ffffff;
+color: var(--text-dark);
+line-height: 1.65;
+overflow-x: hidden;
+}
+/* Container */
+.vteke-container {
+max-width: 1300px;
+margin: 0 auto;
+padding: 0 2rem;
+}
+/* Hero Section */
+.contact-hero {
+background: linear-gradient(135deg, #ff2a2a 0%, #e10600 50%, #c90000 100%);
+padding: 100px 0 70px;
+position: relative;
+overflow: hidden;
+text-align: center;
+box-shadow: inset 0 -40px 80px rgba(0,0,0,0.15);
+}
+.contact-hero:before {
+content: '';
+position: absolute;
+top: -40%;
+right: -10%;
+width: 600px;
+height: 600px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(192, 0, 0, 0.06) 0%, transparent 70%);
+z-index: 0;
+}
+.hero-content {
+position: relative;
+z-index: 1;
+max-width: 750px;
+margin: 0 auto;
+}
+.hero-badge {
+display: inline-block;
+background: rgba(255,255,255,0.15);
+color: #ffffff;
+border: 1px solid rgba(255,255,255,0.3);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+padding: 6px 24px;
+border-radius: 30px;
+font-weight: 600;
+font-size: 0.95rem;
+letter-spacing: 0.5px;
+margin-bottom: 25px;
+box-shadow: none;
+}
+.hero-title {
+font-family: 'Manrope', sans-serif;
+font-size: 3.2rem;
+font-weight: 700;
+margin-bottom: 15px;
+color: #ffffff;
+text-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
+.hero-subtitle {
+font-size: 1.25rem;
+color: rgba(255,255,255,0.85);
+margin-top: 12px;
+}
+/* Main Section */
+.contact-section {
+padding: 80px 0;
+}
+/* Section Header with Lines on Both Sides */
+.section-header {
+text-align: center;
+margin-bottom: 60px;
+}
+.section-header-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+margin-bottom: 20px;
+}
+.section-title-line {
+flex: 1;
+max-width: 200px;
+height: 2px;
+background: linear-gradient(90deg, transparent, var(--primary-red), transparent);
+position: relative;
+}
+.section-title-line::before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(90deg, transparent, var(--primary-red-light), transparent);
+opacity: 0.5;
+}
+.section-title {
+font-family: 'Manrope', sans-serif;
+font-size: 2.4rem;
+font-weight: 800;
+color: var(--text-dark);
+text-align: center;
+letter-spacing: -0.02em;
+white-space: nowrap;
+position: relative;
+margin-bottom: 0;
+}
+.section-subtitle {
+font-size: 1.15rem;
+color: var(--text-light);
+margin-top: 20px;
+max-width: 650px;
+margin-left: auto;
+margin-right: auto;
+}
+/* Contact Grid */
+.contact-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap: 40px;
+margin-top: 45px;
+}
+.contact-card {
+background: var(--white);
+border-radius: 20px;
+padding: 40px 35px;
+box-shadow: var(--shadow-md);
+transition: var(--transition);
+position: relative;
+border: 1px solid var(--gray);
+}
+.contact-card:hover {
+transform: translateY(-5px);
+box-shadow: var(--shadow-lg);
+border-color: rgba(192, 0, 0, 0.2);
+}
+.contact-card:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background: var(--primary-red);
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.35s ease;
+}
+.contact-card:hover:before {
+transform: scaleX(1);
+transform-origin: left;
+}
+.card-icon {
+width: 70px;
+height: 70px;
+background: rgba(192, 0, 0, 0.08);
+border-radius: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 22px;
+font-size: 1.9rem;
+color: var(--primary-red);
+transition: var(--transition);
+}
+.contact-card:hover .card-icon {
+background: var(--primary-red);
+color: white;
+transform: scale(1.08);
+}
+.card-title {
+font-family: 'Manrope', sans-serif;
+font-size: 1.65rem;
+font-weight: 800;
+color: var(--text-dark);
+margin-bottom: 18px;
+}
+.card-text {
+color: var(--text-light);
+margin-bottom: 25px;
+font-size: 1rem;
+line-height: 1.7;
+}
+.contact-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.contact-item {
+display: flex;
+align-items: flex-start;
+margin-bottom: 20px;
+padding-bottom: 20px;
+border-bottom: 1px solid var(--gray);
+}
+.contact-item:last-child {
+border-bottom: none;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+.item-icon {
+min-width: 42px;
+height: 42px;
+background: rgba(192, 0, 0, 0.07);
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 15px;
+color: var(--primary-red);
+flex-shrink: 0;
+font-size: 1.1rem;
+transition: var(--transition);
+}
+.contact-item:hover .item-icon {
+background: var(--primary-red);
+color: white;
+transform: scale(1.08);
+}
+.item-content h4 {
+font-size: 1.15rem;
+font-weight: 700;
+color: var(--text-dark);
+margin-bottom: 3px;
+}
+.item-content p,
+.item-content a {
+color: var(--text-light);
+text-decoration: none;
+transition: var(--transition);
+font-size: 1rem;
+display: block;
+margin-top: 2px;
+}
+.item-content a:hover {
+color: var(--primary-red);
+}
+/* Hours Card */
+.hours-card {
+background: var(--white);
+border-radius: 20px;
+padding: 40px 35px;
+box-shadow: var(--shadow-md);
+transition: var(--transition);
+border-left: 3px solid var(--primary-red);
+}
+.hours-card:hover {
+transform: translateY(-5px);
+box-shadow: var(--shadow-lg);
+}
+.hours-title {
+font-family: 'Manrope', sans-serif;
+font-size: 1.55rem;
+font-weight: 800;
+color: var(--text-dark);
+margin-bottom: 25px;
+display: flex;
+align-items: center;
+}
+.hours-title i {
+margin-right: 10px;
+color: var(--primary-red);
+font-size: 1.6rem;
+}
+.hours-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px 18px;
+}
+.hour-item {
+padding: 10px 0;
+border-bottom: 1px dashed var(--gray);
+}
+.hour-item:last-child {
+border-bottom: none;
+}
+.hour-day {
+font-weight: 600;
+color: var(--text-dark);
+font-size: 1rem;
+}
+.hour-time {
+color: var(--primary-red);
+font-weight: 600;
+font-size: 1rem;
+margin-top: 3px;
+display: block;
+}
+/* Emergency Section */
+.emergency-section {
+background: var(--primary-red);
+color: white;
+border-radius: 20px;
+padding: 35px;
+margin-top: 35px;
+text-align: center;
+box-shadow: 0 8px 25px rgba(192, 0, 0, 0.3);
+}
+.emergency-icon {
+font-size: 2.8rem;
+margin-bottom: 15px;
+display: block;
+}
+.emergency-title {
+font-family: 'Manrope', sans-serif;
+font-size: 1.6rem;
+font-weight: 800;
+margin-bottom: 10px;
+}
+.emergency-text {
+font-size: 1.05rem;
+opacity: 0.95;
+margin-bottom: 20px;
+line-height: 1.6;
+}
+.emergency-phone {
+display: block;
+font-family: 'Manrope', sans-serif;
+font-size: 1.8rem;
+font-weight: 800;
+margin: 12px 0;
+text-decoration: none;
+color: white;
+transition: var(--transition);
+}
+.emergency-phone:hover {
+transform: scale(1.05);
+}
+/* Map Section */
+.map-section {
+padding: 80px 0;
+background-color: var(--white);
+}
+.map-container {
+position: relative;
+max-width: 100%;
+margin: 40px 0;
+}
+.map-link iframe {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.map-link:hover iframe {
+transform: scale(1.02);
+box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+.map-info {
+margin-top: 20px;
+}
+.map-placeholder {
+width: 100%;
+height: 100%;
+background: linear-gradient(45deg, #f5f6f8 0%, #eef0f3 100%);
+position: relative;
+}
+.map-marker {
+position: absolute;
+top: 45%;
+left: 52%;
+transform: translate(-50%, -50%);
+width: 22px;
+height: 22px;
+background: var(--primary-red);
+border-radius: 50%;
+box-shadow: 0 0 0 7px rgba(192, 0, 0, 0.25), 0 0 0 14px rgba(192, 0, 0, 0.1);
+z-index: 10;
+border: 2px solid white;
+}
+.map-info {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 35px;
+background: var(--white);
+border-top: 2px solid var(--primary-red);
+}
+.map-title {
+font-family: 'Manrope', sans-serif;
+font-size: 1.7rem;
+font-weight: 800;
+color: var(--text-dark);
+margin-bottom: 10px;
+}
+.map-address {
+color: var(--text-light);
+font-size: 1.05rem;
+line-height: 1.7;
+}
+.map-address i {
+color: var(--primary-red);
+margin-right: 6px;
+font-size: 1.05rem;
+}
+/* CTA Section */
+.cta-section {
+padding: 80px 0;
+background-color: #FF2E2E;
+text-align: center;
+}
+.cta-content {
+max-width: 700px;
+margin: 0 auto;
+}
+.cta-title {
+font-family: 'Manrope', sans-serif;
+font-size: 2.6rem;
+font-weight: 800;
+margin-bottom: 20px;
+color: var(--text-dark);
+}
+.cta-subtitle {
+font-size: 1.25rem;
+color: var(--text-light);
+margin-bottom: 40px;
+line-height: 1.7;
+}
+.cta-buttons {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+.cta-btn {
+ background: #ffffff;
+ color: var(--primary-red);
+ text-decoration: none;
+ border-radius: 45px;
+ font-family: 'Manrope', sans-serif;
+ font-size: 1.1rem;
+ font-weight: 700;
+ transition: all 0.25s ease;
+ box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+ border: 2px solid transparent;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ padding: 14px 40px;
+}
+.cta-btn i {
+ margin-right: 8px;
+ font-size: 1.2rem;
+}
+.cta-btn:after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+ transition: 0.6s;
+}
+.cta-btn:hover {
+ background: #f0f0f0;
+ color: var(--primary-red);
+ transform: translateY(-2px);
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.cta-btn:hover:after {
+ left: 100%;
+}
+.btn-outline {
+ background: transparent;
+ border: 2px solid #ffffff;
+ color: #ffffff;
+ box-shadow: none;
+}
+.btn-outline:hover {
+ background: #ffffff;
+ color: var(--primary-red);
+ border-color: #ffffff;
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+.hero-title {
+font-size: 2.8rem;
+}
+.section-title {
+font-size: 2.1rem;
+}
+.map-container {
+height: 400px;
+}
+.cta-title {
+font-size: 2.3rem;
+}
+}
+@media (max-width: 768px) {
+.contact-hero {
+padding: 80px 0 60px;
+}
+.hero-title {
+font-size: 2.4rem;
+}
+.hero-subtitle {
+font-size: 1.1rem;
+}
+.section-title {
+font-size: 1.9rem;
+}
+.section-header-wrapper {
+gap: 15px;
+margin-bottom: 20px;
+}
+.section-title-line {
+max-width: 80px;
+}
+.section-subtitle {
+font-size: 1.05rem;
+}
+.contact-grid {
+grid-template-columns: 1fr;
+}
+.hours-grid {
+grid-template-columns: 1fr;
+}
+.map-container {
+height: 350px;
+}
+.map-info {
+padding: 28px;
+}
+.cta-title {
+font-size: 2rem;
+}
+.cta-subtitle {
+font-size: 1.15rem;
+}
+.cta-btn {
+width: 100%;
+max-width: 350px;
+padding: 13px 35px;
+font-size: 1.05rem;
+}
+.cta-buttons {
+flex-direction: column;
+align-items: center;
+}
+.emergency-phone {
+font-size: 1.5rem;
+}
+}
+@media (max-width: 480px) {
+.contact-hero {
+padding: 70px 0 55px;
+}
+.hero-badge {
+padding: 5px 20px;
+font-size: 0.9rem;
+}
+.hero-title {
+font-size: 2.1rem;
+}
+.hero-subtitle {
+font-size: 1rem;
+}
+.section-title {
+font-size: 1.75rem;
+}
+.section-title-line {
+max-width: 60px;
+}
+.contact-card,
+.hours-card {
+padding: 32px 28px;
+}
+.card-icon {
+width: 60px;
+height: 60px;
+font-size: 1.7rem;
+}
+.card-title {
+font-size: 1.5rem;
+}
+.map-container {
+height: 300px;
+}
+.map-title {
+font-size: 1.5rem;
+}
+.map-address {
+font-size: 1rem;
+}
+.cta-title {
+font-size: 1.8rem;
+}
+.cta-subtitle {
+font-size: 1.1rem;
+}
+.cta-btn {
+padding: 12px 30px;
+font-size: 1rem;
+}
+.cta-btn i {
+margin-right: 6px;
+font-size: 1.1rem;
+}
+.emergency-section {
+padding: 28px;
+}
+.emergency-icon {
+font-size: 2.3rem;
+}
+.emergency-title {
+font-size: 1.4rem;
+}
+.emergency-text {
+font-size: 1rem;
+}
+.emergency-phone {
+font-size: 1.4rem;
+}
+}
+</style>
+
+<!-- Hero Section -->
+<section class="contact-hero">
+<div class="vteke-container">
+<div class="hero-content">
+<div class="hero-badge">
+<span data-i18n="hero.badge">24/7 Global Support</span>
+</div>
+<h1 class="hero-title" data-i18n="hero.title">Engineering Excellence Worldwide</h1>
+<p class="hero-subtitle" data-i18n="hero.p">Connect with our expert team for technical support, partnerships, and customized industrial electrical solutions.</p>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     INQUIRY FORM SECTION
+     ═══════════════════════════════════════════════════════ -->
+<style>
+/* ── Inquiry Form Section ── */
+.inquiry-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.inquiry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+/* ── Left Column ── */
+.inq-info-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  position: relative;
+}
+.inq-info-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-red);
+  border-radius: 2px;
+  margin-top: 12px;
+}
+.inq-info-subtitle {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+.inq-info-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.inq-info-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 14px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  transition: var(--transition);
+}
+.inq-info-item:hover {
+  border-color: rgba(231,0,18,0.18);
+  box-shadow: 0 4px 18px rgba(231,0,18,0.06);
+  transform: translateY(-2px);
+}
+.inq-icon-box {
+  width: 48px;
+  height: 48px;
+  background: rgba(231,0,18,0.07);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--primary-red);
+  font-size: 1.3rem;
+  transition: var(--transition);
+}
+.inq-info-item:hover .inq-icon-box {
+  background: var(--primary-red);
+  color: #fff;
+}
+.inq-item-text h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+.inq-item-text p,
+.inq-item-text a {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  text-decoration: none;
+  line-height: 1.6;
+  margin: 0;
+  transition: color 0.2s;
+}
+.inq-item-text a:hover { color: var(--primary-red); }
+
+/* ── Right Column (Glass Panel) ── */
+.inq-form-panel {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(231,0,18,0.1);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  padding: 40px;
+  transition: box-shadow 0.3s ease;
+}
+.inq-form-panel:hover {
+  box-shadow: 0 16px 50px rgba(231,0,18,0.1);
+}
+.inq-form-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 32px;
+  position: relative;
+}
+.inq-form-title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-red);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+/* Form layout */
+.inq-field-group {
+  margin-bottom: 20px;
+}
+.inq-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.inq-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+.inq-input,
+.inq-select,
+.inq-textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.inq-input::placeholder,
+.inq-textarea::placeholder {
+  color: #9ca3af;
+}
+.inq-input:focus,
+.inq-select:focus,
+.inq-textarea:focus {
+  border-color: var(--primary-red);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(231,0,18,0.08);
+}
+.inq-select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23E70012' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+  background-color: #fafafa;
+}
+.inq-textarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.6;
+}
+/* Submit button */
+.inq-submit-btn {
+  width: 100%;
+  padding: 15px 24px;
+  margin-top: 8px;
+  background: var(--primary-red);
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: filter 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.inq-submit-btn::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+  transition: 0.5s;
+}
+.inq-submit-btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 6px 24px rgba(231,0,18,0.4);
+  transform: translateY(-1px);
+}
+.inq-submit-btn:hover::after { left: 100%; }
+.inq-submit-btn:active { transform: translateY(0); }
+
+/* Success message */
+.inq-success {
+  display: none;
+  padding: 18px 22px;
+  background: rgba(22,163,74,0.08);
+  border: 1.5px solid rgba(22,163,74,0.3);
+  border-radius: 10px;
+  color: #166534;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+/* Entry animations */
+@keyframes inqFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.inq-animate {
+  opacity: 0;
+  animation: inqFadeUp 0.6s ease-out forwards;
+}
+.inq-animate-delay-1 { animation-delay: 0.1s; }
+.inq-animate-delay-2 { animation-delay: 0.25s; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .inquiry-grid { grid-template-columns: 1fr; gap: 36px; }
+  .inquiry-section { margin-top: 56px; margin-bottom: 56px; }
+}
+@media (max-width: 480px) {
+  .inq-field-row { grid-template-columns: 1fr; }
+  .inq-form-panel { padding: 28px 20px; }
+}
+</style>
+
+<section class="inquiry-section">
+  <div class="vteke-container">
+    <div class="inquiry-grid">
+
+      <!-- ── Left: Contact Info ── -->
+      <div class="inq-animate inq-animate-delay-1">
+        <h2 class="inq-info-title" data-i18n="inq.hq">Global Headquarters</h2>
+        <p class="inq-info-subtitle" data-i18n="inq.hqSub">
+          Our engineering experts are ready to help with product inquiries, technical support, and partnership opportunities.
+        </p>
+        <div class="inq-info-blocks">
+
+          <!-- Address -->
+          <div class="inq-info-item">
+            <div class="inq-icon-box">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="inq-item-text">
+              <h4 data-i18n="inq.addressLabel">Address</h4>
+              <p>Cumhuriyet Mah, Mücahit Sk. No:34-38A,<br>Sultangazi / Istanbul, Turkey</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="inq-info-item">
+            <div class="inq-icon-box">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="inq-item-text">
+              <h4 data-i18n="inq.phoneLabel">Phone</h4>
+              <a href="tel:+902125440004">+90 2125440004</a>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="inq-info-item">
+            <div class="inq-icon-box">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="inq-item-text">
+              <h4 data-i18n="inq.emailLabel">Email</h4>
+              <a href="mailto:info@vteke.com.tr">info@vteke.com.tr</a>
+            </div>
+          </div>
+
+          <!-- Business Hours -->
+          <div class="inq-info-item">
+            <div class="inq-icon-box">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="inq-item-text">
+              <h4 data-i18n="inq.hoursLabel">Business Hours</h4>
+              <p data-i18n="inq.hoursVal">Mon – Fri: 09:00 – 18:00<br>Sat: 09:00 – 13:00</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Right: Inquiry Form ── -->
+      <div class="inq-form-panel inq-animate inq-animate-delay-2">
+        <h3 class="inq-form-title" data-i18n="inq.formTitle">Send us a message</h3>
+
+        <form id="vtekeInquiryForm" novalidate>
+          <!-- Name Row -->
+          <div class="inq-field-row">
+            <div class="inq-field-group">
+              <label class="inq-label" for="inqFirstName" data-i18n="inq.firstName">First Name</label>
+              <input class="inq-input" type="text" id="inqFirstName" name="firstName" placeholder="John" required>
+            </div>
+            <div class="inq-field-group">
+              <label class="inq-label" for="inqLastName" data-i18n="inq.lastName">Last Name</label>
+              <input class="inq-input" type="text" id="inqLastName" name="lastName" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="inq-field-group">
+            <label class="inq-label" for="inqEmail" data-i18n="inq.email">Email Address</label>
+            <input class="inq-input" type="email" id="inqEmail" name="email" placeholder="john.smith@company.com" required>
+          </div>
+
+          <!-- Subject -->
+          <div class="inq-field-group">
+            <label class="inq-label" for="inqSubject" data-i18n="inq.subject">Subject</label>
+            <select class="inq-select" id="inqSubject" name="subject">
+              <option value="product" data-i18n="inq.optProduct">Product Inquiry</option>
+              <option value="support" data-i18n="inq.optSupport">Technical Support</option>
+              <option value="partner" data-i18n="inq.optPartner">Partnership</option>
+              <option value="other" data-i18n="inq.optOther">Other</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="inq-field-group">
+            <label class="inq-label" for="inqMessage" data-i18n="inq.message">Message</label>
+            <textarea class="inq-textarea" id="inqMessage" name="message" placeholder="Describe your inquiry..." required></textarea>
+          </div>
+
+          <button type="submit" class="inq-submit-btn" data-i18n="inq.submit">SUBMIT INQUIRY</button>
+
+          <div class="inq-success" id="inqSuccess">
+            ✓ <span data-i18n="inq.successMsg">Thank you! Your inquiry has been received. We'll be in touch within 1 business day.</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+/* ── Inquiry Form: Intersection Observer for entry animation ── */
+(function() {
+  var animEls = document.querySelectorAll('.inq-animate');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.style.animationPlayState = 'running';
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    animEls.forEach(function(el) {
+      el.style.animationPlayState = 'paused';
+      obs.observe(el);
+    });
+  } else {
+    animEls.forEach(function(el) { el.style.opacity = '1'; });
+  }
+
+  /* ── Form submit handler — sends to send-inquiry.php ── */
+  var form = document.getElementById('vtekeInquiryForm');
+  var successBox = document.getElementById('inqSuccess');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = form.querySelector('.inq-submit-btn');
+      var isTR = document.documentElement.lang === 'tr';
+
+      // Loading state
+      btn.textContent = isTR ? 'Gönderiliyor…' : 'Sending…';
+      btn.disabled = true;
+      successBox.style.display = 'none';
+      successBox.style.background = '';
+      successBox.style.borderColor = '';
+      successBox.style.color = '';
+
+      // Build form data
+      var data = new FormData(form);
+
+      fetch('send-inquiry.php', {
+        method: 'POST',
+        body: data
+      })
+      .then(function(res) { return res.json(); })
+      .then(function(json) {
+        if (json.success) {
+          form.reset();
+          successBox.innerHTML = '&#10003; <span>' + (isTR
+            ? 'Teşekkürler! Talebiniz alındı. 1 iş günü içinde size döneceğiz.'
+            : "Thank you! Your inquiry has been sent. We'll be in touch within 1 business day.") + '</span>';
+          successBox.style.display = 'block';
+          setTimeout(function() { successBox.style.display = 'none'; }, 8000);
+        } else {
+          successBox.innerHTML = '&#9888; <span>' + (json.message || 'Something went wrong. Please email us directly at info@vteke.com.tr') + '</span>';
+          successBox.style.background = 'rgba(220,38,38,0.08)';
+          successBox.style.borderColor = 'rgba(220,38,38,0.3)';
+          successBox.style.color = '#991b1b';
+          successBox.style.display = 'block';
+        }
+      })
+      .catch(function() {
+        successBox.innerHTML = '&#9888; <span>Network error. Please email us directly at <a href="mailto:info@vteke.com.tr">info@vteke.com.tr</a></span>';
+        successBox.style.background = 'rgba(220,38,38,0.08)';
+        successBox.style.borderColor = 'rgba(220,38,38,0.3)';
+        successBox.style.color = '#991b1b';
+        successBox.style.display = 'block';
+      })
+      .finally(function() {
+        btn.textContent = isTR ? 'TALEBİ GÖNDER' : 'SUBMIT INQUIRY';
+        btn.disabled = false;
+      });
+    });
+  }
+})();
+
+/* ── Inquiry Form i18n integration ── */
+var inqTranslations = {
+  en: {
+    'inq.hq': 'Global Headquarters',
+    'inq.hqSub': 'Our engineering experts are ready to help with product inquiries, technical support, and partnership opportunities.',
+    'inq.addressLabel': 'Address',
+    'inq.phoneLabel': 'Phone',
+    'inq.emailLabel': 'Email',
+    'inq.hoursLabel': 'Business Hours',
+    'inq.hoursVal': 'Mon – Fri: 09:00 – 18:00\nSat: 09:00 – 13:00',
+    'inq.formTitle': 'Send us a message',
+    'inq.firstName': 'First Name',
+    'inq.lastName': 'Last Name',
+    'inq.email': 'Email Address',
+    'inq.subject': 'Subject',
+    'inq.optProduct': 'Product Inquiry',
+    'inq.optSupport': 'Technical Support',
+    'inq.optPartner': 'Partnership',
+    'inq.optOther': 'Other',
+    'inq.message': 'Message',
+    'inq.submit': 'SUBMIT INQUIRY',
+    'inq.successMsg': "Thank you! Your inquiry has been received. We'll be in touch within 1 business day."
+  },
+  tr: {
+    'inq.hq': 'Genel Merkez',
+    'inq.hqSub': 'Mühendislik uzmanlarımız ürün talepleri, teknik destek ve iş ortaklığı için hazır.',
+    'inq.addressLabel': 'Adres',
+    'inq.phoneLabel': 'Telefon',
+    'inq.emailLabel': 'E-posta',
+    'inq.hoursLabel': 'Çalışma Saatleri',
+    'inq.hoursVal': 'Pzt – Cum: 09:00 – 18:00\nCmt: 09:00 – 13:00',
+    'inq.formTitle': 'Bize mesaj gönderin',
+    'inq.firstName': 'Ad',
+    'inq.lastName': 'Soyad',
+    'inq.email': 'E-posta adresi',
+    'inq.subject': 'Konu',
+    'inq.optProduct': 'Ürün Talebi',
+    'inq.optSupport': 'Teknik Destek',
+    'inq.optPartner': 'İş Ortaklığı',
+    'inq.optOther': 'Diğer',
+    'inq.message': 'Mesaj',
+    'inq.submit': 'TALEBİ GÖNDER',
+    'inq.successMsg': 'Teşekkürler! Talebiniz alındı. 1 iş günü içinde size döneceğiz.'
+  }
+};
+
+/* Hook into the existing setLanguage function — extend it for inquiry form fields */
+var _origSetLanguage = window.setLanguage;
+window.setLanguage = function(lang) {
+  if (_origSetLanguage) _origSetLanguage(lang);
+  var t = inqTranslations[lang] || inqTranslations['en'];
+  /* Update labels, titles, placeholders via data-i18n */
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (!t[key]) return;
+    if (el.tagName === 'OPTION') {
+      el.textContent = t[key];
+    } else if (el.tagName === 'INPUT' && el.type !== 'submit') {
+      /* leave placeholder untouched, update label instead if needed */
+    } else {
+      el.innerHTML = t[key].replace(/\n/g, '<br>');
+    }
+  });
+};
+</script>
+
+<!-- Map Section -->
+<section class="map-section">
+<div class="vteke-container">
+<div class="section-header">
+<div class="section-header-wrapper">
+<div class="section-title-line"></div>
+<h2 class="section-title" data-i18n="map.title">Global Presence</h2>
+<div class="section-title-line"></div>
+</div>
+<p class="section-subtitle" data-i18n="map.subtitle">VTEKE serves clients in 35+ countries with dedicated support teams and strategic distribution centers worldwide.</p>
+</div>
+<div class="map-container">
+<a href="https://www.google.com/maps/dir/?api=1&destination=41.1009858,28.886818" target="_blank" class="map-link">
+<iframe
+src="https://www.google.com/maps?q=41.1009858,28.886818&z=17&output=embed"
+width="100%"
+height="400"
+style="border:0; border-radius: 12px;"
+loading="lazy">
+</iframe>
+</a>
+<div class="map-info">
+<h3 class="map-title" data-i18n="map.hq">Global Headquarters</h3>
+<p class="map-address">
+<i class="bi bi-geo-alt-fill"></i>
+Cumhuriyet Mah, Mücahit Sk. No:34-38A, Sultangazi / Istanbul
+<br>
+<i class="bi bi-telephone"></i> +90 2125440004
+<br>
+<i class="bi bi-envelope"></i> info@vteke.com.tr
+</p>
+</div>
+</div>
+</section>
+
+
+<!-- CTA Section -->
+<section class="cta-section">
+<div class="vteke-container">
+<div class="cta-content">
+<h2 class="cta-title" data-i18n="cta.title">Ready to Power Your Project?</h2>
+<p class="cta-subtitle" data-i18n="cta.subtitle">Contact our engineering team today for customized industrial electrical solutions tailored to your requirements.</p>
+<div class="cta-buttons">
+<a href="tel:+90 2125440004" class="cta-btn">
+<i class="bi bi-telephone-fill"></i> <span data-i18n="cta.call">Call Now</span>
+</a>
+<a href="mailto:info@vteke.com.tr" class="cta-btn btn-outline">
+<i class="bi bi-envelope-fill"></i> <span data-i18n="cta.email">Email Us</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+// Toggle Dropdown
+function toggleLanguageDropdown() {
+    const dropdown = document.getElementById('langDropdown');
+    dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('langDropdown');
+    if (dropdown && !dropdown.contains(event.target)) {
+        dropdown.classList.remove('active');
+    }
+});
+
+// RTL languages
+const rtlLanguages = ['ar'];
+
+// Translations
+const translations = {
+    en: {
+        hero: { badge: "24/7 Global Support", title: "Engineering Excellence Worldwide", p: "Connect with our expert team for technical support, partnerships, and customized industrial electrical solutions." },
+        map: { title: "Global Presence", subtitle: "VTEKE serves clients in 35+ countries with dedicated support teams and strategic distribution centers worldwide.", hq: "Global Headquarters" },
+        contact: { title: "Contact Information", subtitle: "Our engineering experts are ready to discuss your project requirements and provide tailored solutions.", hq: "Global Headquarters", hqText: "Reach out to our headquarters or connect with our regional offices for technical inquiries and partnership opportunities.", address: "Address", phone: "Phone", email: "Email", hours: "Business Hours", weekdays: "Monday - Friday", weekend: "Saturday - Sunday", closed: "Closed", emergency: "Emergency", available: "24/7 Available", response: "Response Time", within24h: "Within 24 Hours", emergencySupport: "Emergency Support", emergencyText: "24/7 technical support for critical situations and urgent requirements." },
+        cta: { title: "Ready to Power Your Project?", subtitle: "Contact our engineering team today for customized industrial electrical solutions tailored to your requirements.", call: "Call Now", email: "Email Us" },
+        inq: { hq: "Global Headquarters", hqSub: "Our engineering experts are ready to help with product inquiries, technical support, and partnership opportunities.", addressLabel: "Address", phoneLabel: "Phone", emailLabel: "Email", hoursLabel: "Business Hours", hoursVal: "Mon – Fri: 09:00 – 18:00\nSat: 09:00 – 13:00", formTitle: "Send us a message", firstName: "First Name", lastName: "Last Name", email: "Email Address", subject: "Subject", optProduct: "Product Inquiry", optSupport: "Technical Support", optPartner: "Partnership", optOther: "Other", message: "Message", submit: "SUBMIT INQUIRY", successMsg: "Thank you! Your inquiry has been received. We'll be in touch within 1 business day." }
+    },
+    tr: {
+        hero: { badge: "7/24 Küresel Destek", title: "Dünya Çapında Mühendislik Mükemmelliği", p: "Teknik destek, ortaklıklar ve özelleştirilmiş endüstriyel elektrik çözümleri için uzman ekibimizle iletişime geçin." },
+        map: { title: "Küresel Varlık", subtitle: "VTEKE, dünya çapında özel destek ekipleri ve stratejik dağıtım merkezleri ile 35'ten fazla ülkedeki müşterilere hizmet vermektedir.", hq: "Genel Merkez" },
+        contact: { title: "İletişim Bilgileri", subtitle: "Mühendislik uzmanlarımız, proje gereksinimlerinizi tartışmaya ve özel çözümler sunmaya hazırdır.", hq: "Genel Merkez", hqText: "Teknik sorular ve ortaklık fırsatları için genel merkezimize veya bölgesel ofislerimize ulaşın.", address: "Adres", phone: "Telefon", email: "E-posta", hours: "Çalışma Saatleri", weekdays: "Pazartesi-Cuma", weekend: "Cumartesi - Pazar", closed: "Kapalı", emergency: "Acil Durum", available: "7/24 Hizmet", response: "Yanıt Süresi", within24h: "24 Saat İçinde", emergencySupport: "Acil Destek", emergencyText: "Kritik durumlar ve acil gereksinimler için 7/24 teknik destek." },
+        cta: { title: "Projenizi çalıştırmaya hazır mısınız?", subtitle: "Gereksinimlerinize uygun özelleştirilmiş endüstriyel elektrik çözümleri için mühendislik ekibimizle bugün iletişime geçin.", call: "Şimdi Arayın", email: "Bize E-posta Gönderin" },
+        inq: { hq: "Genel Merkez", hqSub: "Mühendislik uzmanlarımız ürün talepleri, teknik destek ve iş ortaklığı için hazır.", addressLabel: "Adres", phoneLabel: "Telefon", emailLabel: "E-posta", hoursLabel: "Çalışma Saatleri", hoursVal: "Pzt – Cum: 09:00 – 18:00\nCmt: 09:00 – 13:00", formTitle: "Bize mesaj gönderin", firstName: "Ad", lastName: "Soyad", email: "E-posta adresi", subject: "Konu", optProduct: "Ürün Talebi", optSupport: "Teknik Destek", optPartner: "İş Ortaklığı", optOther: "Diğer", message: "Mesaj", submit: "TALEBİ GÖNDER", successMsg: "Teşekkürler! Talebiniz alındı. 1 iş günü içinde size döneceğiz." }
+    },
+    ru: {
+        hero: { badge: "Глобальная поддержка 24/7", title: "Инженерное совершенство по всему миру", p: "Свяжитесь с нашей командой экспертов для технической поддержки, партнерства и индивидуальных промышленных электрических решений." },
+        map: { title: "Глобальное присутствие", subtitle: "VTEKE обслуживает клиентов в 35+ странах с выделенными командами поддержки и стратегическими распределительными центрами по всему миру.", hq: "Глобальная штаб-квартира" },
+        contact: { title: "Контактная информация", subtitle: "Наши инженерные эксперты готовы обсудить требования вашего проекта и предоставить индивидуальные решения.", hq: "Глобальная штаб-квартира", hqText: "Свяжитесь с нашей штаб-квартирой или региональными офисами для технических запросов и возможностей партнерства.", address: "Адрес", phone: "Телефон", email: "Электронная почта", hours: "Часы работы", weekdays: "Понедельник - Пятница", weekend: "Суббота - Воскресенье", closed: "Закрыто", emergency: "Экстренный", available: "Доступно 24/7", response: "Время ответа", within24h: "В течение 24 часов", emergencySupport: "Экстренная поддержка", emergencyText: "Техническая поддержка 24/7 для критических ситуаций и срочных требований." },
+        cta: { title: "Готовы реализовать свой проект?", subtitle: "Свяжитесь с нашей инженерной командой сегодня для индивидуальных промышленных электрических решений, адаптированных к вашим требованиям.", call: "Позвонить сейчас", email: "Написать нам" },
+        inq: { hq: "Глобальная штаб-квартира", hqSub: "Наши эксперты готовы помочь с запросами на продукцию, технической поддержкой и партнёрством.", addressLabel: "Адрес", phoneLabel: "Телефон", emailLabel: "Эл. почта", hoursLabel: "Часы работы", hoursVal: "Пн – Пт: 09:00 – 18:00\nСб: 09:00 – 13:00", formTitle: "Напишите нам", firstName: "Имя", lastName: "Фамилия", email: "Электронная почта", subject: "Тема", optProduct: "Запрос на продукт", optSupport: "Техническая поддержка", optPartner: "Партнёрство", optOther: "Другое", message: "Сообщение", submit: "ОТПРАВИТЬ ЗАПРОС", successMsg: "Спасибо! Ваш запрос получен. Мы свяжемся с вами в течение 1 рабочего дня." }
+    },
+    fr: {
+        hero: { badge: "Support mondial 24/7", title: "Excellence en ingénierie mondiale", p: "Contactez notre équipe d'experts pour un support technique, des partenariats et des solutions électriques industrielles personnalisées." },
+        map: { title: "Présence mondiale", subtitle: "VTEKE sert des clients dans 35+ pays avec des équipes de support dédiées et des centres de distribution stratégiques dans le monde entier.", hq: "Siège mondial" },
+        contact: { title: "Coordonnées", subtitle: "Nos experts en ingénierie sont prêts à discuter des exigences de votre projet et à fournir des solutions sur mesure.", hq: "Siège mondial", hqText: "Contactez notre siège ou nos bureaux régionaux pour des demandes techniques et des opportunités de partenariat.", address: "Adresse", phone: "Téléphone", email: "E-mail", hours: "Heures d'ouverture", weekdays: "Lundi - Vendredi", weekend: "Samedi - Dimanche", closed: "Fermé", emergency: "Urgence", available: "Disponible 24/7", response: "Temps de réponse", within24h: "Dans les 24 heures", emergencySupport: "Support d'urgence", emergencyText: "Support technique 24/7 pour les situations critiques et les exigences urgentes." },
+        cta: { title: "Prêt à alimenter votre projet?", subtitle: "Contactez notre équipe d'ingénierie aujourd'hui pour des solutions électriques industrielles personnalisées adaptées à vos exigences.", call: "Appeler maintenant", email: "Nous envoyer un e-mail" },
+        inq: { hq: "Siège mondial", hqSub: "Nos experts sont prêts à aider pour les demandes de produits, le support technique et les partenariats.", addressLabel: "Adresse", phoneLabel: "Téléphone", emailLabel: "E-mail", hoursLabel: "Heures d'ouverture", hoursVal: "Lun – Ven: 09:00 – 18:00\nSam: 09:00 – 13:00", formTitle: "Envoyez-nous un message", firstName: "Prénom", lastName: "Nom", email: "Adresse e-mail", subject: "Sujet", optProduct: "Demande de produit", optSupport: "Support technique", optPartner: "Partenariat", optOther: "Autre", message: "Message", submit: "ENVOYER LA DEMANDE", successMsg: "Merci ! Votre demande a été reçue. Nous vous contacterons dans 1 jour ouvrable." }
+    },
+    ar: {
+        hero: { badge: "دعم عالمي 24/7", title: "التميز الهندسي في جميع أنحاء العالم", p: "تواصل مع فريق خبرائنا للحصول على الدعم الفني والشراكات والحلول الكهربائية الصناعية المخصصة." },
+        map: { title: "الوجود العالمي", subtitle: "تخدم VTEKE العملاء في أكثر من 35 دولة مع فرق دعم مخصصة ومراكز توزيع استراتيجية في جميع أنحاء العالم.", hq: "المقر العالمي" },
+        contact: { title: "معلومات الاتصال", subtitle: "خبراؤنا الهندسيون مستعدون لمناقشة متطلبات مشروعك وتقديم حلول مخصصة.", hq: "المقر العالمي", hqText: "تواصل مع مقرنا أو مكاتبنا الإقليمية للاستفسارات التقنية وفرص الشراكة.", address: "العنوان", phone: "الهاتف", email: "البريد الإلكتروني", hours: "ساعات العمل", weekdays: "الإثنين - الجمعة", weekend: "السبت - الأحد", closed: "مغلق", emergency: "الطوارئ", available: "متاح 24/7", response: "وقت الاستجابة", within24h: "خلال 24 ساعة", emergencySupport: "دعم الطوارئ", emergencyText: "دعم فني 24/7 للحالات الحرجة والمتطلبات العاجلة." },
+        cta: { title: "هل أنت مستعد لتشغيل مشروعك؟", subtitle: "تواصل مع فريق الهندسة لدينا اليوم للحصول على حلول كهربائية صناعية مخصصة مصممة لمتطلباتك.", call: "اتصل الآن", email: "أرسل لنا بريداً إلكترونياً" },
+        inq: { hq: "المقر العالمي", hqSub: "خبراؤنا مستعدون للمساعدة في الاستفسارات والدعم الفني والشراكات.", addressLabel: "العنوان", phoneLabel: "الهاتف", emailLabel: "البريد الإلكتروني", hoursLabel: "ساعات العمل", hoursVal: "الإثنين–الجمعة: 09:00–18:00\nالسبت: 09:00–13:00", formTitle: "أرسل لنا رسالة", firstName: "الاسم الأول", lastName: "اسم العائلة", email: "عنوان البريد الإلكتروني", subject: "الموضوع", optProduct: "استفسار عن المنتج", optSupport: "الدعم الفني", optPartner: "شراكة", optOther: "أخرى", message: "الرسالة", submit: "إرسال الطلب", successMsg: "شكراً! تم استلام استفسارك. سنتواصل معك خلال يوم عمل واحد." }
+    },
+    zh: {
+        hero: { badge: "24/7 全球支持", title: "全球工程卓越", p: "与我们的专家团队联系，获取技术支持、合作伙伴关系和定制的工业电气解决方案。" },
+        map: { title: "全球存在", subtitle: "VTEKE 在全球 35+ 个国家/地区为客户提供服务，拥有 dedicated 支持团队和战略分销中心。", hq: "全球总部" },
+        contact: { title: "联系信息", subtitle: "我们的工程专家准备讨论您的项目要求并提供定制解决方案。", hq: "全球总部", hqText: "联系我们的总部或区域办事处，获取技术咨询和合作机会。", address: "地址", phone: "电话", email: "电子邮件", hours: "营业时间", weekdays: "周一至周五", weekend: "周六至周日", closed: "关闭", emergency: "紧急情况", available: "24/7 可用", response: "响应时间", within24h: "24 小时内", emergencySupport: "紧急支持", emergencyText: "为关键情况和紧急需求提供 24/7 技术支持。" },
+        cta: { title: "准备好为您的项目供电了吗？", subtitle: "立即联系我们的工程团队，获取根据您的要求定制的工业电气解决方案。", call: "立即致电", email: "给我们发送电子邮件" },
+        inq: { hq: "全球总部", hqSub: "我们的专家准备好协助解决产品咨询、技术支持和合作伙伴关系。", addressLabel: "地址", phoneLabel: "电话", emailLabel: "电子邮件", hoursLabel: "营业时间", hoursVal: "周一至周五: 09:00–18:00\n周六: 09:00–13:00", formTitle: "给我们留言", firstName: "名字", lastName: "姓氏", email: "电子邮件地址", subject: "主题", optProduct: "产品咨询", optSupport: "技术支持", optPartner: "合作关系", optOther: "其他", message: "消息", submit: "提交申请", successMsg: "谢谢！您的询问已收到。我们将在1个工作日内与您联系。" }
+    }
+};
+
+let currentLanguage = localStorage.getItem('vteke_language') || 'en';
+
+document.addEventListener('DOMContentLoaded', function() {
+    setLanguage(currentLanguage);
+    
+    // Mobile language selector
+    const mobileLangSelect = document.getElementById('mobileLangSelect');
+    if (mobileLangSelect) {
+        mobileLangSelect.addEventListener('change', function() {
+            const selectedLang = this.value;
+            setLanguage(selectedLang);
+        });
+    }
+});
+
+function updateLanguageDirection(lang) {
+    if (rtlLanguages.includes(lang)) {
+        document.documentElement.dir = 'rtl';
+        document.body.setAttribute('dir', 'rtl');
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.setAttribute('dir', 'ltr');
+    }
+}
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('vteke_language', lang);
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    const t = translations[lang];
+    
+    // Update all elements with data-i18n attributes
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = t;
+        for (const k of keys) {
+            if (value == null || value[k] === undefined) { value = null; break; }
+            value = value[k];
+        }
+        if (value && typeof value === 'string') {
+            element.classList.add('lang-animating');
+            element.textContent = value;
+            setTimeout(() => {
+                element.classList.remove('lang-animating');
+            }, 400);
+        }
+    });
+    
+    // Update language direction
+    updateLanguageDirection(lang);
+    
+    // Update dropdown display
+    updateDropdownDisplay(lang);
+    
+    // Update page title
+    updatePageTitle(lang);
+    
+    // Close dropdown
+    document.getElementById('langDropdown').classList.remove('active');
+}
+
+function updateDropdownDisplay(lang) {
+    const currentLangFlag = document.getElementById('currentLangFlag');
+    const currentLangCode = document.getElementById('currentLangCode');
+    const dropdownItems = document.querySelectorAll('.lang-dropdown-item');
+    
+    const langInfo = {
+        'en': { flag: '🇬🇧', code: 'EN' },
+        'tr': { flag: '🇹🇷', code: 'TR' },
+        'ru': { flag: '🇷🇺', code: 'RU' },
+        'fr': { flag: '🇫🇷', code: 'FR' },
+        'ar': { flag: '🇸🇦', code: 'AR' },
+        'zh': { flag: '🇨🇳', code: 'ZH' }
+    };
+    
+    if (currentLangFlag && currentLangCode && langInfo[lang]) {
+        currentLangFlag.textContent = langInfo[lang].flag;
+        currentLangCode.textContent = langInfo[lang].code;
+    }
+    
+    dropdownItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('onclick').includes(`'${lang}'`)) {
+            item.classList.add('active');
+        }
+    });
+    
+    // Update mobile selector
+    const mobileLangSelect = document.getElementById('mobileLangSelect');
+    if (mobileLangSelect) {
+        mobileLangSelect.value = lang;
+    }
+}
+
+function updatePageTitle(lang) {
+    const titleElement = document.querySelector('title');
+    if (titleElement) {
+        const titleTranslations = {
+            'en': 'Contact Us – VTEKE | Advanced Electrical Innovation',
+            'tr': 'İletişim – VTEKE | Gelişmiş Elektrik İnovasyonu',
+            'ru': 'Связаться с нами – VTEKE | Передовые электрические инновации',
+            'fr': 'Contactez-nous – VTEKE | Innovation électrique avancée',
+            'ar': 'اتصل بنا – VTEKE | الابتكار الكهربائي المتقدم',
+            'zh': '联系我们 – VTEKE | 先进电气创新'
+        };
+        if (titleTranslations[lang]) {
+            titleElement.textContent = titleTranslations[lang];
+        }
+    }
+}
+</script>
+
+<footer class="vteke-footer-main-container">
+    <div class="vteke-footer-grid-container">
+        <div class="vteke-footer-grid-inner">
+            <!-- Column 1: Company Info -->
+            <div class="vteke-footer-column-wrapper">
+                <div class="vteke-footer-company-info">
+                    <img src="vtekeimg/VTEKE1.png" alt="VTEKE Logo" class="vteke-footer-company-logo">
+                    <p class="vteke-footer-company-desc" data-i18n="footer.desc">Leading provider of innovative electrical solutions with excellence in quality.</p>
+                    <div class="vteke-footer-social-container">
+                        <a href="https://wa.me/+902125440004" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="WhatsApp">
+                            <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.199.05-.372-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.226 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.491h.004c-2.255-.001-4.323-1.176-5.527-3.039l-.003-.004c-.564-.896-.987-1.853-1.263-2.839-.575-2.058-.324-4.17.716-5.92.384-.647.853-1.22 1.389-1.709.893-.813 1.923-1.427 3.039-1.78.366-.116.744-.173 1.123-.171.422.002.851.067 1.272.193.839.252 1.624.706 2.326 1.329.683.606 1.268 1.365 1.728 2.242.909 1.738 1.197 3.692.826 5.509-.366 1.792-1.272 3.407-2.582 4.649-1.364 1.293-3.012 2.109-4.754 2.354-.439.062-.887.092-1.335.091z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="Facebook">
+                            <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="LinkedIn">
+                            <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2: Useful Links -->
+            <div class="vteke-footer-column-wrapper">
+                <h4 class="vteke-footer-column-title" data-i18n="footer.links">Useful Links</h4>
+                <ul class="vteke-footer-links-list">
+                    <li class="vteke-footer-link-item"><a href="index.html" class="vteke-footer-link-anchor" data-i18n="footer.home">Home</a></li>
+                    <li class="vteke-footer-link-item"><a href="aboutus.html" class="vteke-footer-link-anchor" data-i18n="footer.about">About Us</a></li>
+                    <li class="vteke-footer-link-item"><a href="ContactUs.html" class="vteke-footer-link-anchor" data-i18n="footer.contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Projects & News -->
+            <div class="vteke-footer-column-wrapper">
+                <h4 class="vteke-footer-column-title" data-i18n="footer.products">Products & News</h4>
+                <ul class="vteke-footer-links-list">
+                    <li class="vteke-footer-link-item"><a href="News.html" class="vteke-footer-link-anchor" rel="noopener" data-i18n="footer.news">News</a></li>
+                    <li class="vteke-footer-link-item"><a href="Products.html" class="vteke-footer-link-anchor" target="_blank" rel="noopener" data-i18n="footer.products2">Products</a></li>
+                    <li class="vteke-footer-link-item"><a href="Certificates.html" class="vteke-footer-link-anchor" data-i18n="footer.certs">Certificates</a></li>
+                </ul>
+            </div>
+            <!-- Column 4: Contact & Support -->
+            <div class="vteke-footer-column-wrapper">
+                <h4 class="vteke-footer-column-title" data-i18n="footer.support">Contact & Support</h4>
+                <div class="vteke-footer-contact-container">
+                    <div class="vteke-footer-contact-item">
+                        <div class="vteke-footer-contact-icon-box">
+                            <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="vteke-footer-contact-text-box">
+                            <a href="tel:+902125440004" class="vteke-footer-contact-link">+90 2125440004</a>
+                        </div>
+                    </div>
+                    <div class="vteke-footer-contact-item">
+                        <div class="vteke-footer-contact-icon-box">
+                            <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6l-10 7L2 6" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="vteke-footer-contact-text-box">
+                            <a href="mailto:Info@vteke.com.tr" class="vteke-footer-contact-link">Info@vteke.com.tr</a>
+                        </div>
+                    </div>
+                    <div class="vteke-footer-contact-item">
+                        <div class="vteke-footer-contact-icon-box">
+                            <svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="10" r="3" stroke="white" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="vteke-footer-contact-text-box">
+                            <span class="vteke-footer-contact-text" data-i18n="footer.location">Istanbul Turkey</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vteke-footer-newsletter-box">
+                    <p class="vteke-footer-newsletter-text" data-i18n="footer.newsletter">Subscribe to our newsletter for updates</p>
+                </div>
+            </div>
+        </div>
+        <div class="vteke-footer-copyright-box">
+            <p class="vteke-footer-copyright-text">&copy; 2026 Vteke. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate footer links on load
+    const footerLinks = document.querySelectorAll('.vteke-footer-link-item');
+    footerLinks.forEach(link => {
+        link.style.opacity = '0';
+        link.style.transform = 'translateY(15px)';
+        link.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+    });
+    setTimeout(() => {
+        footerLinks.forEach((link, index) => {
+            setTimeout(() => {
+                link.style.opacity = '1';
+                link.style.transform = 'translateY(0)';
+            }, 200 + (index * 120));
+        });
+    }, 300);
+    
+    // Enhanced logo animation on hover
+    const logo = document.querySelector('.vteke-footer-company-logo');
+    if (logo) {
+        logo.addEventListener('mouseenter', () => {
+            logo.style.animation = 'none';
+            setTimeout(() => {
+                logo.style.animation = 'vteke-footer-float 28s ease-in-out infinite';
+            }, 10);
+        });
+    }
+    
+    // Add subtle hover effect to column titles
+    const columnTitles = document.querySelectorAll('.vteke-footer-column-title');
+    columnTitles.forEach(title => {
+        title.addEventListener('mouseenter', () => {
+            title.style.transform = 'scale(1.03)';
+            title.style.transition = 'transform 0.3s ease';
+        });
+        title.addEventListener('mouseleave', () => {
+            title.style.transform = 'scale(1)';
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# ========================================
+# robots.txt - VTEKE Industrial
+# Last Updated: 2026-03-10
+# ========================================
+
+User-agent: *
+Allow: /
+
+Allow: /ProductsPages/
+Allow: /vtekeimg/DataSheet/
+
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /css/
+
+# Disallow: /*.pdf$
+
+Sitemap: https://www.vteke.com.tr/sitemap.xml
+

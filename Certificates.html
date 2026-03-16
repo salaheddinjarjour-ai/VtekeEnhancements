@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="vtekeimg/favicon.png" >
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="vteke.com.tr" content="2wpNhOR1Gm6fospwjw1iF_wLgopq8N1WViTMmW8PbJI" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+<title>Certificates Gallery | VTEKE Professional Electric</title>
+<link rel="stylesheet" href="vteke-header-styles.css" />
+<link rel="stylesheet" href="vteke-footer.css">
+
+</head>
+<body>
+       <header class="vteke-pro-header-main-container">
+<div class="vteke-pro-header-inner-container">
+<div class="vteke-pro-logo-main-wrapper">
+<div class="vteke-pro-logo-glow-effect"></div>
+<a href="index.html" class="vteke-pro-logo-3d-transform" aria-label="VTEKE Home - Industrial Electrical Solutions">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Professional Electric Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</a>
+</div>
+<button class="vteke-pro-mobile-menu-toggle-btn vteke-touch-optimized-element" id="vtekeMenuToggleBtn" aria-label="Open main menu">
+<span>☰</span>
+</button>
+<div class="vteke-pro-navigation-container">
+<nav aria-label="Main navigation">
+<ul class="vteke-pro-main-navigation-list">
+<li class="vteke-pro-nav-list-item">
+<a href="index.html" class="vteke-pro-nav-link-element" data-lang-en="HOME" data-lang-tr="ANA SAYFA">HOME</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="aboutus.html" class="vteke-pro-nav-link-element" data-lang-en="ABOUT US" data-lang-tr="HAKKIMIZDA">ABOUT US</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="News.html" class="vteke-pro-nav-link-element" data-lang-en="NEWS" data-lang-tr="HABERLER">NEWS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Catalog.html" class="vteke-pro-nav-link-element" data-lang-en="CATALOG" data-lang-tr="KATALOG">CATALOG</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Products.html" class="vteke-pro-nav-link-element" data-lang-en="PRODUCTS" data-lang-tr="ÜRÜNLER">PRODUCTS</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="Certificates.html" class="vteke-pro-nav-link-element vteke-active-link" aria-current="page" data-lang-en="CERTIFICATES" data-lang-tr="SERTİFİKALAR">CERTIFICATES</a>
+</li>
+<li class="vteke-pro-nav-list-item">
+<a href="ContactUs.html" class="vteke-pro-nav-link-element" data-lang-en="CONTACT" data-lang-tr="İLETİŞİM">CONTACT</a>
+</li>
+</ul>
+</nav>
+<!-- Language Switcher - Desktop -->
+<div class="lang-dropdown-wrapper" id="langDropdown">
+<button class="lang-dropdown-btn" onclick="toggleLanguageDropdown()" aria-label="Switch Language" aria-expanded="false">
+<span class="language-flag" id="currentLangFlag">🇬🇧</span>
+<span class="language-text" id="currentLangText">EN</span>
+<i class="bi bi-chevron-down"></i>
+</button>
+<div class="lang-dropdown-menu" role="menu">
+<button class="lang-dropdown-item" onclick="setLanguage('en')" role="menuitem">
+<span class="language-flag">🇬🇧</span> English
+</button>
+<button class="lang-dropdown-item" onclick="setLanguage('tr')" role="menuitem">
+<span class="language-flag">🇹🇷</span> Türkçe
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="vteke-pro-mobile-menu-overlay-bg" id="vtekeMobileMenuOverlay" aria-hidden="true"></div>
+<div class="vteke-pro-mobile-menu-sliding-container" id="vtekeMobileMenuContainer" aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
+<div class="vteke-pro-mobile-menu-header-section">
+<div class="vteke-pro-mobile-logo-container">
+<img src="vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+<span style="display:none; font-weight:800; font-size:32px; color:#FF3131;">VTEKE</span>
+</div>
+<button type="button" class="vteke-pro-close-mobile-menu-btn vteke-touch-optimized-element" id="vtekeCloseMenuBtn" aria-label="Close menu">×</button>
+</div>
+<!-- Language Switcher - Mobile -->
+<div class="vteke-pro-mobile-language-container">
+<button class="vteke-pro-mobile-language-btn active" id="mobileLangEN" onclick="setLanguage('en')" aria-label="Switch to English">
+<span class="language-flag">🇬🇧</span>
+<span class="language-text">English</span>
+</button>
+<button class="vteke-pro-mobile-language-btn" id="mobileLangTR" onclick="setLanguage('tr')" aria-label="Türkçe'ye geç">
+<span class="language-flag">🇹🇷</span>
+<span class="language-text">Türkçe</span>
+</button>
+</div>
+<nav class="vteke-pro-mobile-navigation-container" aria-label="Mobile navigation">
+<div class="vteke-pro-mobile-nav-item">
+<a href="index.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="aboutus.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="About Us" data-lang-tr="Hakkımızda">About Us</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="News.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="News" data-lang-tr="Haberler">News</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Catalog.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Catalog" data-lang-tr="Katalog">Catalog</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Products.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Products" data-lang-tr="Ürünler">Products</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="Certificates.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Certificates" data-lang-tr="Sertifikalar">Certificates</a>
+</div>
+<div class="vteke-pro-mobile-nav-item">
+<a href="ContactUs.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a>
+</div>
+</nav>
+<div class="vteke-pro-mobile-menu-footer">
+<p class="vteke-pro-copyright-text">© 2026 VTEKE Professional Electric. All Rights Reserved.</p>
+</div>
+</div>
+</header>
+    <div class="vteke-header-space-reserver"></div>
+    <script src="vteke-header.js"></script>
+
+
+
+  <style>
+    :root {
+      --primary-red: #FF3131;
+      --primary-gold: #d4af37;
+      --gold-light: #e6c07b;
+      --background-white: #ffffff;
+      --background-light: #ffffff;
+      --text-dark: #2a2a2a;
+      --text-medium: #4a4a4a;
+      --border-light: #f0f0f0;
+      --shadow-sm: 0 3px 10px rgba(255, 49, 49, 0.12);
+      --shadow-md: 0 5px 15px rgba(255, 49, 49, 0.18);
+      --shadow-lg: 0 8px 25px rgba(255, 49, 49, 0.22);
+      --shadow-hover: 0 12px 30px rgba(255, 49, 49, 0.28);
+      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --border-radius: 16px;
+      --border-radius-card: 14px;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: var(--background-light);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+     
+    }
+    
+    .certificates-section {
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 100px 40px 80px;
+      background: var(--background-white);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      border: 1px solid var(--border-light);
+    }
+    
+    /* Subtle industrial pattern with red/gold accents on white background */
+    .certificates-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(rgba(255, 49, 49, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 49, 49, 0.015) 1px, transparent 1px),
+        linear-gradient(rgba(212, 175, 55, 0.01) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.01) 1px, transparent 1px);
+      background-size: 40px 40px, 40px 40px, 10px 10px, 10px 10px;
+      z-index: 0;
+      opacity: 0.9;
+    }
+    
+    .certificates-section::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 49, 49, 0.03) 0%, transparent 70%);
+      z-index: 0;
+    }
+    
+    .container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 1400px;
+      text-align: center;
+    }
+    
+    .section-header {
+      margin-bottom: 70px;
+      position: relative;
+      padding-bottom: 30px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .section-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-red), var(--primary-gold), var(--primary-red));
+      border-radius: 2px;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    }
+    
+    .section-title {
+      font-size: 3.8rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--primary-red) 0%, var(--primary-gold) 50%, var(--primary-red) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 8px rgba(255, 49, 49, 0.15);
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    
+    .section-title::before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+      border-radius: 2px;
+    }
+    
+    .section-subtitle {
+      font-size: 1.5rem;
+      color: var(--text-medium);
+      margin-top: 25px;
+      line-height: 1.7;
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 35px;
+      position: relative;
+      z-index: 2;
+      margin-top: 25px;
+    }
+    
+    .certificate-card {
+      background: var(--background-white);
+      border-radius: var(--border-radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      text-decoration: none;
+      color: var(--text-dark);
+      display: block;
+      height: 100%;
+      position: relative;
+      border: 1px solid var(--border-light);
+      transform-origin: center center;
+    }
+    
+    .certificate-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary-red), var(--primary-gold));
+      z-index: 5;
+    }
+    
+    .certificate-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255, 49, 49, 0.03) 0%, rgba(212, 175, 55, 0.02) 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: var(--transition);
+    }
+    
+    .certificate-card:hover {
+      transform: scale(1.05) translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      z-index: 30;
+      border-color: var(--primary-gold);
+    }
+    
+    .certificate-card:hover::after {
+      opacity: 1;
+    }
+    
+    .card-image-container {
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--background-white);
+      border-bottom: 1px solid var(--border-light);
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+    }
+    
+    .card-image-container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 49, 49, 0.05) 0%, rgba(212, 175, 55, 0.03) 70%, transparent 85%);
+      z-index: 1;
+    }
+    
+    .card-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: var(--transition);
+      position: relative;
+      z-index: 2;
+      max-width: 90%;
+      max-height: 90%;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    
+    .certificate-card:hover .card-image {
+      transform: scale(1.1) rotate(2deg);
+      filter: drop-shadow(0 6px 12px rgba(255, 49, 49, 0.2));
+    }
+    
+    .card-title {
+      padding: 25px 20px 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      min-height: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.2;
+      position: relative;
+      z-index: 2;
+      color: var(--primary-red);
+      transition: var(--transition);
+      letter-spacing: -0.5px;
+    }
+    
+    .certificate-card:hover .card-title {
+      color: var(--primary-gold);
+      transform: scale(1.05);
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+    }
+    
+    .card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.92) 0%,
+        rgba(255, 49, 49, 0.08) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: var(--primary-red);
+      opacity: 0;
+      transition: var(--transition);
+      z-index: 10;
+      padding: 20px;
+      backdrop-filter: blur(2px);
+    }
+    
+    .certificate-card:hover .card-overlay {
+      opacity: 1;
+    }
+    
+    .view-icon {
+      font-size: 5rem;
+      margin-bottom: 15px;
+      font-weight: 800;
+      letter-spacing: -3px;
+      position: relative;
+      line-height: 1;
+      color: var(--primary-gold);
+      text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    }
+    
+    .view-icon::after {
+      content: 'PDF';
+      position: absolute;
+      bottom: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.95rem;
+      letter-spacing: 3px;
+      color: var(--primary-red);
+      font-weight: 800;
+      background: var(--background-white);
+      padding: 2px 10px;
+      border-radius: 15px;
+      border: 2px solid var(--primary-gold);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+    
+    .view-text {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: relative;
+      padding-top: 12px;
+      margin-top: 8px;
+      color: var(--primary-red);
+      position: relative;
+    }
+    
+    .view-text::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+      border-radius: 1px;
+    }
+    
+    /* Industrial badge decoration */
+    .industrial-badge {
+      position: absolute;
+      bottom: 22px;
+      right: 22px;
+      width: 60px;
+      height: 60px;
+      background: var(--primary-red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--background-white);
+      font-size: 1.3rem;
+      box-shadow: 
+        0 4px 12px rgba(255, 49, 49, 0.25),
+        0 0 0 3px var(--primary-gold),
+        0 0 0 5px rgba(255, 255, 255, 0.7);
+      z-index: 3;
+      border: 2px solid var(--background-white);
+      transition: var(--transition);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .certificate-card:hover .industrial-badge {
+      transform: scale(1.25) rotate(15deg);
+      box-shadow: 
+        0 6px 18px rgba(255, 49, 49, 0.35),
+        0 0 0 3px var(--primary-gold),
+        0 0 0 6px rgba(212, 175, 55, 0.4),
+        0 0 20px rgba(255, 49, 49, 0.25);
+      background: var(--primary-gold);
+      color: var(--primary-red);
+    }
+    
+    /* Industrial corner decoration */
+    .certificate-card::first-letter {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      background: var(--primary-gold);
+      content: '';
+      z-index: 4;
+      clip-path: polygon(0 0, 100% 0, 100% 100%);
+      box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .section-title {
+        font-size: 3.3rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .section-title {
+        font-size: 2.9rem;
+      }
+      .section-subtitle {
+        font-size: 1.4rem;
+      }
+      .certificates-section {
+        padding: 80px 30px 60px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2.6rem;
+      }
+      .section-header::after {
+        width: 70px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      .certificates-section {
+        padding: 60px 20px 50px;
+        border-radius: var(--border-radius);
+      }
+      .section-title {
+        font-size: 2.4rem;
+      }
+      .section-subtitle {
+        font-size: 1.3rem;
+        padding: 0 10px;
+      }
+      .card-image-container {
+        height: 210px;
+      }
+      .card-title {
+        padding: 22px 15px;
+        font-size: 2.3rem;
+        min-height: 95px;
+      }
+      .view-icon {
+        font-size: 4.2rem;
+      }
+      .view-text {
+        font-size: 1.5rem;
+      }
+      .industrial-badge {
+        width: 52px;
+        height: 52px;
+        font-size: 1.15rem;
+        bottom: 18px;
+        right: 18px;
+      }
+    }
+    
+    /* Industrial animation for section entrance */
+    @keyframes industrialSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.97);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    
+    .animate-section {
+      animation: industrialSlide 0.8s ease-out forwards;
+      opacity: 0;
+    }
+  </style>
+
+  <section class="certificates-section">
+    <div class="container">
+      <div class="section-header animate-section">
+        <h1 class="section-title">VTEKE CERTIFICATIONS</h1>
+        <p class="section-subtitle">Official quality assurance documents demonstrating our commitment to excellence, safety standards, and international compliance in electrical manufacturing and industrial solutions</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <!-- Certificate 1 -->
+        <a href="/vtekeimg/WebSite Certification/ISO-9001.pdf" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.1s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/ISO9001.png" alt="ISO 9001 Quality Management Certification" class="card-image">
+          </div>
+          <div class="card-title">ISO 9001:2015</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 2 -->
+        <a href="/vtekeimg/WebSite Certification/ISO-14001.pdf" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.2s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/ISO-14001.png" alt="ISO 14001 Environmental Management Certification" class="card-image">
+          </div>
+          <div class="card-title">ISO 14001:2015</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 3 -->
+        <a href="/vtekeimg/WebSite Certification/1.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.3s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/testlab DK 125.png" alt="DK 125 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">DK 125 Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 4 -->
+        <a href="/vtekeimg/WebSite Certification/2.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.4s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/TK 100.png" alt="TK 100 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">TK 100 Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+              <!-- Certificate 5 -->
+        <a href="/vtekeimg/WebSite Certification/3.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.1s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/TK 80.png" alt="TK 80 Current Transformer" class="card-image">
+          </div>
+          <div class="card-title">TK 80 Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a> 
+        
+        <!-- Certificate 6 -->
+        <a href="/vtekeimg/WebSite Certification/4.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.2s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/TK 60.png" alt="TK 60 Current Transformer" class="card-image">
+          </div>
+          <div class="card-title">TK 60 Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 3 -->
+        <a href="/vtekeimg/WebSite Certification/5.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.3s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/TK 40.png" alt="TK 40 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">TK 40 Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 4 -->
+        <a href="/vtekeimg/WebSite Certification/6.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.4s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/TK 30.png" alt="TK 30 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">TK 30 Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+                <!-- Certificate 1 -->
+        <a href="/vtekeimg/WebSite Certification/7.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.1s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/TK 30S.png" alt="TK 30S Current Transformer" class="card-image">
+          </div>
+          <div class="card-title">TK 30S Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 2 -->
+        <a href="/vtekeimg/WebSite Certification/8.PDF" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.2s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/TK 20.png" alt="TK 20 Current Transformer" class="card-image">
+          </div>
+          <div class="card-title">TK 20 Current Transformer</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 3 -->
+        <a href="/vtekeimg/WebSite Certification/9.pdf" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.3s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/test TK120.png" alt="TK 120 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">TK 120 TESTLA</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 4 -->
+        <a href="/vtekeimg/WebSite Certification/10.pdf" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.4s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/testla TK30.png" alt="TK 30 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">TK 30 TESTLA</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+                <!-- Certificate 1 -->
+        <a href="/vtekeimg/WebSite Certification/11.pdf" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.1s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/testla TK40.png" alt="TK 40 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">TK 40 TESTLA</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 2 -->
+        <a href="/vtekeimg/WebSite Certification/12.pdf" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.2s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/testla TK60D.png" alt="TK 60D TESTLA" class="card-image">
+          </div>
+          <div class="card-title">TK 60D TESTLA</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        <!-- Certificate 13 -->
+        <a href="/vtekeimg/WebSite Certification/13.pdf" target="_blank" class="certificate-card animate-section" style="animation-delay: 0.3s">
+          <div class="card-image-container">
+            <img src="/vtekeimg/WebSite Certification/testla TK100.png" alt="TK 100 Current Transformer Certification" class="card-image">
+          </div>
+          <div class="card-title">TK 100 TESTLA</div>
+          <div class="card-overlay">
+            <div class="view-text">View Certificate</div>
+          </div>
+        </a>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Simple animation trigger for certificate cards
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.animationPlayState = 'running';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll('.animate-section').forEach(card => {
+        card.style.opacity = 0;
+        card.style.animationPlayState = 'paused';
+        observer.observe(card);
+      });
+    });
+  </script>
+
+<footer class="vteke-footer-main-container">
+<div class="vteke-footer-grid-container">
+<div class="vteke-footer-grid-inner">
+<!-- Column 1: Company Info -->
+<div class="vteke-footer-column-wrapper">
+<div class="vteke-footer-company-info">
+<img src="vtekeimg/VTEKE1.png" alt="VTEKE Logo" class="vteke-footer-company-logo">
+<p class="vteke-footer-company-desc">Leading provider of innovative electrical solutions with excellence in quality.</p>
+<div class="vteke-footer-social-container">
+<a href="https://wa.me/+902125440004" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="WhatsApp">
+<svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.199.05-.372-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.226 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.491h.004c-2.255-.001-4.323-1.176-5.527-3.039l-.003-.004c-.564-.896-.987-1.853-1.263-2.839-.575-2.058-.324-4.17.716-5.92.384-.647.853-1.22 1.389-1.709.893-.813 1.923-1.427 3.039-1.78.366-.116.744-.173 1.123-.171.422.002.851.067 1.272.193.839.252 1.624.706 2.326 1.329.683.606 1.268 1.365 1.728 2.242.909 1.738 1.197 3.692.826 5.509-.366 1.792-1.272 3.407-2.582 4.649-1.364 1.293-3.012 2.109-4.754 2.354-.439.062-.887.092-1.335.091z"/>
+</svg>
+</a>
+<a href="https://facebook.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="Facebook">
+<svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+</svg>
+</a>
+<a href="https://linkedin.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="LinkedIn">
+<svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Column 2: Useful Links -->
+<div class="vteke-footer-column-wrapper">
+<h4 class="vteke-footer-column-title">Useful Links</h4>
+<ul class="vteke-footer-links-list">
+<li class="vteke-footer-link-item"><a href="index.html" class="vteke-footer-link-anchor">Home</a></li>
+<li class="vteke-footer-link-item"><a href="aboutus.html" class="vteke-footer-link-anchor">About Us</a></li>
+<li class="vteke-footer-link-item"><a href="ContactUs.html" class="vteke-footer-link-anchor">Contact Us</a></li>
+</ul>
+</div>
+                <!-- Column 3: Projects & News -->
+                <div class="vteke-footer-column-wrapper">
+                    <h4 class="vteke-footer-column-title">Products & News</h4>
+                    <ul class="vteke-footer-links-list">
+                        <li class="vteke-footer-link-item"><a href="News.html" class="vteke-footer-link-anchor" rel="noopener">News</a></li>
+                        <li class="vteke-footer-link-item"><a href="Products.html" class="vteke-footer-link-anchor" target="_blank" rel="noopener">Products</a></li>
+                        <li class="vteke-footer-link-item"><a href="Certificates.html" class="vteke-footer-link-anchor">Certificates</a></li>
+                    </ul>
+                </div>
+<!-- Column 4: Contact & Support -->
+<div class="vteke-footer-column-wrapper">
+<h4 class="vteke-footer-column-title">Contact & Support</h4>
+<div class="vteke-footer-contact-container">
+<div class="vteke-footer-contact-item">
+<div class="vteke-footer-contact-icon-box">
+<svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="vteke-footer-contact-text-box">
+<a href="tel:+902125440004" class="vteke-footer-contact-link">+90 2125440004</a>
+</div>
+</div>
+<div class="vteke-footer-contact-item">
+<div class="vteke-footer-contact-icon-box">
+<svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 6l-10 7L2 6" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="vteke-footer-contact-text-box">
+<a href="mailto:Info@vteke.com.tr" class="vteke-footer-contact-link">Info@vteke.com.tr</a>
+</div>
+</div>
+<div class="vteke-footer-contact-item">
+<div class="vteke-footer-contact-icon-box">
+<svg class="vteke-footer-contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="10" r="3" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="vteke-footer-contact-text-box">
+<span class="vteke-footer-contact-text">Istanbul Turkey</span>
+</div>
+</div>
+</div>
+<div class="vteke-footer-newsletter-box">
+<p class="vteke-footer-newsletter-text">Subscribe to our newsletter for updates</p>
+</div>
+</div>
+</div>
+<div class="vteke-footer-copyright-box">
+<p class="vteke-footer-copyright-text">&copy; 2026 Vteke. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Animate footer links on load
+const footerLinks = document.querySelectorAll('.vteke-footer-link-item');
+// Reset for potential re-animation
+footerLinks.forEach(link => {
+link.style.opacity = '0';
+link.style.transform = 'translateY(15px)';
+link.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+});
+// Trigger animations with staggered delay
+setTimeout(() => {
+footerLinks.forEach((link, index) => {
+setTimeout(() => {
+link.style.opacity = '1';
+link.style.transform = 'translateY(0)';
+}, 200 + (index * 120));
+});
+}, 300);
+// Enhanced logo animation on hover
+const logo = document.querySelector('.vteke-footer-company-logo');
+if (logo) {
+logo.addEventListener('mouseenter', () => {
+logo.style.animation = 'none';
+setTimeout(() => {
+logo.style.animation = 'vteke-footer-float 28s ease-in-out infinite';
+}, 10);
+});
+}
+// Add subtle hover effect to column titles
+const columnTitles = document.querySelectorAll('.vteke-footer-column-title');
+columnTitles.forEach(title => {
+title.addEventListener('mouseenter', () => {
+title.style.transform = 'scale(1.03)';
+title.style.transition = 'transform 0.3s ease';
+});
+title.addEventListener('mouseleave', () => {
+title.style.transform = 'scale(1)';
+});
+});
+});
+</script>
+<script src="vteke-header.js" defer></script>
+</body>
+</html>
+
+
