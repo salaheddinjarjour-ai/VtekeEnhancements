@@ -4,8 +4,8 @@
 
  
 :root {
-  --vteke-primary-red: #FF3131;
-  --vteke-hover-red: #D92020;
+  --vteke-primary-red: #E10600;
+  --vteke-hover-red: #C40000;
   /* Ultra Transparent Glass */
   --vteke-glass-bg: rgba(255, 255, 255, 0.70); 
   --vteke-glass-border: rgba(255, 255, 255, 0.5);
@@ -58,7 +58,7 @@
 .vteke-pro-header-main-container.vteke-header-scrolled {
   background: rgba(255, 255, 255, 0.90);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 49, 49, 0.3);
+  border-bottom: 1px solid rgba(225, 6, 0, 0.3);
 }
 
 /* Inner Layout */
@@ -84,7 +84,7 @@
   position: absolute;
   width: 80px;
   height: 80px;
-  background: radial-gradient(circle, rgba(255, 49, 49, 0.4) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(225, 6, 0, 0.4) 0%, transparent 70%);
   filter: blur(15px);
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -157,7 +157,7 @@
   width: 0;
   height: 3px;
   background: var(--vteke-primary-red);
-  box-shadow: 0 0 10px rgba(255, 49, 49, 0.5);
+  box-shadow: 0 0 10px rgba(225, 6, 0, 0.5);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px 2px 0 0;
 }
@@ -206,7 +206,7 @@
   border-top: 4px solid var(--vteke-primary-red);
   border-radius: 0 0 12px 12px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12), 
-              0 0 30px rgba(255, 49, 49, 0.15);
+              0 0 30px rgba(225, 6, 0, 0.15);
   
   opacity: 0;
   visibility: hidden;
@@ -519,7 +519,7 @@
   gap: 6px;
   padding: 6px 12px;
   background: rgba(255,255,255,0.8);
-  border: 1px solid rgba(200,13,44,0.3);
+  border: 1px solid rgba(196, 0, 0, 0.3);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
@@ -531,8 +531,8 @@
 }
 .lang-dropdown-btn:hover {
   background: #fff;
-  border-color: #C80D2C;
-  box-shadow: 0 4px 12px rgba(200,13,44,0.15);
+  border-color: #C40000;
+  box-shadow: 0 4px 12px rgba(196, 0, 0, 0.15);
   transform: translateY(-1px);
 }
 .lang-dropdown-btn i {
@@ -547,7 +547,7 @@
   top: calc(100% + 8px);
   right: 0;
   background: #ffffff;
-  border: 1px solid rgba(200,13,44,0.1);
+  border: 1px solid rgba(196, 0, 0, 0.1);
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   display: flex;
@@ -584,13 +584,13 @@
   width: 100%;
 }
 .lang-dropdown-item:hover {
-  background: rgba(200,13,44,0.06);
-  color: #C80D2C;
+  background: rgba(196, 0, 0, 0.06);
+  color: #C40000;
   padding-left: 16px;
 }
 .lang-dropdown-item.active {
-  background: rgba(200,13,44,0.1);
-  color: #C80D2C;
+  background: rgba(196, 0, 0, 0.1);
+  color: #C40000;
   font-weight: 600;
 }
 .language-flag { font-size: 1.1rem; }
@@ -602,9 +602,9 @@
   justify-content: center;
   gap: 10px;
   padding: 20px;
-  border-top: 1px solid rgba(200,13,44,0.15);
-  border-bottom: 1px solid rgba(200,13,44,0.15);
-  background: linear-gradient(135deg,rgba(200,13,44,0.03),rgba(139,0,0,0.03));
+  border-top: 1px solid rgba(196, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(196, 0, 0, 0.15);
+  background: linear-gradient(135deg,rgba(196, 0, 0, 0.03),rgba(139,0,0,0.03));
 }
 .vteke-pro-mobile-language-btn {
   display: flex;
@@ -612,7 +612,7 @@
   gap: 6px;
   padding: 10px 18px;
   background: rgba(255,255,255,0.9);
-  border: 2px solid rgba(200,13,44,0.3);
+  border: 2px solid rgba(196, 0, 0, 0.3);
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -624,10 +624,10 @@
   justify-content: center;
 }
 .vteke-pro-mobile-language-btn.active {
-  background: linear-gradient(135deg,#C80D2C,#8B0000);
-  border-color: #C80D2C;
+  background: linear-gradient(135deg,#C40000,#8B0000);
+  border-color: #C40000;
   color: white;
-  box-shadow: 0 4px 15px rgba(200,13,44,0.35);
+  box-shadow: 0 4px 15px rgba(196, 0, 0, 0.35);
 }
 .vteke-pro-mobile-language-btn:hover { transform: scale(1.05); }
 
