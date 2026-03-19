@@ -7,7 +7,7 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 }
 :root {
     --red: #E10600;
@@ -29,24 +29,25 @@ body {
 /* Hero Section */
 .hero {
     text-align: center;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 3px solid var(--red);
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eeeeee;
     position: relative;
     width: 100%;
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
 }
+/* subtle red underline accent — replaces thick divider */
 .hero::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: var(--red);
+    width: 48px;
+    height: 3px;
+    background: #E10600;
     border-radius: 2px;
 }
 .hero-title {
@@ -54,10 +55,7 @@ body {
     font-weight: 800;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
-    background: linear-gradient(90deg, var(--red), var(--theme-secondary), var(--theme-dark));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #111111;
     position: relative;
     display: inline-block;
 }
@@ -96,18 +94,17 @@ body {
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-/* Product Row Layout */
 .product-row {
     display: flex;
     align-items: stretch;
     padding: 0;
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 1px solid #f0f0f0;
     opacity: 0;
     transform: translateY(25px);
     transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.4s ease;
     position: relative;
     width: 100%;
-    height: 400px; /* تم زيادة الارتفاع */
+    height: 400px;
 }
 
 .product-link:nth-child(odd) .product-row {
@@ -119,14 +116,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 4px;
+    width: 3px;
     height: 100%;
-    background: var(--red);
-    opacity: 0;
-    transition: opacity 0.4s ease;
+    background: #eeeeee;
+    opacity: 1;
+    transition: background 0.3s ease;
 }
 .product-row:hover::before {
-    opacity: 1;
+    background: #E10600;
 }
 .product-row.visible {
     opacity: 1;
@@ -203,13 +200,12 @@ body {
     padding-left: 2rem;
 }
 
-/* Product Name */
 .product-name {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 1rem;
-    color: var(--gray-900);
+    color: #111111;
     position: relative;
     display: inline-block;
 }
@@ -242,7 +238,7 @@ body {
     align-items: center;
     gap: 0.6rem;
     padding: 0.85rem 2rem;
-    background: linear-gradient(135deg, var(--red), var(--theme-secondary));
+    background: #E10600;
     color: white;
     border: none;
     border-radius: 8px;
@@ -250,34 +246,13 @@ body {
     font-size: 0.9rem;
     cursor: pointer;
     transition: var(--transition);
-    box-shadow: 0 4px 12px rgba(255, 49, 49, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+    letter-spacing: 0.03em;
     align-self: flex-start;
 }
-.view-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--theme-secondary), var(--red));
-    z-index: -1;
-    transition: transform 0.4s ease;
-    transform: scaleX(0);
-    transform-origin: right;
-}
-.view-btn:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}
 .view-btn:hover {
+    background: #C40000;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(255, 49, 49, 0.4);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 .view-btn i {
     font-size: 1rem;
