@@ -109,7 +109,7 @@ nav, .nav,
     font-weight: var(--fw-medium);
     font-size:   var(--text-sm);
     letter-spacing: var(--ls-label);
-    text-transform: uppercase;
+    /* No text-transform: uppercase — use Title Case in HTML */
 }
 
 /* --- Tables & Data --- */
