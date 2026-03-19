@@ -1042,6 +1042,68 @@ section {
 .cert-card:nth-child(6) { --i: 6; }
 </style>
 
+<!-- ========================================
+     ABOUT PAGE — ALTERNATING SECTION COLORS
+     odd  → beige  #faf7f2
+     even → grey   #f5f5f5
+     ======================================== -->
+<style>
+/* --- Section color variables --- */
+:root {
+    --section-beige: #faf7f2;
+    --section-grey:  #f5f5f5;
+    --section-divider: #ebebeb;
+}
+
+/* --- Reset all section backgrounds first --- */
+section {
+    background: var(--section-beige);
+    border-bottom: 1px solid var(--section-divider);
+    padding: 60px 0 !important;
+}
+
+/* --- Alternating pattern (by section ID) --- */
+
+/* Odd  1 — Hero */
+#hero             { background: var(--section-beige); }
+
+/* Even 2 — Overview */
+#overview         { background: var(--section-grey); }
+
+/* Odd  3 — Video */
+#video            { background: var(--section-beige); }
+
+/* Even 4 — Statistics */
+#statistics       { background: var(--section-grey); }
+
+/* Odd  5 — Gallery */
+#gallery          { background: var(--section-beige); }
+
+/* Even 6 — Values / Core Values */
+#values           { background: var(--section-grey); }
+
+/* Odd  7 — Certifications */
+#certifications   { background: var(--section-beige); }
+
+/* --- Keep card backgrounds white for contrast --- */
+.cert-card,
+.stat-card,
+.gallery-item,
+.feature-card,
+.values-card,
+.card,
+[class*="-card"] {
+    background: #ffffff !important;
+}
+
+/* --- Hero is a special case (has its own dark gradient) — keep it --- */
+.hero {
+    background: var(--primary-gradient) !important;
+    border-bottom: none;
+    padding: 0 !important;
+}
+</style>
+
 <!-- Hero Section -->
 <section class="hero" id="hero">
     <div class="container">
