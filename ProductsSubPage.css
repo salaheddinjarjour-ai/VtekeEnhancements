@@ -150,24 +150,24 @@ body {
     background: #ffffff;
 }
 
-/* Product Image Box */
+/* Product Image Box — standardized */
 .product-image {
     width: 100%;
-    height: 100%;
-    background: #ffffff;
-    border-radius: 12px;
+    height: 180px;
+    background: #f6f6f6;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: visible;
-    box-shadow: none;
+    overflow: hidden;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.04);
     transition: var(--transition);
     border: none;
 }
 .product-link:hover .product-image {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.08);
 }
 
 /* Product Badge */
@@ -298,12 +298,12 @@ body {
     transform: translateY(-3px);
 }
 
-/* Real Image */
+/* Real Image — standardized 80% constraint */
 .product-real-image {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
+    max-width: 80% !important;
+    max-height: 80% !important;
+    width: auto !important;
+    height: auto !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
@@ -311,9 +311,10 @@ body {
     z-index: 2;
     transition: transform 0.5s ease;
     background: transparent !important;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.08));
 }
 .product-link:hover .product-real-image {
-    transform: scale(1.1); /* تم زيادة التكبير عند hover */
+    transform: scale(1.06);
 }
 
 /* Responsive Design */
