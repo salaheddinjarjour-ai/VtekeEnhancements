@@ -11,7 +11,7 @@
   --vteke-glass-border: rgba(255, 255, 255, 0.5);
   --vteke-text-main: #111111; /* Darker for clarity */
   --vteke-text-muted: #555555;
-  --vteke-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --vteke-font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
   
   /* Increased Dimensions */
   --vteke-header-height: 95px; 

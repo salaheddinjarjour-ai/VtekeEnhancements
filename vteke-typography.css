@@ -1,0 +1,125 @@
+/* ============================================================
+   VTEKE — Enterprise Typography System
+   Inspired by Siemens / ABB / Schneider Electric
+   Fonts: Montserrat (headings) + Inter (body/UI)
+   ============================================================ */
+
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap');
+
+/* --- Typography Variables --- */
+:root {
+    --font-heading:  'Montserrat', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --font-body:     'Inter',      'Segoe UI', system-ui, -apple-system, sans-serif;
+
+    /* Scale */
+    --text-h1:    clamp(2rem,   4vw, 3rem);       /* 48px max */
+    --text-h2:    clamp(1.6rem, 3vw, 2.25rem);    /* 36px max */
+    --text-h3:    clamp(1.25rem, 2vw, 1.625rem);  /* 26px max */
+    --text-h4:    1.125rem;                        /* 18px */
+    --text-body:  0.9375rem;                       /* 15px */
+    --text-sm:    0.8125rem;                       /* 13px */
+    --text-xs:    0.75rem;                         /* 12px */
+
+    /* Weights */
+    --fw-regular:   400;
+    --fw-medium:    500;
+    --fw-semibold:  600;
+    --fw-bold:      700;
+    --fw-extrabold: 800;
+
+    /* Spacing */
+    --lh-tight:   1.2;
+    --lh-snug:    1.35;
+    --lh-normal:  1.6;
+    --lh-relaxed: 1.75;
+    --ls-heading: 0.02em;
+    --ls-label:   0.04em;
+    --ls-tight:   -0.01em;
+}
+
+/* --- Global Base --- */
+body {
+    font-family: var(--font-body);
+    font-size:   var(--text-body);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* --- Heading System --- */
+h1, h2, h3, h4, h5, h6,
+.heading {
+    font-family:    var(--font-heading);
+    line-height:    var(--lh-tight);
+    letter-spacing: var(--ls-heading);
+    font-weight:    var(--fw-bold);
+    color:          inherit;
+    margin-bottom:  0.5em;
+}
+
+h1 { font-size: var(--text-h1); font-weight: var(--fw-extrabold); }
+h2 { font-size: var(--text-h2); font-weight: var(--fw-bold);      }
+h3 { font-size: var(--text-h3); font-weight: var(--fw-semibold);  }
+h4 { font-size: var(--text-h4); font-weight: var(--fw-semibold);  }
+h5, h6 { font-size: var(--text-body); font-weight: var(--fw-semibold); }
+
+/* --- Body Text --- */
+p {
+    font-family: var(--font-body);
+    font-size:   var(--text-body);
+    line-height: var(--lh-relaxed);
+    max-width:   68ch;   /* never too wide — readability rule */
+}
+
+/* --- Labels / Overlines / Badges --- */
+.label,
+.overline,
+.category-label,
+.tag,
+[class*="-label"],
+[class*="-badge"],
+[class*="-tag"] {
+    font-family:    var(--font-body);
+    font-size:      var(--text-xs);
+    font-weight:    var(--fw-semibold);
+    letter-spacing: var(--ls-label);
+    text-transform: uppercase;
+}
+
+/* --- Buttons / CTAs --- */
+button, .btn,
+[class*="-btn"],
+[class*="-button"],
+a[class*="btn"],
+a[class*="button"] {
+    font-family:    var(--font-body);
+    font-weight:    var(--fw-semibold);
+    letter-spacing: 0.03em;
+}
+
+/* --- Navigation --- */
+nav, .nav,
+[class*="-nav"],
+[class*="-menu"],
+[class*="-link"] {
+    font-family: var(--font-body);
+    font-weight: var(--fw-medium);
+    font-size:   var(--text-sm);
+    letter-spacing: var(--ls-label);
+    text-transform: uppercase;
+}
+
+/* --- Tables & Data --- */
+table, th, td {
+    font-family: var(--font-body);
+    font-size:   var(--text-sm);
+}
+
+/* --- Small text --- */
+small, .text-sm, .text-xs {
+    font-family: var(--font-body);
+    font-size:   var(--text-sm);
+}
