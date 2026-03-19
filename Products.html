@@ -832,27 +832,27 @@ data-zh="搜索产品...">
 <span class="category-name" data-en="All Products" data-tr="Tüm Ürünler" data-ar="جميع المنتجات" data-es="Todos los Productos" data-ru="Все Продукты" data-fa="همه محصولات" data-de="Alle Produkte" data-fr="Tous les Produits" data-zh="所有产品">All Products</span>
 <span class="category-count">12</span>
 </button>
-<button class="category-item" data-category="transformers" onclick="filterProducts('transformers')">
+<button class="category-item" data-category="transformers" onclick="window.location.href='Current Transformer.html'">
 <span class="category-name" data-en="Transformers" data-tr="Transformatörler" data-ar="المحولات" data-es="Transformadores" data-ru="Трансформаторы" data-fa="ترانسفورماتورها" data-de="Transformatoren" data-fr="Transformateurs" data-zh="变压器">Transformers</span>
 <span class="category-count">1</span>
 </button>
-<button class="category-item" data-category="relays" onclick="filterProducts('relays')">
+<button class="category-item" data-category="relays" onclick="window.location.href='protection relay.html'">
 <span class="category-name" data-en="Relays" data-tr="Röleler" data-ar="المرحلات" data-es="Relés" data-ru="Реле" data-fa="رله ها" data-de="Relais" data-fr="Relais" data-zh="继电器">Relays</span>
 <span class="category-count">3</span>
 </button>
-<button class="category-item" data-category="meters" onclick="filterProducts('meters')">
+<button class="category-item" data-category="meters" onclick="window.location.href='analog meters.html'">
 <span class="category-name" data-en="Meters" data-tr="Ölçerler" data-ar="العدادات" data-es="Medidores" data-ru="Счетчики" data-fa="مترها" data-de="Messgeräte" data-fr="Compteurs" data-zh="仪表">Meters</span>
 <span class="category-count">2</span>
 </button>
-<button class="category-item" data-category="analyzers" onclick="filterProducts('analyzers')">
+<button class="category-item" data-category="analyzers" onclick="window.location.href='energy analyzer.html'">
 <span class="category-name" data-en="Analyzers" data-tr="Analizörler" data-ar="المحللات" data-es="Analizadores" data-ru="Анализаторы" data-fa="تجزیه کننده ها" data-de="Analysatoren" data-fr="Analyseurs" data-zh="分析器">Analyzers</span>
 <span class="category-count">2</span>
 </button>
-<button class="category-item" data-category="power" onclick="filterProducts('power')">
+<button class="category-item" data-category="power" onclick="window.location.href='power supply.html'">
 <span class="category-name" data-en="Power Systems" data-tr="Güç Sistemleri" data-ar="أنظمة الطاقة" data-es="Sistemas de Potencia" data-ru="Энергосистемы" data-fa="سیستم های قدرت" data-de="Energiesysteme" data-fr="Systèmes d'Alimentation" data-zh="电源系统">Power Systems</span>
 <span class="category-count">2</span>
 </button>
-<button class="category-item" data-category="transducers" onclick="filterProducts('transducers')">
+<button class="category-item" data-category="transducers" onclick="window.location.href='volt transducer.html'">
 <span class="category-name" data-en="Transducers" data-tr="Transdüserler" data-ar="المحولات" data-es="Transductores" data-ru="Преобразователи" data-fa="ترانسدیوسرها" data-de="Wandler" data-fr="Transducteurs" data-zh="变换器">Transducers</span>
 <span class="category-count">2</span>
 </button>
@@ -2213,42 +2213,48 @@ const categoriesConfig = [
         label: 'Current Transformers',
         labelTr: 'Akım Transformatörleri',
         desc: 'High-accuracy window, split-core & busbar CTs for industrial metering.',
-        image: '/vtekeimg/Current Transformers/TK30N.png'
+        image: '/vtekeimg/Current Transformers/TK30N.png',
+        href: 'Current Transformer.html'
     },
     {
         key: 'relays',
         label: 'Protection & Control Relays',
         labelTr: 'Koruma ve Kontrol Röleleri',
         desc: 'Voltage, phase, timer, liquid-level and photocell relay solutions.',
-        image: '/vtekeimg/electronic relays/pcr-04.jpg'
+        image: '/vtekeimg/electronic relays/pcr-04.jpg',
+        href: 'protection relay.html'
     },
     {
         key: 'meters',
         label: 'Meters & Instruments',
         labelTr: 'Ölçüm Cihazları',
         desc: 'Analog & digital voltmeters, ammeters, frequency and multifunction meters.',
-        image: '/vtekeimg/Analog Meters/AK-V96-500.jpg'
+        image: '/vtekeimg/Analog Meters/AK-V96-500.jpg',
+        href: 'analog meters.html'
     },
     {
         key: 'analyzers',
         label: 'Energy Analyzers',
         labelTr: 'Enerji Analizörleri',
         desc: 'Panel-mount power analyzers and power factor controllers with Modbus.',
-        image: '/vtekeimg/Energy Analyzer/EA-C1.png'
+        image: '/vtekeimg/Energy Analyzer/EA-C1.png',
+        href: 'energy analyzer.html'
     },
     {
         key: 'power',
         label: 'Power Supplies & Chargers',
         labelTr: 'Güç Kaynakları ve Şarj Cihazları',
         desc: '12/24V DC switching power supplies and industrial battery chargers.',
-        image: '/vtekeimg/Power Supply/PSU-2406.jpg'
+        image: '/vtekeimg/Power Supply/PSU-2406.jpg',
+        href: 'power supply.html'
     },
     {
         key: 'transducers',
         label: 'Transducers',
         labelTr: 'Transdüserler',
         desc: 'Voltage and current transducers for signal conversion in automation.',
-        image: '/vtekeimg/favicon.png'
+        image: '/vtekeimg/favicon.png',
+        href: 'volt transducer.html'
     }
 ];
 
@@ -2261,7 +2267,7 @@ function renderCategories() {
 
     grid.className = 'category-grid';
     grid.innerHTML = categoriesConfig.map(cat => `
-        <div class="category-card" onclick="filterProducts('${cat.key}')">
+        <a class="category-card" href="${cat.href}">
             <div class="category-card-image">
                 <img src="${cat.image}" alt="${cat.label}"
                      onerror="this.src='/vtekeimg/favicon.png'; this.style.objectFit='contain'; this.style.padding='1.5rem';">
@@ -2271,7 +2277,7 @@ function renderCategories() {
                 <p class="category-card-desc">${cat.desc}</p>
                 <span class="category-card-btn">View Products →</span>
             </div>
-        </div>
+        </a>
     `).join('');
 }
 
