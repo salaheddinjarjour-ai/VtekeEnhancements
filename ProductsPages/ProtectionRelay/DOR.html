@@ -172,7 +172,6 @@
             <!-- Product Image Section -->
             <div class="product-image-section">
                 <div class="main-image-wrapper" onclick="openLightbox(this)">
-                    <img src="/images/products/dor-main.jpg" alt="DOR Over Current Relay" class="product-main-image" id="main-image">
                     <div class="zoom-hint">
                         <i class="fas fa-expand"></i>
                         <span class="hint-en">Click to enlarge</span>
@@ -182,16 +181,11 @@
                                                                                                             <!-- ✅ Lightbox Container (Required for JS to work) -->
 <div id="lightbox" class="image-lightbox" onclick="closeLightbox(event)">
     <div class="lightbox-content" onclick="event.stopPropagation()">
-        <img src="" alt="Preview" id="lightbox-img">
         <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
     </div>
 </div>
                 <!-- Gallery -->
                 <div class="product-gallery">
-                    <img src="/images/products/dor-front.jpg" alt="Front View" class="gallery-image active" onclick="changeImage(this)">
-                    <img src="/images/products/dor-side.jpg" alt="Side View" class="gallery-image" onclick="changeImage(this)">
-                    <img src="/images/products/dor-wiring.jpg" alt="Wiring Diagram" class="gallery-image" onclick="changeImage(this)">
-                    <img src="/images/products/dor-installation.jpg" alt="Installation" class="gallery-image" onclick="changeImage(this)">
                 </div>
             </div>
 
@@ -330,22 +324,18 @@
             </h2>
             <div class="products-slider">
                 <div class="related-product-card" onclick="loadProduct('ELR-V2')">
-                    <img src="/images/products/elr-v2-thumb.jpg" alt="ELR-V2">
                     <h4>ELR-V2</h4>
                     <p>Earth Leakage Relay</p>
                 </div>
                 <div class="related-product-card" onclick="loadProduct('PPR-05F')">
-                    <img src="/images/products/ppr-05f-thumb.jpg" alt="PPR-05F">
                     <h4>PPR-05F</h4>
                     <p>Multi-Function Protection</p>
                 </div>
                 <div class="related-product-card" onclick="loadProduct('VCR-11')">
-                    <img src="/images/products/vcr-11-thumb.jpg" alt="VCR-11">
                     <h4>VCR-11</h4>
                     <p>Voltage Control</p>
                 </div>
                 <div class="related-product-card" onclick="loadProduct('PPR-06F')">
-                    <img src="/images/products/ppr-06f-thumb.jpg" alt="PPR-06F">
                     <h4>PPR-06F</h4>
                     <p>Phase Protection</p>
                 </div>
@@ -359,7 +349,6 @@
             <button class="lightbox-close" onclick="closeLightbox()">
                 <i class="fas fa-times"></i>
             </button>
-            <img src="" alt="" id="lightbox-img">
         </div>
     </div>
 

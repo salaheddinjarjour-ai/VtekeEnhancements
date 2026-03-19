@@ -174,7 +174,6 @@
             <!-- Product Image Section -->
             <div class="product-image-section">
                 <div class="main-image-wrapper" onclick="openLightbox(this)">
-                    <img src="/vtekeimg/mm.jpeg" alt="PCR-04 Photocell Relay" class="product-main-image" id="main-image">
                     <div class="zoom-hint">
                         <i class="fas fa-expand"></i>
                         <span class="hint-en">Click to enlarge</span>
@@ -184,16 +183,11 @@
                                                                             <!-- ✅ Lightbox Container (Required for JS to work) -->
 <div id="lightbox" class="image-lightbox" onclick="closeLightbox(event)">
     <div class="lightbox-content" onclick="event.stopPropagation()">
-        <img src="" alt="Preview" id="lightbox-img">
         <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
     </div>
 </div>
                 <!-- Gallery -->
                 <div class="product-gallery">
-                    <img src="/images/products/pcr-04-front.jpg" alt="Front View" class="gallery-image active" onclick="changeImage(this)">
-                    <img src="/vtekeimg/mm.jpeg" alt="Adjustment Dial" class="gallery-image" onclick="changeImage(this)">
-                    <img src="/images/products/pcr-04-sensor.jpg" alt="Light Sensor" class="gallery-image" onclick="changeImage(this)">
-                    <img src="/images/products/pcr-04-installation.jpg" alt="Installation" class="gallery-image" onclick="changeImage(this)">
                 </div>
             </div>
 
@@ -360,22 +354,18 @@
             </h2>
             <div class="products-slider">
                 <div class="related-product-card" onclick="loadProduct('PCR-03')">
-                    <img src="/images/products/pcr-03-thumb.jpg" alt="PCR-03">
                     <h4>PCR-03</h4>
                     <p>Fixed Photocell</p>
                 </div>
                 <div class="related-product-card" onclick="loadProduct('DTR-SC')">
-                    <img src="/images/products/dtr-sc-thumb.jpg" alt="DTR-SC">
                     <h4>DTR-SC</h4>
                     <p>Staircase Timer</p>
                 </div>
                 <div class="related-product-card" onclick="loadProduct('LLR-05')">
-                    <img src="/images/products/llr-05-thumb.jpg" alt="LLR-05">
                     <h4>LLR-05</h4>
                     <p>Liquid Level Relay</p>
                 </div>
                 <div class="related-product-card" onclick="loadProduct('VCR-11')">
-                    <img src="/images/products/vcr-11-thumb.jpg" alt="VCR-11">
                     <h4>VCR-11</h4>
                     <p>Voltage Control Relay</p>
                 </div>
@@ -389,7 +379,6 @@
             <button class="lightbox-close" onclick="closeLightbox()">
                 <i class="fas fa-times"></i>
             </button>
-            <img src="" alt="" id="lightbox-img">
         </div>
     </div>
 
