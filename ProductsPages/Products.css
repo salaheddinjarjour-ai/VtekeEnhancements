@@ -158,7 +158,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0;
-    overflow: hidden;
+    overflow: visible;                      /* allow sticky to work */
+    /* Sticky floating image on desktop */
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    transition: box-shadow 0.3s ease;
 }
 
 .main-image-wrapper {
@@ -627,6 +632,11 @@ body {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0 8px;
+    }
+    /* Disable sticky on mobile — layout is single column anyway */
+    .product-image-section {
+        position: relative;
+        top: auto;
     }
     .product-title {
         font-size: 1.8rem;
