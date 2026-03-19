@@ -150,7 +150,7 @@
     
     body {
       background: var(--light);
-      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
       color: var(--gray-800);
       line-height: 1.6;
     }
@@ -192,7 +192,7 @@
     }
 
     .section-title {
-      font-family: 'Manrope', 'Inter', sans-serif;
+      font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
       font-size: 3rem;
       font-weight: 800;
       color: var(--gray-800);

@@ -29,7 +29,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    font-family: 'Montserrat', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: var(--font-heading, 'Montserrat', 'Inter', system-ui, sans-serif);
     background: linear-gradient(135deg, var(--steel-light) 0%, var(--gray-100) 100%);
     color: var(--gray-800);
     line-height: 1.6;

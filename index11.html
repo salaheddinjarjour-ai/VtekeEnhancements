@@ -516,9 +516,9 @@ box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.02);
 .vp-title-wrapper { display: flex; align-items: center; justify-content: center; gap: 30px; margin-bottom: 20px; }
 .vp-title-line { flex: 1; max-width: 150px; height: 2px; background: linear-gradient(90deg, transparent, #C40000); position: relative; }
 .vp-title-line:last-child { background: linear-gradient(90deg, #C40000, transparent); }
-.vp-industrial-title { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2.8rem; font-weight: 900; color: #1a1a1a; margin: 0; letter-spacing: 2px; line-height: 1.1; text-transform: uppercase; white-space: nowrap; transition: all 0.3s ease; }
+.vp-industrial-title { font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif); font-size: 2.8rem; font-weight: 900; color: #1a1a1a; margin: 0; letter-spacing: 2px; line-height: 1.1; text-transform: uppercase; white-space: nowrap; transition: all 0.3s ease; }
 .vp-industrial-title:hover { color: #C40000; transform: scale(1.05); }
-.vp-industrial-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 24px; background: linear-gradient(135deg, #C40000, #8B0000); color: #ffffff; border-radius: 50px; font-weight: 800; font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 20px; border: 2px solid rgba(255, 255, 255, 0.3); box-shadow: 0 8px 32px rgba(200, 13, 44, 0.5); text-transform: uppercase; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.vp-industrial-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 24px; background: linear-gradient(135deg, #C40000, #8B0000); color: #ffffff; border-radius: 50px; font-weight: 800; font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 20px; border: 2px solid rgba(255, 255, 255, 0.3); box-shadow: 0 8px 32px rgba(200, 13, 44, 0.5); text-transform: uppercase; font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif); }
 .vp-industrial-badge-icon { font-size: 1.1rem; }
 .vp-section-label { display: block; font-size: 0.85rem; letter-spacing: 4px; color: rgba(0, 0, 0, 0.7); margin-bottom: 8px; text-transform: uppercase; font-weight: 600; }
 .vp-industrial-subtitle { font-size: 1rem; color: rgba(0, 0, 0, 0.75); margin-top: 20px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
@@ -527,7 +527,7 @@ box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.02);
 .vp-industrial-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #C40000, #E10600, #E70012, #E10600, #C40000); background-size: 300% 100%; animation: shimmer 3s ease-in-out infinite; z-index: 20; }
 @keyframes shimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
 .vp-industrial-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(200, 13, 44, 0.25); z-index: 30; border-color: rgba(200, 13, 44, 0.4); }
-.vp-product-number { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #C40000, #8B0000); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.1rem; color: white; z-index: 15; box-shadow: 0 4px 15px rgba(200, 13, 44, 0.4); border: 2px solid rgba(255, 255, 255, 0.5); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.vp-product-number { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #C40000, #8B0000); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.1rem; color: white; z-index: 15; box-shadow: 0 4px 15px rgba(200, 13, 44, 0.4); border: 2px solid rgba(255, 255, 255, 0.5); font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif); }
 .vp-industrial-img-container {
 height: 280px;
 overflow: visible;
@@ -553,20 +553,20 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 .vp-industrial-card:hover .vp-industrial-img-container { background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%); }
 .vp-industrial-card:hover .vp-industrial-img { transform: scale(1.12); filter: drop-shadow(0 18px 35px rgba(200, 13, 44, 0.3)); }
 .vp-industrial-content { padding: 20px 18px; flex-grow: 1; display: flex; flex-direction: column; background: #ffffff; position: relative; }
-.vp-industrial-category { font-size: 0.75rem; color: #C40000; font-weight: 800; margin-bottom: 8px; letter-spacing: 2px; text-transform: uppercase; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; align-items: center; gap: 6px; }
+.vp-industrial-category { font-size: 0.75rem; color: #C40000; font-weight: 800; margin-bottom: 8px; letter-spacing: 2px; text-transform: uppercase; font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif); display: flex; align-items: center; gap: 6px; }
 .vp-industrial-category::before { content: '▸'; font-size: 0.9rem; }
-.vp-industrial-product-title { font-size: 1.4rem; font-weight: 900; color: #1a1a1a; margin: 0 0 12px; line-height: 1.2; transition: all 0.3s ease; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; letter-spacing: 0.8px; }
+.vp-industrial-product-title { font-size: 1.4rem; font-weight: 900; color: #1a1a1a; margin: 0 0 12px; line-height: 1.2; transition: all 0.3s ease; font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif); text-transform: uppercase; letter-spacing: 0.8px; }
 .vp-industrial-card:hover .vp-industrial-product-title { color: #C40000; }
 .vp-tech-specs { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
 .vp-tech-tag { background: rgba(200, 13, 44, 0.08); padding: 4px 10px; border-radius: 15px; font-size: 0.7rem; font-weight: 700; color: #C40000; border: 1px solid rgba(200, 13, 44, 0.15); letter-spacing: 0.3px; }
-.vp-industrial-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; background: linear-gradient(135deg, #C40000, #8B0000); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 800; letter-spacing: 1px; transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1); text-align: center; width: 100%; box-shadow: 0 6px 20px rgba(200, 13, 44, 0.35); position: relative; font-size: 0.85rem; margin-top: auto; border: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; }
+.vp-industrial-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; background: linear-gradient(135deg, #C40000, #8B0000); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 800; letter-spacing: 1px; transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1); text-align: center; width: 100%; box-shadow: 0 6px 20px rgba(200, 13, 44, 0.35); position: relative; font-size: 0.85rem; margin-top: auto; border: none; font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif); text-transform: uppercase; }
 .vp-industrial-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(200, 13, 44, 0.5); letter-spacing: 1.2px; background: linear-gradient(135deg, #E70012, #C40000); }
 .vp-industrial-arrow { transition: all 0.35s ease; font-weight: 900; }
 .vp-industrial-btn:hover .vp-industrial-arrow { transform: translateX(6px); }
 .vp-industrial-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; padding-top: 15px; border-top: 1px solid rgba(200, 13, 44, 0.15); }
 .vp-rating { display: flex; align-items: center; gap: 6px; }
 .vp-rating-stars { color: #ffc860; font-size: 0.9rem; letter-spacing: -2px; }
-.vp-rating-value { color: #C40000; font-weight: 900; font-size: 1rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.vp-rating-value { color: #C40000; font-weight: 900; font-size: 1rem; font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif); }
 .vp-projects { display: flex; align-items: center; gap: 5px; color: #666666; font-weight: 700; font-size: 0.8rem; background: rgba(200, 13, 44, 0.08); padding: 5px 12px; border-radius: 15px; border: 1px solid rgba(200, 13, 44, 0.15); }
 .vp-project-icon { color: #C40000; font-size: 14px; }
 @keyframes card-fade-in { from { opacity: 0; transform: translateY(30px) scale(0.95); } to { opacity: 1; transform: translateY(0) scale(1); } }

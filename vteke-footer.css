@@ -99,7 +99,7 @@
             position: relative;
             padding-bottom: 10px;
             display: block;
-            font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -145,7 +145,7 @@
             opacity: 0.92;
             max-width: 380px;
             font-weight: 400;
-            font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
             line-height: 1.65;
             letter-spacing: 0.01em;
         }
@@ -260,7 +260,7 @@
             font-weight: 500;
             position: relative;
             padding: 4px 0;
-            font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
         }
         
         .vteke-footer-link-anchor:hover {
@@ -321,7 +321,7 @@
             display: block;
             line-height: 1.5;
             word-break: break-word;
-            font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
         }
         
         .vteke-footer-contact-link:hover {
@@ -344,7 +344,7 @@
             line-height: 1.65;
             max-width: 320px;
             font-weight: 400;
-            font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
         }
         
         /* COPYRIGHT SECTION */
@@ -365,7 +365,7 @@
             max-width: 700px;
             line-height: 1.6;
             opacity: 0.92;
-            font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            font-family: var(--font-body, 'Inter', 'Segoe UI', system-ui, sans-serif);
             margin: 0 auto;
             text-align: center;
         }
