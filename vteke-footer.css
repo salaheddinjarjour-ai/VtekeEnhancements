@@ -272,7 +272,7 @@
         .vteke-footer-contact-container {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 12px;
             margin-top: 8px;
         }
         
@@ -315,11 +315,11 @@
         .vteke-footer-contact-text {
             color: #1a1a1a;
             text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1.12rem;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
             font-weight: 500;
             display: block;
-            line-height: 1.55;
+            line-height: 1.5;
             word-break: break-word;
             font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
         }
