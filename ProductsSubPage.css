@@ -153,21 +153,16 @@ body {
 /* Product Image Box — standardized */
 .product-image {
     width: 100%;
-    height: 180px;
-    background: #f6f6f6;
+    height: 260px;
+    background: transparent;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    box-shadow: inset 0 2px 8px rgba(0,0,0,0.04);
     transition: var(--transition);
     border: none;
-}
-.product-link:hover .product-image {
-    transform: translateY(-3px);
-    box-shadow: inset 0 2px 8px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.08);
 }
 
 /* Product Badge */
@@ -298,10 +293,10 @@ body {
     transform: translateY(-3px);
 }
 
-/* Real Image — standardized 80% constraint */
+/* Real Image — standardized 90% constraint, no hover animation */
 .product-real-image {
-    max-width: 80% !important;
-    max-height: 80% !important;
+    max-width: 90% !important;
+    max-height: 90% !important;
     width: auto !important;
     height: auto !important;
     object-fit: contain !important;
@@ -309,12 +304,7 @@ body {
     display: block !important;
     position: relative;
     z-index: 2;
-    transition: transform 0.5s ease;
     background: transparent !important;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.08));
-}
-.product-link:hover .product-real-image {
-    transform: scale(1.06);
 }
 
 /* Responsive Design */
