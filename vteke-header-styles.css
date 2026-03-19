@@ -135,7 +135,7 @@
 .vteke-pro-nav-link-element {
   text-decoration: none;
   color: var(--vteke-text-main);
-  font-size: 17px; /* Clearer Text */
+  font-size: 18px; /* Clearer Text */
   font-weight: 800; /* Bolder */
   letter-spacing: 0.6px;
   text-transform: uppercase;
