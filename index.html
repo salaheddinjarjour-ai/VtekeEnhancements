@@ -196,8 +196,8 @@ BANNER SLIDER STYLES
 .indicator.active { background: linear-gradient(135deg, #C40000, #E31E3F); border-color: rgba(255, 255, 255, 0.9); transform: scale(1.4); box-shadow: 0 0 15px rgba(200, 13, 44, 0.7); }
 
 
-.view-specs-btn { display: inline-block; margin-top: 14px; padding: 10px 24px; background: linear-gradient(135deg, #C40000 0%, #E10600 100%); color: #ffffff; font-size: 0.875rem; font-weight: 600; border-radius: 25px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(196, 0, 0, 0.3); }
-.view-specs-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(196, 0, 0, 0.4); background: linear-gradient(135deg, #E10600 0%, #C40000 100%); }
+.view-details-btn { display: inline-block; padding: 9px 22px; background: #E10600; color: #ffffff; font-size: 0.82rem; font-weight: 600; border-radius: 6px; text-decoration: none; transition: all 0.3s ease; letter-spacing: 0.3px; }
+.view-details-btn:hover { transform: translateY(-2px); background: #C40000; box-shadow: 0 4px 12px rgba(196,0,0,0.2); }
 @media (min-width: 768px) and (max-width: 1023px) { .control-btn { width: 50px; height: 50px; font-size: 1.5rem; } }
 @media (min-width: 1024px) { .slider-section { width: 100%; background: #ffffff; padding: 0; margin: 0; height: calc(100vh - 80px); } .slides-wrapper { width: 100%; height: 100%; } .slide { min-width: 100%; height: 100%; padding: 0; display: flex; align-items: center; justify-content: center; } .slide img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; } .controls { width: calc(100% - 80px); left: 40px; padding: 0; } .control-btn { width: 60px; height: 60px; font-size: 1.8rem; background: linear-gradient(135deg, rgba(200, 13, 44, 0.85), rgba(139, 0, 0, 0.85)); border: 3px solid rgba(255, 255, 255, 0.5); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); } .control-btn:hover { transform: scale(1.1); background: linear-gradient(135deg, rgba(227, 30, 63, 0.9), rgba(200, 13, 44, 0.9)); } .indicators { bottom: 30px; gap: 15px; } .indicator { width: 14px; height: 14px; border-width: 3px; } .indicator.active { transform: scale(1.5); box-shadow: 0 0 20px rgba(200, 13, 44, 0.8); } }
 @media (min-width: 1440px) { .control-btn { width: 70px; height: 70px; font-size: 2rem; } .controls { width: calc(100% - 100px); left: 50px; } }
@@ -416,16 +416,16 @@ PRODUCT SLIDER STYLES
 .product-slider { position: relative; overflow: hidden; padding: var(--ps-spacing-lg) 0; width: 100%; }
 .slider-track { display: flex; transition: transform 0.65s var(--ps-transition-ease); will-change: transform; }
 .product-item { flex: 0 0 auto; width: 100%; padding: 0 var(--ps-spacing-md); opacity: 0.85; transition: opacity 0.5s var(--ps-transition-ease), transform 0.65s var(--ps-transition-ease); position: relative; display: flex; justify-content: center; }
-.product-card { background: var(--ps-white); border-radius: 14px; overflow: hidden; box-shadow: var(--ps-shadow-md); width: 100%; max-width: 480px; display: flex; flex-direction: column; height: 100%; transition: all 0.6s var(--ps-transition-ease); position: relative; transform: scale(0.98); will-change: transform, box-shadow; border: 1px solid #f0f0f0; }
-.product-card:hover { transform: scale(1.01); box-shadow: var(--ps-shadow-xl); }
-.product-card.active { transform: scale(1.03); box-shadow: var(--ps-shadow-xl); z-index: 10; opacity: 1 !important; }
-.product-image { height: 400px; background: linear-gradient(180deg, #fafafa 0%, #f2f2f2 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-.product-image::before { content: ''; position: absolute; width: 200%; height: 200%; background: radial-gradient(circle, rgba(200, 13, 44, 0.1) 0%, rgba(255,255,255,0) 70%); top: -50%; left: -50%; transform: scale(0.8); transition: transform 0.7s var(--ps-transition-ease); }
-.product-card:hover .product-image::before { transform: scale(1.2); }
-.product-image img { width: 100%; height: 100%; object-fit: cover; padding: 0; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15)); transition: transform 0.7s var(--ps-transition-ease); }
-.product-card:hover .product-image img { transform: scale(1.08); }
-.product-content { padding: var(--ps-spacing-lg); padding-top: var(--ps-spacing-xl); padding-bottom: var(--ps-spacing-xl); background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.85)); text-align: center; }
-.product-title { font-family: var(--ps-font-sans); font-size: 1.5rem; font-weight: 700; color: #111111; line-height: 1.3; }
+.product-card { background: #ffffff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); width: 100%; max-width: 480px; display: flex; flex-direction: column; height: 100%; transition: all 0.3s ease; position: relative; will-change: transform, box-shadow; border: 1px solid #f0f0f0; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); border-color: rgba(225,6,0,0.2); }
+.product-card.active { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); z-index: 10; opacity: 1 !important; }
+.product-image { height: 220px; background: #f6f6f6; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; border-radius: 10px 10px 0 0; box-shadow: inset 0 2px 8px rgba(0,0,0,0.04); }
+/* product-image pseudo-element removed */
+
+.product-image img { max-width: 80%; max-height: 80%; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); transition: transform 0.3s ease; }
+.product-card:hover .product-image img { transform: scale(1.04); }
+.product-content { padding: 14px 16px 20px; background: #ffffff; text-align: center; }
+.product-title { font-family: var(--ps-font-sans); font-size: 1.4rem; font-weight: 700; color: #111111; line-height: 1.3; margin-bottom: 14px; }
 .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 64px; height: 64px; border-radius: 50%; background: rgba(255, 255, 255, 0.95); border: 1px solid rgba(229, 231, 235, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); color: #111111; font-size: 1.75rem; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 100; transition: all 0.35s var(--ps-transition-ease); box-shadow: var(--ps-shadow-md); line-height: 1; padding: 0; user-select: none; }
 .slider-btn::after { content: ''; position: absolute; width: 100%; height: 100%; border-radius: 50%; background: rgba(200, 13, 44, 0.1); opacity: 0; transition: opacity 0.3s; z-index: -1; }
 .slider-btn:hover::after { opacity: 1; }
@@ -440,11 +440,11 @@ PRODUCT SLIDER STYLES
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 
-.view-specs-btn { display: inline-block; margin-top: 14px; padding: 10px 24px; background: linear-gradient(135deg, #C40000 0%, #E10600 100%); color: #ffffff; font-size: 0.875rem; font-weight: 600; border-radius: 25px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(196, 0, 0, 0.3); }
-.view-specs-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(196, 0, 0, 0.4); background: linear-gradient(135deg, #E10600 0%, #C40000 100%); }
-@media (min-width: 768px) { .product-item { width: 50%; } .product-image { height: 360px; } .product-title { font-size: 1.625rem; } }
-@media (min-width: 1024px) { .product-item { width: 33.3333%; } .product-image { height: 400px; } .product-title { font-size: 1.75rem; } .slider-btn { width: 72px; height: 72px; font-size: 2rem; } .slider-btn.prev { left: 40px; } .slider-btn.next { right: 40px; } }
-@media (max-width: 767px) { .product-image { height: 280px; } .product-title { font-size: 1.375rem; } .slider-btn { width: 56px; height: 56px; font-size: 1.5rem; } .slider-btn.prev { left: 16px; } .slider-btn.next { right: 16px; } .slider-dots { margin-top: var(--ps-spacing-md); } }
+.view-details-btn { display: inline-block; padding: 9px 22px; background: #E10600; color: #ffffff; font-size: 0.82rem; font-weight: 600; border-radius: 6px; text-decoration: none; transition: all 0.3s ease; letter-spacing: 0.3px; }
+.view-details-btn:hover { transform: translateY(-2px); background: #C40000; box-shadow: 0 4px 12px rgba(196,0,0,0.2); }
+@media (min-width: 768px) { .product-item { width: 50%; } .product-image { height: 220px; } .product-title { font-size: 1.5rem; } }
+@media (min-width: 1024px) { .product-item { width: 33.3333%; } .product-image { height: 220px; } .product-title { font-size: 1.5rem; } .slider-btn { width: 72px; height: 72px; font-size: 2rem; } .slider-btn.prev { left: 40px; } .slider-btn.next { right: 40px; } }
+@media (max-width: 767px) { .product-image { height: 200px; } .product-title { font-size: 1.25rem; } .slider-btn { width: 56px; height: 56px; font-size: 1.5rem; } .slider-btn.prev { left: 16px; } .slider-btn.next { right: 16px; } .slider-dots { margin-top: var(--ps-spacing-md); } }
 </style>
 
 <!-- Product Slider Section -->
@@ -452,18 +452,18 @@ PRODUCT SLIDER STYLES
 <div class="product-slider-container">
 <div class="product-slider" role="region" aria-label="Product slider">
 <div class="slider-track" id="slider-track">
-<a href="Current Transformer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/ALL.png" alt="VTEKE Current Transformers - Industrial Grade" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Current Transformer" data-lang-tr="Akım Transformatörü">Current Transformer</h3><a href="Current Transformer.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="timers.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Timers - Precision Control" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Timers" data-lang-tr="Zaman Röleleri">Timers</h3><a href="timers.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="protection relay.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Protection Relays - Safety Systems" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Protection Relay" data-lang-tr="Koruma Rölesi">Protection Relay</h3><a href="protection relay.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="control relay.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/electronic relays/pcr-04.jpg" alt="VTEKE Control Relays - Automation" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Control Relay" data-lang-tr="[^"]*">Control Relay</h3><a href="control_relay.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="digital meters.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Digital Meters - Accurate Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Digital Meters" data-lang-tr="[^"]*">Digital Meters</h3><a href="digital_meters.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="analog meters.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Analog Meters/AK-V96-500.jpg" alt="VTEKE Analog Meters - Classic Design" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Analog Meters" data-lang-tr="[^"]*">Analog Meters</h3><a href="analog_meters.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="power factor controller.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Power Factor/PFC-12S.jpg" alt="VTEKE Power Factor Controllers - Energy Efficiency" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Power Factor Controller" data-lang-tr="[^"]*">Power Factor Controller</h3><a href="power factor controller.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="energy analyzer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Energy Analyzer/ALL.png" alt="VTEKE Energy Analyzers - Power Monitoring" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Energy Analyzer" data-lang-tr="[^"]*">Energy Analyzer</h3><a href="energy analyzer.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="battery charger.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Battery Charger/VBC-1205.png" alt="VTEKE Battery Chargers - Reliable Power" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Battery Charger" data-lang-tr="[^"]*">Battery Charger</h3><a href="battery charger.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="power supply.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Power Supply/PSU-2406.jpg" alt="VTEKE Power Supplies - Stable Output" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Power Supply" data-lang-tr="[^"]*">Power Supply</h3><a href="power supply.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="volt transducer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Volt Transducers - Voltage Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Volt Transducer" data-lang-tr="[^"]*">Volt Transducer</h3><a href="volt transducer.html" class="view-specs-btn">View Specs</a></div></div></div></a>
-<a href="ampere transducer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Ampere Transducers - Current Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Ampere Transducer" data-lang-tr="[^"]*">Ampere Transducer</h3><a href="ampere transducer.html" class="view-specs-btn">View Specs</a></div></div></div></a>
+<a href="Current Transformer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/ALL.png" alt="VTEKE Current Transformers - Industrial Grade" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Current Transformer" data-lang-tr="Akım Transformatörü">Current Transformer</h3><a href="Current Transformer.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="timers.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Timers - Precision Control" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Timers" data-lang-tr="Zaman Röleleri">Timers</h3><a href="timers.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="protection relay.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Protection Relays - Safety Systems" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Protection Relay" data-lang-tr="Koruma Rölesi">Protection Relay</h3><a href="protection relay.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="control relay.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/electronic relays/pcr-04.jpg" alt="VTEKE Control Relays - Automation" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Control Relay" data-lang-tr="[^"]*">Control Relay</h3><a href="control_relay.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="digital meters.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Digital Meters - Accurate Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Digital Meters" data-lang-tr="[^"]*">Digital Meters</h3><a href="digital_meters.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="analog meters.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Analog Meters/AK-V96-500.jpg" alt="VTEKE Analog Meters - Classic Design" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Analog Meters" data-lang-tr="[^"]*">Analog Meters</h3><a href="analog_meters.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="power factor controller.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Power Factor/PFC-12S.jpg" alt="VTEKE Power Factor Controllers - Energy Efficiency" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Power Factor Controller" data-lang-tr="[^"]*">Power Factor Controller</h3><a href="power factor controller.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="energy analyzer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Energy Analyzer/ALL.png" alt="VTEKE Energy Analyzers - Power Monitoring" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Energy Analyzer" data-lang-tr="[^"]*">Energy Analyzer</h3><a href="energy analyzer.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="battery charger.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Battery Charger/VBC-1205.png" alt="VTEKE Battery Chargers - Reliable Power" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Battery Charger" data-lang-tr="[^"]*">Battery Charger</h3><a href="battery charger.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="power supply.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Power Supply/PSU-2406.jpg" alt="VTEKE Power Supplies - Stable Output" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Power Supply" data-lang-tr="[^"]*">Power Supply</h3><a href="power supply.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="volt transducer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Volt Transducers - Voltage Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Volt Transducer" data-lang-tr="[^"]*">Volt Transducer</h3><a href="volt transducer.html" class="view-details-btn">View Details</a></div></div></div></a>
+<a href="ampere transducer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Ampere Transducers - Current Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Ampere Transducer" data-lang-tr="[^"]*">Ampere Transducer</h3><a href="ampere transducer.html" class="view-details-btn">View Details</a></div></div></div></a>
 </div>
 <button class="slider-btn prev" aria-label="Previous product"><span class="visually-hidden">Previous product</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
 <button class="slider-btn next" aria-label="Next product"><span class="visually-hidden">Next product</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
@@ -511,10 +511,9 @@ INDUSTRIAL EXCELLENCE PRODUCTS STYLES
 <style>
 .vp-industrial-section {
 background: #F5F5F5;
-padding: 80px 0 60px;
+padding: 60px 0 50px;
 position: relative;
 overflow: visible;
-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.02);
 }
 .vp-industrial-container { max-width: 1400px; margin: 0 auto; padding: 0 30px; position: relative; z-index: 1; }
 .vp-industrial-header { text-align: center; max-width: 900px; margin: 0 auto 50px; position: relative; }
@@ -522,50 +521,49 @@ box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.02);
 .vp-title-line { flex: 1; max-width: 150px; height: 2px; background: linear-gradient(90deg, transparent, #C40000); position: relative; }
 .vp-title-line:last-child { background: linear-gradient(90deg, #C40000, transparent); }
 .vp-industrial-title { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2.8rem; font-weight: 900; color: #1a1a1a; margin: 0; letter-spacing: 2px; line-height: 1.1; text-transform: uppercase; white-space: nowrap; transition: all 0.3s ease; }
-.vp-industrial-title:hover { color: #C40000; transform: scale(1.05); }
+.vp-industrial-title:hover { color: #1a1a1a; }
 
 
 
 .vp-industrial-subtitle { font-size: 1rem; color: rgba(0, 0, 0, 0.75); margin-top: 20px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
 .vp-industrial-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
-.vp-industrial-card { background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; height: 100%; display: flex; flex-direction: column; border: 1px solid rgba(200, 13, 44, 0.15); }
+.vp-industrial-card { background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; position: relative; height: 100%; display: flex; flex-direction: column; border: 1px solid #f0f0f0; }
 .vp-industrial-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #C40000, #E10600, #E70012, #E10600, #C40000); background-size: 300% 100%; animation: shimmer 3s ease-in-out infinite; z-index: 20; }
 @keyframes shimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
-.vp-industrial-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(200, 13, 44, 0.25); z-index: 30; border-color: rgba(200, 13, 44, 0.4); }
+.vp-industrial-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); z-index: 30; border-color: rgba(225,6,0,0.2); }
 
 .vp-industrial-img-container {
-height: 280px;
-overflow: visible;
+height: 200px;
+overflow: hidden;
 position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
-background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
-border-bottom: 2px solid #C40000;
-transition: all 0.4s ease;
-padding: 20px;
+background: #f6f6f6;
+border-bottom: 1px solid #f0f0f0;
+transition: all 0.3s ease;
+padding: 16px;
+box-shadow: inset 0 2px 8px rgba(0,0,0,0.04);
 }
 .vp-industrial-img {
-width: 100%;
-height: 100%;
-max-width: 100%;
-max-height: 100%;
+max-width: 80%;
+max-height: 80%;
 object-fit: contain;
 object-position: center;
-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+transition: transform 0.3s ease;
+filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
 }
-.vp-industrial-card:hover .vp-industrial-img-container { background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%); }
-.vp-industrial-card:hover .vp-industrial-img { transform: scale(1.12); filter: drop-shadow(0 18px 35px rgba(200, 13, 44, 0.3)); }
+.vp-industrial-card:hover .vp-industrial-img-container { background: #f0f0f0; }
+.vp-industrial-card:hover .vp-industrial-img { transform: scale(1.04); filter: drop-shadow(0 6px 14px rgba(0,0,0,0.12)); }
 .vp-industrial-content { padding: 20px 18px; flex-grow: 1; display: flex; flex-direction: column; background: #ffffff; position: relative; }
 .vp-industrial-category { font-size: 0.75rem; color: #C40000; font-weight: 800; margin-bottom: 8px; letter-spacing: 2px; text-transform: uppercase; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; align-items: center; gap: 6px; }
 .vp-industrial-category::before { content: '▸'; font-size: 0.9rem; }
 .vp-industrial-product-title { font-size: 1.4rem; font-weight: 900; color: #1a1a1a; margin: 0 0 12px; line-height: 1.2; transition: all 0.3s ease; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; letter-spacing: 0.8px; }
-.vp-industrial-card:hover .vp-industrial-product-title { color: #C40000; }
+.vp-industrial-card:hover .vp-industrial-product-title { color: #111111; }
 .vp-tech-specs { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
 .vp-tech-tag { background: rgba(200, 13, 44, 0.08); padding: 4px 10px; border-radius: 15px; font-size: 0.7rem; font-weight: 700; color: #C40000; border: 1px solid rgba(200, 13, 44, 0.15); letter-spacing: 0.3px; }
-.vp-industrial-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; background: linear-gradient(135deg, #C40000, #8B0000); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 800; letter-spacing: 1px; transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1); text-align: center; width: 100%; box-shadow: 0 6px 20px rgba(200, 13, 44, 0.35); position: relative; font-size: 0.85rem; margin-top: auto; border: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; }
-.vp-industrial-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(200, 13, 44, 0.5); letter-spacing: 1.2px; background: linear-gradient(135deg, #E70012, #C40000); }
+.vp-industrial-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 11px 20px; background: #E10600; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 700; letter-spacing: 0.5px; transition: all 0.3s ease; text-align: center; width: 100%; box-shadow: 0 4px 10px rgba(196,0,0,0.2); position: relative; font-size: 0.82rem; margin-top: auto; border: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; }
+.vp-industrial-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(196,0,0,0.2); background: linear-gradient(135deg, #E10600, #C40000); }
 .vp-industrial-arrow { transition: all 0.35s ease; font-weight: 900; }
 .vp-industrial-btn:hover .vp-industrial-arrow { transform: translateX(6px); }
 
@@ -590,13 +588,13 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 .vp-industrial-subtitle { animation: fadeInUp 0.8s ease-out 0.5s backwards; }
 @media (max-width: 1300px) {
 .vp-industrial-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.vp-industrial-img-container { height: 260px; }
+.vp-industrial-img-container { height: 200px; }
 .vp-title-line { max-width: 120px; }
 }
 @media (max-width: 1000px) {
 .vp-industrial-title { font-size: 2.2rem; }
 .vp-industrial-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
-.vp-industrial-img-container { height: 250px; }
+.vp-industrial-img-container { height: 190px; }
 .vp-industrial-product-title { font-size: 1.25rem; }
 .vp-title-line { max-width: 100px; }
 }
@@ -617,7 +615,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 .vp-industrial-title { font-size: 1.6rem; }
 .vp-title-wrapper { gap: 15px; }
 .vp-title-line { max-width: 60px; height: 1.5px; }
-.vp-industrial-img-container { height: 260px; }
+.vp-industrial-img-container { height: 200px; }
 .vp-industrial-product-title { font-size: 1.2rem; }
 .vp-industrial-btn { padding: 11px 18px; font-size: 0.8rem; }
 }
@@ -648,7 +646,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="IEC 61869" data-lang-tr="IEC 61869">IEC 61869</span>
 </div>
 <a href="ProductsPages/CurrentTransformer/TK30N-Current-Transformer.html" class="vp-industrial-btn">
-<span data-lang-en="VIEW SPECS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW SPECS</span>
+<span data-lang-en="VIEW DETAILS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW DETAILS</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
 </div>
@@ -666,7 +664,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="DIN Rail" data-lang-tr="DIN Ray">DIN Rail</span>
 </div>
 <a href="ProductsPages/Timers/DTR-60.html" class="vp-industrial-btn">
-<span data-lang-en="VIEW SPECS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW SPECS</span>
+<span data-lang-en="VIEW DETAILS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW DETAILS</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
 </div>
@@ -684,7 +682,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="CE Certified" data-lang-tr="CE Sertifikalı">CE Certified</span>
 </div>
 <a href="ProductsPages/ProtectionRelay/VCR-03F.html" class="vp-industrial-btn">
-<span data-lang-en="VIEW SPECS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW SPECS</span>
+<span data-lang-en="VIEW DETAILS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW DETAILS</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
 </div>
@@ -702,7 +700,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="Modbus" data-lang-tr="Modbus">Modbus</span>
 </div>
 <a href="ProductsPages/DigitalMeters/VK-M96S.html" class="vp-industrial-btn">
-<span data-lang-en="VIEW SPECS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW SPECS</span>
+<span data-lang-en="VIEW DETAILS" data-lang-tr="TEKNİK ÖZELLİKLER">VIEW DETAILS</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
 </div>
