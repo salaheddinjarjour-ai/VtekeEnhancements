@@ -866,7 +866,7 @@ data-zh="搜索产品...">
 LANGUAGE SWITCHER JAVASCRIPT (MODIFIED)
 ======================================== -->
 <script>
-let currentLanguage = localStorage.getItem('vteke-language') || 'en';
+let currentLanguage = localStorage.getItem('vteke_language') || 'en';
 
 // Toggle Dropdown
 function toggleLanguageDropdown() {
@@ -915,7 +915,7 @@ document.documentElement.dir = 'ltr';
         if (lang === currentLanguage) return;
         
         currentLanguage = lang;
-        localStorage.setItem('vteke-language', lang);
+        localStorage.setItem('vteke_language', lang);
         document.documentElement.lang = lang;
 
         // Set RTL for Arabic and Persian
@@ -1072,7 +1072,7 @@ document.body.setAttribute('dir', 'ltr');
 
 function applyLanguage(lang) {
 currentLanguage = lang;
-localStorage.setItem('vteke-language', lang);
+localStorage.setItem('vteke_language', lang);
 
 translatableElements.forEach(el => {
 const translation = el.getAttribute(`data-${lang}`);
@@ -1155,7 +1155,7 @@ item.classList.add('active');
 }
 
 // Load saved language preference
-const savedLang = localStorage.getItem('vteke-language');
+const savedLang = localStorage.getItem('vteke_language');
 if (savedLang && ['en', 'tr', 'ar', 'es', 'ru', 'fa', 'de', 'fr', 'zh'].includes(savedLang)) {
 applyLanguage(savedLang);
 updateLanguageDirection(savedLang);

@@ -225,7 +225,7 @@ document.addEventListener('click', function(e) {
 
 /* ─── setLanguage — shared language switcher for all pages ─── */
 function setLanguage(lang) {
-  localStorage.setItem('vteke-lang', lang);
+  localStorage.setItem('vteke_language', lang);
 
   // Update html lang attribute
   document.documentElement.lang = lang;
@@ -260,7 +260,7 @@ function setLanguage(lang) {
 
 // Apply saved language on page load + inject SVGs into initial flag elements
 (function() {
-  var saved = localStorage.getItem('vteke-lang') || 'en';
+  var saved = localStorage.getItem('vteke_language') || localStorage.getItem('vteke-lang') || 'en';
   // Inject SVG into flag elements even before setLanguage is called
   document.addEventListener('DOMContentLoaded', function() {
     _vtekeSetFlagEl(document.getElementById('currentLangFlag'), saved);
