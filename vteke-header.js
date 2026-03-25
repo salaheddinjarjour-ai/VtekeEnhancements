@@ -261,11 +261,15 @@ function setLanguage(lang) {
 // Apply saved language on page load + inject SVGs into initial flag elements
 (function() {
   var saved = localStorage.getItem('vteke_language') || localStorage.getItem('vteke-lang') || 'en';
-  // Inject SVG into flag elements even before setLanguage is called
   document.addEventListener('DOMContentLoaded', function() {
+    // Inject SVG into flag elements
     _vtekeSetFlagEl(document.getElementById('currentLangFlag'), saved);
     var textEl = document.getElementById('currentLangText');
     if (textEl) textEl.textContent = saved === 'tr' ? 'TR' : 'EN';
+    // Apply saved language AFTER page has had a chance to define its own setLanguage
+    if (saved && saved !== 'en') {
+      // Small delay ensures any page-level setLanguage override is fully defined
+      setTimeout(function() { setLanguage(saved); }, 0);
+    }
   });
-  if (saved && saved !== 'en') setLanguage(saved);
 })();
