@@ -2366,6 +2366,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 
+
+
+<script>
+// Re-apply translations after dynamic content loads
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        var lang = localStorage.getItem('vteke_language');
+        if (lang && lang !== 'en' && window.setLanguage) {
+            window.setLanguage(lang);
+        }
+    }, 500);
+});
+</script>
 <script src="translations/translation.js"></script>
 </body>
 </html>

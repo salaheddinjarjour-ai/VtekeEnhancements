@@ -2,12 +2,28 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-6px); }
         }
-        
+
         @keyframes vteke-footer-fade-in {
             from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
+
+        /* Footer Image Fixes */
+        .vteke-footer-main-container img,
+        .vteke-footer-company-logo {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            opacity: 1;
+            image-rendering: -webkit-optimize-contrast;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+
+        .vteke-footer-company-logo.loaded {
+            opacity: 1;
+        }
 
         @keyframes vteke-footer-shimmer {
             0% { background-position: -200% center; }

@@ -2,7 +2,23 @@
                   background-color: white; /* Ensure the iframe has a white background */
                 }
 
- 
+                /* Header Image Fixes */
+                .vteke-pro-header-main-container img,
+                .vteke-pro-site-logo-image {
+                    display: block;
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    opacity: 1;
+                    image-rendering: -webkit-optimize-contrast;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                }
+
+                .vteke-pro-site-logo-image.loaded {
+                    opacity: 1;
+                }
+
 :root {
   --vteke-primary-red: #E10600;
   --vteke-hover-red: #C40000;
