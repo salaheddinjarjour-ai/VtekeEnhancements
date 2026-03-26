@@ -1331,9 +1331,9 @@ const PRODUCTS = {
     features: [{"en": "High power output 140W (24V DC, 6A)", "tr": "Yüksek güç çıkışı 140W (24V DC, 6A)"}, {"en": "Wide input voltage range for global use", "tr": "Küresel kullanım için geniş giriş gerilim aralığı"}, {"en": "High efficiency &gt;85% for energy savings", "tr": "Enerji tasarrufu için yüksek verimlilik &gt;85%"}, {"en": "Multiple protection features for safety", "tr": "Güvenlik için çoklu koruma özellikleri"}, {"en": "Compact design for easy installation", "tr": "Kolay kurulum için kompakt tasarım"}],
   },
   "DOR": {
-    name: {"en": "Technical Specifications", "tr": "Teknik Özellikler"},
+    name: {"en": "DOR Over Current Protection Relay", "tr": "DOR Aşırı Akım Koruma Rölesi"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Over current protection relay for motors with selectable current ratings from 25A to 400A. Provides 50% asymmetry protection and adjustable delay time from 0.1s to 20s for motor overload prevention.", "tr": "25A ile 400A arası seçilebilir akım değerleri ile motorlar için aşırı akım koruma rölesi. Motor aşırı yük önleme için %50 asimetri koruması ve 0.1s-20s ayarlanabilir gecikme süresi sağlar."},
     reference: "REF: DOR-100A",
     images: [""],
     specs: {
@@ -1349,9 +1349,9 @@ const PRODUCTS = {
     features: [{"en": "Multiple current ratings 25A to 400A", "tr": "25A-400A çoklu akım değerleri"}, {"en": "50% asymmetry protection for phase balance", "tr": "Faz dengesi için %50 asimetri koruması"}, {"en": "Adjustable delay time 0.1s-20s", "tr": "0.1s-20s ayarlanabilir gecikme süresi"}, {"en": "Ideal for motor overload protection", "tr": "Motor aşırı yük koruması için ideal"}],
   },
   "DVC-01": {
-    name: {"en": "Technical Specifications", "tr": "Teknik Özellikler"},
+    name: {"en": "DVC-01 Single Phase Voltage Control Relay", "tr": "DVC-01 Tek Faz Gerilim Kontrol Rölesi"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Single phase voltage control relay for 230V AC systems with adjustable over and under voltage protection. Low power consumption below 6VA with adjustable delay time.", "tr": "Ayarlanabilir aşırı ve düşük gerilim korumalı 230V AC sistemler için tek faz gerilim kontrol rölesi. Ayarlanabilir gecikme süresi ile 6VA altında düşük güç tüketimi."},
     reference: "REF: DVC-01",
     images: [""],
     specs: {
@@ -1385,9 +1385,9 @@ const PRODUCTS = {
     features: [{"en": "Three-phase 3x380V AC voltage monitoring", "tr": "Üç fazlı 3x380V AC gerilim izleme"}, {"en": "Over voltage protection 400V-460V AC", "tr": "400V-460V AC aşırı gerilim koruması"}, {"en": "Under voltage protection 230V-360V AC", "tr": "230V-360V AC düşük gerilim koruması"}, {"en": "Protects motors from voltage damage", "tr": "Motorları gerilim hasarından korur"}],
   },
   "DVC-04F": {
-    name: {"en": "Technical Specifications", "tr": "Teknik Özellikler"},
+    name: {"en": "DVC-04F 3-Phase 380V Voltage Control & Phase Sequence Relay", "tr": "DVC-04F 3-Faz 380V Gerilim Kontrol ve Faz Sırası Rölesi"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Three-phase voltage control relay for 3x380V AC systems with over voltage, under voltage, and phase sequence protection. Adjustable reset time from 0.1s to 10s.", "tr": "3x380V AC sistemler için aşırı gerilim, düşük gerilim ve faz sırası korumalı üç fazlı gerilim kontrol rölesi. 0.1s-10s ayarlanabilir sıfırlama süresi."},
     reference: "REF: DVC-04F",
     images: [""],
     specs: {
@@ -1403,9 +1403,9 @@ const PRODUCTS = {
     features: [{"en": "Phase sequence protection prevents motor reversal", "tr": "Faz sırası koruması motor ters dönmesini önler"}, {"en": "Over voltage protection 400V-460V AC", "tr": "400V-460V AC aşırı gerilim koruması"}, {"en": "Under voltage protection 230V-360V AC", "tr": "230V-360V AC düşük gerilim koruması"}, {"en": "Adjustable reset time for flexible operation", "tr": "Esnek çalışma için ayarlanabilir sıfırlama süresi"}],
   },
   "ELR-V2": {
-    name: {"en": "Technical Specifications", "tr": "Teknik Özellikler"},
+    name: {"en": "ELR-V2 Earth Leakage Current Protection Relay", "tr": "ELR-V2 Toprak Kaçak Akım Koruma Rölesi"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Earth leakage current protection relay for 230V AC systems with adjustable delay time from 0.1s to 20s. Prevents electrical shock hazards and ensures safety compliance.", "tr": "0.1s-20s ayarlanabilir gecikme süresi ile 230V AC sistemler için toprak kaçak akım koruma rölesi. Elektrik çarpması tehlikelerini önler ve güvenlik uyumluluğunu sağlar."},
     reference: "REF: ELR-V2",
     images: [""],
     specs: {
@@ -1471,9 +1471,9 @@ const PRODUCTS = {
     features: [{"en": "Designed for 3x380V AC three-phase systems", "tr": "3x380V AC üç fazlı sistemler için tasarlanmıştır"}, {"en": "Adjustable delay time for customized protection", "tr": "Özelleştirilmiş koruma için ayarlanabilir gecikme"}, {"en": "High over voltage protection at 500V AC", "tr": "500V AC'de yüksek aşırı gerilim koruması"}, {"en": "Complete phase and neutral monitoring", "tr": "Eksiksiz faz ve nötr izleme"}],
   },
   "PPR-14": {
-    name: {"en": "Technical Specifications", "tr": "Teknik Özellikler"},
+    name: {"en": "PPR-14 Phase Sequence & Asymmetry Protection Relay", "tr": "PPR-14 Faz Sırası ve Asimetrisi Koruma Rölesi"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Phase sequence and asymmetry protection relay for 3x380V AC systems. Provides protection for phase absence, phase asymmetry (30%), and phase sequence with under 6VA power consumption.", "tr": "3x380V AC sistemler için faz sırası ve asimetrisi koruma rölesi. 6VA altında güç tüketimi ile faz yokluğu, faz asimetrisi (%30) ve faz sırası koruması sağlar."},
     images: [""],
     specs: {
       "product_model": {"label": {"en": "Product Model", "tr": "Ürün Modeli"}, "value": "PPR-14"},
@@ -1488,7 +1488,7 @@ const PRODUCTS = {
     features: [{"en": "Phase absence detection and protection", "tr": "Faz yokluğu algılama ve koruma"}, {"en": "Phase sequence monitoring and correction", "tr": "Faz sırası izleme ve düzeltme"}, {"en": "30% asymmetry protection threshold", "tr": "%30 asimetri koruma eşiği"}, {"en": "Energy efficient operation under 6VA", "tr": "6VA altında enerji verimli çalışma"}],
   },
   "PPR-24F": {
-    name: {"en": "PPR-24F Related Products", "tr": "PPR-24F İlgili Ürünler"},
+    name: {"en": "PPR-24F Over/Under Voltage & Phase Protection Relay", "tr": "PPR-24F Aşırı/Düşük Gerilim ve Faz Koruma Rölesi"},
     category: "relays",
     description: {"en": "Comprehensive protection relay for 3x380V AC three-phase systems with advanced voltage monitoring. Provides over voltage protection at 500V AC, under voltage protection at 180V AC, 11% asymmetry protection, and phase sequence monitoring. Low power consumption below 6VA makes it ideal for continuous industrial operation.", "tr": "Comprehensive protection relay for 3x380V AC three-phase systems with advanced voltage monitoring. Provides over voltage protection at 500V AC, under voltage protection at 180V AC, 11% asymmetry protection, and phase sequence monitoring. Low power consumption below 6VA makes it ideal for continuous industrial operation."},
     images: [""],
