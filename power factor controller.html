@@ -181,8 +181,8 @@
 
 <!-- Hero Section -->
 <div class="hero">
-  <h1 class="hero-title">Power Factor Controllers</h1>
-  <p class="hero-subtitle">Advanced power factor controllers for automatic capacitor bank switching. Optimize power factor, reduce energy costs, and improve electrical system efficiency with intelligent control and multiple programming options.</p>
+  <h1 class="hero-title" data-lang-en="Power Factor Controllers" data-lang-tr="Güç Faktörü Kontrolörleri">Power Factor Controllers</h1>
+  <p class="hero-subtitle" data-lang-en="Advanced power factor controllers for automatic capacitor bank switching. Optimize power factor, reduce energy costs, and improve electrical system efficiency with intelligent control and multiple programming options." data-lang-tr="Otomatik kapasitör bankası anahtarlama için gelişmiş güç faktörü kontrolörleri. Akıllı kontrol ve çoklu programlama seçenekleriyle güç faktörünü optimize edin, enerji maliyetlerini azaltın ve elektrik sistemi verimliliğini artırın.">Advanced power factor controllers for automatic capacitor bank switching. Optimize power factor, reduce energy costs, and improve electrical system efficiency with intelligent control and multiple programming options.</p>
 </div>
 
 <!-- Products Grid -->
@@ -216,9 +216,9 @@
         </div>
       </div>
       <div class="product-info">
-        <h2 class="product-name">PFC-12S – Advanced Power Factor Controller (12 Programs)</h2>
-        <p class="product-desc">Advanced power factor controller with 12 programmable steps for comprehensive capacitor bank control. Features voltage measurement (10V-300V), current measurement (10mA-5.5A for CT 5/5A to 10000/5A), and operates on 100-300VAC. Perfect for large-scale industrial applications requiring extensive power factor correction.</p>
-        <button class="view-btn advanced">
+        <h2 class="product-name"><span class="product-code">PFC-12S</span><span data-lang-en=" – Advanced Power Factor Controller (12 Programs)" data-lang-tr=" – Gelişmiş Güç Faktörü Kontrolörü (12 Program)"> – Advanced Power Factor Controller (12 Programs)</span></h2>
+        <p class="product-desc" data-lang-en="Advanced power factor controller with 12 programmable steps for comprehensive capacitor bank control. Features voltage measurement (10V-300V), current measurement (10mA-5.5A for CT 5/5A to 10000/5A), and operates on 100-300VAC. Perfect for large-scale industrial applications requiring extensive power factor correction." data-lang-tr="Kapsamlı kapasitör bankası kontrolü için 12 programlanabilir kademeli gelişmiş güç faktörü kontrolörü. Gerilim ölçümü (10V-300V), akım ölçümü (10mA-5.5A, CT 5/5A - 10000/5A) ve 100-300VAC'de çalışır. Kapsamlı güç faktörü düzeltmesi gerektiren büyük ölçekli endüstriyel uygulamalar için mükemmeldir.">Advanced power factor controller with 12 programmable steps for comprehensive capacitor bank control. Features voltage measurement (10V-300V), current measurement (10mA-5.5A for CT 5/5A to 10000/5A), and operates on 100-300VAC. Perfect for large-scale industrial applications requiring extensive power factor correction.</p>
+        <button class="view-btn advanced" data-lang-en="View Details" data-lang-tr="Detayları Gör">
           <i class="fas fa-arrow-right"></i>
           View Details
         </button>
@@ -403,5 +403,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   
+
+    <script>
+    // Apply translations on page load
+    (function() {
+      const lang = localStorage.getItem('vteke_language') || 'en';
+      document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+      // Handle product name spans
+      document.querySelectorAll('h2.product-name span[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+    })();
+    </script>
+
+    <!-- Lightbox for image enlargement -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+    // Lightbox functionality
+    (function() {
+        const lightbox = document.getElementById('imageLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('lightboxClose');
+
+        // Add click event to all product images
+        document.querySelectorAll('.product-real-image').forEach(img => {
+            img.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                lightboxImg.src = this.src;
+                lightboxImg.alt = this.alt || 'Enlarged Image';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close on X button click
+        closeBtn.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close on background click
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    })();
+    </script>
+
 </body>
 </html>

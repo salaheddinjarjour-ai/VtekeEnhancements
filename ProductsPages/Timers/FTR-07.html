@@ -149,10 +149,7 @@
                 <span class="title-en">FTR-07 Right-Left Alternating Timer (0.1s-100min)</span>
                 <span class="title-tr" style="display:none;">FTR-07 Sağ-Sol Alternatif Zamanlayıcı (0.1s-100dk)</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Alternating right-left timer for sequential control applications with wide time range from 0.1 seconds to 100 minutes. Universal voltage input from 12-230V AC/DC with low power consumption below 6VA. Features IP20 protection class for reliable operation. Ideal for alternating pump control, dual system operation, and applications requiring automatic switching between two loads or processes.</span>
-                <span class="desc-tr" style="display:none">0.1 saniye ile 100 dakika arasında geniş zaman aralığına sahip sıralı kontrol uygulamaları için alternatif sağ-sol zamanlayıcı. 6VA altında düşük güç tüketimi ile 12-230V AC/DC evrensel gerilim girişi. Güvenilir çalışma için IP20 koruma sınıfı özellikleri. Alternatif pompa kontrolü, çift sistem çalışma ve iki yük veya proses arasında otomatik geçiş gerektiren uygulamalar için idealdir.</span>
-            </p>
+            <p class="product-description" data-lang-en="Alternating right-left timer for sequential control applications with wide time range from 0.1 seconds to 100 minutes. Universal voltage input from 12-230V AC/DC with low power consumption below 6VA. Features IP20 protection class for reliable operation. Ideal for alternating pump control, dual system operation, and applications requiring automatic switching between two loads or processes." data-lang-tr="0.1 saniye ile 100 dakika arasında geniş zaman aralığına sahip sıralı kontrol uygulamaları için alternatif sağ-sol zamanlayıcı. 6VA altında düşük güç tüketimi ile 12-230V AC/DC evrensel gerilim girişi. Güvenilir çalışma için IP20 koruma sınıfı özellikleri. Alternatif pompa kontrolü, çift sistem çalışma ve iki yük veya proses arasında otomatik geçiş gerektiren uygulamalar için idealdir.">Alternating right-left timer for sequential control applications with wide time range from 0.1 seconds to 100 minutes. Universal voltage input from 12-230V AC/DC with low power consumption below 6VA. Features IP20 protection class for reliable operation. Ideal for alternating pump control, dual system operation, and applications requiring automatic switching between two loads or processes.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: FTR-07</span>
                 <span class="ref-tr" style="display:none;">REF: FTR-07</span>
@@ -192,7 +189,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -356,6 +353,25 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

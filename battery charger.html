@@ -178,8 +178,8 @@
 
 <!-- Hero Section -->
 <div class="hero">
-  <h1 class="hero-title">Battery Chargers</h1>
-  <p class="hero-subtitle">Intelligent battery chargers for 12V and 24V systems. Advanced charging algorithms with multi-stage protection for extended battery life and reliable backup power.</p>
+  <h1 class="hero-title" data-lang-en="Battery Chargers" data-lang-tr="Akü Şarj Cihazları">Battery Chargers</h1>
+  <p class="hero-subtitle" data-lang-en="Intelligent battery chargers for 12V and 24V systems. Advanced charging algorithms with multi-stage protection for extended battery life and reliable backup power." data-lang-tr="12V ve 24V sistemler için akıllı akü şarj cihazları. Uzun pil ömrü ve güvenilir yedek güç için çok aşamalı korumalı gelişmiş şarj algoritmaları.">Intelligent battery chargers for 12V and 24V systems. Advanced charging algorithms with multi-stage protection for extended battery life and reliable backup power.</p>
 </div>
 
 <!-- Products Grid -->
@@ -194,9 +194,9 @@
         </div>
       </div>
       <div class="product-info">
-        <h2 class="product-name">VBC-A05 – Smart Automatic Battery Charger</h2>
-        <p class="product-desc">Intelligent microprocessor-controlled charger with automatic voltage detection for 12V/24V batteries. Features multi-stage charging, reverse polarity protection, and short circuit protection for safe operation.</p>
-        <button class="view-btn smart">
+        <h2 class="product-name"><span class="product-code">VBC-A05</span><span data-lang-en=" – Smart Automatic Battery Charger" data-lang-tr=" – Akıllı Otomatik Akü Şarj Cihazı"> – Smart Automatic Battery Charger</span></h2>
+        <p class="product-desc" data-lang-en="Intelligent microprocessor-controlled charger with automatic voltage detection for 12V/24V batteries. Features multi-stage charging, reverse polarity protection, and short circuit protection for safe operation." data-lang-tr="12V/24V piller için otomatik gerilim algılama özellikli akıllı mikro işlemci kontrollü şarj cihazı. Güvenli çalışma için çok aşamalı şarj, ters kutuplama koruması ve kısa devre koruması.">Intelligent microprocessor-controlled charger with automatic voltage detection for 12V/24V batteries. Features multi-stage charging, reverse polarity protection, and short circuit protection for safe operation.</p>
+        <button class="view-btn smart" data-lang-en="View Details" data-lang-tr="Detayları Gör">
           <i class="fas fa-arrow-right"></i>
           View Details
         </button>
@@ -251,9 +251,9 @@
         </div>
       </div>
       <div class="product-info">
-        <h2 class="product-name">VBC-2405 – 24V 5A Battery Charger</h2>
-        <p class="product-desc">Dedicated 24V battery charger with 5A output current. Perfect for industrial equipment, electric vehicles, and backup power systems. Features overload protection and LED status indicators.</p>
-        <button class="view-btn standard">
+        <h2 class="product-name"><span class="product-code">VBC-2405</span><span data-lang-en=" – 24V 5A Battery Charger" data-lang-tr=" – 24V 5A Akü Şarj Cihazı"> – 24V 5A Battery Charger</span></h2>
+        <p class="product-desc" data-lang-en="Dedicated 24V battery charger with 5A output current. Perfect for industrial equipment, electric vehicles, and backup power systems. Features overload protection and LED status indicators." data-lang-tr="5A çıkış akımına sahip özel 24V akü şarj cihazı. Endüstriyel ekipmanlar, elektrikli araçlar ve yedek güç sistemleri için mükemmeldir. Aşırı yük koruması ve LED durum göstergeleri özellikleri.">Dedicated 24V battery charger with 5A output current. Perfect for industrial equipment, electric vehicles, and backup power systems. Features overload protection and LED status indicators.</p>
+        <button class="view-btn standard" data-lang-en="View Details" data-lang-tr="Detayları Gör">
           <i class="fas fa-arrow-right"></i>
           View Details
         </button>
@@ -513,6 +513,76 @@ document.addEventListener('DOMContentLoaded', () => {
     </script>
 
 
+
+
+    <script>
+    // Apply translations on page load
+    (function() {
+      const lang = localStorage.getItem('vteke_language') || 'en';
+      document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+      // Handle product name spans
+      document.querySelectorAll('h2.product-name span[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+    })();
+    </script>
+
+    <!-- Lightbox for image enlargement -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+    // Lightbox functionality
+    (function() {
+        const lightbox = document.getElementById('imageLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('lightboxClose');
+
+        // Add click event to all product images
+        document.querySelectorAll('.product-real-image').forEach(img => {
+            img.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                lightboxImg.src = this.src;
+                lightboxImg.alt = this.alt || 'Enlarged Image';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close on X button click
+        closeBtn.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close on background click
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    })();
+    </script>
 
 </body>
 </html>

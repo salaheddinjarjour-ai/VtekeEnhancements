@@ -149,10 +149,7 @@
                 <span class="title-en">FTR-10 10-Function Multi-Mode Timer (0.1s-30hr)</span>
                 <span class="title-tr" style="display:none;">FTR-10 10-Fonksiyonlu Çok Modlu Zamanlayıcı (0.1s-30s)</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Advanced multi-function timer with 10 different operating modes for comprehensive timing control. Time range from 0.1 seconds to 30 hours with universal voltage 12-230V AC/DC compatibility. Features IP20 protection class for industrial environments. Comprehensive solution for complex automation requiring multiple timing functions in one device with extensive mode selection and hour-range precision.</span>
-                <span class="desc-tr" style="display:none">Kapsamlı zamanlama kontrolü için 10 farklı çalışma moduna sahip gelişmiş çok fonksiyonlu zamanlayıcı. Evrensel gerilim 12-230V AC/DC uyumluluğu ile 0.1 saniye ile 30 saat arasında zaman aralığı. Endüstriyel ortamlar için IP20 koruma sınıfı özellikleri. Kapsamlı mod seçimi ve saat aralığı hassasiyeti ile tek cihazda çoklu zamanlama fonksiyonları gerektiren karmaşık otomasyon için kapsamlı çözüm.</span>
-            </p>
+            <p class="product-description" data-lang-en="Advanced multi-function timer with 10 different operating modes for comprehensive timing control. Time range from 0.1 seconds to 30 hours with universal voltage 12-230V AC/DC compatibility. Features IP20 protection class for industrial environments. Comprehensive solution for complex automation requiring multiple timing functions in one device with extensive mode selection and hour-range precision." data-lang-tr="Kapsamlı zamanlama kontrolü için 10 farklı çalışma moduna sahip gelişmiş çok fonksiyonlu zamanlayıcı. Evrensel gerilim 12-230V AC/DC uyumluluğu ile 0.1 saniye ile 30 saat arasında zaman aralığı. Endüstriyel ortamlar için IP20 koruma sınıfı özellikleri. Kapsamlı mod seçimi ve saat aralığı hassasiyeti ile tek cihazda çoklu zamanlama fonksiyonları gerektiren karmaşık otomasyon için kapsamlı çözüm.">Advanced multi-function timer with 10 different operating modes for comprehensive timing control. Time range from 0.1 seconds to 30 hours with universal voltage 12-230V AC/DC compatibility. Features IP20 protection class for industrial environments. Comprehensive solution for complex automation requiring multiple timing functions in one device with extensive mode selection and hour-range precision.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: FTR-10</span>
                 <span class="ref-tr" style="display:none;">REF: FTR-10</span>
@@ -192,7 +189,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -356,6 +353,25 @@
    
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

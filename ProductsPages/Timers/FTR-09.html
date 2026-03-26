@@ -149,10 +149,7 @@
                 <span class="title-en">FTR-09 Flasher Timer (0.1s-100min)</span>
                 <span class="title-tr" style="display:none;">FTR-09 Flaşör Zamanlayıcı (0.1s-100dk)</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Dedicated flasher timer for signaling and indication applications with adjustable time range from 0.1 seconds to 100 minutes. Wide voltage range 12-230V AC/DC with low power consumption below 6VA. Features IP20 protection class for reliable operation. Ideal for warning lights, alarms, visual signaling systems, and applications requiring periodic flashing or pulsing signals.</span>
-                <span class="desc-tr" style="display:none">0.1 saniye ile 100 dakika arasında ayarlanabilir zaman aralığına sahip sinyalizasyon ve gösterge uygulamaları için özel flaşör zamanlayıcı. 6VA altında düşük güç tüketimi ile geniş gerilim aralığı 12-230V AC/DC. Güvenilir çalışma için IP20 koruma sınıfı özellikleri. Uyarı ışıkları, alarmlar, görsel sinyalizasyon sistemleri ve periyodik flaş veya darbe sinyalleri gerektiren uygulamalar için idealdir.</span>
-            </p>
+            <p class="product-description" data-lang-en="Dedicated flasher timer for signaling and indication applications with adjustable time range from 0.1 seconds to 100 minutes. Wide voltage range 12-230V AC/DC with low power consumption below 6VA. Features IP20 protection class for reliable operation. Ideal for warning lights, alarms, visual signaling systems, and applications requiring periodic flashing or pulsing signals." data-lang-tr="0.1 saniye ile 100 dakika arasında ayarlanabilir zaman aralığına sahip sinyalizasyon ve gösterge uygulamaları için özel flaşör zamanlayıcı. 6VA altında düşük güç tüketimi ile geniş gerilim aralığı 12-230V AC/DC. Güvenilir çalışma için IP20 koruma sınıfı özellikleri. Uyarı ışıkları, alarmlar, görsel sinyalizasyon sistemleri ve periyodik flaş veya darbe sinyalleri gerektiren uygulamalar için idealdir.">Dedicated flasher timer for signaling and indication applications with adjustable time range from 0.1 seconds to 100 minutes. Wide voltage range 12-230V AC/DC with low power consumption below 6VA. Features IP20 protection class for reliable operation. Ideal for warning lights, alarms, visual signaling systems, and applications requiring periodic flashing or pulsing signals.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: FTR-09</span>
                 <span class="ref-tr" style="display:none;">REF: FTR-09</span>
@@ -192,7 +189,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -357,6 +354,25 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

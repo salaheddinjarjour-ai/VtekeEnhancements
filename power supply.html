@@ -181,8 +181,8 @@
 
 <!-- Hero Section -->
 <div class="hero">
-  <h1 class="hero-title">Power Supply</h1>
-  <p class="hero-subtitle">Reliable switching power supplies for industrial automation and control systems. Features wide input voltage range, stable 24V DC output, and compact design for panel mounting.</p>
+  <h1 class="hero-title" data-lang-en="Power Supply" data-lang-tr="Güç Kaynağı">Power Supply</h1>
+  <p class="hero-subtitle" data-lang-en="Reliable switching power supplies for industrial automation and control systems. Features wide input voltage range, stable 24V DC output, and compact design for panel mounting." data-lang-tr="Endüstriyel otomasyon ve kontrol sistemleri için güvenilir anahtamalı güç kaynakları. Panel montajı için geniş giriş gerilimi aralığı, kararlı 24V DC çıkışı ve kompakt tasarım.">Reliable switching power supplies for industrial automation and control systems. Features wide input voltage range, stable 24V DC output, and compact design for panel mounting.</p>
 </div>
 
 <!-- Products Grid -->
@@ -407,5 +407,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   
+
+    <script>
+    // Apply translations on page load
+    (function() {
+      const lang = localStorage.getItem('vteke_language') || 'en';
+      document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+      // Handle product name spans
+      document.querySelectorAll('h2.product-name span[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+    })();
+    </script>
+
+    <!-- Lightbox for image enlargement -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+    // Lightbox functionality
+    (function() {
+        const lightbox = document.getElementById('imageLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('lightboxClose');
+
+        // Add click event to all product images
+        document.querySelectorAll('.product-real-image').forEach(img => {
+            img.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                lightboxImg.src = this.src;
+                lightboxImg.alt = this.alt || 'Enlarged Image';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close on X button click
+        closeBtn.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close on background click
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    })();
+    </script>
+
 </body>
 </html>

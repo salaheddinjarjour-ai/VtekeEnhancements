@@ -146,13 +146,9 @@
         <!-- Product Header -->
         <div class="product-header">
             <h1 class="product-title">
-                <span class="title-en">DOR Over Current & Asymmetry Protection Relay</span>
-                <span class="title-tr" style="display:none;">DOR Aşırı Akım ve Asimetri Koruma Rölesi</span>
+                <span data-lang-en="DOR Over Current & Asymmetry Protection Relay" data-lang-tr="DOR Aşırı Akım ve Asimetri Koruma Rölesi">DOR Over Current & Asymmetry Protection Relay</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Versatile over current protection relay for 230V AC systems with multiple current rating options. Features 50% asymmetry protection and over current protection with selectable ratings of 25A, 50A, 100A, 200A, and 400A. Adjustable delay time from 0.1s to 20s provides flexibility for various applications. Low power consumption below 6VA makes it ideal for motor protection and industrial load monitoring.</span>
-                <span class="desc-tr" style="display:none">Çoklu akım değeri seçeneklerine sahip 230V AC sistemler için çok yönlü aşırı akım koruma rölesi. %50 asimetri koruması ve 25A, 50A, 100A, 200A ve 400A seçilebilir değerlerinde aşırı akım koruması özellikleri. 0.1s-20s ayarlanabilir gecikme süresi çeşitli uygulamalar için esneklik sağlar. 6VA altında düşük güç tüketimi motor koruması ve endüstriyel yük izleme için idealdir.</span>
-            </p>
+            <p class="product-description" data-lang-en="Versatile over current protection relay for 230V AC systems with multiple current rating options. Features 50% asymmetry protection and over current protection with selectable ratings of 25A, 50A, 100A, 200A, and 400A. Adjustable delay time from 0.1s to 20s provides flexibility for various applications. Low power consumption below 6VA makes it ideal for motor protection and industrial load monitoring." data-lang-tr="Çoklu akım değeri seçeneklerine sahip 230V AC sistemler için çok yönlü aşırı akım koruma rölesi. %50 asimetri koruması ve 25A, 50A, 100A, 200A ve 400A seçilebilir değerlerinde aşırı akım koruması özellikleri. 0.1s-20s ayarlanabilir gecikme süresi çeşitli uygulamalar için esneklik sağlar. 6VA altında düşük güç tüketimi motor koruması ve endüstriyel yük izleme için idealdir.">Versatile over current protection relay for 230V AC systems with multiple current rating options.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: DOR-100A</span>
                 <span class="ref-tr" style="display:none;">REF: DOR-100A</span>
@@ -336,6 +332,24 @@
 
 
 <script src="../Products.js"></script>
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('vteke_language') || 'en';
+    applyTranslations(savedLang);
+});
+</script>
 
 
 <footer class="vteke-footer-main-container">

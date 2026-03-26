@@ -149,10 +149,7 @@
                 <span class="title-en">DTR-SD Star-Delta Timer for Motor Starting</span>
                 <span class="title-tr" style="display:none;">DTR-SD Motor Başlatma için Yıldız-Üçgen Zamanlayıcısı</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Specialized star-delta timer designed for motor starting applications to reduce inrush current. Features adjustable star time from 0.1 seconds to 30 seconds and waiting time from 1ms to 500ms for smooth transition. Operates on 180-230V AC with low power consumption below 6VA. Essential for protecting motors and reducing electrical stress during startup in industrial applications.</span>
-                <span class="desc-tr" style="display:none">Ani akımı azaltmak için motor başlatma uygulamaları için tasarlanmış özel yıldız-üçgen zamanlayıcısı. Sorunsuz geçiş için 0.1 saniye ile 30 saniye arasında ayarlanabilir yıldız süresi ve 1ms ile 500ms arasında bekleme süresi özellikleri. 6VA altında düşük güç tüketimi ile 180-230V AC'de çalışır. Endüstriyel uygulamalarda başlatma sırasında motorları korumak ve elektriksel stresi azaltmak için gereklidir.</span>
-            </p>
+            <p class="product-description" data-lang-en="Specialized star-delta timer designed for motor starting applications to reduce inrush current. Features adjustable star time from 0.1 seconds to 30 seconds and waiting time from 1ms to 500ms for smooth transition. Operates on 180-230V AC with low power consumption below 6VA. Essential for protecting motors and reducing electrical stress during startup in industrial applications." data-lang-tr="Ani akımı azaltmak için motor başlatma uygulamaları için tasarlanmış özel yıldız-üçgen zamanlayıcısı. Sorunsuz geçiş için 0.1 saniye ile 30 saniye arasında ayarlanabilir yıldız süresi ve 1ms ile 500ms arasında bekleme süresi özellikleri. 6VA altında düşük güç tüketimi ile 180-230V AC'de çalışır. Endüstriyel uygulamalarda başlatma sırasında motorları korumak ve elektriksel stresi azaltmak için gereklidir.">Specialized star-delta timer designed for motor starting applications to reduce inrush current. Features adjustable star time from 0.1 seconds to 30 seconds and waiting time from 1ms to 500ms for smooth transition. Operates on 180-230V AC with low power consumption below 6VA. Essential for protecting motors and reducing electrical stress during startup in industrial applications.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: DTR-SD</span>
                 <span class="ref-tr" style="display:none;">REF: DTR-SD</span>
@@ -192,7 +189,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -357,6 +354,25 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

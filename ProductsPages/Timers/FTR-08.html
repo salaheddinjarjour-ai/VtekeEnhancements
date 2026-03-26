@@ -149,10 +149,7 @@
                 <span class="title-en">FTR-08 On/Off Delay Timer (0.1s-100h)</span>
                 <span class="title-tr" style="display:none;">FTR-08 Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-100s)</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Extended range on-delay or off-delay timer with extensive time range from 0.1 seconds to 100 hours. Dual voltage operation on 230V AC and 24V AC/DC with low power consumption below 6VA. Features IP20 protection class for industrial environments. Perfect for long-duration timing applications, process control systems, and industrial automation requiring hour-range precision and reliability.</span>
-                <span class="desc-tr" style="display:none">0.1 saniye ile 100 saat arasında kapsamlı zaman aralığına sahip genişletilmiş aralıklı açık/kapalı gecikme zamanlayıcısı. 6VA altında düşük güç tüketimi ile 230V AC ve 24V AC/DC'de çift gerilim çalışma. Endüstriyel ortamlar için IP20 koruma sınıfı özellikleri. Saat aralığı hassasiyeti ve güvenilirliği gerektiren uzun süreli zamanlama uygulamaları, proses kontrol sistemleri ve endüstriyel otomasyon için mükemmel.</span>
-            </p>
+            <p class="product-description" data-lang-en="Extended range on-delay or off-delay timer with extensive time range from 0.1 seconds to 100 hours. Dual voltage operation on 230V AC and 24V AC/DC with low power consumption below 6VA. Features IP20 protection class for industrial environments. Perfect for long-duration timing applications, process control systems, and industrial automation requiring hour-range precision and reliability." data-lang-tr="0.1 saniye ile 100 saat arasında kapsamlı zaman aralığına sahip genişletilmiş aralıklı açık/kapalı gecikme zamanlayıcısı. 6VA altında düşük güç tüketimi ile 230V AC ve 24V AC/DC'de çift gerilim çalışma. Endüstriyel ortamlar için IP20 koruma sınıfı özellikleri. Saat aralığı hassasiyeti ve güvenilirliği gerektiren uzun süreli zamanlama uygulamaları, proses kontrol sistemleri ve endüstriyel otomasyon için mükemmel.">Extended range on-delay or off-delay timer with extensive time range from 0.1 seconds to 100 hours. Dual voltage operation on 230V AC and 24V AC/DC with low power consumption below 6VA. Features IP20 protection class for industrial environments. Perfect for long-duration timing applications, process control systems, and industrial automation requiring hour-range precision and reliability.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: FTR-08</span>
                 <span class="ref-tr" style="display:none;">REF: FTR-08</span>
@@ -192,7 +189,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -357,6 +354,25 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

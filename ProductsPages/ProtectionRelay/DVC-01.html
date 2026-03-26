@@ -146,13 +146,9 @@
         <!-- Product Header -->
         <div class="product-header">
             <h1 class="product-title">
-                <span class="title-en">DVC-01 Single Phase Voltage Control Relay</span>
-                <span class="title-tr" style="display:none;">DVC-01 Tek Faz Gerilim Kontrol Rölesi</span>
+                <span data-lang-en="DVC-01 Single Phase Voltage Control Relay" data-lang-tr="DVC-01 Tek Faz Gerilim Kontrol Rölesi">DVC-01 Single Phase Voltage Control Relay</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Compact single-phase voltage control relay for 230V AC systems with precise over and under voltage protection. Features over voltage protection range of 230V-280V AC and under voltage protection range of 150V-210V AC. Adjustable reset time from 0.1s to 10s with low power consumption below 6VA. Ideal for residential, commercial, and light industrial applications.</span>
-                <span class="desc-tr" style="display:none;">Hassas aşırı ve düşük gerilim korumalı 230V AC sistemler için kompakt tek fazlı gerilim kontrol rölesi. 230V-280V AC aşırı gerilim koruma aralığı ve 150V-210V AC düşük gerilim koruma aralığı özellikleri. 6VA altında düşük güç tüketimi ile 0.1s-10s ayarlanabilir sıfırlama süresi. Konut, ticari ve hafif endüstriyel uygulamalar için idealdir.</span>
-            </p>
+            <p class="product-description" data-lang-en="Compact single-phase voltage control relay for 230V AC systems with precise over and under voltage protection. Features over voltage protection range of 230V-280V AC and under voltage protection range of 150V-210V AC. Adjustable reset time from 0.1s to 10s with low power consumption below 6VA. Ideal for residential, commercial, and light industrial applications." data-lang-tr="Hassas aşırı ve düşük gerilim korumalı 230V AC sistemler için kompakt tek fazlı gerilim kontrol rölesi. 230V-280V AC aşırı gerilim koruma aralığı ve 150V-210V AC düşük gerilim koruma aralığı özellikleri. 6VA altında düşük güç tüketimi ile 0.1s-10s ayarlanabilir sıfırlama süresi. Konut, ticari ve hafif endüstriyel uygulamalar için idealdir.">Compact single-phase voltage control relay for 230V AC systems with precise over and under voltage protection.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: DVC-01</span>
                 <span class="ref-tr" style="display:none;">REF: DVC-01</span>
@@ -336,6 +332,24 @@
 
 
 <script src="../Products.js"></script>
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('vteke_language') || 'en';
+    applyTranslations(savedLang);
+});
+</script>
 
 
 <footer class="vteke-footer-main-container">

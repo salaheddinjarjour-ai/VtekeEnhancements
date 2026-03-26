@@ -181,8 +181,8 @@
 
 <!-- Hero Section -->
 <div class="hero">
-  <h1 class="hero-title">Energy Analyzers</h1>
-  <p class="hero-subtitle">Advanced energy analyzers for comprehensive power quality monitoring. Features energy measurement, power factor analysis, harmonics detection, and communication capabilities for smart grid applications.</p>
+  <h1 class="hero-title" data-lang-en="Energy Analyzers" data-lang-tr="Enerji Analizörleri">Energy Analyzers</h1>
+  <p class="hero-subtitle" data-lang-en="Advanced energy analyzers for comprehensive power quality monitoring. Features energy measurement, power factor analysis, harmonics detection, and communication capabilities for smart grid applications." data-lang-tr="Kapsamlı güç kalitesi izleme için gelişmiş enerji analizörleri. Akıllı şebeke uygulamaları için enerji ölçümü, güç faktörü analizi, harmonik tespiti ve iletişim yetenekleri.">Advanced energy analyzers for comprehensive power quality monitoring. Features energy measurement, power factor analysis, harmonics detection, and communication capabilities for smart grid applications.</p>
 </div>
 
 <!-- Products Grid -->
@@ -197,9 +197,9 @@
         </div>
       </div>
       <div class="product-info">
-        <h2 class="product-name">EA-C1 – Energy Analyzer with Communication (91x91mm)</h2>
-        <p class="product-desc">Advanced energy analyzer with comprehensive monitoring capabilities including voltage (5V-330kV), current (10mA-5.5A for CT 5/5A to 10000/5A), energy measurement, power factor, and harmonics analysis. Features RTU RS485 communication and 91x91mm panel mounting. Ideal for industrial power quality monitoring.</p>
-        <button class="view-btn analyzer">
+        <h2 class="product-name"><span class="product-code">EA-C1</span><span data-lang-en=" – Energy Analyzer with Communication (91x91mm)" data-lang-tr=" – İletişimli Enerji Analizörü (91x91mm)"> – Energy Analyzer with Communication (91x91mm)</span></h2>
+        <p class="product-desc" data-lang-en="Advanced energy analyzer with comprehensive monitoring capabilities including voltage (5V-330kV), current (10mA-5.5A for CT 5/5A to 10000/5A), energy measurement, power factor, and harmonics analysis. Features RTU RS485 communication and 91x91mm panel mounting. Ideal for industrial power quality monitoring." data-lang-tr="Gerilim (5V-330kV), akım (10mA-5.5A, CT 5/5A - 10000/5A), enerji ölçümü, güç faktörü ve harmonik analizi dahil kapsamlı izleme yeteneklerine sahip gelişmiş enerji analizörü. RTU RS485 iletişim ve 91x91mm panel montajı. Endüstriyel güç kalitesi izleme için idealdir.">Advanced energy analyzer with comprehensive monitoring capabilities including voltage (5V-330kV), current (10mA-5.5A for CT 5/5A to 10000/5A), energy measurement, power factor, and harmonics analysis. Features RTU RS485 communication and 91x91mm panel mounting. Ideal for industrial power quality monitoring.</p>
+        <button class="view-btn analyzer" data-lang-en="View Details" data-lang-tr="Detayları Gör">
           <i class="fas fa-arrow-right"></i>
           View Details
         </button>
@@ -255,9 +255,9 @@
         </div>
       </div>
       <div class="product-info">
-        <h2 class="product-name">EA-4DIN – DIN Rail Energy Analyzer</h2>
-        <p class="product-desc">Compact DIN rail mounted energy analyzer with comprehensive monitoring (5V-330kV voltage, 10mA-5.5A current for CT 5/5A to 50000/5A). Features energy measurement, power factor, harmonics detection, and communication capabilities. Perfect for distribution boards and space-constrained installations.</p>
-        <button class="view-btn din">
+        <h2 class="product-name"><span class="product-code">EA-4DIN</span><span data-lang-en=" – DIN Rail Energy Analyzer" data-lang-tr=" – DIN Ray Enerji Analizörü"> – DIN Rail Energy Analyzer</span></h2>
+        <p class="product-desc" data-lang-en="Compact DIN rail mounted energy analyzer with comprehensive monitoring (5V-330kV voltage, 10mA-5.5A current for CT 5/5A to 50000/5A). Features energy measurement, power factor, harmonics detection, and communication capabilities. Perfect for distribution boards and space-constrained installations." data-lang-tr="Kapsamlı izleme özellikli kompakt DIN ray monte enerji analizörü (5V-330kV gerilim, CT 5/5A - 50000/5A için 10mA-5.5A akım). Enerji ölçümü, güç faktörü, harmonik tespiti ve iletişim yetenekleri. Dağıtım panoları ve alan kısıtlı kurulumlar için mükemmeldir.">Compact DIN rail mounted energy analyzer with comprehensive monitoring (5V-330kV voltage, 10mA-5.5A current for CT 5/5A to 50000/5A). Features energy measurement, power factor, harmonics detection, and communication capabilities. Perfect for distribution boards and space-constrained installations.</p>
+        <button class="view-btn din" data-lang-en="View Details" data-lang-tr="Detayları Gör">
           <i class="fas fa-arrow-right"></i>
           View Details
         </button>
@@ -449,5 +449,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   
+
+    <script>
+    // Apply translations on page load
+    (function() {
+      const lang = localStorage.getItem('vteke_language') || 'en';
+      document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+      // Handle product name spans
+      document.querySelectorAll('h2.product-name span[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute('data-lang-' + lang);
+        if (translation) {
+          el.textContent = translation;
+        }
+      });
+    })();
+    </script>
+
+    <!-- Lightbox for image enlargement -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+    // Lightbox functionality
+    (function() {
+        const lightbox = document.getElementById('imageLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('lightboxClose');
+
+        // Add click event to all product images
+        document.querySelectorAll('.product-real-image').forEach(img => {
+            img.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                lightboxImg.src = this.src;
+                lightboxImg.alt = this.alt || 'Enlarged Image';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close on X button click
+        closeBtn.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close on background click
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    })();
+    </script>
+
 </body>
 </html>

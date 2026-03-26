@@ -223,9 +223,10 @@ margin-bottom: 64px;
 padding: 0 var(--space-6);
 }
 .page-header h1 {
-font-size: 3rem;
-font-weight: 800;
-color: var(--gray-900);
+font-size: 2.6rem;
+font-weight: 700;
+color: var(--gray-800);
+letter-spacing: -0.02em;
 margin-bottom: var(--space-4);
 line-height: 1.2;
 }
@@ -301,6 +302,37 @@ position: static;
     color: #9ca3af;
     font-size: 0.9rem;
     pointer-events: none;
+}
+
+/* No Results Message */
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 1px dashed #d1d5db;
+}
+.no-results.show {
+    display: block;
+    animation: fadeInUp 0.3s ease-out;
+}
+.no-results-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    opacity: 0.7;
+}
+.no-results-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #374151;
+    margin: 0 0 8px;
+}
+.no-results-text {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0;
 }
 
 /* Category List */
@@ -695,25 +727,25 @@ animation: languageFadeIn 0.4s ease-out;
 <nav aria-label="Main navigation">
 <ul class="vteke-pro-main-navigation-list">
 <li class="vteke-pro-nav-list-item">
-<a href="index.html" class="vteke-pro-nav-link-element" data-i18n="nav.home">Home</a>
+<a href="index.html" class="vteke-pro-nav-link-element" data-lang-en="Home" data-lang-tr="ANA SAYFA">Home</a>
 </li>
 <li class="vteke-pro-nav-list-item">
-<a href="aboutus.html" class="vteke-pro-nav-link-element" data-i18n="nav.about">About Us</a>
+<a href="aboutus.html" class="vteke-pro-nav-link-element" data-lang-en="About Us" data-lang-tr="HAKKIMIZDA">About Us</a>
 </li>
 <li class="vteke-pro-nav-list-item">
-<a href="News.html" class="vteke-pro-nav-link-element" data-i18n="nav.news">News</a>
+<a href="News.html" class="vteke-pro-nav-link-element" data-lang-en="News" data-lang-tr="HABERLER">News</a>
 </li>
 <li class="vteke-pro-nav-list-item">
-<a href="Catalog.html" class="vteke-pro-nav-link-element" data-i18n="nav.catalog">Catalog</a>
+<a href="Catalog.html" class="vteke-pro-nav-link-element" data-lang-en="Catalog" data-lang-tr="KATALOG">Catalog</a>
 </li>
 <li class="vteke-pro-nav-list-item">
-<a href="Products.html" class="vteke-pro-nav-link-element vteke-active-link" aria-current="page" data-i18n="nav.products">Products</a>
+<a href="Products.html" class="vteke-pro-nav-link-element vteke-active-link" aria-current="page" data-lang-en="Products" data-lang-tr="ÜRÜNLER">Products</a>
 </li>
 <li class="vteke-pro-nav-list-item">
-<a href="Certificates.html" class="vteke-pro-nav-link-element" data-i18n="nav.certificates">Certificates</a>
+<a href="Certificates.html" class="vteke-pro-nav-link-element" data-lang-en="Certificates" data-lang-tr="SERTİFİKALAR">Certificates</a>
 </li>
 <li class="vteke-pro-nav-list-item">
-<a href="ContactUs.html" class="vteke-pro-nav-link-element" data-i18n="nav.contact">Contact</a>
+<a href="ContactUs.html" class="vteke-pro-nav-link-element" data-lang-en="Contact" data-lang-tr="İLETİŞİM">Contact</a>
 </li>
 </ul>
 </nav>
@@ -757,25 +789,25 @@ animation: languageFadeIn 0.4s ease-out;
 </div>
 <nav class="vteke-pro-mobile-navigation-container" aria-label="Mobile navigation">
 <div class="vteke-pro-mobile-nav-item">
-<a href="index.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-i18n="nav.home">Home</a>
+<a href="index.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a>
 </div>
 <div class="vteke-pro-mobile-nav-item">
-<a href="aboutus.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-i18n="nav.about">About Us</a>
+<a href="aboutus.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="About Us" data-lang-tr="Hakkımızda">About Us</a>
 </div>
 <div class="vteke-pro-mobile-nav-item">
-<a href="News.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-i18n="nav.news">News</a>
+<a href="News.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="News" data-lang-tr="Haberler">News</a>
 </div>
 <div class="vteke-pro-mobile-nav-item">
-<a href="Catalog.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-i18n="nav.catalog">Catalog</a>
+<a href="Catalog.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Catalog" data-lang-tr="Katalog">Catalog</a>
 </div>
 <div class="vteke-pro-mobile-nav-item">
-<a href="Products.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-i18n="nav.products">Products</a>
+<a href="Products.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Products" data-lang-tr="Ürünler">Products</a>
 </div>
 <div class="vteke-pro-mobile-nav-item">
-<a href="Certificates.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-i18n="nav.certificates">Certificates</a>
+<a href="Certificates.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Certificates" data-lang-tr="Sertifikalar">Certificates</a>
 </div>
 <div class="vteke-pro-mobile-nav-item">
-<a href="ContactUs.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-i18n="nav.contact">Contact</a>
+<a href="ContactUs.html" class="vteke-pro-mobile-nav-link vteke-touch-optimized-element" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a>
 </div>
 </nav>
 <div class="vteke-pro-mobile-menu-footer">
@@ -790,16 +822,8 @@ animation: languageFadeIn 0.4s ease-out;
 <div class="catalog-container">
 <!-- Page Header -->
 <div class="page-header">
-<h1 data-en="VTEKE INDUSTRIAL ELECTRICAL COMPONENTS"
-data-tr="VTEKE Endüstriyel Elektrik Bileşenleri"
-data-ar="VTEKE مكونات كهرباء صناعية"
-data-es="VTEKE Componentes Eléctricos Industriales"
-data-ru="VTEKE Промышленные электрические компоненты"
-data-fa="قطعات الکتریکی صنعتی VTEKE"
-data-de="VTEKE Industrielle Elektrische Komponenten"
-data-fr="VTEKE Composants Électriques Industriels"
-data-zh="VTEKE 工业电气元件">
-VTEKE INDUSTRIAL ELECTRICAL COMPONENTS
+<h1 class="section-title" style="font-weight: 700; letter-spacing: -0.02em;" data-lang-en="Industrial Electrical Products" data-lang-tr="Endüstriyel Elektrik Ürünleri">
+Industrial Electrical Products
 </h1>
 </div>
 
@@ -810,47 +834,71 @@ VTEKE INDUSTRIAL ELECTRICAL COMPONENTS
 <!-- Search Bar -->
 <div class="search-container">
 <i class="bi bi-search search-icon"></i>
-<input type="text" class="search-input" id="productSearch" placeholder="Search products..." data-i18n-placeholder="products.searchPlaceholder" 
-data-en="Search products..." 
-data-tr="Ürün ara..." 
-data-ar="البحث عن المنتجات..." 
-data-es="Buscar productos..." 
-data-ru="Поиск продуктов..." 
-data-fa="جستجوی محصولات..." 
-data-de="Produkte suchen..." 
-data-fr="Chercher des produits..." 
-data-zh="搜索产品...">
+<input type="text" class="search-input" id="productSearch"
+data-lang-en-placeholder="Search products..."
+data-lang-tr-placeholder="Ürün ara..."
+placeholder="Search products...">
+</div>
+
+<!-- No Results Message -->
+<div class="no-results" id="noResults">
+<div class="no-results-icon">🔍</div>
+<h3 class="no-results-title" data-lang-en="No products found" data-lang-tr="Ürün bulunamadı">No products found</h3>
+<p class="no-results-text" data-lang-en="Try adjusting your search or filter criteria" data-lang-tr="Arama veya filtre kriterlerinizi ayarlamayı deneyin">Try adjusting your search or filter criteria</p>
 </div>
 
 <!-- Categories -->
 <div class="category-list">
 <button class="category-item active" data-category="all" onclick="filterProducts('all')">
-<span class="category-name" data-en="All Products" data-tr="Tüm Ürünler" data-ar="جميع المنتجات" data-es="Todos los Productos" data-ru="Все Продукты" data-fa="همه محصولات" data-de="Alle Produkte" data-fr="Tous les Produits" data-zh="所有产品" data-i18n="products.allProducts" data-i18n="products.allProducts">All Products</span>
-<span class="category-count">12</span>
+<span class="category-name" data-lang-en="All Products" data-lang-tr="Tüm Ürünler">All Products</span>
 </button>
-<button class="category-item" data-category="transformers" onclick="window.location.href='Current Transformer.html'">
-<span class="category-name" data-en="Transformers" data-tr="Transformatörler" data-ar="المحولات" data-es="Transformadores" data-ru="Трансформаторы" data-fa="ترانسفورماتورها" data-de="Transformatoren" data-fr="Transformateurs" data-zh="变压器" data-i18n="products.transformers">Transformers</span>
-<span class="category-count">1</span>
+<button class="category-item" data-category="transformers" onclick="filterProducts('transformers')">
+<span class="category-name" data-lang-en="Current Transformers" data-lang-tr="Akım Transformatörleri">Current Transformers</span>
+<span class="category-count">0</span>
 </button>
-<button class="category-item" data-category="relays" onclick="window.location.href='protection relay.html'">
-<span class="category-name" data-en="Relays" data-tr="Röleler" data-ar="المرحلات" data-es="Relés" data-ru="Реле" data-fa="رله ها" data-de="Relais" data-fr="Relais" data-zh="继电器">Relays</span>
-<span class="category-count">3</span>
+<button class="category-item" data-category="protection-relays" onclick="filterProducts('protection-relays')">
+<span class="category-name" data-lang-en="Protection Relays" data-lang-tr="Koruma Röleleri">Protection Relays</span>
+<span class="category-count">0</span>
 </button>
-<button class="category-item" data-category="meters" onclick="window.location.href='analog meters.html'">
-<span class="category-name" data-en="Meters" data-tr="Ölçerler" data-ar="العدادات" data-es="Medidores" data-ru="Счетчики" data-fa="مترها" data-de="Messgeräte" data-fr="Compteurs" data-zh="仪表">Meters</span>
-<span class="category-count">2</span>
+<button class="category-item" data-category="timers" onclick="filterProducts('timers')">
+<span class="category-name" data-lang-en="Timers" data-lang-tr="Zamanlayıcılar">Timers</span>
+<span class="category-count">0</span>
 </button>
-<button class="category-item" data-category="analyzers" onclick="window.location.href='energy analyzer.html'">
-<span class="category-name" data-en="Analyzers" data-tr="Analizörler" data-ar="المحللات" data-es="Analizadores" data-ru="Анализаторы" data-fa="تجزیه کننده ها" data-de="Analysatoren" data-fr="Analyseurs" data-zh="分析器">Analyzers</span>
-<span class="category-count">2</span>
+<button class="category-item" data-category="control-relays" onclick="filterProducts('control-relays')">
+<span class="category-name" data-lang-en="Control Relays" data-lang-tr="Kontrol Röleleri">Control Relays</span>
+<span class="category-count">0</span>
 </button>
-<button class="category-item" data-category="power" onclick="window.location.href='power supply.html'">
-<span class="category-name" data-en="Power Systems" data-tr="Güç Sistemleri" data-ar="أنظمة الطاقة" data-es="Sistemas de Potencia" data-ru="Энергосистемы" data-fa="سیستم های قدرت" data-de="Energiesysteme" data-fr="Systèmes d'Alimentation" data-zh="电源系统">Power Systems</span>
-<span class="category-count">2</span>
+<button class="category-item" data-category="analog-meters" onclick="filterProducts('analog-meters')">
+<span class="category-name" data-lang-en="Analog Meters" data-lang-tr="Analog Ölçerler">Analog Meters</span>
+<span class="category-count">0</span>
 </button>
-<button class="category-item" data-category="transducers" onclick="window.location.href='volt transducer.html'">
-<span class="category-name" data-en="Transducers" data-tr="Transdüserler" data-ar="المحولات" data-es="Transductores" data-ru="Преобразователи" data-fa="ترانسدیوسرها" data-de="Wandler" data-fr="Transducteurs" data-zh="变换器">Transducers</span>
-<span class="category-count">2</span>
+<button class="category-item" data-category="digital-meters" onclick="filterProducts('digital-meters')">
+<span class="category-name" data-lang-en="Digital Meters" data-lang-tr="Dijital Ölçerler">Digital Meters</span>
+<span class="category-count">0</span>
+</button>
+<button class="category-item" data-category="analyzers" onclick="filterProducts('analyzers')">
+<span class="category-name" data-lang-en="Energy Analyzers" data-lang-tr="Enerji Analizörleri">Energy Analyzers</span>
+<span class="category-count">0</span>
+</button>
+<button class="category-item" data-category="power-factor" onclick="filterProducts('power-factor')">
+<span class="category-name" data-lang-en="Power Factor Controllers" data-lang-tr="Güç Faktörü Kontrolörleri">Power Factor Controllers</span>
+<span class="category-count">0</span>
+</button>
+<button class="category-item" data-category="battery-chargers" onclick="filterProducts('battery-chargers')">
+<span class="category-name" data-lang-en="Battery Chargers" data-lang-tr="Akü Şarj Cihazları">Battery Chargers</span>
+<span class="category-count">0</span>
+</button>
+<button class="category-item" data-category="power-supplies" onclick="filterProducts('power-supplies')">
+<span class="category-name" data-lang-en="Power Supply Units" data-lang-tr="Güç Kaynakları">Power Supply Units</span>
+<span class="category-count">0</span>
+</button>
+<button class="category-item" data-category="volt-transducer" onclick="filterProducts('volt-transducer')">
+<span class="category-name" data-lang-en="Volt Transducers" data-lang-tr="Gerilim Transdüserleri">Volt Transducers</span>
+<span class="category-count">0</span>
+</button>
+<button class="category-item" data-category="ampere-transducer" onclick="filterProducts('ampere-transducer')">
+<span class="category-name" data-lang-en="Ampere Transducers" data-lang-tr="Akım Transdüserleri">Ampere Transducers</span>
+<span class="category-count">0</span>
 </button>
 </div>
 </div>
@@ -866,6 +914,13 @@ data-zh="搜索产品...">
 LANGUAGE SWITCHER JAVASCRIPT (MODIFIED)
 ======================================== -->
 <script>
+let currentLanguage = localStorage.getItem('vteke_language') || 'en';
+
+// Get current language for use in rendering
+function getCurrentLang() {
+    return currentLanguage;
+}
+
 // Toggle Dropdown
 function toggleLanguageDropdown() {
 const dropdown = document.getElementById('langDropdown');
@@ -881,15 +936,49 @@ dropdown.classList.remove('active');
 });
 
 // RTL languages
+const rtlLanguages = ['ar', 'fa'];
+
+// Apply translations to all elements with data-lang-en attribute
+function applyTranslations(lang) {
+    // Translate text content
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) {
+            el.textContent = translation;
+        }
+    });
+    
+    // Translate placeholders
+    document.querySelectorAll('[data-lang-en-placeholder]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}-placeholder`);
+        if (translation) {
+            el.placeholder = translation;
+        }
+    });
+}
+
+// Re-render dynamic content with current language
+function reRenderDynamicContent() {
+    const activeBtn = document.querySelector('.category-item.active');
+    const category = activeBtn ? activeBtn.getAttribute('data-category') : 'all';
+    
+    if (category === 'all') {
+        renderCategories();
+    } else {
+        renderProducts(category);
+    }
+    
+    // Re-apply translations to any elements with translation attributes
+    applyTranslations(currentLanguage);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 const langButtons = document.querySelectorAll('.lang-dropdown-item');
 const mobileLangSelect = document.getElementById('mobileLangSelect');
-const translatableElements = document.querySelectorAll('[data-en], [data-tr], [data-ar], [data-es], [data-ru], [data-fa], [data-de], [data-fr], [data-zh]');
 
-// Default to English
-applyLanguage('en');
-document.documentElement.lang = 'en';
-document.documentElement.dir = 'ltr';
+// Load saved language
+const savedLang = localStorage.getItem('vteke_language') || 'en';
+applyLanguage(savedLang);
 
 // Desktop language dropdown items
     langButtons.forEach(button => {
@@ -928,7 +1017,7 @@ document.documentElement.dir = 'ltr';
         };
         
         document.getElementById('currentLangFlag').textContent = flags[lang] || '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="14" style="display:inline-block;vertical-align:middle;border-radius:2px"><clipPath id="vtek-a"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="vtek-b"><path d="M30 15h30v15zM30 15H0v15zM30 15h30V0zM30 15H0V0z"/></clipPath><g clip-path="url(#vtek-a)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#vtek-b)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>';
-        document.getElementById('currentLangCode').textContent = lang.toUpperCase();
+        document.getElementById('currentLangText').textContent = lang.toUpperCase();
 
         // Update mobile selector
         if (mobileLangSelect) {
@@ -943,79 +1032,120 @@ document.documentElement.dir = 'ltr';
             }
         });
 
-        // Translate content
-        translatableElements.forEach(element => {
-            const translation = element.getAttribute(`data-${lang}`);
-            if (translation) {
-                // Add animation class
-                element.classList.add('lang-animating');
-                setTimeout(() => element.classList.remove('lang-animating'), 400);
-                
-                // Update text content
-                if (element.tagName === 'INPUT') {
-                    element.placeholder = translation;
-                } else {
-                    element.textContent = translation;
-                }
-            }
-        });
+        // Apply translations to all elements
+        applyTranslations(lang);
+        
+        // Re-render dynamic content with new language
+        reRenderDynamicContent();
+        
+        // Add animation class
+        document.body.classList.add('lang-animating');
+        setTimeout(() => document.body.classList.remove('lang-animating'), 400);
     }
 });
 
 // Search and Filter Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('productSearch');
-    const productCards = document.querySelectorAll('.product-card');
-    const categoryButtons = document.querySelectorAll('.category-item');
+    const noResults = document.getElementById('noResults');
+
+    // Debounce function for better performance
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
 
     // Search functionality
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
-        
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const productGrid = document.getElementById('productGrid');
+        if (!productGrid) return;
+
+        const productCards = productGrid.querySelectorAll('.product-card');
+        let visibleCount = 0;
+
         productCards.forEach(card => {
-            const title = card.querySelector('.product-title').textContent.toLowerCase();
-            const description = card.querySelector('.product-description').textContent.toLowerCase();
-            const category = card.querySelector('.category-label').textContent.toLowerCase();
-            
-            const matches = title.includes(searchTerm) || 
-                          description.includes(searchTerm) || 
-                          category.includes(searchTerm);
-            
-            if (matches) {
-                card.style.display = 'block';
+            // Get all searchable text
+            const title = card.querySelector('.product-title')?.textContent.toLowerCase() || '';
+            const description = card.querySelector('.product-description')?.textContent.toLowerCase() || '';
+            const category = card.querySelector('.category-label')?.textContent.toLowerCase() || '';
+            const dataCategory = card.getAttribute('data-category') || '';
+            const link = card.getAttribute('href') || '';
+
+            const matches = title.includes(searchTerm) ||
+                          description.includes(searchTerm) ||
+                          category.includes(searchTerm) ||
+                          dataCategory.includes(searchTerm) ||
+                          link.includes(searchTerm);
+
+            if (matches || searchTerm === '') {
+                card.style.display = '';
                 card.style.animation = 'fadeInUp 0.3s ease-out';
+                visibleCount++;
             } else {
                 card.style.display = 'none';
             }
         });
-        
+
+        // Show/hide no results message
+        if (noResults) {
+            if (visibleCount === 0 && searchTerm !== '') {
+                noResults.classList.add('show');
+            } else {
+                noResults.classList.remove('show');
+            }
+        }
+
         updateCategoryCounts();
-    });
+    }
+
+    // Attach search with debounce
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(performSearch, 200));
+    }
+
+    // Initialize
+    performSearch();
 });
 
 // Filter products by category
 function filterProducts(category) {
-    const productCards = document.querySelectorAll('.product-card');
-    const categoryButtons = document.querySelectorAll('.category-item');
-    
-    // Update active button
-    categoryButtons.forEach(btn => {
+    // Hide no results when changing category
+    const noResults = document.getElementById('noResults');
+    if (noResults) noResults.classList.remove('show');
+
+    // Update active button in sidebar
+    document.querySelectorAll('.category-item').forEach(btn => {
         btn.classList.remove('active');
     });
-    document.querySelector(`[data-category="${category}"]`).classList.add('active');
-    
-    // Filter products
-    productCards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-            card.style.display = 'block';
-            card.style.animation = 'fadeInUp 0.3s ease-out';
-        } else {
-            card.style.display = 'none';
-        }
-    });
-    
+    const activeBtn = document.querySelector(`[data-category="${category}"]`);
+    if (activeBtn) activeBtn.classList.add('active');
+
+    // Re-render content based on category
+    if (category === 'all') {
+        renderCategories();
+    } else {
+        renderProducts(category);
+    }
+
     // Clear search when category is selected
-    document.getElementById('productSearch').value = '';
+    const searchInput = document.getElementById('productSearch');
+    if (searchInput) {
+        searchInput.value = '';
+        // Trigger search to show all products in category
+        const event = new Event('input');
+        searchInput.dispatchEvent(event);
+    }
+
+    // Update counts
+    updateCategoryCounts();
 }
 
 // Update category counts based on visible products
@@ -1036,119 +1166,14 @@ function updateCategoryCounts() {
         countElement.textContent = count;
     });
 }
-langButtons.forEach(button => {
-button.addEventListener('click', function () {
-const selectedLang = this.getAttribute('onclick').match(/'([^']+)'/)[1];
-applyLanguage(selectedLang);
-updateLanguageDirection(selectedLang);
-if (mobileLangSelect) mobileLangSelect.value = selectedLang;
-// Close dropdown
-document.getElementById('langDropdown').classList.remove('active');
-});
-});
 
-// Mobile language selector
-if (mobileLangSelect) {
-mobileLangSelect.addEventListener('change', function() {
-const selectedLang = this.value;
-applyLanguage(selectedLang);
-updateLanguageDirection(selectedLang);
-});
-}
-
-}
-
-function applyLanguage(lang) {
-currentLanguage = lang;
-localStorage.setItem('vteke_language', lang);
-
-translatableElements.forEach(el => {
-const translation = el.getAttribute(`data-${lang}`);
-if (translation) {
-el.classList.add('lang-animating');
-el.textContent = translation;
-setTimeout(() => {
-el.classList.remove('lang-animating');
-}, 400);
-}
-});
-
-// Update dropdown button display
-updateDropdownDisplay(lang);
-
-// Update page title
-const titleElement = document.querySelector('title');
-if (titleElement) {
-const titleTranslations = {
-'en': 'Products | Premium Electrical Components',
-'tr': 'Ürünler | Premium Elektrik Bileşenleri',
-'ar': 'المنتجات | مكونات كهربائية مميزة',
-'es': 'Productos | Componentes Eléctricos Premium',
-'ru': 'Продукты | Премиум Электрические Компоненты',
-'fa': 'محصولات | قطعات الکتریکی ممتاز',
-'de': 'Produkte | Premium Elektrische Komponenten',
-'fr': 'Produits | Composants Électriques Premium',
-'zh': '产品 | 优质电气元件'
-};
-if (titleTranslations[lang]) {
-titleElement.textContent = titleTranslations[lang];
-}
-}
-
-// Update meta description
-const metaDesc = document.querySelector('meta[name="description"]');
-if (metaDesc) {
-const descTranslations = {
-'en': 'Premium industrial electrical components: Power Transformers, Control Relays, Digital Meters, Energy Analyzers, Power Supplies, Transducers — engineered in Turkey for global industry.',
-'tr': 'Premium endüstriyel elektrik bileşenleri: Güç Transformatörleri, Kontrol Röleleri, Dijital Ölçerler, Enerji Analizörleri, Güç Kaynakları, Transdüserler — küresel endüstri için Türkiye\'de üretilmiştir.',
-'ar': 'مكونات كهربائية صناعية مميزة: محولات الطاقة، مرحلات التحكم، العدادات الرقمية، محللات الطاقة، مصادر الطاقة، المحولات — مصممة في تركيا للصناعة العالمية.',
-'es': 'Componentes eléctricos industriales premium: Transformadores de Potencia, Relés de Control, Medidores Digitales, Analizadores de Energía, Fuentes de Alimentación, Transductores — diseñados en Turquía para la industria global.',
-'ru': 'Премиум промышленные электрические компоненты: Силовые Трансформаторы, Реле Управления, Цифровые Счетчики, Анализаторы Энергии, Блоки Питания, Преобразователи — разработаны в Турции для глобальной индустрии.',
-'fa': 'قطعات الکتریکی صنعتی ممتاز: ترانسفورماتورهای قدرت، رله‌های کنترل، مترهای دیجیتال، تحلیل‌گرهای انرژی، منابع تغذیه، ترانسدیوسرها — مهندسی شده در ترکیه برای صنعت جهانی.',
-'de': 'Premium industrielle elektrische Komponenten: Leistungstransformatoren, Steuerrelais, Digitale Messgeräte, Energieanalysatoren, Netzteile, Wandler — entwickelt in der Türkei für die globale Industrie.',
-'fr': 'Composants électriques industriels premium : Transformateurs de Puissance, Relais de Commande, Compteurs Numériques, Analyseurs d\'Énergie, Alimentations, Transducteurs — conçus en Turquie pour l\'industrie mondiale.',
-'zh': '优质工业电气元件：电力变压器、控制继电器、数字仪表、能源分析仪、电源、变送器 — 为全球工业在土耳其制造。'
-};
-if (descTranslations[lang]) {
-metaDesc.setAttribute('content', descTranslations[lang]);
-}
-}
-}
-
-function updateDropdownDisplay(lang) {
-const currentLangFlag = document.getElementById('currentLangFlag');
-const currentLangCode = document.getElementById('currentLangCode');
-const dropdownItems = document.querySelectorAll('.lang-dropdown-item');
-
-const langInfo = {
-'en': { flag: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="14" style="display:inline-block;vertical-align:middle;border-radius:2px"><clipPath id="vtek-a"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="vtek-b"><path d="M30 15h30v15zM30 15H0v15zM30 15h30V0zM30 15H0V0z"/></clipPath><g clip-path="url(#vtek-a)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#vtek-b)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>', code: 'EN' },
-'tr': { flag: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="20" height="14" style="display:inline-block;vertical-align:middle;border-radius:2px"><rect width="30" height="20" fill="#E30A17"/><circle cx="10" cy="10" r="6" fill="#fff"/><circle cx="11.5" cy="10" r="4.8" fill="#E30A17"/><polygon points="16.5,10 18.6,10.7 17.3,8.8 17.3,11.2 18.6,9.3" fill="#fff"/></svg>', code: 'TR' },
-'ru': { flag: '🇷🇺', code: 'RU' },
-'fr': { flag: '🇫🇷', code: 'FR' },
-'ar': { flag: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="14" style="display:inline-block;vertical-align:middle;border-radius:2px"><clipPath id="vtek-a"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="vtek-b"><path d="M30 15h30v15zM30 15H0v15zM30 15h30V0zM30 15H0V0z"/></clipPath><g clip-path="url(#vtek-a)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#vtek-b)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>', code: 'AR' },
-'zh': { flag: '🇨🇳', code: 'ZH' }
-};
-
-if (currentLangFlag && currentLangCode && langInfo[lang]) {
-currentLangFlag.textContent = langInfo[lang].flag;
-currentLangCode.textContent = langInfo[lang].code;
-}
-
-dropdownItems.forEach(item => {
-item.classList.remove('active');
-if (item.getAttribute('onclick').includes(`'${lang}'`)) {
-item.classList.add('active');
-}
-});
-}
-
-// Load saved language preference
-const savedLang = localStorage.getItem('vteke_language');
-if (savedLang && ['en', 'tr', 'ar', 'es', 'ru', 'fa', 'de', 'fr', 'zh'].includes(savedLang)) {
-applyLanguage(savedLang);
-updateLanguageDirection(savedLang);
-if (mobileLangSelect) mobileLangSelect.value = savedLang;
-}
+// ============================================================
+//  Initialize on page load
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+    updateCategoryCounts();
+    renderCategories();
+    applyTranslations(currentLanguage);
 });
 </script>
 
@@ -1168,16 +1193,21 @@ data-ru="Ведущий поставщик инновационных элект
 data-fa="ارائه‌دهنده پیشرو راه‌حل‌های الکتریکی نوآورانه با تعالی در کیفیت."
 data-de="Führender Anbieter innovativer elektrischer Lösungen mit Exzellenz in der Qualität."
 data-fr="Fournisseur leader de solutions électriques innovantes avec excellence en qualité."
-data-zh="以卓越品质提供创新电气解决方案的领先供应商。" data-i18n="footer.desc">Leading provider of innovative electrical solutions with excellence in quality.</p>
+data-zh="以卓越品质提供创新电气解决方案的领先供应商。">Leading provider of innovative electrical solutions with excellence in quality.</p>
 <div class="vteke-footer-social-container">
 <a href="https://wa.me/+902125440004" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="WhatsApp">
 <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.199.05-.372-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.226 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.491h.004c-2.255-.001-4.323-1.176-5.527-3.039l-.003-.004c-.564-.896-.987-1.853-1.263-2.839-.575-2.058-.324-4.17.716-5.92.384-.647.853-1.22 1.389-1.709.893-.813 1.923-1.427 3.039-1.78.366-.116.744-.173 1.123-.171.422.002.851.067 1.272.193.839.252 1.624.706 2.326 1.329.683.606 1.268 1.365 1.728 2.242.909 1.738 1.197 3.692.826 5.509-.366 1.792-1.272 3.407-2.582 4.649-1.364 1.293-3.012 2.109-4.754 2.354-.439.062-.887.092-1.335.091z"/>
 </svg>
 </a>
-<a href="https://facebook.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="Facebook">
+<a href="https://instagram.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="Instagram">
 <svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg>
+</a>
+<a href="https://youtube.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="YouTube">
+<svg class="vteke-footer-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
 </svg>
 </a>
 <a href="https://linkedin.com" target="_blank" rel="noopener" class="vteke-footer-social-link" aria-label="LinkedIn">
@@ -1191,26 +1221,26 @@ data-zh="以卓越品质提供创新电气解决方案的领先供应商。" dat
 <!-- Column 2: Useful Links -->
 <div class="vteke-footer-column-wrapper">
 <h4 class="vteke-footer-column-title"
-data-en="Useful Links" data-tr="Faydalı Bağlantılar" data-ar="روابط مفيدة" data-es="Enlaces Útiles" data-ru="Полезные Ссылки" data-fa="لینک‌های مفید" data-de="Nützliche Links" data-fr="Liens Utiles" data-zh="有用链接" data-i18n="footer.usefulLinks">Useful Links</h4>
+data-en="Useful Links" data-tr="Faydalı Bağlantılar" data-ar="روابط مفيدة" data-es="Enlaces Útiles" data-ru="Полезные Ссылки" data-fa="لینک‌های مفید" data-de="Nützliche Links" data-fr="Liens Utiles" data-zh="有用链接">Useful Links</h4>
 <ul class="vteke-footer-links-list">
-<li class="vteke-footer-link-item"><a href="index.html" class="vteke-footer-link-anchor" data-en="Home" data-tr="Ana Sayfa" data-ar="الرئيسية" data-es="Inicio" data-ru="Главная" data-fa="صفحه اصلی" data-de="Startseite" data-fr="Accueil" data-zh="首页" data-i18n="footer.home">Home</a></li>
-<li class="vteke-footer-link-item"><a href="aboutus.html" class="vteke-footer-link-anchor" data-en="About Us" data-tr="Hakkımızda" data-ar="من نحن" data-es="Sobre Nosotros" data-ru="О Нас" data-fa="درباره ما" data-de="Über Uns" data-fr="À Propos" data-zh="关于我们" data-i18n="footer.about">About Us</a></li>
-<li class="vteke-footer-link-item"><a href="ContactUs.html" class="vteke-footer-link-anchor" data-en="Contact Us" data-tr="Bize Ulaşın" data-ar="اتصل بنا" data-es="Contáctenos" data-ru="Свяжитесь с Нами" data-fa="با ما تماس بگیرید" data-de="Kontaktieren Sie Uns" data-fr="Contactez-Nous" data-zh="联系我们" data-i18n="footer.contact">Contact Us</a></li>
+<li class="vteke-footer-link-item"><a href="index.html" class="vteke-footer-link-anchor" data-en="Home" data-tr="Ana Sayfa" data-ar="الرئيسية" data-es="Inicio" data-ru="Главная" data-fa="صفحه اصلی" data-de="Startseite" data-fr="Accueil" data-zh="首页">Home</a></li>
+<li class="vteke-footer-link-item"><a href="aboutus.html" class="vteke-footer-link-anchor" data-en="About Us" data-tr="Hakkımızda" data-ar="من نحن" data-es="Sobre Nosotros" data-ru="О Нас" data-fa="درباره ما" data-de="Über Uns" data-fr="À Propos" data-zh="关于我们">About Us</a></li>
+<li class="vteke-footer-link-item"><a href="ContactUs.html" class="vteke-footer-link-anchor" data-en="Contact Us" data-tr="Bize Ulaşın" data-ar="اتصل بنا" data-es="Contáctenos" data-ru="Свяжитесь с Нами" data-fa="با ما تماس بگیرید" data-de="Kontaktieren Sie Uns" data-fr="Contactez-Nous" data-zh="联系我们">Contact Us</a></li>
 </ul>
 </div>
 <!-- Column 3: Projects & News -->
 <div class="vteke-footer-column-wrapper">
-<h4 class="vteke-footer-column-title" data-en="Products & News" data-tr="Ürünler ve Haberler" data-ar="المنتجات والأخبار" data-es="Productos y Noticias" data-ru="Продукты и Новости" data-fa="محصولات و اخبار" data-de="Produkte & News" data-fr="Produits et Actualités" data-zh="产品与新闻" data-i18n="footer.productsNews">Products & News</h4>
+<h4 class="vteke-footer-column-title" data-en="Products & News" data-tr="Ürünler ve Haberler" data-ar="المنتجات والأخبار" data-es="Productos y Noticias" data-ru="Продукты и Новости" data-fa="محصولات و اخبار" data-de="Produkte & News" data-fr="Produits et Actualités" data-zh="产品与新闻">Products & News</h4>
 <ul class="vteke-footer-links-list">
-<li class="vteke-footer-link-item"><a href="News.html" class="vteke-footer-link-anchor" rel="noopener" data-en="News" data-tr="Haberler" data-ar="الأخبار" data-es="Noticias" data-ru="Новости" data-fa="اخبار" data-de="News" data-fr="Actualités" data-zh="新闻" data-i18n="footer.news">News</a></li>
-<li class="vteke-footer-link-item"><a href="Products.html" class="vteke-footer-link-anchor" target="_blank" rel="noopener" data-en="Products" data-tr="Ürünler" data-ar="المنتجات" data-es="Productos" data-ru="Продукты" data-fa="محصولات" data-de="Produkte" data-fr="Produits" data-zh="产品" data-i18n="footer.products">Products</a></li>
-<li class="vteke-footer-link-item"><a href="Certificates.html" class="vteke-footer-link-anchor" data-en="Certificates" data-tr="Sertifikalar" data-ar="الشهادات" data-es="Certificados" data-ru="Сертификаты" data-fa="گواهینامه ها" data-de="Zertifikate" data-fr="Certificats" data-zh="证书" data-i18n="footer.certificates">Certificates</a></li>
+<li class="vteke-footer-link-item"><a href="News.html" class="vteke-footer-link-anchor" rel="noopener" data-en="News" data-tr="Haberler" data-ar="الأخبار" data-es="Noticias" data-ru="Новости" data-fa="اخبار" data-de="News" data-fr="Actualités" data-zh="新闻">News</a></li>
+<li class="vteke-footer-link-item"><a href="Products.html" class="vteke-footer-link-anchor" target="_blank" rel="noopener" data-en="Products" data-tr="Ürünler" data-ar="المنتجات" data-es="Productos" data-ru="Продукты" data-fa="محصولات" data-de="Produkte" data-fr="Produits" data-zh="产品">Products</a></li>
+<li class="vteke-footer-link-item"><a href="Certificates.html" class="vteke-footer-link-anchor" data-en="Certificates" data-tr="Sertifikalar" data-ar="الشهادات" data-es="Certificados" data-ru="Сертификаты" data-fa="گواهینامه ها" data-de="Zertifikate" data-fr="Certificats" data-zh="证书">Certificates</a></li>
 </ul>
 </div>
 <!-- Column 4: Contact & Support -->
 <div class="vteke-footer-column-wrapper">
 <h4 class="vteke-footer-column-title"
-data-en="Contact & Support" data-tr="İletişim & Destek" data-ar="الدعم والاتصال" data-es="Contacto y Soporte" data-ru="Контакты и Поддержка" data-fa="تماس و پشتیبانی" data-de="Kontakt & Support" data-fr="Contact & Support" data-zh="联系与支持" data-i18n="footer.support">Contact & Support</h4>
+data-en="Contact & Support" data-tr="İletişim & Destek" data-ar="الدعم والاتصال" data-es="Contacto y Soporte" data-ru="Контакты и Поддержка" data-fa="تماس و پشتیبانی" data-de="Kontakt & Support" data-fr="Contact & Support" data-zh="联系与支持">Contact & Support</h4>
 <div class="vteke-footer-contact-container">
 <div class="vteke-footer-contact-item">
 <div class="vteke-footer-contact-icon-box">
@@ -1256,7 +1286,7 @@ data-ru="Подпишитесь на нашу рассылку для получ
 data-fa="برای دریافت به‌روزرسانی‌ها در خبرنامه ما مشترک شوید"
 data-de="Abonnieren Sie unseren Newsletter für Updates"
 data-fr="Abonnez-vous à notre newsletter pour les mises à jour"
-data-zh="订阅我们的新闻通讯以获取更新" data-i18n="footer.newsletter">Subscribe to our newsletter for updates</p>
+data-zh="订阅我们的新闻通讯以获取更新">Subscribe to our newsletter for updates</p>
 </div>
 </div>
 </div>
@@ -1391,7 +1421,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-V72-500.jpg",
         "link": "ProductsPages/AnalogMeters/AK-V72-500V.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1399,7 +1429,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-A72-XXD.png",
         "link": "ProductsPages/AnalogMeters/AK-A72-XXD.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1407,7 +1437,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-A96-XXD.png",
         "link": "ProductsPages/AnalogMeters/AK-A96-XXD.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1415,7 +1445,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-V72-XX.0.1.png",
         "link": "ProductsPages/AnalogMeters/AK-V72-XX0,1.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1423,7 +1453,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-V96-XX.0.1.png",
         "link": "ProductsPages/AnalogMeters/AK-V96-500V.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1431,7 +1461,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-V96-500.jpg",
         "link": "ProductsPages/AnalogMeters/AK-V96-XX0,1.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1439,7 +1469,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-A96-XX.png",
         "link": "ProductsPages/AnalogMeters/AK-A96-XXX.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1447,7 +1477,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-A72-XX.png",
         "link": "ProductsPages/AnalogMeters/AK-A72-XXX.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1455,7 +1485,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Analog Meters/AK-A96-XX.png",
         "link": "ProductsPages/AnalogMeters/AK-A96-XXX-1.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1463,7 +1493,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ak-f96-main.jpg",
         "link": "ProductsPages/AnalogMeters/AK-F96.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1471,7 +1501,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ak-f72-main.jpg",
         "link": "ProductsPages/AnalogMeters/AK-F72.html",
-        "category": "meters",
+        "category": "analog-meters",
         "categoryLabel": "AnalogMeters"
     },
     {
@@ -1479,7 +1509,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ftr-08ms-main.jpg",
         "link": "ProductsPages/Timers/FTR-08MS.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1487,7 +1517,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dtr-sd-main.jpg",
         "link": "ProductsPages/Timers/DTR-SD.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1495,7 +1525,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Timer/ll.jpeg",
         "link": "ProductsPages/Timers/DTR-03M.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1503,7 +1533,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ftr-10-main.jpg",
         "link": "ProductsPages/Timers/FTR-10.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1511,7 +1541,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dtr-sc-main.jpg",
         "link": "ProductsPages/Timers/DTR-SC.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1519,7 +1549,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ftr-07-main.jpg",
         "link": "ProductsPages/Timers/FTR-07.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1527,7 +1557,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ftr-08-main.jpg",
         "link": "ProductsPages/Timers/FTR-08.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1535,7 +1565,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ftr-09-main.jpg",
         "link": "ProductsPages/Timers/FTR-09.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1543,7 +1573,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dtr-60-main.jpg",
         "link": "ProductsPages/Timers/DTR-60.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1551,7 +1581,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dtr-30-main.jpg",
         "link": "ProductsPages/Timers/DTR-30.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1559,7 +1589,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ftr-08m-main.jpg",
         "link": "ProductsPages/Timers/FTR-08M.html",
-        "category": "relays",
+        "category": "timers",
         "categoryLabel": "Timers"
     },
     {
@@ -1567,7 +1597,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vk-a96-t-main.jpg",
         "link": "ProductsPages/DigitalMeters/VK-A96-T.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
@@ -1575,7 +1605,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vk-v72-main.jpg",
         "link": "ProductsPages/DigitalMeters/VK-V72.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
@@ -1583,7 +1613,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vk-v96-main.jpg",
         "link": "ProductsPages/DigitalMeters/VK-V96.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
@@ -1591,7 +1621,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vk-a72-main.jpg",
         "link": "ProductsPages/DigitalMeters/VK-A72.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
@@ -1599,7 +1629,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vk-m96-c-main.jpg",
         "link": "ProductsPages/DigitalMeters/VK-M96-C.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
@@ -1607,15 +1637,15 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vk-v96-t2-main.jpg",
         "link": "ProductsPages/DigitalMeters/VK-V96-T2.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
         "title": "VK-M96S Multi-Function Digital Meter (91x91mm)\nVK-M96S \u00c7ok Fonksiyonlu Dijital \u00d6l\u00e7er (91x91mm)",
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
-        "image": "/vtekeimg/mm.jpeg",
+        "image": "/vtekeimg/electronic relays/pcr-04.jpg",
         "link": "ProductsPages/DigitalMeters/VK-M96S.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
@@ -1623,7 +1653,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vk-a96-main.jpg",
         "link": "ProductsPages/DigitalMeters/VK-A96.html",
-        "category": "meters",
+        "category": "digital-meters",
         "categoryLabel": "DigitalMeters"
     },
     {
@@ -1631,7 +1661,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vcr-11-main.jpg",
         "link": "ProductsPages/ProtectionRelay/VCR-11.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1639,7 +1669,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vcr-02f-main.jpg",
         "link": "ProductsPages/ProtectionRelay/VCR-02F.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1647,7 +1677,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ppr-03n-main.jpg",
         "link": "ProductsPages/ProtectionRelay/PPR-03N.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1655,7 +1685,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/elr-v2-main.jpg",
         "link": "ProductsPages/ProtectionRelay/ELR-V2.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1663,7 +1693,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vcr-03f-main.jpg",
         "link": "ProductsPages/ProtectionRelay/VCR-03F.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1671,7 +1701,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dvc-04f-main.jpg",
         "link": "ProductsPages/ProtectionRelay/DVC-04F.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1679,7 +1709,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dvc-04-main.jpg",
         "link": "ProductsPages/ProtectionRelay/DVC-04.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1687,7 +1717,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ppr-05f-main.jpg",
         "link": "ProductsPages/ProtectionRelay/PPR-05F.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1695,7 +1725,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/vcr-02-main.jpg",
         "link": "ProductsPages/ProtectionRelay/VCR-02.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1703,7 +1733,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dor-main.jpg",
         "link": "ProductsPages/ProtectionRelay/DOR.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1711,7 +1741,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ppr-06f-main.jpg",
         "link": "ProductsPages/ProtectionRelay/PPR-06F.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1719,7 +1749,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ppr-14-main.jpg",
         "link": "ProductsPages/ProtectionRelay/PPR-14.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1727,7 +1757,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/dvc-01-main.jpg",
         "link": "ProductsPages/ProtectionRelay/DVC-01.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1735,7 +1765,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ppr-24f-main.jpg",
         "link": "ProductsPages/ProtectionRelay/PPR-24F.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1743,7 +1773,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/ppr-24fn-main.jpg",
         "link": "ProductsPages/ProtectionRelay/PPR-24FN.html",
-        "category": "relays",
+        "category": "protection-relays",
         "categoryLabel": "ProtectionRelay"
     },
     {
@@ -1943,7 +1973,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Power Factor/PFC-07.jpg",
         "link": "ProductsPages/PowerFactorController/PFC-07.html",
-        "category": "analyzers",
+        "category": "power-factor",
         "categoryLabel": "PowerFactorController"
     },
     {
@@ -1951,7 +1981,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Power Factor/PFC-12S.jpg",
         "link": "ProductsPages/PowerFactorController/PFC-12S.html",
-        "category": "analyzers",
+        "category": "power-factor",
         "categoryLabel": "PowerFactorController"
     },
     {
@@ -1959,7 +1989,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-1205.png",
         "link": "ProductsPages/BatteryCharger/VBC-1205.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
@@ -1967,7 +1997,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-1205A.png",
         "link": "ProductsPages/BatteryCharger/VBC-1205A.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
@@ -1975,7 +2005,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-2405.png",
         "link": "ProductsPages/BatteryCharger/VBC-2405.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
@@ -1983,7 +2013,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-2405A.png",
         "link": "ProductsPages/BatteryCharger/VBC-2405A.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
@@ -1991,7 +2021,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-A05.png",
         "link": "ProductsPages/BatteryCharger/VBC-A05.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
@@ -1999,7 +2029,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-1210.png",
         "link": "ProductsPages/BatteryCharger/VBC-1210.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
@@ -2007,7 +2037,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-1210A.png",
         "link": "ProductsPages/BatteryCharger/VBC-1210A.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
@@ -2015,15 +2045,15 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Battery Charger/VBC-2410.png",
         "link": "ProductsPages/BatteryCharger/VBC-2410.html",
-        "category": "power",
+        "category": "battery-chargers",
         "categoryLabel": "BatteryCharger"
     },
     {
         "title": "HPR-03M 3-Pump Alternation Relay (Hydrophore Controller)\nHPR-03M 3-Pompa Alternasyon R\u00f6lesi (Hidofor Kontrol\u00f6r\u00fc)",
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
-        "image": "/vtekeimg/mm.jpeg",
+        "image": "/vtekeimg/electronic relays/pcr-04.jpg",
         "link": "ProductsPages/ControlRelay/HPR-03M.html",
-        "category": "relays",
+        "category": "control-relays",
         "categoryLabel": "ControlRelay"
     },
     {
@@ -2031,7 +2061,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/llr-05u-main.jpg",
         "link": "ProductsPages/ControlRelay/LLR-05U.html",
-        "category": "relays",
+        "category": "control-relays",
         "categoryLabel": "ControlRelay"
     },
     {
@@ -2039,7 +2069,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/hpr-02m-main.jpg",
         "link": "ProductsPages/ControlRelay/HPR-02M.html",
-        "category": "relays",
+        "category": "control-relays",
         "categoryLabel": "ControlRelay"
     },
     {
@@ -2047,7 +2077,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/llr-06-main.jpg",
         "link": "ProductsPages/ControlRelay/LLR-06.html",
-        "category": "relays",
+        "category": "control-relays",
         "categoryLabel": "ControlRelay"
     },
     {
@@ -2055,7 +2085,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/llr-05-main.jpg",
         "link": "ProductsPages/ControlRelay/LLR-05.html",
-        "category": "relays",
+        "category": "control-relays",
         "categoryLabel": "ControlRelay"
     },
     {
@@ -2063,15 +2093,15 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/images/products/pcr-03-main.jpg",
         "link": "ProductsPages/ControlRelay/PCR-03.html",
-        "category": "relays",
+        "category": "control-relays",
         "categoryLabel": "ControlRelay"
     },
     {
         "title": "PCR-04 Photocell Relay (Adjustable Lux Control)\nPCR-04 Fotoselli R\u00f6le (Ayarlanabilir L\u00fcks Kontrol)",
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
-        "image": "/vtekeimg/mm.jpeg",
+        "image": "/vtekeimg/electronic relays/pcr-04.jpg",
         "link": "ProductsPages/ControlRelay/PCR-04.html",
-        "category": "relays",
+        "category": "control-relays",
         "categoryLabel": "ControlRelay"
     },
     {
@@ -2079,7 +2109,7 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Power Supply/PSU-2406.jpg",
         "link": "ProductsPages/PowerSupply/PSU-2406.html",
-        "category": "power",
+        "category": "power-supplies",
         "categoryLabel": "PowerSupply"
     },
     {
@@ -2087,104 +2117,40 @@ const productsData = [
         "description": "TK30N Digital Multifunction Power Meter - Advanced energy monitoring solution with high accuracy measurement, MODBUS communication, and real-time data logging for industrial power systems.",
         "image": "/vtekeimg/Power Supply/PSU-2403.png",
         "link": "ProductsPages/PowerSupply/PSU-2403.html",
-        "category": "power",
+        "category": "power-supplies",
         "categoryLabel": "PowerSupply"
     },
     {
-        "title": "volt transducer",
-        "description": "",
+        "title": "VTV-01 AC Voltage Transducer (0-500V Input)\nVTV-01 AC Gerilim Transdüseri (0-500V Giri\u015f)",
+        "description": "Precision voltage transducer for AC voltage measurement and signal isolation in industrial automation systems.",
         "image": "/vtekeimg/favicon.png",
         "link": "volt transducer.html",
-        "category": "transducers",
-        "categoryLabel": "transducers"
+        "category": "volt-transducer",
+        "categoryLabel": "VoltTransducer"
     },
     {
-        "title": "Analog Meters",
-        "description": "",
+        "title": "VTV-02 DC Voltage Transducer (0-1000V Input)\nVTV-02 DC Gerilim Transdüseri (0-1000V Giri\u015f)",
+        "description": "High voltage DC transducer for accurate DC voltage measurement and isolation in power systems.",
         "image": "/vtekeimg/favicon.png",
-        "link": "analog meters.html",
-        "category": "meters",
-        "categoryLabel": "meters"
+        "link": "volt transducer.html",
+        "category": "volt-transducer",
+        "categoryLabel": "VoltTransducer"
     },
     {
-        "title": "Protection Relays",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "protection relay.html",
-        "category": "relays",
-        "categoryLabel": "relays"
-    },
-    {
-        "title": "Protection Relays",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "protection_relay.html",
-        "category": "relays",
-        "categoryLabel": "relays"
-    },
-    {
-        "title": "Digital Meters",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "digital meters.html",
-        "category": "meters",
-        "categoryLabel": "meters"
-    },
-    {
-        "title": "ampere_transducer",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "ampere_transducer.html",
-        "category": "transducers",
-        "categoryLabel": "transducers"
-    },
-    {
-        "title": "ampere transducer",
-        "description": "",
+        "title": "ATC-01 AC Current Transducer (0-5A Input)\nATC-01 AC Ak\u0131m Transdüseri (0-5A Giri\u015f)",
+        "description": "Current transducer for AC current measurement with standard 0-5A CT input and isolated output.",
         "image": "/vtekeimg/favicon.png",
         "link": "ampere transducer.html",
-        "category": "transducers",
-        "categoryLabel": "transducers"
+        "category": "ampere-transducer",
+        "categoryLabel": "AmpereTransducer"
     },
     {
-        "title": "Digital Meters",
-        "description": "",
+        "title": "ATC-02 DC Current Transducer (0-20mA Input)\nATC-02 DC Ak\u0131m Transdüseri (0-20mA Giri\u015f)",
+        "description": "DC current transducer for 4-20mA loop measurement and industrial signal conversion.",
         "image": "/vtekeimg/favicon.png",
-        "link": "digital_meters.html",
-        "category": "meters",
-        "categoryLabel": "meters"
-    },
-    {
-        "title": "Analog Meters",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "analog_meters.html",
-        "category": "meters",
-        "categoryLabel": "meters"
-    },
-    {
-        "title": "Control Relays",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "control_relay.html",
-        "category": "relays",
-        "categoryLabel": "relays"
-    },
-    {
-        "title": "Control Relays",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "control relay.html",
-        "category": "relays",
-        "categoryLabel": "relays"
-    },
-    {
-        "title": "volt_transducer",
-        "description": "",
-        "image": "/vtekeimg/favicon.png",
-        "link": "volt_transducer.html",
-        "category": "transducers",
-        "categoryLabel": "transducers"
+        "link": "ampere transducer.html",
+        "category": "ampere-transducer",
+        "categoryLabel": "AmpereTransducer"
     }
 ];
 
@@ -2194,53 +2160,134 @@ const productsData = [
 const categoriesConfig = [
     {
         key: 'transformers',
-        label: 'Current Transformers',
-        labelTr: 'Akım Transformatörleri',
-        desc: 'High-accuracy window, split-core & busbar CTs for industrial metering.',
+        label_en: 'Current Transformers',
+        label_tr: 'Akım Transformatörleri',
+        desc_en: 'High-accuracy window, split-core & busbar CTs for industrial metering.',
+        desc_tr: 'Endüstriyel ölçüm için yüksek hassasiyetli pencere tipi, açılır-kapanır ve bara tipi akım trafoları.',
         image: '/vtekeimg/Current Transformers/TK30N.png',
         href: 'Current Transformer.html'
     },
     {
-        key: 'relays',
-        label: 'Protection & Control Relays',
-        labelTr: 'Koruma ve Kontrol Röleleri',
-        desc: 'Voltage, phase, timer, liquid-level and photocell relay solutions.',
+        key: 'protection-relays',
+        label_en: 'Protection Relays',
+        label_tr: 'Koruma Röleleri',
+        desc_en: 'Voltage, phase sequence, overcurrent and asymmetry protection relays.',
+        desc_tr: 'Gerilim, faz sırası, aşırı akım ve asimetri koruma röleleri.',
         image: '/vtekeimg/electronic relays/pcr-04.jpg',
         href: 'protection relay.html'
     },
     {
-        key: 'meters',
-        label: 'Meters & Instruments',
-        labelTr: 'Ölçüm Cihazları',
-        desc: 'Analog & digital voltmeters, ammeters, frequency and multifunction meters.',
+        key: 'timers',
+        label_en: 'Timers',
+        label_tr: 'Zamanlayıcılar',
+        desc_en: 'Delay timers, star-delta timers, staircase timers and multifunction timers.',
+        desc_tr: 'Gecikme zamanlayıcıları, yıldız-üçgen zamanlayıcılar, merdiven zamanlayıcıları ve çok fonksiyonlu zamanlayıcılar.',
+        image: '/vtekeimg/electronic relays/pcr-04.jpg',
+        href: 'Products.html'
+    },
+    {
+        key: 'control-relays',
+        label_en: 'Control Relays',
+        label_tr: 'Kontrol Röleleri',
+        desc_en: 'Pump alternation, liquid level, photocell and hydrophore control relays.',
+        desc_tr: 'Pompa alternasyonu, sıvı seviye, fotoselli ve hidrofor kontrol röleleri.',
+        image: '/vtekeimg/electronic relays/pcr-04.jpg',
+        href: 'control relay.html'
+    },
+    {
+        key: 'analog-meters',
+        label_en: 'Analog Meters',
+        label_tr: 'Analog Ölçerler',
+        desc_en: 'Analog voltmeters, ammeters, and frequency meters in various sizes.',
+        desc_tr: 'Çeşitli boyutlarda analog voltmetreler, ampermetreler ve frekansmetreler.',
         image: '/vtekeimg/Analog Meters/AK-V96-500.jpg',
         href: 'analog meters.html'
     },
     {
+        key: 'digital-meters',
+        label_en: 'Digital Meters',
+        label_tr: 'Dijital Ölçerler',
+        desc_en: 'Digital voltmeters, ammeters and multifunction power meters.',
+        desc_tr: 'Dijital voltmetreler, ampermetreler ve çok fonksiyonlu güç ölçerler.',
+        image: '/vtekeimg/electronic relays/pcr-04.jpg',
+        href: 'digital meters.html'
+    },
+    {
         key: 'analyzers',
-        label: 'Energy Analyzers',
-        labelTr: 'Enerji Analizörleri',
-        desc: 'Panel-mount power analyzers and power factor controllers with Modbus.',
+        label_en: 'Energy Analyzers',
+        label_tr: 'Enerji Analizörleri',
+        desc_en: 'Panel-mount power analyzers with Modbus communication.',
+        desc_tr: 'Modbus iletişimli panel tipi güç analizörleri.',
         image: '/vtekeimg/Energy Analyzer/EA-C1.png',
         href: 'energy analyzer.html'
     },
     {
-        key: 'power',
-        label: 'Power Supplies & Chargers',
-        labelTr: 'Güç Kaynakları ve Şarj Cihazları',
-        desc: '12/24V DC switching power supplies and industrial battery chargers.',
-        image: '/vtekeimg/Power Supply/PSU-2406.jpg',
-        href: 'power supply.html'
+        key: 'power-factor',
+        label_en: 'Power Factor Controllers',
+        label_tr: 'Güç Faktörü Kontrolörleri',
+        desc_en: 'Automatic power factor correction controllers for industrial applications.',
+        desc_tr: 'Endüstriyel uygulamalar için otomatik güç faktörü düzeltme kontrolörleri.',
+        image: '/vtekeimg/Power Factor/PFC-07.jpg',
+        href: 'Products.html'
     },
     {
-        key: 'transducers',
-        label: 'Transducers',
-        labelTr: 'Transdüserler',
-        desc: 'Voltage and current transducers for signal conversion in automation.',
+        key: 'battery-chargers',
+        label_en: 'Battery Chargers',
+        label_tr: 'Akü Şarj Cihazları',
+        desc_en: '12V/24V industrial battery chargers with various current ratings.',
+        desc_tr: 'Çeşitli akım değerlerinde 12V/24V endüstriyel akü şarj cihazları.',
+        image: '/vtekeimg/Battery Charger/VBC-1205.png',
+        href: 'Products.html'
+    },
+    {
+        key: 'power-supplies',
+        label_en: 'Power Supply Units',
+        label_tr: 'Güç Kaynakları',
+        desc_en: '24V DC switching power supplies for industrial automation.',
+        desc_tr: 'Endüstriyel otomasyon için 24V DC anahtarlamalı güç kaynakları.',
+        image: '/vtekeimg/Power Supply/PSU-2406.jpg',
+        href: 'Products.html'
+    },
+    {
+        key: 'volt-transducer',
+        label_en: 'Volt Transducers',
+        label_tr: 'Gerilim Transdüserleri',
+        desc_en: 'Voltage transducers for signal conversion and isolation in industrial automation.',
+        desc_tr: 'Endüstriyel otomasyonda sinyal dönüşümü ve izolasyon için gerilim transdüserleri.',
         image: '/vtekeimg/favicon.png',
         href: 'volt transducer.html'
+    },
+    {
+        key: 'ampere-transducer',
+        label_en: 'Ampere Transducers',
+        label_tr: 'Akım Transdüserleri',
+        desc_en: 'Current transducers for accurate current measurement and signal conversion.',
+        desc_tr: 'Hassas akım ölçümü ve sinyal dönüşümü için akım transdüserleri.',
+        image: '/vtekeimg/favicon.png',
+        href: 'ampere transducer.html'
     }
 ];
+
+// Translation strings for dynamic UI
+const uiTranslations = {
+    en: {
+        backToCategories: '← Back to Categories',
+        viewProducts: 'View Products',
+        products: 'Products',
+        highPrecision: 'High-precision industrial electrical equipment.'
+    },
+    tr: {
+        backToCategories: '← Kategorilere Dön',
+        viewProducts: 'Ürünleri Görüntüle',
+        products: 'Ürün',
+        highPrecision: 'Yüksek hassasiyetli endüstriyel elektrik ekipmanları.'
+    }
+};
+
+// Get translation helper
+function t(key) {
+    return uiTranslations[currentLanguage]?.[key] || uiTranslations.en[key] || key;
+}
 
 // ============================================================
 //  Render CATEGORY grid (shown for "All Products")
@@ -2249,17 +2296,19 @@ function renderCategories() {
     const grid = document.getElementById('productGrid');
     if (!grid) return;
 
+    const isTurkish = currentLanguage === 'tr';
+    
     grid.className = 'category-grid';
     grid.innerHTML = categoriesConfig.map(cat => `
         <a class="category-card" href="${cat.href}">
             <div class="category-card-image">
-                <img src="${cat.image}" alt="${cat.label}"
+                <img src="${cat.image}" alt="${isTurkish ? cat.label_tr : cat.label_en}"
                      onerror="this.src='/vtekeimg/favicon.png'; this.style.objectFit='contain'; this.style.padding='1.5rem';">
             </div>
             <div class="category-card-body">
-                <h3 class="category-card-title">${cat.label}</h3>
-                <p class="category-card-desc">${cat.desc}</p>
-                <span class="category-card-btn" data-i18n="products.viewProducts">View Products →</span>
+                <h3 class="category-card-title" data-lang-en="${cat.label_en}" data-lang-tr="${cat.label_tr}">${isTurkish ? cat.label_tr : cat.label_en}</h3>
+                <p class="category-card-desc" data-lang-en="${cat.desc_en}" data-lang-tr="${cat.desc_tr}">${isTurkish ? cat.desc_tr : cat.desc_en}</p>
+                <span class="category-card-btn" data-lang-en="View Products →" data-lang-tr="Ürünleri Görüntüle →">${t('viewProducts')} →</span>
             </div>
         </a>
     `).join('');
@@ -2272,35 +2321,43 @@ function renderProducts(category) {
     const grid = document.getElementById('productGrid');
     if (!grid) return;
 
+    const isTurkish = currentLanguage === 'tr';
     grid.className = 'product-grid';
 
     const filtered = productsData.filter(p => p.category === category);
 
     // Back button + count
     const catInfo = categoriesConfig.find(c => c.key === category);
-    const catLabel = catInfo ? catInfo.label : category;
+    const catLabel = isTurkish && catInfo ? catInfo.label_tr : (catInfo ? catInfo.label_en : category);
+    const productsLabel = t('products');
 
     grid.innerHTML = `
-        <div class="back-to-categories" onclick="filterProducts('all')">
-            ← Back to Categories
+        <div class="back-to-categories" onclick="filterProducts('all')" data-lang-en="← Back to Categories" data-lang-tr="← Kategorilere Dön">
+            ${t('backToCategories')}
         </div>
         <div class="category-product-header">
-            <h2 class="category-product-title">${catLabel}</h2>
-            <span class="category-product-count">${filtered.length} Products</span>
+            <h2 class="category-product-title" data-lang-en="${catInfo ? catInfo.label_en : category}" data-lang-tr="${catInfo ? catInfo.label_tr : category}">${catLabel}</h2>
+            <span class="category-product-count">${filtered.length} ${productsLabel}</span>
         </div>
-        ${filtered.map(product => `
+        ${filtered.map(product => {
+            const titleParts = product.title.split('\n');
+            const enTitle = titleParts[0] || product.title;
+            const trTitle = titleParts[1] || enTitle;
+            const descText = isTurkish ? (titleParts[1] || t('highPrecision')) : (titleParts[0] || t('highPrecision'));
+            
+            return `
         <a href="${product.link}" class="product-card" data-category="${product.category}">
             <div class="card-image-container">
-                <img src="${product.image}" alt="${product.title.split('\n')[0]}"
+                <img src="${product.image}" alt="${isTurkish ? trTitle : enTitle}"
                      onerror="this.src='/vtekeimg/favicon.png'; this.style.objectFit='contain'; this.style.padding='2rem';">
             </div>
             <div class="card-content">
                 <span class="category-label">${product.categoryLabel.replace(/([A-Z])/g, ' $1').trim()}</span>
-                <h3 class="product-title">${product.title.split('\n')[0]}</h3>
-                <p class="product-description">${product.title.includes('\n') ? product.title.split('\n')[1] : 'High-precision industrial electrical equipment.'}</p>
+                <h3 class="product-title" data-lang-en="${enTitle}" data-lang-tr="${trTitle}">${isTurkish ? trTitle : enTitle}</h3>
+                <p class="product-description" data-lang-en="High-precision industrial electrical equipment." data-lang-tr="Yüksek hassasiyetli endüstriyel elektrik ekipmanları.">${t('highPrecision')}</p>
             </div>
         </a>
-        `).join('')}
+        `}).join('')}
     `;
 
     // Staggered animation
@@ -2338,13 +2395,19 @@ function filterProducts(category) {
 // ============================================================
 function updateCategoryCounts() {
     const counts = {
-        all: categoriesConfig.length,          // show # of categories when on "All"
+        all: productsData.length,
         transformers: productsData.filter(p => p.category === 'transformers').length,
-        relays:       productsData.filter(p => p.category === 'relays').length,
-        meters:       productsData.filter(p => p.category === 'meters').length,
-        analyzers:    productsData.filter(p => p.category === 'analyzers').length,
-        power:        productsData.filter(p => p.category === 'power').length,
-        transducers:  productsData.filter(p => p.category === 'transducers').length
+        'protection-relays': productsData.filter(p => p.category === 'protection-relays').length,
+        timers: productsData.filter(p => p.category === 'timers').length,
+        'control-relays': productsData.filter(p => p.category === 'control-relays').length,
+        'analog-meters': productsData.filter(p => p.category === 'analog-meters').length,
+        'digital-meters': productsData.filter(p => p.category === 'digital-meters').length,
+        analyzers: productsData.filter(p => p.category === 'analyzers').length,
+        'power-factor': productsData.filter(p => p.category === 'power-factor').length,
+        'battery-chargers': productsData.filter(p => p.category === 'battery-chargers').length,
+        'power-supplies': productsData.filter(p => p.category === 'power-supplies').length,
+        'volt-transducer': productsData.filter(p => p.category === 'volt-transducer').length,
+        'ampere-transducer': productsData.filter(p => p.category === 'ampere-transducer').length
     };
 
     document.querySelectorAll('.category-item').forEach(btn => {
@@ -2365,20 +2428,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
-
-
-
-<script>
-// Re-apply translations after dynamic content loads
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        var lang = localStorage.getItem('vteke_language');
-        if (lang && lang !== 'en' && window.setLanguage) {
-            window.setLanguage(lang);
-        }
-    }, 500);
-});
-</script>
-<script src="translations/translation.js"></script>
 </body>
 </html>

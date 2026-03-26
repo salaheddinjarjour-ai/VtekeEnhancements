@@ -223,4 +223,61 @@ document.addEventListener('click', function(e) {
   }
 });
 
+/* ─── setLanguage — shared language switcher for all pages ─── */
+function setLanguage(lang) {
+  localStorage.setItem('vteke_language', lang);
 
+  // Update html lang attribute
+  document.documentElement.lang = lang;
+
+  // Update all data-lang-en / data-lang-tr elements
+  document.querySelectorAll('[data-lang-en]').forEach(function(el) {
+    el.textContent = lang === 'tr' ? (el.getAttribute('data-lang-tr') || el.textContent) : (el.getAttribute('data-lang-en') || el.textContent);
+  });
+
+  // Update desktop language button SVG flag + text
+  var flagEl = document.getElementById('currentLangFlag');
+  var textEl = document.getElementById('currentLangText');
+  _vtekeSetFlagEl(flagEl, lang);
+  if (textEl) textEl.textContent = lang === 'tr' ? 'TR' : 'EN';
+
+  // Update mobile language button active states
+  var btnEN = document.getElementById('mobileLangEN');
+  var btnTR = document.getElementById('mobileLangTR');
+  if (btnEN) btnEN.classList.toggle('active', lang === 'en');
+  if (btnTR) btnTR.classList.toggle('active', lang === 'tr');
+
+  // Update desktop dropdown item active states
+  document.querySelectorAll('.lang-dropdown-item').forEach(function(item) {
+    var isEn = item.textContent.trim().toLowerCase().includes('english');
+    item.classList.toggle('active', (lang === 'en' && isEn) || (lang === 'tr' && !isEn));
+  });
+
+  // Close the dropdown
+  var wrapper = document.getElementById('langDropdown');
+  if (wrapper) wrapper.classList.remove('active');
+}
+
+// Apply saved language on page load + inject SVGs into initial flag elements
+(function() {
+  var saved = localStorage.getItem('vteke_language') || 'en';
+  // Inject SVG into flag elements even before setLanguage is called
+  document.addEventListener('DOMContentLoaded', function() {
+    _vtekeSetFlagEl(document.getElementById('currentLangFlag'), saved);
+    var textEl = document.getElementById('currentLangText');
+    if (textEl) textEl.textContent = saved === 'tr' ? 'TR' : 'EN';
+    // Apply translations on initial page load
+    applyTranslations(saved);
+  });
+  if (saved && saved !== 'en') setLanguage(saved);
+})();
+
+// Global translation function - applies to all [data-lang-en]/[data-lang-tr] elements
+function applyTranslations(lang) {
+  document.querySelectorAll('[data-lang-en]').forEach(function(el) {
+    var translated = el.getAttribute('data-lang-' + lang);
+    if (translated) {
+      el.textContent = translated;
+    }
+  });
+}

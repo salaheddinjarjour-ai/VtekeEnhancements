@@ -146,13 +146,10 @@
         <!-- Product Header -->
         <div class="product-header">
             <h1 class="product-title">
-                <span class="title-en">FTR-08MS Adjustable Delay/Flasher Timer (0.1s-100h)</span>
-                <span class="title-tr" style="display:none;">FTR-08MS Ayarlanabilir Gecikme/Flaşör Zamanlayıcı (0.1s-100s)</span>
+                <span class="product-code">FTR-08MS</span>
+                <span data-lang-en=" Adjustable Delay/Flasher Timer (0.1s-100h)" data-lang-tr=" Ayarlanabilir Gecikme/Flaşör Zamanlayıcı (0.1s-100s)"> Adjustable Delay/Flasher Timer (0.1s-100h)</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Multi-function timer with adjustable delay and flasher functions. Extended time range from 0.1 seconds to 100 hours with universal voltage 12-230V AC/DC compatibility. Features IP20 protection class for versatile applications. Versatile solution for complex timing and flashing applications requiring multiple functions in one device with extended time range precision.</span>
-                <span class="desc-tr" style="display:none">Ayarlanabilir gecikme ve flaşör fonksiyonlarına sahip çok fonksiyonlu zamanlayıcı. Evrensel gerilim 12-230V AC/DC uyumluluğu ile 0.1 saniye ile 100 saat arasında genişletilmiş zaman aralığı. Çok yönlü uygulamalar için IP20 koruma sınıfı özellikleri. Genişletilmiş zaman aralığı hassasiyeti ile tek cihazda çoklu fonksiyon gerektiren karmaşık zamanlama ve flaş uygulamaları için çok yönlü çözüm.</span>
-            </p>
+            <p class="product-description" data-lang-en="Multi-function timer with adjustable delay and flasher functions. Extended time range from 0.1 seconds to 100 hours with universal voltage 12-230V AC/DC compatibility. Features IP20 protection class for versatile applications. Versatile solution for complex timing and flashing applications requiring multiple functions in one device with extended time range precision." data-lang-tr="Ayarlanabilir gecikme ve flaşör fonksiyonlarına sahip çok fonksiyonlu zamanlayıcı. Evrensel gerilim 12-230V AC/DC uyumluluğu ile 0.1 saniye ile 100 saat arasında genişletilmiş zaman aralığı. Çok yönlü uygulamalar için IP20 koruma sınıfı özellikleri. Genişletilmiş zaman aralığı hassasiyeti ile tek cihazda çoklu fonksiyon gerektiren karmaşık zamanlama ve flaş uygulamaları için çok yönlü çözüm.">Multi-function timer with adjustable delay and flasher functions. Extended time range from 0.1 seconds to 100 hours with universal voltage 12-230V AC/DC compatibility. Features IP20 protection class for versatile applications. Versatile solution for complex timing and flashing applications requiring multiple functions in one device with extended time range precision.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: FTR-08MS</span>
                 <span class="ref-tr" style="display:none;">REF: FTR-08MS</span>
@@ -167,8 +164,7 @@
                 <div class="main-image-wrapper" onclick="openLightbox(this)">
                     <div class="zoom-hint">
                         <i class="fas fa-expand"></i>
-                        <span class="hint-en">Click to enlarge</span>
-                        <span class="hint-tr" style="display:none">Büyütmek için tıklayın</span>
+                        <span data-lang-en="Click to enlarge" data-lang-tr="Büyütmek için tıklayın">Click to enlarge</span>
                     </div>
                 </div>
                                                                                                             <!-- ✅ Lightbox Container (Required for JS to work) -->
@@ -192,7 +188,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -357,6 +353,25 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

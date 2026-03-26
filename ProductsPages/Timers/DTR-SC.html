@@ -149,10 +149,7 @@
                 <span class="title-en">DTR-SC Staircase Timer for Lighting Control</span>
                 <span class="title-tr" style="display:none;">DTR-SC Aydınlatma Kontrolü için Merdiven Zamanlayıcısı</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Automatic staircase timer designed for lighting control in buildings, stairwells, and common areas. Features adjustable time range from 1 second to 20 minutes for flexible lighting duration. Operates on 180-230V AC with low power consumption below 6VA. Energy-efficient solution that automatically turns off lights after preset time, reducing energy waste in residential and commercial buildings.</span>
-                <span class="desc-tr" style="display:none">Binalar, merdiven boşlukları ve ortak alanlarda aydınlatma kontrolü için tasarlanmış otomatik merdiven zamanlayıcısı. Esnek aydınlatma süresi için 1 saniye ile 20 dakika arasında ayarlanabilir zaman aralığı özellikleri. 6VA altında düşük güç tüketimi ile 180-230V AC'de çalışır. Önceden ayarlanmış süreden sonra ışıkları otomatik olarak kapatan, konut ve ticari binalarda enerji israfını azaltan enerji verimli çözüm.</span>
-            </p>
+            <p class="product-description" data-lang-en="Automatic staircase timer designed for lighting control in buildings, stairwells, and common areas. Features adjustable time range from 1 second to 20 minutes for flexible lighting duration. Operates on 180-230V AC with low power consumption below 6VA. Energy-efficient solution that automatically turns off lights after preset time, reducing energy waste in residential and commercial buildings." data-lang-tr="Binalar, merdiven boşlukları ve ortak alanlarda aydınlatma kontrolü için tasarlanmış otomatik merdiven zamanlayıcısı. Esnek aydınlatma süresi için 1 saniye ile 20 dakika arasında ayarlanabilir zaman aralığı özellikleri. 6VA altında düşük güç tüketimi ile 180-230V AC'de çalışır. Önceden ayarlanmış süreden sonra ışıkları otomatik olarak kapatan, konut ve ticari binalarda enerji israfını azaltan enerji verimli çözüm.">Automatic staircase timer designed for lighting control in buildings, stairwells, and common areas. Features adjustable time range from 1 second to 20 minutes for flexible lighting duration. Operates on 180-230V AC with low power consumption below 6VA. Energy-efficient solution that automatically turns off lights after preset time, reducing energy waste in residential and commercial buildings.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: DTR-SC</span>
                 <span class="ref-tr" style="display:none;">REF: DTR-SC</span>
@@ -192,7 +189,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -357,6 +354,25 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

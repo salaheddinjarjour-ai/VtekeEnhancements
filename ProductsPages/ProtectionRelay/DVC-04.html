@@ -335,6 +335,24 @@
 
 
 <script src="../Products.js"></script>
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('vteke_language') || 'en';
+    applyTranslations(savedLang);
+});
+</script>
 
 
 <footer class="vteke-footer-main-container">

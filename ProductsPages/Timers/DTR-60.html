@@ -149,10 +149,7 @@
                 <span class="title-en">DTR-60 On/Off Delay Timer (0.1s-60s)</span>
                 <span class="title-tr" style="display:none;">DTR-60 Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-60s)</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Reliable on-delay or off-delay timer with extended time range from 0.1 seconds to 60 seconds. Dual voltage operation on 230V AC and 24V AC/DC with low power consumption below 6VA. Features IP20 protection class for safe operation in control panels. Perfect for sequential control, process automation, and applications requiring medium-range timing precision.</span>
-                <span class="desc-tr" style="display:none">0.1 saniye ile 60 saniye arasında genişletilmiş zaman aralığına sahip güvenilir açık/kapalı gecikme zamanlayıcısı. 6VA altında düşük güç tüketimi ile 230V AC ve 24V AC/DC'de çift gerilim çalışma. Kontrol panolarında güvenli çalışma için IP20 koruma sınıfı özellikleri. Sıralı kontrol, proses otomasyonu ve orta menzilli zamanlama hassasiyeti gerektiren uygulamalar için mükemmel.</span>
-            </p>
+            <p class="product-description" data-lang-en="Reliable on-delay or off-delay timer with extended time range from 0.1 seconds to 60 seconds. Dual voltage operation on 230V AC and 24V AC/DC with low power consumption below 6VA. Features IP20 protection class for safe operation in control panels. Perfect for sequential control, process automation, and applications requiring medium-range timing precision." data-lang-tr="0.1 saniye ile 60 saniye arasında genişletilmiş zaman aralığına sahip güvenilir açık/kapalı gecikme zamanlayıcısı. 6VA altında düşük güç tüketimi ile 230V AC ve 24V AC/DC'de çift gerilim çalışma. Kontrol panolarında güvenli çalışma için IP20 koruma sınıfı özellikleri. Sıralı kontrol, proses otomasyonu ve orta menzilli zamanlama hassasiyeti gerektiren uygulamalar için mükemmel.">Reliable on-delay or off-delay timer with extended time range from 0.1 seconds to 60 seconds. Dual voltage operation on 230V AC and 24V AC/DC with low power consumption below 6VA. Features IP20 protection class for safe operation in control panels. Perfect for sequential control, process automation, and applications requiring medium-range timing precision.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: DTR-60</span>
                 <span class="ref-tr" style="display:none;">REF: DTR-60</span>
@@ -193,7 +190,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Í座性">Technical Specifications</span>
                         <span class="title-tr" style="display:none">Teknik Özellikler</span>
                     </h2>
                     <table class="spec-table">
@@ -357,6 +354,25 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    applyTranslations(localStorage.getItem('vteke_language') || 'en');
+});
+</script>
+
 
 
 <footer class="vteke-footer-main-container">

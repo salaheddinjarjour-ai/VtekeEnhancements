@@ -146,13 +146,9 @@
         <!-- Product Header -->
         <div class="product-header">
             <h1 class="product-title">
-                <span class="title-en">DVC-04F 3-Phase 380V Voltage Control Relay with Phase Sequence Protection</span>
-                <span class="title-tr" style="display:none;">DVC-04F Faz Sırası Korumalı 3-Faz 380V Gerilim Kontrol Rölesi</span>
+                <span data-lang-en="DVC-04F 3-Phase 380V Voltage Control Relay with Phase Sequence Protection" data-lang-tr="DVC-04F Faz Sırası Korumalı 3-Faz 380V Gerilim Kontrol Rölesi">DVC-04F 3-Phase 380V Voltage Control Relay with Phase Sequence Protection</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Advanced three-phase voltage control relay for 3x380V AC systems with enhanced phase sequence protection. Features over voltage protection (400V-460V AC), under voltage protection (230V-360V AC), and phase sequence monitoring to prevent motor reversal damage. Adjustable reset time from 0.1s to 10s with low power consumption below 6VA. Essential for protecting three-phase equipment in industrial and commercial installations.</span>
-                <span class="desc-tr" style="display:none">Gelişmiş faz sırası korumalı 3x380V AC sistemler için gelişmiş üç fazlı gerilim kontrol rölesi. Aşırı gerilim koruması (400V-460V AC), düşük gerilim koruması (230V-360V AC) ve motor ters dönme hasarını önlemek için faz sırası izleme özellikleri. 6VA altında düşük güç tüketimi ile 0.1s-10s ayarlanabilir sıfırlama süresi. Endüstriyel ve ticari tesisatlarda üç fazlı ekipmanları korumak için gerekli.</span>
-            </p>
+            <p class="product-description" data-lang-en="Advanced three-phase voltage control relay for 3x380V AC systems with enhanced phase sequence protection. Features over voltage protection (400V-460V AC), under voltage protection (230V-360V AC), and phase sequence monitoring to prevent motor reversal damage. Adjustable reset time from 0.1s to 10s with low power consumption below 6VA. Essential for protecting three-phase equipment in industrial and commercial installations." data-lang-tr="Gelişmiş faz sırası korumalı 3x380V AC sistemler için gelişmiş üç fazlı gerilim kontrol rölesi. Aşırı gerilim koruması (400V-460V AC), düşük gerilim koruması (230V-360V AC) ve motor ters dönme hasarını önlemek için faz sırası izleme özellikleri. 6VA altında düşük güç tüketimi ile 0.1s-10s ayarlanabilir sıfırlama süresi. Endüstriyel ve ticari tesisatlarda üç fazlı ekipmanları korumak için gerekli.">Advanced three-phase voltage control relay for 3x380V AC systems with enhanced phase sequence protection.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: DVC-04F</span>
                 <span class="ref-tr" style="display:none;">REF: DVC-04F</span>
@@ -335,6 +331,24 @@
 
 
 <script src="../Products.js"></script>
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('vteke_language') || 'en';
+    applyTranslations(savedLang);
+});
+</script>
 
 
 <footer class="vteke-footer-main-container">

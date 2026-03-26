@@ -146,16 +146,12 @@
         <!-- Product Header -->
         <div class="product-header">
             <h1 class="product-title">
-                <span class="title-en">PPR-14 Phase Sequence & Asymmetry Protection Relay</span>
-                <span class="title-tr" style="display:none;">PPR-14 Faz Sırası ve Asimetri Koruma Rölesi</span>
+                <span class="product-code">PPR-14</span>
+                <span data-lang-en="Phase Sequence & Asymmetry Protection Relay" data-lang-tr="Faz Sırası ve Asimetri Koruma Rölesi">Phase Sequence & Asymmetry Protection Relay</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Advanced phase protection relay for three-phase 3x380V AC systems. Provides comprehensive protection against phase absence, phase sequence errors, and 30% asymmetry. Features low power consumption below 6VA for energy-efficient operation in industrial applications.</span>
-                <span class="desc-tr" style="display:none;">Üç fazlı 3x380V AC sistemler için gelişmiş faz koruma rölesi. Faz yokluğu, faz sırası hataları ve %30 asimetriye karşı kapsamlı koruma sağlar. Endüstriyel uygulamalarda enerji verimli çalışma için 6VA altında düşük güç tüketimi.</span>
-            </p>
+            <p class="product-description" data-lang-en="Advanced phase protection relay for three-phase 3x380V AC systems. Provides comprehensive protection against phase absence, phase sequence errors, and 30% asymmetry. Features low power consumption below 6VA for energy-efficient operation in industrial applications." data-lang-tr="Üç fazlı 3x380V AC sistemler için gelişmiş faz koruma rölesi. Faz yokluğu, faz sırası hataları ve %30 asimetriye karşı kapsamlı koruma sağlar. Endüstriyel uygulamalarda enerji verimli çalışma için 6VA altında düşük güç tüketimi.">Advanced phase protection relay for three-phase 3x380V AC systems. Provides comprehensive protection against phase absence, phase sequence errors, and 30% asymmetry. Features low power consumption below 6VA for energy-efficient operation in industrial applications.</p>
             <div class="product-reference">
-                <span class="ref-en">REF: PPR-14</span>
-                <span class="ref-tr" style="display:none;">REF: PPR-14</span>
+                <span class="product-code">REF: PPR-14</span>
             </div>
         </div>
 
@@ -167,8 +163,7 @@
                 <div class="main-image-wrapper" onclick="openLightbox(this)">
                     <div class="zoom-hint">
                         <i class="fas fa-expand"></i>
-                        <span class="hint-en">Click to enlarge</span>
-                        <span class="hint-tr" style="display:none">Büyütmek için tıklayın</span>
+                        <span data-lang-en="Click to enlarge" data-lang-tr="Büyütmek için tıklayın">Click to enlarge</span>
                     </div>
                 </div>
                                                                                                             <!-- ✅ Lightbox Container (Required for JS to work) -->
@@ -299,13 +294,11 @@
                     <div class="action-buttons">
                         <button class="action-btn primary-action" onclick="requestQuote()">
                             <i class="fas fa-comments-dollar"></i>
-                            <span class="btn-en">Request Quote</span>
-                            <span class="btn-tr" style="display:none">Teklif İste</span>
+                            <span data-lang-en="Request Quote" data-lang-tr="Teklif İste">Request Quote</span>
                         </button>
                         <button class="action-btn secondary-action" onclick="downloadDatasheet()">
                             <i class="fas fa-download"></i>
-                            <span class="btn-en">Download Datasheet</span>
-                            <span class="btn-tr" style="display:none">Ürün Bilgisini İndir</span>
+                            <span data-lang-en="Download Datasheet" data-lang-tr="Ürün Bilgisini İndir">Download Datasheet</span>
                         </button>
                     </div>
                 </div>
@@ -315,8 +308,7 @@
         <!-- Related Products -->
         <div class="related-products">
             <h2 class="related-title">
-                <span class="title-en">Related Products</span>
-                <span class="title-tr" style="display:none">İlgili Ürünler</span>
+                <span data-lang-en="Related Products" data-lang-tr="İlgili Ürünler">Related Products</span>
             </h2>
             <div class="products-slider">
                 </div>
@@ -334,6 +326,29 @@
 
 
 <script src="../Products.js"></script>
+
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) {
+            el.textContent = translation;
+        }
+    });
+}
+
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('vteke_language') || 'en';
+    applyTranslations(savedLang);
+});
+</script>
 
 
 <footer class="vteke-footer-main-container">
@@ -474,6 +489,9 @@ title.style.transform = 'scale(1)';
 });
 });
 });
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>

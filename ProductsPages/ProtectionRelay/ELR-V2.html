@@ -146,13 +146,9 @@
         <!-- Product Header -->
         <div class="product-header">
             <h1 class="product-title">
-                <span class="title-en">ELR-V2 Earth Leakage Current Protection Relay</span>
-                <span class="title-tr" style="display:none;">ELR-V2 Toprak Kaçak Akım Koruma Rölesi</span>
+                <span data-lang-en="ELR-V2 Earth Leakage Current Protection Relay" data-lang-tr="ELR-V2 Toprak Kaçak Akım Koruma Rölesi">ELR-V2 Earth Leakage Current Protection Relay</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Critical safety protection relay for 230V AC systems designed to detect and protect against earth leakage currents. Features adjustable delay time from 0.1s to 20s for precise fault detection and prevention of electrical hazards. Low power consumption below 6VA with IP20 protection class. Essential for personnel safety and equipment protection in residential, commercial, and industrial electrical installations.</span>
-                <span class="desc-tr" style="display:none">Toprak kaçak akımlarını algılamak ve korumak için tasarlanmış 230V AC sistemler için kritik güvenlik koruma rölesi. Hassas arıza algılama ve elektrik tehlikelerinin önlenmesi için 0.1s-20s ayarlanabilir gecikme süresi özellikleri. IP20 koruma sınıfı ile 6VA altında düşük güç tüketimi. Konut, ticari ve endüstriyel elektrik tesisatlarında personel güvenliği ve ekipman koruması için gerekli.</span>
-            </p>
+            <p class="product-description" data-lang-en="Critical safety protection relay for 230V AC systems designed to detect and protect against earth leakage currents. Features adjustable delay time from 0.1s to 20s for precise fault detection and prevention of electrical hazards. Low power consumption below 6VA with IP20 protection class. Essential for personnel safety and equipment protection in residential, commercial, and industrial electrical installations." data-lang-tr="Toprak kaçak akımlarını algılamak ve korumak için tasarlanmış 230V AC sistemler için kritik güvenlik koruma rölesi. Hassas arıza algılama ve elektrik tehlikelerinin önlenmesi için 0.1s-20s ayarlanabilir gecikme süresi özellikleri. IP20 koruma sınıfı ile 6VA altında düşük güç tüketimi. Konut, ticari ve endüstriyel elektrik tesisatlarında personel güvenliği ve ekipman koruması için gerekli.">Critical safety protection relay for 230V AC systems designed to detect and protect against earth leakage currents.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: ELR-V2</span>
                 <span class="ref-tr" style="display:none;">REF: ELR-V2</span>
@@ -333,6 +329,24 @@
     </div>
 
 <script src="../Products.js"></script>
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('vteke_language') || 'en';
+    applyTranslations(savedLang);
+});
+</script>
 
 
 <footer class="vteke-footer-main-container">

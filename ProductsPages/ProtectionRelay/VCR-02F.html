@@ -146,13 +146,9 @@
         <!-- Product Header -->
         <div class="product-header">
             <h1 class="product-title">
-                <span class="title-en">VCR-02F 3-Phase Voltage Control & Protection Relay</span>
-                <span class="title-tr" style="display:none;">VCR-02F 3-Faz Gerilim Kontrol ve Koruma Rölesi</span>
+                <span data-lang-en="VCR-02F 3-Phase Voltage Control & Protection Relay" data-lang-tr="VCR-02F 3-Faz Gerilim Kontrol ve Koruma Rölesi">VCR-02F 3-Phase Voltage Control & Protection Relay</span>
             </h1>
-            <p class="product-description">
-                <span class="desc-en">Comprehensive three-phase voltage control relay for 3x230V AC systems with advanced protection features. Provides over voltage protection (230V-300V AC), under voltage protection (140V-210V AC), phase sequence monitoring, and neutral absence detection. Features adjustable delay and reset time from 0.1s to 20s for optimal protection customization in industrial environments.</span>
-                <span class="desc-tr" style="display:none;">Gelişmiş koruma özelliklerine sahip 3x230V AC sistemler için kapsamlı üç fazlı gerilim kontrol rölesi. Aşırı gerilim koruması (230V-300V AC), düşük gerilim koruması (140V-210V AC), faz sırası izleme ve nötr yokluğu algılama sağlar. Endüstriyel ortamlarda optimal koruma özelleştirmesi için 0.1s-20s arası ayarlanabilir gecikme ve sıfırlama süresi.</span>
-            </p>
+            <p class="product-description" data-lang-en="Comprehensive three-phase voltage control relay for 3x230V AC systems with advanced protection features. Provides over voltage protection (230V-300V AC), under voltage protection (140V-210V AC), phase sequence monitoring, and neutral absence detection. Features adjustable delay and reset time from 0.1s to 20s for optimal protection customization in industrial environments." data-lang-tr="Gelişmiş koruma özelliklerine sahip 3x230V AC sistemler için kapsamlı üç fazlı gerilim kontrol rölesi. Aşırı gerilim koruması (230V-300V AC), düşük gerilim koruması (140V-210V AC), faz sırası izleme ve nötr yokluğu algılama sağlar. Endüstriyel ortamlarda optimal koruma özelleştirmesi için 0.1s-20s arası ayarlanabilir gecikme ve sıfırlama süresi.">Comprehensive three-phase voltage control relay for 3x230V AC systems with advanced protection features.</p>
             <div class="product-reference">
                 <span class="ref-en">REF: VCR-02F</span>
                 <span class="ref-tr" style="display:none;">REF: VCR-02F</span>
@@ -192,8 +188,7 @@
                 <div class="product-specifications">
                     <h2 class="specs-title">
                         <i class="fas fa-sliders-h"></i>
-                        <span class="title-en">Technical Specifications</span>
-                        <span class="title-tr" style="display:none">Teknik Özellikler</span>
+                        <span data-lang-en="Technical Specifications" data-lang-tr="Teknik Özellikler">Technical Specifications</span>
                     </h2>
                     <table class="spec-table">
                         <tr>
@@ -335,6 +330,24 @@
  
 
 <script src="../Products.js"></script>
+<!-- Translation System -->
+<script>
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        const translation = el.getAttribute(`data-lang-${lang}`);
+        if (translation) el.textContent = translation;
+    });
+}
+function setLanguage(lang) {
+    localStorage.setItem('vteke_language', lang);
+    applyTranslations(lang);
+    document.getElementById('currentLangText').textContent = lang.toUpperCase();
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('vteke_language') || 'en';
+    applyTranslations(savedLang);
+});
+</script>
 
 
 <footer class="vteke-footer-main-container">
@@ -477,4 +490,24 @@ title.style.transform = 'scale(1)';
 });
 </script>
 </body>
+</html>out(() => {
+logo.style.animation = 'vteke-footer-float 28s ease-in-out infinite';
+}, 10);
+});
+}
+// Add subtle hover effect to column titles
+const columnTitles = document.querySelectorAll('.vteke-footer-column-title');
+columnTitles.forEach(title => {
+title.addEventListener('mouseenter', () => {
+title.style.transform = 'scale(1.03)';
+title.style.transition = 'transform 0.3s ease';
+});
+title.addEventListener('mouseleave', () => {
+title.style.transform = 'scale(1)';
+});
+});
+});
+</script>
+</body>
+</html>
 </html>

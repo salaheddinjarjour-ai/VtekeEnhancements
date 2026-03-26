@@ -342,3 +342,97 @@ body {
     .product-name { font-size: 1.3rem; }
     .product-desc { font-size: 0.85rem; }
 }
+
+/* ========================================
+   LIGHTBOX - Click to Enlarge Feature
+   ======================================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex !important;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+    animation: lightboxZoom 0.3s ease;
+}
+
+@keyframes lightboxZoom {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+/* Product Image - Zoom cursor hint */
+.product-real-image {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.product-real-image:hover {
+    transform: scale(1.03);
+}
+
+/* Mobile touch optimization */
+@media (max-width: 768px) {
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+    
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        width: 44px;
+        height: 44px;
+    }
+}
