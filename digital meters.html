@@ -40,6 +40,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="vteke-typography.css">
+
+<style id="vteke-img-lightbox-style">
+/* ── Product Image Lightbox ─── */
+#vteke-img-lb {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 99999;
+  align-items: center; justify-content: center;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  animation: vtlbFade .2s ease;
+}
+#vteke-img-lb.open { display: flex; }
+@keyframes vtlbFade { from{opacity:0} to{opacity:1} }
+#vteke-img-lb img {
+  max-width: 88vw; max-height: 84vh;
+  object-fit: contain; border-radius: 12px;
+  background: #fff; padding: 12px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.55);
+  animation: vtlbZoom .22s ease;
+}
+@keyframes vtlbZoom { from{transform:scale(.9);opacity:0} to{transform:scale(1);opacity:1} }
+#vteke-img-lb-close {
+  position: absolute; top: 20px; right: 24px;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255,255,255,.15); border: none;
+  color: #fff; font-size: 1.4rem; line-height: 40px;
+  text-align: center; cursor: pointer; transition: background .2s;
+}
+#vteke-img-lb-close:hover { background: #E10600; }
+.product-real-image { cursor: zoom-in; transition: transform .2s, box-shadow .2s; }
+.product-real-image:hover { transform: scale(1.04); box-shadow: 0 4px 20px rgba(0,0,0,.15); }
+</style>
 </head>
 <body>
       <header class="vteke-pro-header-main-container">
@@ -618,5 +650,25 @@ document.addEventListener('DOMContentLoaded', () => {
     })();
     </script>
 
+
+<!-- Image Lightbox -->
+<div id="vteke-img-lb" role="dialog" aria-modal="true">
+  <button id="vteke-img-lb-close" onclick="vtCloseLB()" aria-label="Close">&times;</button>
+  <img id="vteke-img-lb-img" src="" alt="Product image">
+</div>
+<script>
+(function(){
+  function vtOpenLB(src){ var lb=document.getElementById('vteke-img-lb'),img=document.getElementById('vteke-img-lb-img'); if(lb&&img){img.src=src;lb.classList.add('open');document.body.style.overflow='hidden';} }
+  function vtCloseLB(){ var lb=document.getElementById('vteke-img-lb'); if(lb){lb.classList.remove('open');document.body.style.overflow='';} }
+  window.vtCloseLB=vtCloseLB;
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')vtCloseLB();});
+  document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('vteke-img-lb')?.addEventListener('click',function(e){if(e.target===this)vtCloseLB();});
+    document.querySelectorAll('.product-real-image').forEach(function(img){
+      img.addEventListener('click',function(e){ e.preventDefault(); e.stopPropagation(); vtOpenLB(this.src||this.getAttribute('src')); });
+    });
+  });
+})();
+</script>
 </body>
 </html>
