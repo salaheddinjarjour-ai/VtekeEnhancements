@@ -1,0 +1,2347 @@
+/* ================================================================
+ * VTEKE — Central Product Data File
+ * Auto-generated. Edit this file to update all product pages.
+ * ================================================================ */
+
+const PRODUCTS = {
+  "AK-A72-XXD": {
+    name: { en: "AK-A72-XXD Analog Ammeter - Direct Connection 72x72mm", tr: "AK-A72-XXD Analog Ampermetre - Doğrudan Bağlantı 72x72mm" },
+    category: "meters",
+    description: { en: "Compact 72x72mm analog ammeter with direct connection for current measurement from 5A to 100A. Features Class 1.5 accuracy, clear analog scale display, and robust construction for reliable operation in electrical panels and industrial control systems.", tr: "5A ile 100A arası akım ölçümü için doğrudan bağlantılı kompakt 72x72mm analog ampermetre. Class 1.5 doğruluk, net analog skala ekranı ve elektrik panoları ile endüstriyel kontrol sistemlerinde güvenilir çalışma için sağlam yapı özellikleri." },
+    reference: "REF: AK-A72-XXD",
+    images: ["/vtekeimg/Analog Meters/AK-A72-XXD.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-A72-XXD" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Current (Ammeter)" },
+      "input_range": { label: { en: "Input Range", tr: "Giriş Aralığı" }, value: "5A - 100A (Direct Connection)" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "72x72mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "67x67mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "connection_type": { label: { en: "Connection Type", tr: "Bağlantı Tipi" }, value: "Direct Connection" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 180g" }
+    },
+    features: [
+      { en: "Compact 72x72mm panel size for space-saving installation", tr: "Yer tasarruflu montaj için kompakt 72x72mm pano boyutu" },
+      { en: "Direct connection for 5A-100A range without external CT", tr: "Harici CT olmadan 5A-100A aralığı için doğrudan bağlantı" },
+      { en: "Class 1.5 accuracy for reliable current measurement", tr: "Güvenilir akım ölçümü için Class 1.5 doğruluk" },
+      { en: "Clear analog scale with anti-parallax design", tr: "Anti-paralaks tasarımlı net analog skala" },
+      { en: "Robust construction for industrial environments", tr: "Endüstriyel ortamlar için sağlam yapı" }
+    ],
+    datasheet: ""
+  },
+  "AK-A72-XXX": {
+    name: { en: "AK-A72-XXX Analog Ammeter with Current Transformer 72x72mm", tr: "AK-A72-XXX Akım Transformatörlü Analog Ampermetre 72x72mm" },
+    category: "meters",
+    description: { en: "Compact 72x72mm analog ammeter designed for use with external current transformers. Supports CT ratios from 5/5A to 6300/5A for high current measurement applications. Features Class 1.5 accuracy and robust construction for reliable operation in industrial electrical panels.", tr: "Harici akım transformatörleri ile kullanım için tasarlanmış kompakt 72x72mm analog ampermetre. Yüksek akım ölçüm uygulamaları için 5/5A ile 6300/5A arası CT oranlarını destekler. Class 1.5 doğruluk ve endüstriyel elektrik panolarında güvenilir çalışma için sağlam yapı özellikleri." },
+    reference: "REF: AK-A72-XXX",
+    images: ["/vtekeimg/Analog Meters/AK-A72-XX.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-A72-XXX" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Current with External CT" },
+      "ct_ratio_range": { label: { en: "CT Ratio Range", tr: "CT Oranı Aralığı" }, value: "5/5A to 6300/5A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "5A" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "72x72mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "67x67mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "connection_type": { label: { en: "Connection Type", tr: "Bağlantı Tipi" }, value: "Via External Current Transformer" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 180g" }
+    },
+    features: [
+      { en: "Compatible with wide range of CT ratios", tr: "Geniş CT oranı aralığı ile uyumlu" },
+      { en: "Measures high currents up to 6300A via CT", tr: "CT üzerinden 6300A'ya kadar yüksek akımları ölçer" },
+      { en: "Compact 72x72mm size for space-saving", tr: "Yer tasarrufu için kompakt 72x72mm boyut" },
+      { en: "Class 1.5 accuracy for reliable measurement", tr: "Güvenilir ölçüm için Class 1.5 doğruluk" },
+      { en: "Easy wiring with standard CT connections", tr: "Standart CT bağlantıları ile kolay kablaj" }
+    ],
+    datasheet: ""
+  },
+  "AK-A96-XXD": {
+    name: { en: "AK-A96-XXD Analog Ammeter - Direct Connection 96x96mm", tr: "AK-A96-XXD Analog Ampermetre - Doğrudan Bağlantı 96x96mm" },
+    category: "meters",
+    description: { en: "Standard 96x96mm analog ammeter with direct connection for current measurement from 5A to 100A. Features Class 1.5 accuracy, large easy-to-read analog scale, and durable construction for long-term reliability in electrical distribution panels.", tr: "5A ile 100A arası akım ölçümü için doğrudan bağlantılı standart 96x96mm analog ampermetre. Class 1.5 doğruluk, büyük kolay okunur analog skala ve elektrik dağıtım panolarında uzun ömürlü güvenilirlik için dayanıklı yapı özellikleri." },
+    reference: "REF: AK-A96-XXD",
+    images: ["/vtekeimg/Analog Meters/AK-A96-XXD.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-A96-XXD" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Current (Ammeter)" },
+      "input_range": { label: { en: "Input Range", tr: "Giriş Aralığı" }, value: "5A - 100A (Direct Connection)" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "96x96mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "91x91mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "connection_type": { label: { en: "Connection Type", tr: "Bağlantı Tipi" }, value: "Direct Connection" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 280g" }
+    },
+    features: [
+      { en: "Standard 96x96mm panel size for wide compatibility", tr: "Geniş uyumluluk için standart 96x96mm pano boyutu" },
+      { en: "Large scale for easy reading from distance", tr: "Uzaktan kolay okuma için büyük skala" },
+      { en: "Direct connection eliminates need for external CT", tr: "Harici CT ihtiyacını ortadan kaldıran doğrudan bağlantı" },
+      { en: "Class 1.5 accuracy for precise monitoring", tr: "Hassas izleme için Class 1.5 doğruluk" },
+      { en: "Durable construction for industrial applications", tr: "Endüstriyel uygulamalar için dayanıklı yapı" }
+    ],
+    datasheet: ""
+  },
+  "AK-A96-XXX-1": {
+    name: { en: "AK-A96-XXX-1 Analog Ammeter with CT - Special Variant 96x96mm", tr: "AK-A96-XXX-1 Akım Transformatörlü Analog Ampermetre - Özel Varyant 96x96mm" },
+    category: "meters",
+    description: { en: "Special variant of the AK-A96-XXX analog ammeter with enhanced features for specific applications. Designed for use with external current transformers supporting ratios from 5/5A to 6300/5A. Features Class 1.5 accuracy, improved scale visibility, and reinforced terminal connections for demanding industrial environments.", tr: "Belirli uygulamalar için geliştirilmiş özelliklere sahip AK-A96-XXX analog ampermetrenin özel varyantı. 5/5A ile 6300/5A arası oranları destekleyen harici akım transformatörleri ile kullanım için tasarlanmıştır. Class 1.5 doğruluk, geliştirilmiş skala görünürlüğü ve zorlu endüstriyel ortamlar için güçlendirilmiş terminal bağlantıları özellikleri." },
+    reference: "REF: AK-A96-XXX-1",
+    images: ["/vtekeimg/Analog Meters/AK-A96-XX.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-A96-XXX-1" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Current with External CT" },
+      "ct_ratio_range": { label: { en: "CT Ratio Range", tr: "CT Oranı Aralığı" }, value: "5/5A to 6300/5A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "5A" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "96x96mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "91x91mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "connection_type": { label: { en: "Connection Type", tr: "Bağlantı Tipi" }, value: "Via External Current Transformer" },
+      "special_features": { label: { en: "Special Features", tr: "Özel Özellikler" }, value: "Enhanced Scale, Reinforced Terminals" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +55°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 290g" }
+    },
+    features: [
+      { en: "Enhanced scale visibility for better readability", tr: "Daha iyi okunabilirlik için geliştirilmiş skala görünürlüğü" },
+      { en: "Reinforced terminal connections for reliability", tr: "Güvenilirlik için güçlendirilmiş terminal bağlantıları" },
+      { en: "Extended temperature range for harsh environments", tr: "Zorlu ortamlar için genişletilmiş sıcaklık aralığı" },
+      { en: "Compatible with wide CT ratio range", tr: "Geniş CT oranı aralığı ile uyumlu" },
+      { en: "Ideal for critical industrial monitoring", tr: "Kritik endüstriyel izleme için ideal" }
+    ],
+    datasheet: ""
+  },
+  "AK-A96-XXX": {
+    name: { en: "AK-A96-XXX Analog Ammeter with Current Transformer 96x96mm", tr: "AK-A96-XXX Akım Transformatörlü Analog Ampermetre 96x96mm" },
+    category: "meters",
+    description: { en: "Standard 96x96mm analog ammeter designed for use with external current transformers. Supports CT ratios from 5/5A to 6300/5A for high current measurement in distribution panels. Features large easy-to-read scale, Class 1.5 accuracy, and durable construction for industrial applications.", tr: "Harici akım transformatörleri ile kullanım için tasarlanmış standart 96x96mm analog ampermetre. Dağıtım panolarında yüksek akım ölçümü için 5/5A ile 6300/5A arası CT oranlarını destekler. Büyük kolay okunur skala, Class 1.5 doğruluk ve endüstriyel uygulamalar için dayanıklı yapı özellikleri." },
+    reference: "REF: AK-A96-XXX",
+    images: ["/vtekeimg/Analog Meters/AK-A96-XX.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-A96-XXX" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Current with External CT" },
+      "ct_ratio_range": { label: { en: "CT Ratio Range", tr: "CT Oranı Aralığı" }, value: "5/5A to 6300/5A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "5A" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "96x96mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "91x91mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "connection_type": { label: { en: "Connection Type", tr: "Bağlantı Tipi" }, value: "Via External Current Transformer" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 280g" }
+    },
+    features: [
+      { en: "Standard 96x96mm size for wide panel compatibility", tr: "Geniş pano uyumluluğu için standart 96x96mm boyut" },
+      { en: "Large scale for easy reading in control rooms", tr: "Kontrol odalarında kolay okuma için büyük skala" },
+      { en: "Measures currents up to 6300A via external CT", tr: "Harici CT üzerinden 6300A'ya kadar akım ölçer" },
+      { en: "Class 1.5 accuracy for precise monitoring", tr: "Hassas izleme için Class 1.5 doğruluk" },
+      { en: "Robust construction for industrial environments", tr: "Endüstriyel ortamlar için sağlam yapı" }
+    ],
+    datasheet: ""
+  },
+  "AK-F72": {
+    name: { en: "AK-F72 Analog Frequency Meter 72x72mm", tr: "AK-F72 Analog Frekans Metre 72x72mm" },
+    category: "meters",
+    description: { en: "Compact 72x72mm analog frequency meter designed for accurate frequency measurement in electrical systems. Features Class 1.5 accuracy, clear analog scale display, and fast response time for real-time monitoring. Essential for monitoring system frequency in power generation, distribution networks, and industrial applications.", tr: "Elektrik sistemlerinde hassas frekans ölçümü için tasarlanmış kompakt 72x72mm analog frekans metre. Class 1.5 doğruluk, net analog skala ekranı ve gerçek zamanlı izleme için hızlı tepki süresi özellikleri. Enerji üretimi, dağıtım şebekeleri ve endüstriyel uygulamalarda sistem frekansını izlemek için gereklidir." },
+    reference: "REF: AK-F72",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-F72" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "Frequency (Hz)" },
+      "frequency_range": { label: { en: "Frequency Range", tr: "Frekans Aralığı" }, value: "45-65 Hz (Standard)" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "72x72mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "67x67mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "nominal_voltage": { label: { en: "Nominal Voltage", tr: "Nominal Gerilim" }, value: "110V-440V AC" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "response_time": { label: { en: "Response Time", tr: "Tepki Süresi" }, value: "&lt;1 second" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 180g" }
+    },
+    features: [
+      { en: "Precise frequency measurement 45-65 Hz", tr: "Hassas frekans ölçümü 45-65 Hz" },
+      { en: "Fast response time for real-time monitoring", tr: "Gerçek zamanlı izleme için hızlı tepki süresi" },
+      { en: "Compact 72x72mm size for space-saving", tr: "Yer tasarrufu için kompakt 72x72mm boyut" },
+      { en: "Class 1.5 accuracy for reliable monitoring", tr: "Güvenilir izleme için Class 1.5 doğruluk" },
+      { en: "Essential for power system stability", tr: "Güç sistemi stabilitesi için gerekli" }
+    ],
+    datasheet: ""
+  },
+  "AK-F96": {
+    name: { en: "AK-F96 Analog Frequency Meter 96x96mm", tr: "AK-F96 Analog Frekans Metre 96x96mm" },
+    category: "meters",
+    description: { en: "Standard 96x96mm analog frequency meter designed for accurate frequency measurement in electrical systems. Features large easy-to-read analog scale, Class 1.5 accuracy, and fast response time. Essential for monitoring system frequency in power generation, distribution networks, and critical industrial applications.", tr: "Elektrik sistemlerinde hassas frekans ölçümü için tasarlanmış standart 96x96mm analog frekans metre. Büyük kolay okunur analog skala, Class 1.5 doğruluk ve hızlı tepki süresi özellikleri. Enerji üretimi, dağıtım şebekeleri ve kritik endüstriyel uygulamalarda sistem frekansını izlemek için gereklidir." },
+    reference: "REF: AK-F96",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-F96" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "Frequency (Hz)" },
+      "frequency_range": { label: { en: "Frequency Range", tr: "Frekans Aralığı" }, value: "45-65 Hz (Standard)" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "96x96mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "91x91mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "nominal_voltage": { label: { en: "Nominal Voltage", tr: "Nominal Gerilim" }, value: "110V-440V AC" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "response_time": { label: { en: "Response Time", tr: "Tepki Süresi" }, value: "&lt;1 second" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 280g" }
+    },
+    features: [
+      { en: "Standard 96x96mm size for wide compatibility", tr: "Geniş uyumluluk için standart 96x96mm boyut" },
+      { en: "Large scale for easy reading from distance", tr: "Uzaktan kolay okuma için büyük skala" },
+      { en: "Precise frequency measurement 45-65 Hz", tr: "Hassas frekans ölçümü 45-65 Hz" },
+      { en: "Class 1.5 accuracy for reliable monitoring", tr: "Güvenilir izleme için Class 1.5 doğruluk" },
+      { en: "Fast response for real-time system monitoring", tr: "Gerçek zamanlı sistem izleme için hızlı tepki" }
+    ],
+    datasheet: ""
+  },
+  "AK-V72-500V": {
+    name: { en: "AK-V72-500V Analog Voltmeter - 500V AC 72x72mm", tr: "AK-V72-500V Analog Voltmetre - 500V AC 72x72mm" },
+    category: "meters",
+    description: { en: "Compact 72x72mm analog voltmeter designed for 500V AC voltage measurement applications. Features Class 1.5 accuracy, clear analog scale display, and high input impedance for minimal circuit loading. Ideal for monitoring voltage levels in electrical distribution panels and control systems.", tr: "500V AC gerilim ölçüm uygulamaları için tasarlanmış kompakt 72x72mm analog voltmetre. Class 1.5 doğruluk, net analog skala ekranı ve minimum devre yükü için yüksek giriş empedansı özellikleri. Elektrik dağıtım panoları ve kontrol sistemlerinde gerilim seviyelerini izlemek için idealdir." },
+    reference: "REF: AK-V72-500V",
+    images: ["/vtekeimg/Analog Meters/AK-V72-500.jpg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-V72-500V" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Voltage (Voltmeter)" },
+      "voltage_range": { label: { en: "Voltage Range", tr: "Gerilim Aralığı" }, value: "0-500V AC" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "72x72mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "67x67mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "input_impedance": { label: { en: "Input Impedance", tr: "Giriş Empedansı" }, value: "High Impedance (&gt;10kΩ/V)" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 180g" }
+    },
+    features: [
+      { en: "500V AC voltage measurement range", tr: "500V AC gerilim ölçüm aralığı" },
+      { en: "High input impedance minimizes circuit loading", tr: "Yüksek giriş empedansı devre yükünü minimize eder" },
+      { en: "Compact 72x72mm size for space-saving", tr: "Yer tasarrufu için kompakt 72x72mm boyut" },
+      { en: "Class 1.5 accuracy for reliable monitoring", tr: "Güvenilir izleme için Class 1.5 doğruluk" },
+      { en: "Clear analog scale for easy reading", tr: "Kolay okuma için net analog skala" }
+    ],
+    datasheet: ""
+  },
+  "AK-V72-XX0,1": {
+    name: { en: "AK-V72-XX/0.1 Analog Voltmeter with Potential Transformer 72x72mm", tr: "AK-V72-XX/0.1 Potansiyel Transformatörlü Analog Voltmetre 72x72mm" },
+    category: "meters",
+    description: { en: "Compact 72x72mm analog voltmeter equipped with potential transformer (PT) unit for high voltage measurement applications. Supports customizable PT ratios (XX/0.1) for flexible voltage monitoring. Features Class 1.5 accuracy and safe isolation for high voltage electrical systems.", tr: "Yüksek gerilim ölçüm uygulamaları için potansiyel transformatör (PT) ünitesi ile donatılmış kompakt 72x72mm analog voltmetre. Esnek gerilim izleme için özelleştirilebilir PT oranlarını (XX/0.1) destekler. Class 1.5 doğruluk ve yüksek gerilimli elektrik sistemleri için güvenli izolasyon özellikleri." },
+    reference: "REF: AK-V72-XX/0.1",
+    images: ["/vtekeimg/Analog Meters/AK-V72-XX.0.1.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-V72-XX/0.1" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Voltage with PT Unit" },
+      "pt_ratio": { label: { en: "PT Ratio", tr: "PT Oranı" }, value: "Customizable (XX/0.1)" },
+      "secondary_voltage": { label: { en: "Secondary Voltage", tr: "İkincil Gerilim" }, value: "100V or 110V (Standard)" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "72x72mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "67x67mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "connection_type": { label: { en: "Connection Type", tr: "Bağlantı Tipi" }, value: "Via Potential Transformer" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 190g" }
+    },
+    features: [
+      { en: "Integrated potential transformer for high voltage safety", tr: "Yüksek gerilim güvenliği için entegre potansiyel transformatör" },
+      { en: "Customizable PT ratio for flexible applications", tr: "Esnek uygulamalar için özelleştirilebilir PT oranı" },
+      { en: "Compact 72x72mm size for space-saving", tr: "Yer tasarrufu için kompakt 72x72mm boyut" },
+      { en: "Class 1.5 accuracy for precise monitoring", tr: "Hassas izleme için Class 1.5 doğruluk" },
+      { en: "Safe isolation for high voltage systems", tr: "Yüksek gerilim sistemleri için güvenli izolasyon" }
+    ],
+    datasheet: ""
+  },
+  "AK-V96-500V": {
+    name: { en: "AK-V96-500V Analog Voltmeter - 500V AC 96x96mm", tr: "AK-V96-500V Analog Voltmetre - 500V AC 96x96mm" },
+    category: "meters",
+    description: { en: "Standard 96x96mm analog voltmeter designed for 500V AC voltage measurement applications. Features large easy-to-read analog scale, Class 1.5 accuracy, and high input impedance. Ideal for voltage monitoring in electrical distribution panels, switchgear, and industrial control systems.", tr: "500V AC gerilim ölçüm uygulamaları için tasarlanmış standart 96x96mm analog voltmetre. Büyük kolay okunur analog skala, Class 1.5 doğruluk ve yüksek giriş empedansı özellikleri. Elektrik dağıtım panoları, şalt malzemeleri ve endüstriyel kontrol sistemlerinde gerilim izleme için idealdir." },
+    reference: "REF: AK-V96-500V",
+    images: ["/vtekeimg/Analog Meters/AK-V96-XX.0.1.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-V96-500V" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Voltage (Voltmeter)" },
+      "voltage_range": { label: { en: "Voltage Range", tr: "Gerilim Aralığı" }, value: "0-500V AC" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "96x96mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "91x91mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "input_impedance": { label: { en: "Input Impedance", tr: "Giriş Empedansı" }, value: "High Impedance (&gt;10kΩ/V)" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 280g" }
+    },
+    features: [
+      { en: "Standard 96x96mm size for wide compatibility", tr: "Geniş uyumluluk için standart 96x96mm boyut" },
+      { en: "Large scale for easy reading from distance", tr: "Uzaktan kolay okuma için büyük skala" },
+      { en: "500V AC measurement for distribution systems", tr: "Dağıtım sistemleri için 500V AC ölçüm" },
+      { en: "Class 1.5 accuracy for precise monitoring", tr: "Hassas izleme için Class 1.5 doğruluk" },
+      { en: "High input impedance prevents circuit loading", tr: "Yüksek giriş empedansı devre yükünü önler" }
+    ],
+    datasheet: ""
+  },
+  "AK-V96-XX0,1": {
+    name: { en: "AK-V96-XX/0.1 Analog Voltmeter with Potential Transformer 96x96mm", tr: "AK-V96-XX/0.1 Potansiyel Transformatörlü Analog Voltmetre 96x96mm" },
+    category: "meters",
+    description: { en: "Standard 96x96mm analog voltmeter equipped with potential transformer (PT) unit for high voltage measurement applications. Supports customizable PT ratios (XX/0.1) for flexible voltage monitoring in distribution systems. Features large easy-to-read scale, Class 1.5 accuracy, and safe isolation for high voltage electrical installations.", tr: "Yüksek gerilim ölçüm uygulamaları için potansiyel transformatör (PT) ünitesi ile donatılmış standart 96x96mm analog voltmetre. Dağıtım sistemlerinde esnek gerilim izleme için özelleştirilebilir PT oranlarını (XX/0.1) destekler. Büyük kolay okunur skala, Class 1.5 doğruluk ve yüksek gerilimli elektrik tesisatları için güvenli izolasyon özellikleri." },
+    reference: "REF: AK-V96-XX/0.1",
+    images: ["/vtekeimg/Analog Meters/AK-V96-XX-500.jpg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "AK-V96-XX/0.1" },
+      "measurement_type": { label: { en: "Measurement Type", tr: "Ölçüm Tipi" }, value: "AC Voltage with PT Unit" },
+      "pt_ratio": { label: { en: "PT Ratio", tr: "PT Oranı" }, value: "Customizable (XX/0.1)" },
+      "secondary_voltage": { label: { en: "Secondary Voltage", tr: "İkincil Gerilim" }, value: "100V or 110V (Standard)" },
+      "panel_size": { label: { en: "Panel Size", tr: "Pano Boyutu" }, value: "96x96mm" },
+      "cutout_dimension": { label: { en: "Cutout Dimension", tr: "Kesim Boyutu" }, value: "91x91mm" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "Class 1.5" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "connection_type": { label: { en: "Connection Type", tr: "Bağlantı Tipi" }, value: "Via Potential Transformer" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "insulation_resistance": { label: { en: "Insulation Resistance", tr: "Yalıtım Direnci" }, value: "&gt;100 MΩ @ 500V DC" },
+      "dielectric_strength": { label: { en: "Dielectric Strength", tr: "Dielektrik Dayanım" }, value: "2kV AC 1min" },
+      "weight": { label: { en: "Weight", tr: "Ağırlık" }, value: "Approx. 290g" }
+    },
+    features: [
+      { en: "Standard 96x96mm size for wide compatibility", tr: "Geniş uyumluluk için standart 96x96mm boyut" },
+      { en: "Large scale for easy reading in control rooms", tr: "Kontrol odalarında kolay okuma için büyük skala" },
+      { en: "Customizable PT ratio for flexible voltage ranges", tr: "Esnek gerilim aralıkları için özelleştirilebilir PT oranı" },
+      { en: "Class 1.5 accuracy for precise monitoring", tr: "Hassas izleme için Class 1.5 doğruluk" },
+      { en: "Safe isolation for high voltage distribution systems", tr: "Yüksek gerilim dağıtım sistemleri için güvenli izolasyon" }
+    ],
+    datasheet: ""
+  },
+  "VBC-1205": {
+    name: { en: "VBC-1205 12V 5A Standard Battery Charger", tr: "VBC-1205 12V 5A Standart Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "Reliable 12V battery charger with 5A output current designed for lead-acid, AGM, and gel batteries. Features automatic float charging mode to maintain battery health during standby periods, reverse polarity protection, and short circuit protection. Ideal for automotive, marine, UPS, and backup power applications.", tr: "Kurşun-asit, AGM ve jel aküler için tasarlanmış 5A çıkış akımlı güvenilir 12V akü şarj cihazı. Bekleme sürelerinde akü sağlığını korumak için otomatik float şarj modu, ters kutup koruması ve kısa devre koruması özellikleri. Otomotiv, denizcilik, UPS ve yedek güç uygulamaları için idealdir." },
+    reference: "REF: VBC-1205",
+    images: ["/vtekeimg/Battery Charger/VBC-1205.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-1205" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "12V DC (Fixed)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "5A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "2-Stage: Bulk/Float" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Lead-Acid, AGM, Gel" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Reverse Polarity, Short Circuit, Over-Current" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +45°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;80%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Fixed 12V output for dedicated applications", tr: "Özel uygulamalar için sabit 12V çıkış" },
+      { en: "Automatic float mode prevents overcharging", tr: "Otomatik float modu aşırı şarjı önler" },
+      { en: "Compatible with multiple battery technologies", tr: "Çoklu akü teknolojileri ile uyumlu" },
+      { en: "Compact design for easy installation", tr: "Kolay montaj için kompakt tasarım" },
+      { en: "LED indicators for charging status", tr: "Şarj durumu için LED göstergeler" }
+    ],
+    datasheet: ""
+  },
+  "VBC-1205A": {
+    name: { en: "VBC-1205A 12V 5A Advanced Battery Charger", tr: "VBC-1205A 12V 5A Gelişmiş Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "Advanced version of the VBC-1205 with enhanced charging algorithm for 12V batteries. Features desulfation mode for battery recovery, digital display for real-time monitoring of charging parameters, and programmable charging profiles. Ideal for professional applications requiring precise battery management.", tr: "12V aküler için gelişmiş şarj algoritmasına sahip VBC-1205'in gelişmiş versiyonu. Akü kurtarma için desülfasyon modu, şarj parametrelerinin gerçek zamanlı izlenmesi için dijital ekran ve programlanabilir şarj profilleri özellikleri. Hassas akü yönetimi gerektiren profesyonel uygulamalar için idealdir." },
+    reference: "REF: VBC-1205A",
+    images: ["/vtekeimg/Battery Charger/VBC-1205A.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-1205A" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "12V DC (Fixed)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "5A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "4-Stage: Desulfation/Bulk/Absorption/Float" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Lead-Acid, AGM, Gel, MF, EFB" },
+      "display": { label: { en: "Display", tr: "Ekran" }, value: "LCD Digital Display" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Reverse Polarity, Short Circuit, Over-Current, Over-Voltage, Over-Temp" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;87%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Desulfation mode recovers old batteries", tr: "Desülfasyon modu eski aküleri kurtarır" },
+      { en: "LCD display shows voltage, current, and status", tr: "LCD ekran gerilim, akım ve durumu gösterir" },
+      { en: "Programmable charging profiles for different batteries", tr: "Farklı aküler için programlanabilir şarj profilleri" },
+      { en: "Advanced 4-stage charging algorithm", tr: "Gelişmiş 4 aşamalı şarj algoritması" },
+      { en: "Compatible with EFB and enhanced batteries", tr: "EFB ve gelişmiş aküler ile uyumlu" }
+    ],
+    datasheet: ""
+  },
+  "VBC-1210": {
+    name: { en: "VBC-1210 12V 10A High Current Battery Charger", tr: "VBC-1210 12V 10A Yüksek Akım Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "High-current 12V battery charger with 10A output for faster charging of large capacity batteries. Suitable for deep cycle, AGM, and gel batteries with temperature compensation for optimal charging performance. Features robust construction for industrial environments and comprehensive protection suite.", tr: "Büyük kapasiteli akülerin daha hızlı şarjı için 10A çıkışlı yüksek akımlı 12V akü şarj cihazı. Optimal şarj performansı için sıcaklık telafisi ile derin döngü, AGM ve jel aküler için uygun. Endüstriyel ortamlar için sağlam yapı ve kapsamlı koruma paketi özellikleri." },
+    reference: "REF: VBC-1210",
+    images: ["/vtekeimg/Battery Charger/VBC-1210.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-1210" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "12V DC (Fixed)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "10A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "3-Stage: Bulk/Absorption/Float" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Deep Cycle, AGM, Gel, Lead-Acid" },
+      "temperature_compensation": { label: { en: "Temperature Compensation", tr: "Sıcaklık Telafisi" }, value: "-3mV/°C/Cell" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Reverse Polarity, Short Circuit, Over-Current, Over-Temp" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;85%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "High 10A output for rapid battery charging", tr: "Hızlı akü şarjı için yüksek 10A çıkış" },
+      { en: "Temperature compensation for optimal charging", tr: "Optimal şarj için sıcaklık telafisi" },
+      { en: "Suitable for deep cycle and industrial batteries", tr: "Derin döngü ve endüstriyel aküler için uygun" },
+      { en: "Robust construction for harsh environments", tr: "Zorlu ortamlar için sağlam yapı" },
+      { en: "Advanced 3-stage charging algorithm", tr: "Gelişmiş 3 aşamalı şarj algoritması" }
+    ],
+    datasheet: ""
+  },
+  "VBC-1210A": {
+    name: { en: "VBC-1210A 12V 10A Premium Advanced Battery Charger", tr: "VBC-1210A 12V 10A Premium Gelişmiş Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "Premium 12V charger with 10A output and advanced features for professional applications. Includes multi-stage charging (bulk/absorption/float/maintenance), temperature sensor input, programmable charging profiles for different battery types, and digital monitoring display. Ideal for fleet management, marine, and critical backup power systems.", tr: "Profesyonel uygulamalar için 10A çıkışlı ve gelişmiş özelliklere sahip premium 12V şarj cihazı. Çok aşamalı şarj (bulk/absorption/float/maintenance), sıcaklık sensörü girişi, farklı akü tipleri için programlanabilir şarj profilleri ve dijital izleme ekranı içerir. Filo yönetimi, denizcilik ve kritik yedek güç sistemleri için idealdir." },
+    reference: "REF: VBC-1210A",
+    images: ["/vtekeimg/Battery Charger/VBC-1210A.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-1210A" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "12V DC (Fixed)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "10A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "4-Stage: Bulk/Absorption/Float/Maintenance" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Lead-Acid, AGM, Gel, MF, EFB, Lithium (selectable)" },
+      "display_&_control": { label: { en: "Display & Control", tr: "Ekran ve Kontrol" }, value: "LCD Display + Programmable Buttons" },
+      "temperature_sensor": { label: { en: "Temperature Sensor", tr: "Sıcaklık Sensörü" }, value: "External Input (-3mV/°C/Cell)" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Reverse Polarity, Short Circuit, Over-Current, Over-Voltage, Over-Temp, Spark Protection" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +55°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;90%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Premium 10A output with advanced charging algorithm", tr: "Gelişmiş şarj algoritmalı premium 10A çıkış" },
+      { en: "Programmable profiles for multiple battery types", tr: "Çoklu akü tipleri için programlanabilir profiller" },
+      { en: "External temperature sensor for optimal charging", tr: "Optimal şarj için harici sıcaklık sensörü" },
+      { en: "LCD display with comprehensive parameter monitoring", tr: "Kapsamlı parametre izlemeli LCD ekran" },
+      { en: "Ideal for fleet and critical backup applications", tr: "Filo ve kritik yedek uygulamaları için ideal" }
+    ],
+    datasheet: ""
+  },
+  "VBC-2405": {
+    name: { en: "VBC-2405 24V 5A Industrial Battery Charger", tr: "VBC-2405 24V 5A Endüstriyel Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "Dedicated 24V battery charger with 5A output current designed for industrial equipment, electric vehicles, and backup power systems. Features overload protection, short circuit protection, and LED status indicators for easy monitoring. Suitable for lead-acid, AGM, and gel battery technologies.", tr: "Endüstriyel ekipmanlar, elektrikli araçlar ve yedek güç sistemleri için tasarlanmış 5A çıkış akımlı özel 24V akü şarj cihazı. Kolay izleme için aşırı yük koruması, kısa devre koruması ve LED durum göstergeleri özellikleri. Kurşun-asit, AGM ve jel akü teknolojileri için uygun." },
+    reference: "REF: VBC-2405",
+    images: ["/vtekeimg/Battery Charger/VBC-2405.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-2405" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "24V DC (Fixed)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "5A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "2-Stage: Bulk/Float" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Lead-Acid, AGM, Gel" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Overload, Short Circuit, Reverse Polarity, Over-Voltage" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;82%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Dedicated 24V output for industrial systems", tr: "Endüstriyel sistemler için özel 24V çıkış" },
+      { en: "Overload protection for equipment safety", tr: "Ekipman güvenliği için aşırı yük koruması" },
+      { en: "LED indicators for real-time status monitoring", tr: "Gerçek zamanlı durum izleme için LED göstergeler" },
+      { en: "Compatible with multiple battery technologies", tr: "Çoklu akü teknolojileri ile uyumlu" },
+      { en: "Reliable performance in industrial environments", tr: "Endüstriyel ortamlarda güvenilir performans" }
+    ],
+    datasheet: ""
+  },
+  "VBC-2405A": {
+    name: { en: "VBC-2405A 24V 5A Advanced Battery Charger", tr: "VBC-2405A 24V 5A Gelişmiş Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "Advanced 24V charger with intelligent charging management for critical backup power systems. Features automatic equalization mode for battery maintenance, low voltage disconnect protection, remote monitoring capability, and digital display. Ideal for telecommunications, solar installations, and emergency power applications requiring reliable battery management.", tr: "Kritik yedek güç sistemleri için akıllı şarj yönetimi ile gelişmiş 24V şarj cihazı. Akü bakımı için otomatik eşitleme modu, düşük gerilim bağlantı kesme koruması, uzaktan izleme yeteneği ve dijital ekran özellikleri. Güvenilir akü yönetimi gerektiren telekomünikasyon, güneş enerjisi tesisleri ve acil durum güç uygulamaları için idealdir." },
+    reference: "REF: VBC-2405A",
+    images: ["/vtekeimg/Battery Charger/VBC-2405A.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-2405A" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "24V DC (Fixed)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "5A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "4-Stage: Bulk/Absorption/Equalization/Float" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Lead-Acid, AGM, Gel, Deep Cycle" },
+      "display_&_monitoring": { label: { en: "Display & Monitoring", tr: "Ekran ve İzleme" }, value: "LCD Display + Remote Monitoring Port" },
+      "low_voltage_disconnect": { label: { en: "Low Voltage Disconnect", tr: "Düşük Gerilim Kesme" }, value: "Adjustable 20V-22V" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Overload, Short Circuit, Reverse Polarity, Over-Voltage, Over-Temp, LVD" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +55°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;88%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Automatic equalization mode extends battery life", tr: "Otomatik eşitleme modu akü ömrünü uzatır" },
+      { en: "Low voltage disconnect protects battery from deep discharge", tr: "Düşük gerilim kesme aküyü derin deşarjdan korur" },
+      { en: "Remote monitoring capability for critical systems", tr: "Kritik sistemler için uzaktan izleme yeteneği" },
+      { en: "LCD display with comprehensive status information", tr: "Kapsamlı durum bilgili LCD ekran" },
+      { en: "Ideal for telecom and solar backup applications", tr: "Telekom ve güneş yedek uygulamaları için ideal" }
+    ],
+    datasheet: ""
+  },
+  "VBC-2410": {
+    name: { en: "VBC-2410 24V 10A Heavy-Duty Battery Charger", tr: "VBC-2410 24V 10A Ağır Hizmet Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "Heavy-duty 24V charger with 10A output for rapid charging of high-capacity battery banks. Designed for telecommunications, solar systems, and emergency power applications with robust construction and comprehensive protection features. Features temperature compensation and advanced charging algorithm for extended battery life.", tr: "Yüksek kapasiteli akü bankalarının hızlı şarjı için 10A çıkışlı ağır hizmet 24V şarj cihazı. Sağlam yapı ve kapsamlı koruma özellikleri ile telekomünikasyon, güneş enerjisi sistemleri ve acil durum güç uygulamaları için tasarlanmıştır. Uzun akü ömrü için sıcaklık telafisi ve gelişmiş şarj algoritması özellikleri." },
+    reference: "REF: VBC-2410",
+    images: ["/vtekeimg/Battery Charger/VBC-2410.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-2410" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "24V DC (Fixed)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "10A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "3-Stage: Bulk/Absorption/Float" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Deep Cycle, AGM, Gel, Lead-Acid" },
+      "temperature_compensation": { label: { en: "Temperature Compensation", tr: "Sıcaklık Telafisi" }, value: "-3mV/°C/Cell" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Overload, Short Circuit, Reverse Polarity, Over-Voltage, Over-Temp" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +55°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;88%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "High 10A output for fast battery bank charging", tr: "Hızlı akü bankası şarjı için yüksek 10A çıkış" },
+      { en: "Ideal for telecommunications and solar applications", tr: "Telekomünikasyon ve güneş uygulamaları için ideal" },
+      { en: "Temperature compensation extends battery life", tr: "Sıcaklık telafisi akü ömrünü uzatır" },
+      { en: "Robust construction for critical applications", tr: "Kritik uygulamalar için sağlam yapı" },
+      { en: "Advanced 3-stage charging for optimal performance", tr: "Optimal performans için gelişmiş 3 aşamalı şarj" }
+    ],
+    datasheet: ""
+  },
+  "VBC-A05": {
+    name: { en: "VBC-A05 Smart Automatic Battery Charger", tr: "VBC-A05 Akıllı Otomatik Akü Şarj Cihazı" },
+    category: "power",
+    description: { en: "Intelligent microprocessor-controlled battery charger with automatic voltage detection for 12V/24V lead-acid batteries. Features multi-stage charging algorithm (bulk, absorption, float), reverse polarity protection, short circuit protection, and over-temperature protection. Ideal for automotive, marine, UPS, and backup power applications.", tr: "12V/24V kurşun-asit aküler için otomatik gerilim algılamalı akıllı mikroişlemci kontrollü akü şarj cihazı. Çok aşamalı şarj algoritması (bulk, absorption, float), ters kutup koruması, kısa devre koruması ve aşırı sıcaklık koruması özellikleri. Otomotiv, denizcilik, UPS ve yedek güç uygulamaları için idealdir." },
+    reference: "REF: VBC-A05",
+    images: ["/vtekeimg/Battery Charger/VBC-A05.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VBC-A05" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "230V AC ±10%, 50/60Hz" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "12V/24V DC (Auto-Detect)" },
+      "charging_current": { label: { en: "Charging Current", tr: "Şarj Akımı" }, value: "5A Max" },
+      "charging_mode": { label: { en: "Charging Mode", tr: "Şarj Modu" }, value: "3-Stage: Bulk/Absorption/Float" },
+      "battery_type": { label: { en: "Battery Type", tr: "Akü Tipi" }, value: "Lead-Acid, AGM, Gel, MF" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Reverse Polarity, Short Circuit, Over-Temp, Over-Voltage" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;85%" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Automatic 12V/24V voltage detection", tr: "Otomatik 12V/24V gerilim algılama" },
+      { en: "3-stage intelligent charging algorithm", tr: "3 aşamalı akıllı şarj algoritması" },
+      { en: "Multiple battery type compatibility", tr: "Çoklu akü tipi uyumluluğu" },
+      { en: "Comprehensive protection suite for safe operation", tr: "Güvenli çalışma için kapsamlı koruma paketi" },
+      { en: "LED status indicators for easy monitoring", tr: "Kolay izleme için LED durum göstergeleri" }
+    ],
+    datasheet: ""
+  },
+  "HPR-02M": {
+    name: { en: "HPR-02M 2-Pump Alternation Relay (Hydrophore Controller)", tr: "HPR-02M 2-Pompa Alternasyon Rölesi (Hidofor Kontrolörü)" },
+    category: "relays",
+    description: { en: "Automatic 2-pump alternation relay for hydrophore systems with dual pump control. Operates on 150-250V AC with low power consumption &lt;6VA at 50/60Hz frequency. Features intelligent pump rotation to ensure even wear distribution and extend equipment life. Ideal for hydrophore systems, water pressure systems, dual pump installations, and applications requiring automatic pump alternation for balanced operation.", tr: "Çift pompalı kontrol ile hidofor sistemleri için otomatik 2-pompa alternasyon rölesi. 50/60Hz frekansta 6VA altında düşük güç tüketimi ile 150-250V AC'de çalışır. Eşit aşınma dağılımını sağlamak ve ekipman ömrünü uzatmak için akıllı pompa rotasyonu özellikleri. Hidrofor sistemleri, su basınç sistemleri, çift pompa tesisatları ve dengeli çalışma için otomatik pompa alternasyonu gerektiren uygulamalar için idealdir." },
+    reference: "REF: HPR-02M",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "HPR-02M" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "150-250V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "2-Pump Alternation Relay (Hydrophore Controller)" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Automatic Pump Alternation" },
+      "number_of_pumps": { label: { en: "Number of Pumps", tr: "Pompa Sayısı" }, value: "2 Pumps" },
+      "alternation_mode": { label: { en: "Alternation Mode", tr: "Alternasyon Modu" }, value: "Automatic Rotation" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Automatic 2-pump alternation control", tr: "Otomatik 2-pompa alternasyon kontrolü" },
+      { en: "Ensures even wear distribution", tr: "Eşit aşınma dağılımını sağlar" },
+      { en: "Extends pump equipment lifespan", tr: "Pompa ekipman ömrünü uzatır" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Ideal for hydrophore systems", tr: "Hidrofor sistemleri için ideal" }
+    ],
+    datasheet: ""
+  },
+  "HPR-03M": {
+    name: { en: "HPR-03M 3-Pump Alternation Relay (Hydrophore Controller)", tr: "HPR-03M 3-Pompa Alternasyon Rölesi (Hidofor Kontrolörü)" },
+    category: "relays",
+    description: { en: "Advanced 3-pump alternation relay for hydrophore systems with triple pump control. Operates on 150-250V AC with low power consumption &lt;6VA at 50/60Hz frequency. Features intelligent pump rotation for maximum system reliability and extended equipment lifespan. Perfect for large hydrophore systems, industrial water pressure systems, triple pump installations, and applications requiring sophisticated pump management for optimal performance.", tr: "Üç pompalı kontrol ile hidofor sistemleri için gelişmiş 3-pompa alternasyon rölesi. 50/60Hz frekansta 6VA altında düşük güç tüketimi ile 150-250V AC'de çalışır. Maksimum sistem güvenilirliği ve uzatılmış ekipman ömrü için akıllı pompa rotasyonu özellikleri. Büyük hidrofor sistemleri, endüstriyel su basınç sistemleri, üç pompa tesisatları ve optimal performans için gelişmiş pompa yönetimi gerektiren uygulamalar için mükemmel." },
+    reference: "REF: HPR-03M",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "HPR-03M" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "150-250V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "3-Pump Alternation Relay (Hydrophore Controller)" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Automatic 3-Pump Alternation" },
+      "number_of_pumps": { label: { en: "Number of Pumps", tr: "Pompa Sayısı" }, value: "3 Pumps" },
+      "alternation_mode": { label: { en: "Alternation Mode", tr: "Alternasyon Modu" }, value: "Intelligent Rotation" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Advanced 3-pump alternation control", tr: "Gelişmiş 3-pompa alternasyon kontrolü" },
+      { en: "Intelligent pump rotation algorithm", tr: "Akıllı pompa rotasyon algoritması" },
+      { en: "Maximum system reliability", tr: "Maksimum sistem güvenilirliği" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Ideal for large hydrophore systems", tr: "Büyük hidrofor sistemleri için ideal" }
+    ],
+    datasheet: ""
+  },
+  "LLR-05": {
+    name: { en: "LLR-05 Liquid Level Control Relay (Single Tank)", tr: "LLR-05 Sıvı Seviye Kontrol Rölesi (Tek Tank)" },
+    category: "relays",
+    description: { en: "Single tank liquid level control relay for automatic pump control in water tanks and reservoirs. Operates on 85-230V AC/DC with low power consumption &lt;6VA at 50/60Hz frequency. Features reliable electrode-based level detection for automatic filling and emptying control. Ideal for water tanks, reservoirs, liquid level monitoring, pump control, and industrial and residential water management applications.", tr: "Su tankları ve rezervuarlarında otomatik pompa kontrolü için tek tank sıvı seviye kontrol rölesi. 50/60Hz frekansta 6VA altında düşük güç tüketimi ile 85-230V AC/DC'de çalışır. Otomatik doldurma ve boşaltma kontrolü için güvenilir elektrot tabanlı seviye algılama özellikleri. Su tankları, rezervuarlar, sıvı seviye izleme, pompa kontrolü ve endüstriyel ve konut su yönetimi uygulamaları için idealdir." },
+    reference: "REF: LLR-05",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "LLR-05" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Liquid Level Control Relay (Single Tank)" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Single Tank Level Control" },
+      "sensor_type": { label: { en: "Sensor Type", tr: "Sensör Tipi" }, value: "Conductive Electrodes" },
+      "number_of_electrodes": { label: { en: "Number of Electrodes", tr: "Elektrot Sayısı" }, value: "3 Electrodes" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Automatic pump control for single tank", tr: "Tek tank için otomatik pompa kontrolü" },
+      { en: "Conductive electrode level detection", tr: "İletken elektrot seviye algılama" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Prevents dry running and overflow", tr: "Kuru çalışma ve taşmayı önler" }
+    ],
+    datasheet: ""
+  },
+  "LLR-05U": {
+    name: { en: "LLR-05U Liquid Level Control Relay with Adjustable Time Delay", tr: "LLR-05U Ayarlanabilir Zaman Gecikmeli Sıvı Seviye Kontrol Rölesi" },
+    category: "relays",
+    description: { en: "Advanced liquid level control relay with adjustable time delay for single tank applications. Operates on 85-230V AC/DC with low power consumption &lt;6VA at 50/60Hz frequency. Features adjustable time delay to prevent pump cycling and reduce wear. Ideal for water tanks, reservoirs, pump protection, and applications requiring delayed response to level changes.", tr: "Tek tank uygulamaları için ayarlanabilir zaman gecikmeli gelişmiş sıvı seviye kontrol rölesi. 50/60Hz frekansta 6VA altında düşük güç tüketimi ile 85-230V AC/DC'de çalışır. Pompa döngüsünü önlemek ve aşınmayı azaltmak için ayarlanabilir zaman gecikmesi özellikleri. Su tankları, rezervuarlar, pompa koruması ve seviye değişikliklerine gecikmeli tepki gerektiren uygulamalar için idealdir." },
+    reference: "REF: LLR-05U",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "LLR-05U" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Liquid Level Control Relay with Adjustable Time Delay" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Single Tank with Time Delay" },
+      "sensor_type": { label: { en: "Sensor Type", tr: "Sensör Tipi" }, value: "Conductive Electrodes" },
+      "time_delay": { label: { en: "Time Delay", tr: "Zaman Gecikmesi" }, value: "Adjustable (0.5s-10s)" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Adjustable time delay prevents pump cycling", tr: "Ayarlanabilir zaman gecikmesi pompa döngüsünü önler" },
+      { en: "Extends pump and equipment lifespan", tr: "Pompa ve ekipman ömrünü uzatır" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Ideal for unstable water levels", tr: "Dengesiz su seviyeleri için ideal" }
+    ],
+    datasheet: ""
+  },
+  "LLR-06": {
+    name: { en: "LLR-06 Dual Tank Liquid Level Control Relay", tr: "LLR-06 Çift Tank Sıvı Seviye Kontrol Rölesi" },
+    category: "relays",
+    description: { en: "Dual tank liquid level control relay for complex water management systems with two tanks or reservoirs. Operates on 85-230V AC/DC with low power consumption &lt;6VA at 50/60Hz frequency. Features independent level control for both tanks with automatic pump control between tanks. Perfect for controlling pumps between two tanks, reservoirs, storage systems, and industrial water management applications.", tr: "İki tank veya rezervuarlı karmaşık su yönetim sistemleri için çift tank sıvı seviye kontrol rölesi. 50/60Hz frekansta 6VA altında düşük güç tüketimi ile 85-230V AC/DC'de çalışır. Tanklar arasında otomatik pompa kontrolü ile her iki tank için bağımsız seviye kontrolü özellikleri. İki tank, rezervuar, depolama sistemleri arasında pompa kontrolü ve endüstriyel su yönetimi uygulamaları için mükemmel." },
+    reference: "REF: LLR-06",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "LLR-06" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Dual Tank Liquid Level Control Relay" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Dual Tank Level Control" },
+      "sensor_type": { label: { en: "Sensor Type", tr: "Sensör Tipi" }, value: "Conductive Electrodes" },
+      "number_of_tanks": { label: { en: "Number of Tanks", tr: "Tank Sayısı" }, value: "2 Tanks" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Independent control for two tanks", tr: "İki tank için bağımsız kontrol" },
+      { en: "Automatic pump transfer between tanks", tr: "Tanklar arasında otomatik pompa transferi" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Ideal for complex water systems", tr: "Karmaşık su sistemleri için ideal" }
+    ],
+    datasheet: ""
+  },
+  "PCR-03": {
+    name: { en: "PCR-03 Photocell Relay (Fixed Lux Control)", tr: "PCR-03 Fotoselli Röle (Sabit Lüks Kontrol)" },
+    category: "relays",
+    description: { en: "Automatic photocell relay with fixed lux control for lighting automation. Operates on 180-230V AC with low power consumption &lt;6VA at 50/60Hz frequency. Features reliable light sensor for automatic day/night switching. Ideal for street lighting, outdoor lighting, garden lighting, and automatic lighting control applications requiring fixed sensitivity threshold.", tr: "Aydınlatma otomasyonu için sabit lüks kontrollü otomatik fotoselli röle. 50/60Hz frekansta 6VA altında düşük güç tüketimi ile 180-230V AC'de çalışır. Otomatik gündüz/gece geçişi için güvenilir ışık sensörü özellikleri. Sokak aydınlatması, dış mekan aydınlatması, bahçe aydınlatması ve sabit hassasiyet eşiği gerektiren otomatik aydınlatma kontrol uygulamaları için idealdir." },
+    reference: "REF: PCR-03",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PCR-03" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "180-230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Photocell Relay (Fixed Lux Control)" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Fixed Light Sensitivity" },
+      "sensor_type": { label: { en: "Sensor Type", tr: "Sensör Tipi" }, value: "Photoresistor" },
+      "response_time": { label: { en: "Response Time", tr: "Tepki Süresi" }, value: "&lt;1 second" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Automatic day/night switching", tr: "Otomatik gündüz/gece geçişi" },
+      { en: "Fixed lux control for consistent operation", tr: "Tutarlı çalışma için sabit lüks kontrol" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Reliable photoresistor sensor", tr: "Güvenilir fotoresistör sensör" },
+      { en: "Ideal for street and outdoor lighting", tr: "Sokak ve dış mekan aydınlatması için ideal" }
+    ],
+    datasheet: ""
+  },
+  "PCR-04": {
+    name: { en: "PCR-04 Photocell Relay (Adjustable Lux Control)", tr: "PCR-04 Fotoselli Röle (Ayarlanabilir Lüks Kontrol)" },
+    category: "relays",
+    description: { en: "Advanced photocell relay with adjustable lux control for customizable lighting automation. Operates on 180-230V AC with low power consumption &lt;6VA at 50/60Hz frequency. Features adjustable light sensitivity threshold for precise control. Perfect for applications requiring customizable light detection levels, outdoor lighting, security lighting, and energy-efficient automatic lighting control.", tr: "Özelleştirilebilir aydınlatma otomasyonu için ayarlanabilir lüks kontrollü gelişmiş fotoselli röle. 50/60Hz frekansta 6VA altında düşük güç tüketimi ile 180-230V AC'de çalışır. Hassas kontrol için ayarlanabilir ışık hassasiyet eşiği özellikleri. Özelleştirilebilir ışık algılama seviyeleri, dış mekan aydınlatması, güvenlik aydınlatması ve enerji verimli otomatik aydınlatma kontrolü gerektiren uygulamalar için mükemmel." },
+    reference: "REF: PCR-04",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PCR-04" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "180-230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Photocell Relay (Adjustable Lux Control)" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Adjustable Light Sensitivity" },
+      "sensor_type": { label: { en: "Sensor Type", tr: "Sensör Tipi" }, value: "Photoresistor" },
+      "adjustment_range": { label: { en: "Adjustment Range", tr: "Ayar Aralığı" }, value: "Adjustable Lux Threshold" },
+      "response_time": { label: { en: "Response Time", tr: "Tepki Süresi" }, value: "&lt;1 second" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Adjustable lux threshold for flexibility", tr: "Esneklik için ayarlanabilir lüks eşiği" },
+      { en: "Automatic day/night switching", tr: "Otomatik gündüz/gece geçişi" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Precise light sensitivity control", tr: "Hassas ışık hassasiyeti kontrolü" },
+      { en: "Energy-efficient lighting automation", tr: "Enerji verimli aydınlatma otomasyonu" }
+    ],
+    datasheet: ""
+  },
+  "BK": {
+    name: { en: "BK Series Busbar Type Current Transformer", tr: "BK Serisi Bara Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Busbar-type current transformer for primary currents from 5A to 200A AC. Designed for direct busbar connection with rectangular window, suitable for distribution boards and control panels with up to 10VA output.", tr: "5A ile 200A AC birincil akımlar için bara tipi akım trafosu. Dikdörtgen pencere ile doğrudan bara bağlantısı için tasarlanmıştır, 10VA'ya kadar çıkış ile dağıtım tabloları ve kontrol panolarına uygun." },
+    reference: "REF: BK-100/5-0.5",
+    images: ["/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "BK" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "5-200A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5S, 0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 10VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Busbar Type" },
+      "window_shape": { label: { en: "Window Shape", tr: "Pencere Şekli" }, value: "Rectangular" }
+    },
+    features: [
+      { en: "Rectangular window for busbar installation", tr: "Bara montajı için dikdörtgen pencere" },
+      { en: "Direct connection to copper or aluminum busbars", tr: "Bakır veya alüminyum baralara doğrudan bağlantı" },
+      { en: "Compact design for distribution boards", tr: "Dağıtım tabloları için kompakt tasarım" },
+      { en: "Multiple accuracy classes available", tr: "Çoklu doğruluk sınıfları mevcut" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/BK.pdf"
+  },
+  "BK1C": {
+    name: { en: "BK1C Series Terminal Type Current Transformer", tr: "BK1C Serisi Terminal Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Compact terminal-type current transformer for low primary currents from 5A to 50A AC. Ideal for control circuits, small motors, and precision measurement applications with up to 10VA output.", tr: "5A ile 50A AC düşük birincil akımlar için kompakt terminal tipi akım trafosu. 10VA'ya kadar çıkış ile kontrol devreleri, küçük motorlar ve hassas ölçüm uygulamaları için ideal." },
+    reference: "REF: BK1C-25/5-0.5",
+    images: ["/vtekeimg/Current Transformers/BK1C.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "BK1C" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "5-50A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 10VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Terminal Type" },
+      "mounting": { label: { en: "Mounting", tr: "Montaj" }, value: "DIN Rail / Panel" }
+    },
+    features: [
+      { en: "Compact design for control panels", tr: "Kontrol panoları için kompakt tasarım" },
+      { en: "Suitable for low current applications", tr: "Düşük akım uygulamaları için uygun" },
+      { en: "Easy DIN rail or panel mounting", tr: "Kolay DIN ray veya pano montajı" },
+      { en: "Ideal for motor protection circuits", tr: "Motor koruma devreleri için ideal" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/BK1C.pdf"
+  },
+  "CK20": {
+    name: { en: "CK20 — VTEKE Product", tr: "CK20 — VTEKE Product" },
+    category: "transformers",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "",
+    images: ["/vtekeimg/Current Transformers/CK20.jpg", "/vtekeimg/Current Transformers/CK20.png"],
+    specs: {
+
+    },
+    features: [
+
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/CK20.pdf"
+  },
+  "DK125": {
+    name: { en: "DK125 Series Ultra High Current Window Type CT", tr: "DK125 Serisi Ultra Yüksek Akım Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Ultra high capacity window-type current transformer for primary currents from 600A to 4000A AC. Features precision accuracy classes including 0.2S for revenue metering with up to 40VA output power for demanding applications.", tr: "600A ile 4000A AC birincil akımlar için ultra yüksek kapasiteli pencere tipi akım trafosu. Gelir ölçümü için 0.2S dahil hassas doğruluk sınıfları ve talepkar uygulamalar için 40VA'ya kadar çıkış gücü." },
+    reference: "REF: DK125-2000/5-0.2S",
+    images: ["/vtekeimg/Current Transformers/DK125.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "DK125" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "600-4000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 40VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "Main Distribution/Substations" }
+    },
+    features: [
+      { en: "Ultra high current capacity up to 4000A", tr: "4000A'ya kadar ultra yüksek akım kapasitesi" },
+      { en: "Class 0.2S accuracy for revenue metering", tr: "Gelir ölçümü için 0.2S sınıfı doğruluk" },
+      { en: "Maximum 40VA output for complex systems", tr: "Karmaşık sistemler için maksimum 40VA çıkış" },
+      { en: "Suitable for substations and power plants", tr: "Trafo merkezleri ve enerji santralleri için uygun" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/DK125.pdf"
+  },
+  "MSK24": {
+    name: { en: "MSK24 Split-Core Current Transformer 24×24mm", tr: "MSK24 Açılır-Kapanır Akım Trafo 24×24mm" },
+    category: "transformers",
+    description: { en: "Split-core current transformer with 24×24mm window, closed by side clips. Ideal for retrofit installations without disconnecting cables. Suitable for 100A to 400A AC primary currents.", tr: "Yan klipslerle kapatılan 24×24mm pencereli açılır-kapanır akım trafosu. Kabloları ayırmadan mevcut tesisatlara montaj için ideal. 100A ile 400A AC birincil akımlar için uygun." },
+    reference: "REF: MSK24-200/5-1",
+    images: ["/vtekeimg/Current Transformers/MSK24.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "MSK24" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "100-400A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 3.75VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "24×24mm" },
+      "closing_mechanism": { label: { en: "Closing Mechanism", tr: "Kapatma Mekanizması" }, value: "Side Clips" }
+    },
+    features: [
+      { en: "Split-core design for easy installation without power shutdown", tr: "Güç kesintisi olmadan kolay montaj için açılır-kapanır tasarım" },
+      { en: "Secure side clip closing mechanism", tr: "Güvenli yan klips kapatma mekanizması" },
+      { en: "Perfect for energy monitoring and retrofit projects", tr: "Enerji izleme ve tadilat projeleri için mükemmel" },
+      { en: "Compact 24×24mm window fits standard cables", tr: "Standart kablolar sığan kompakt 24×24mm pencere" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/MSK24,36,50.pdf"
+  },
+  "MSK36": {
+    name: { en: "MSK36 Split-Core Current Transformer 36×36mm", tr: "MSK36 Açılır-Kapanır Akım Trafo 36×36mm" },
+    category: "transformers",
+    description: { en: "Split-core current transformer with 36×36mm window, closed by side clips. Suitable for primary currents from 100A to 600A AC. Perfect for retrofit installations and energy monitoring without power shutdown.", tr: "Yan klipslerle kapatılan 36×36mm pencereli açılır-kapanır akım trafosu. 100A ile 600A AC birincil akımlar için uygun. Güç kesintisi olmadan mevcut tesisatlar ve enerji izleme için mükemmel." },
+    reference: "REF: MSK36-400/5-1",
+    images: ["/vtekeimg/Current Transformers/MSK36.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "MSK36" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "100-600A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 5VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "36×36mm" },
+      "closing_mechanism": { label: { en: "Closing Mechanism", tr: "Kapatma Mekanizması" }, value: "Side Clips" }
+    },
+    features: [
+      { en: "Split-core design for easy installation", tr: "Kolay montaj için açılır-kapanır tasarım" },
+      { en: "No power shutdown required", tr: "Güç kesintisi gerekmez" },
+      { en: "36×36mm window for medium cables", tr: "Orta kablolar için 36×36mm pencere" },
+      { en: "Ideal for energy audits and monitoring", tr: "Enerji denetimleri ve izleme için ideal" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/MSK24,36,50.pdf"
+  },
+  "MSK50": {
+    name: { en: "MSK50 Split-Core Current Transformer 50×50mm", tr: "MSK50 Açılır-Kapanır Akım Trafo 50×50mm" },
+    category: "transformers",
+    description: { en: "Split-core current transformer with 50×50mm window, closed by side clips. Suitable for primary currents from 100A to 800A AC. Ideal for large cables and busbars in retrofit applications.", tr: "Yan klipslerle kapatılan 50×50mm pencereli açılır-kapanır akım trafosu. 100A ile 800A AC birincil akımlar için uygun. Tadilat uygulamalarında büyük kablo ve baralar için ideal." },
+    reference: "REF: MSK50-600/5-1",
+    images: ["/vtekeimg/Current Transformers/MSK50.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "MSK50" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "100-800A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 5VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "50×50mm" },
+      "closing_mechanism": { label: { en: "Closing Mechanism", tr: "Kapatma Mekanizması" }, value: "Side Clips" }
+    },
+    features: [
+      { en: "Large 50×50mm window for thick cables", tr: "Kalın kablolar için büyük 50×50mm pencere" },
+      { en: "Installation without power interruption", tr: "Güç kesintisi olmadan montaj" },
+      { en: "Suitable for cables and small busbars", tr: "Kablo ve küçük baralara uygun" },
+      { en: "Perfect for energy management systems", tr: "Enerji yönetim sistemleri için mükemmel" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/MSK24,36,50.pdf"
+  },
+  "SK58": {
+    name: { en: "SK58 Split-Core Current Transformer", tr: "SK58 Açılır-Kapanır Akım Trafo" },
+    category: "transformers",
+    description: { en: "Split-core current transformer suitable for primary currents from 250A to 1600A AC. Features easy clip-on installation without cable disconnection, perfect for medium to high current retrofit applications with up to 15VA output.", tr: "250A ile 1600A AC birincil akımlar için uygun açılır-kapanır akım trafosu. Kablo bağlantısı kesilmeden kolay takma özellikli, 15VA'ya kadar çıkış ile orta ve yüksek akım tadilat uygulamaları için mükemmel." },
+    reference: "REF: SK58-800/5-1",
+    images: ["/vtekeimg/Current Transformers/SK58.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "SK58" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "250-1600A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 15VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "58×58mm (Approx.)" },
+      "installation": { label: { en: "Installation", tr: "Montaj" }, value: "Clip-On Type" }
+    },
+    features: [
+      { en: "Split-core design for quick installation", tr: "Hızlı montaj için açılır-kapanır tasarım" },
+      { en: "No system shutdown required", tr: "Sistem kapatması gerekmez" },
+      { en: "Higher VA output for multiple devices", tr: "Çoklu cihazlar için daha yüksek VA çıkışı" },
+      { en: "Suitable for industrial power monitoring", tr: "Endüstriyel güç izleme için uygun" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/SK 58, 88, 812, 816, 820.pdf"
+  },
+  "SK812": {
+    name: { en: "SK812 Large Split-Core Current Transformer", tr: "SK812 Büyük Açılır-Kapanır Akım Trafo" },
+    category: "transformers",
+    description: { en: "Large window split-core current transformer suitable for primary currents from 400A to 3000A AC. Features easy clip-on installation without cable disconnection, ideal for high current retrofit and energy monitoring with up to 30VA output.", tr: "400A ile 3000A AC birincil akımlar için uygun büyük pencereli açılır-kapanır akım trafosu. Kablo bağlantısı kesilmeden kolay takma özellikli, 30VA'ya kadar çıkış ile yüksek akım tadilat ve enerji izleme için ideal." },
+    reference: "REF: SK812-2000/5-1",
+    images: ["/vtekeimg/Current Transformers/SK812.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "SK812" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "400-3000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 30VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "812mm² (Approx.)" },
+      "installation": { label: { en: "Installation", tr: "Montaj" }, value: "Clip-On Type" }
+    },
+    features: [
+      { en: "Very large window for multiple cables", tr: "Çoklu kablolar için çok büyük pencere" },
+      { en: "High current capacity up to 3000A", tr: "3000A'ya kadar yüksek akım kapasitesi" },
+      { en: "30VA output for complex monitoring systems", tr: "Karmaşık izleme sistemleri için 30VA çıkış" },
+      { en: "No power shutdown for installation", tr: "Montaj için güç kesintisi yok" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/SK 58, 88, 812, 816, 820.pdf"
+  },
+  "SK816": {
+    name: { en: "SK816 Extra Large Split-Core Current Transformer", tr: "SK816 Ekstra Büyük Açılır-Kapanır Akım Trafo" },
+    category: "transformers",
+    description: { en: "Extra large window split-core current transformer suitable for primary currents from 1000A to 6000A AC. Designed for high current applications with easy installation on cables and busbars without power shutdown, up to 30VA output.", tr: "1000A ile 6000A AC birincil akımlar için uygun ekstra büyük pencereli açılır-kapanır akım trafosu. Güç kesintisi olmadan kablo ve baralara kolay montaj ile yüksek akım uygulamaları için tasarlanmıştır, 30VA'ya kadar çıkış." },
+    reference: "REF: SK816-4000/5-1",
+    images: ["/vtekeimg/Current Transformers/sk816.jpg", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "SK816" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "1000-6000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 30VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "816mm² (Approx.)" },
+      "installation": { label: { en: "Installation", tr: "Montaj" }, value: "Clip-On Type" }
+    },
+    features: [
+      { en: "Extra large window for very thick cables", tr: "Çok kalın kablolar için ekstra büyük pencere" },
+      { en: "Maximum current capacity up to 6000A", tr: "6000A'ya kadar maksimum akım kapasitesi" },
+      { en: "Suitable for main distribution feeders", tr: "Ana dağıtım beslemeleri için uygun" },
+      { en: "Installation without system interruption", tr: "Sistem kesintisi olmadan montaj" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/SK 58, 88, 812, 816, 820.pdf"
+  },
+  "SK820": {
+    name: { en: "SK820 Maximum Split-Core Current Transformer", tr: "SK820 Maksimum Açılır-Kapanır Akım Trafo" },
+    category: "transformers",
+    description: { en: "Maximum capacity split-core current transformer suitable for primary currents from 2000A to 6300A AC. Designed for the highest current applications with easy installation on large cables and busbars without power shutdown, up to 30VA output.", tr: "2000A ile 6300A AC birincil akımlar için uygun maksimum kapasiteli açılır-kapanır akım trafosu. Güç kesintisi olmadan büyük kablo ve baralara kolay montaj ile en yüksek akım uygulamaları için tasarlanmıştır, 30VA'ya kadar çıkış." },
+    reference: "REF: SK820-5000/5-1",
+    images: ["/vtekeimg/Current Transformers/SK820.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "SK820" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "2000-6300A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 30VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "820mm² (Approx.)" },
+      "installation": { label: { en: "Installation", tr: "Montaj" }, value: "Clip-On Type" }
+    },
+    features: [
+      { en: "Maximum current capacity for split-core design", tr: "Açılır-kapanır tasarım için maksimum akım kapasitesi" },
+      { en: "Up to 6300A primary current rating", tr: "6300A'ya kadar birincil akım değeri" },
+      { en: "Ideal for power generation and transmission", tr: "Enerji üretimi ve iletim için ideal" },
+      { en: "No power shutdown for installation", tr: "Montaj için güç kesintisi yok" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/SK 58, 88, 812, 816, 820.pdf"
+  },
+  "SK88": {
+    name: { en: "SK88 Large Split-Core Current Transformer", tr: "SK88 Büyük Açılır-Kapanır Akım Trafo" },
+    category: "transformers",
+    description: { en: "Large window split-core current transformer suitable for primary currents from 400A to 2000A AC. Features easy clip-on installation without cable disconnection, perfect for retrofit and energy monitoring applications.", tr: "400A ile 2000A AC birincil akımlar için uygun büyük pencereli açılır-kapanır akım trafosu. Kablo bağlantısı kesilmeden kolay takma özellikli, tadilat ve enerji izleme uygulamaları için mükemmel." },
+    reference: "REF: SK88-1000/5-1",
+    images: ["/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "SK88" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "400-2000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 20VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Split-Core Current Transformer" },
+      "window_size": { label: { en: "Window Size", tr: "Pencere Boyutu" }, value: "88×88mm (Approx.)" },
+      "installation": { label: { en: "Installation", tr: "Montaj" }, value: "Clip-On Type" }
+    },
+    features: [
+      { en: "Large window accommodates thick cables and busbars", tr: "Büyük pencere kalın kablo ve baraları alır" },
+      { en: "No power shutdown required for installation", tr: "Montaj için güç kesintisi gerekmez" },
+      { en: "Suitable for cables and rectangular busbars", tr: "Kablo ve dikdörtgen baralara uygun" },
+      { en: "Ideal for energy audits and load monitoring", tr: "Enerji denetimleri ve yük izleme için ideal" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/SK 58, 88, 812, 816, 820.pdf"
+  },
+  "TK100": {
+    name: { en: "TK100 Series Ultra High Current Window Type CT", tr: "TK100 Serisi Ultra Yüksek Akım Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Ultra high capacity window-type current transformer for primary currents from 1000A to 4000A AC. Designed for utility substations and large industrial plants with up to 40VA output power.", tr: "1000A ile 4000A AC birincil akımlar için ultra yüksek kapasiteli pencere tipi akım trafosu. 40VA'ya kadar çıkış gücü ile şebeke trafo merkezleri ve büyük endüstriyel tesisler için tasarlanmıştır." },
+    reference: "REF: TK100-2500/5-0.2S",
+    images: ["/vtekeimg/Current Transformers/TK100.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK100" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "1000-4000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 40VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "terminal_cover": { label: { en: "Terminal Cover", tr: "Terminal Kapağı" }, value: "Sealable" }
+    },
+    features: [
+      { en: "Ultra high current capacity up to 4000A", tr: "4000A'ya kadar ultra yüksek akım kapasitesi" },
+      { en: "Class 0.2S accuracy for billing applications", tr: "Faturalama uygulamaları için 0.2S sınıfı doğruluk" },
+      { en: "High VA output for multiple protection relays", tr: "Çoklu koruma röleleri için yüksek VA çıkışı" },
+      { en: "Sealable terminal cover for tamper protection", tr: "Kurcalama koruması için kapatılabilir terminal kapağı" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK100.pdf"
+  },
+  "TK120": {
+    name: { en: "TK120 Series Maximum Current Window Type CT", tr: "TK120 Serisi Maksimum Akım Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Maximum capacity window-type current transformer for primary currents from 2000A to 6300A AC. Designed for high voltage substations and power generation facilities with up to 40VA output.", tr: "2000A ile 6300A AC birincil akımlar için maksimum kapasiteli pencere tipi akım trafosu. 40VA'ya kadar çıkış ile yüksek gerilim trafo merkezleri ve enerji üretim tesisleri için tasarlanmıştır." },
+    reference: "REF: TK120-4000/5-0.2S",
+    images: ["/vtekeimg/Current Transformers/TK120.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK120" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "2000-6300A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 40VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "HV Substations" }
+    },
+    features: [
+      { en: "Maximum current capacity up to 6300A", tr: "6300A'ya kadar maksimum akım kapasitesi" },
+      { en: "Suitable for power generation facilities", tr: "Enerji üretim tesisleri için uygun" },
+      { en: "High accuracy for transmission metering", tr: "İletim ölçümü için yüksek doğruluk" },
+      { en: "Heavy-duty construction for harsh environments", tr: "Zorlu ortamlar için ağır hizmet tipi yapı" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK120.pdf"
+  },
+  "TK30": {
+    name: { en: "TK30 Series Window Type Current Transformer", tr: "TK30 Serisi Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Window-type current transformer with 2 screw terminals per connection, suitable for primary currents from 30A to 600A AC. Designed for reliable metering and protection applications.", tr: "Bağlantı başına 2 vidalı terminal ile 30A ile 600A AC arasındaki birincil akımlar için uygun pencere tipi akım trafosu. Güvenilir ölçüm ve koruma uygulamaları için tasarlanmıştır." },
+    reference: "REF: TK30-150/5-0.5",
+    images: ["/vtekeimg/Current Transformers/TK30.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK30" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "30-600A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5S, 0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 5 VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "terminal_type": { label: { en: "Terminal Type", tr: "Terminal Tipi" }, value: "2 Screws Each Terminal" }
+    },
+    features: [
+      { en: "Dual screw terminals for secure connections", tr: "Güvenli bağlantılar için çift vidalı terminaller" },
+      { en: "Wide accuracy class options for various applications", tr: "Çeşitli uygulamalar için geniş doğruluk sınıfı seçenekleri" },
+      { en: "Suitable for 50/60 Hz power systems", tr: "50/60 Hz güç sistemlerine uygun" },
+      { en: "Compact design for easy panel installation", tr: "Kolay pano montajı için kompakt tasarım" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK30.pdf"
+  },
+  "TK30A": {
+    name: { en: "TK30A Series High Accuracy Window Type Current Transformer", tr: "TK30A Serisi Yüksek Doğruluk Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "High accuracy window-type current transformer for primary currents from 25A to 600A AC. Features precision accuracy classes including 0.2S for revenue metering applications with up to 20VA output power.", tr: "25A ile 600A AC birincil akımlar için yüksek doğruluk pencere tipi akım trafosu. Gelir ölçüm uygulamaları için 0.2S dahil hassas doğruluk sınıfları ve 20VA'ya kadar çıkış gücü." },
+    reference: "REF: TK30A-400/5-0.2S",
+    images: ["/vtekeimg/Current Transformers/TK30A.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK30A" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "25-600A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 20VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "frequency": { label: { en: "Frequency", tr: "Frekans" }, value: "50/60 Hz" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "Revenue Metering" }
+    },
+    features: [
+      { en: "High precision accuracy class 0.2S for billing", tr: "Faturalama için yüksek hassasiyet 0.2S sınıfı" },
+      { en: "Wide current range from 25A to 600A", tr: "25A ile 600A arası geniş akım aralığı" },
+      { en: "High VA output for multiple meter connections", tr: "Çoklu ölçüm bağlantıları için yüksek VA çıkışı" },
+      { en: "Suitable for commercial and industrial metering", tr: "Ticari ve endüstriyel ölçüm için uygun" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK30A.pdf"
+  },
+  "TK30N": {
+    name: { en: "TK30N — VTEKE Product", tr: "TK30N — VTEKE Product" },
+    category: "transformers",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "",
+    images: ["/vtekeimg/Current Transformers/TK30N.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+
+    },
+    features: [
+
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK30N.pdf"
+  },
+  "TK40": {
+    name: { en: "TK40 Series Window Type Current Transformer", tr: "TK40 Serisi Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Medium capacity window-type current transformer for primary currents from 200A to 800A AC. Features 2 screw terminals per connection with up to 10VA output power for demanding applications.", tr: "200A ile 800A AC birincil akımlar için orta kapasiteli pencere tipi akım trafosu. Talepkar uygulamalar için 10VA'ya kadar çıkış gücü ile bağlantı başına 2 vidalı terminal." },
+    reference: "REF: TK40-400/5-0.5",
+    images: ["/vtekeimg/Current Transformers/TK40.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK40" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "200-800A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5S, 0.5, 1, 3" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 10VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "terminal_type": { label: { en: "Terminal Type", tr: "Terminal Tipi" }, value: "2 Screws Each Terminal" }
+    },
+    features: [
+      { en: "Higher VA output for multiple meter connections", tr: "Çoklu ölçüm cihazı bağlantıları için daha yüksek VA çıkışı" },
+      { en: "Robust construction for industrial environments", tr: "Endüstriyel ortamlar için sağlam yapı" },
+      { en: "Suitable for motor protection and energy metering", tr: "Motor koruma ve enerji ölçümü için uygun" },
+      { en: "Easy mounting on busbars and cables", tr: "Bara ve kablolara kolay montaj" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK40.pdf"
+  },
+  "TK40A": {
+    name: { en: "TK40A Series Window Type Current Transformer", tr: "TK40A Serisi Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Extended range window-type current transformer for primary currents from 200A to 1000A AC. Provides up to 20VA output power for applications requiring multiple secondary connections.", tr: "200A ile 1000A AC birincil akımlar için genişletilmiş aralıklı pencere tipi akım trafosu. Çoklu ikincil bağlantı gerektiren uygulamalar için 20VA'ya kadar çıkış gücü sağlar." },
+    reference: "REF: TK40A-600/5-0.5",
+    images: ["/vtekeimg/Current Transformers/TK40A.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK40A" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "200-1000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 20VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "terminal_type": { label: { en: "Terminal Type", tr: "Terminal Tipi" }, value: "2 Screws Each Terminal" }
+    },
+    features: [
+      { en: "High VA output for complex metering systems", tr: "Karmaşık ölçüm sistemleri için yüksek VA çıkışı" },
+      { en: "Extended current range up to 1000A", tr: "1000A'ya kadar genişletilmiş akım aralığı" },
+      { en: "Precision accuracy class 0.2S available", tr: "0.2S hassas doğruluk sınıfı mevcut" },
+      { en: "Suitable for main distribution panels", tr: "Ana dağıtım panolarına uygun" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK40A.pdf"
+  },
+  "TK60": {
+    name: { en: "TK60 Series High Current Window Type CT", tr: "TK60 Serisi Yüksek Akım Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "High capacity window-type current transformer for primary currents from 400A to 1250A AC. Features robust construction with up to 30VA output for industrial and commercial applications.", tr: "400A ile 1250A AC birincil akımlar için yüksek kapasiteli pencere tipi akım trafosu. Endüstriyel ve ticari uygulamalar için 30VA'ya kadar çıkış ile sağlam yapı." },
+    reference: "REF: TK60-800/5-0.5",
+    images: ["/vtekeimg/Current Transformers/TK60.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK60" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "400-1250A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 30VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "Industrial/Commercial" }
+    },
+    features: [
+      { en: "High VA capacity for multiple instrument connections", tr: "Çoklu cihaz bağlantıları için yüksek VA kapasitesi" },
+      { en: "Wide current range for flexible application", tr: "Esnek uygulama için geniş akım aralığı" },
+      { en: "High accuracy classes for revenue metering", tr: "Gelir ölçümü için yüksek doğruluk sınıfları" },
+      { en: "Durable design for long-term reliability", tr: "Uzun ömürlü güvenilirlik için dayanıklı tasarım" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK60.pdf"
+  },
+  "TK60D": {
+    name: { en: "TK60D Series Extra High Current Window Type CT", tr: "TK60D Serisi Ekstra Yüksek Akım Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Extra high capacity window-type current transformer for primary currents from 600A to 2000A AC. Designed for main distribution applications with up to 30VA output power.", tr: "600A ile 2000A AC birincil akımlar için ekstra yüksek kapasiteli pencere tipi akım trafosu. 30VA'ya kadar çıkış gücü ile ana dağıtım uygulamaları için tasarlanmıştır." },
+    reference: "REF: TK60D-1500/5-0.5",
+    images: ["/vtekeimg/Current Transformers/TK60D.jpg", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK60D" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "600-2000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 30VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "Main Distribution" }
+    },
+    features: [
+      { en: "Extra high current capacity up to 2000A", tr: "2000A'ya kadar ekstra yüksek akım kapasitesi" },
+      { en: "Suitable for transformer secondary metering", tr: "Transformatör ikincil ölçümü için uygun" },
+      { en: "High accuracy for billing applications", tr: "Faturalama uygulamaları için yüksek doğruluk" },
+      { en: "Robust construction for substations", tr: "Trafo merkezleri için sağlam yapı" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK60D.pdf"
+  },
+  "TK80": {
+    name: { en: "TK80 Series Very High Current Window Type CT", tr: "TK80 Serisi Çok Yüksek Akım Pencere Tipi Akım Trafo" },
+    category: "transformers",
+    description: { en: "Very high capacity window-type current transformer for primary currents from 800A to 2000A AC. Ideal for main incoming feeders and large industrial installations with up to 30VA output.", tr: "800A ile 2000A AC birincil akımlar için çok yüksek kapasiteli pencere tipi akım trafosu. 30VA'ya kadar çıkış ile ana giriş beslemeleri ve büyük endüstriyel tesisler için ideal." },
+    reference: "REF: TK80-1600/5-0.5",
+    images: ["/vtekeimg/Current Transformers/TK80.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "TK80" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "800-2000A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.2S, 0.5S, 0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 30VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Window Type" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "Main Incoming Feeders" }
+    },
+    features: [
+      { en: "Very high current capacity for main distribution", tr: "Ana dağıtım için çok yüksek akım kapasitesi" },
+      { en: "Precision accuracy for revenue metering", tr: "Gelir ölçümü için hassas doğruluk" },
+      { en: "Suitable for large industrial facilities", tr: "Büyük endüstriyel tesisler için uygun" },
+      { en: "High VA output for complex protection schemes", tr: "Karmaşık koruma şemaları için yüksek VA çıkışı" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Current Transformer/TK80.pdf"
+  },
+  "VST5": {
+    name: { en: "VST5 Summation Current Transformer", tr: "VST5 Toplama Akım Trafosu" },
+    category: "transformers",
+    description: { en: "Summation current transformer designed to combine multiple CT secondary currents into a single output. Suitable for 5A secondary current with accuracy classes 0.5 and 1, up to 15VA output power. Ideal for multi-circuit metering applications.", tr: "Birden fazla CT ikincil akımını tek çıkışta birleştirmek için tasarlanmış toplama akım trafosu. 5A ikincil akım için uygun, 0.5 ve 1 doğruluk sınıfları ile 15VA'ya kadar çıkış gücü. Çoklu devre ölçüm uygulamaları için ideal." },
+    reference: "REF: VST5-5A-0.5",
+    images: ["/vtekeimg/Current Transformers/VST5.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "VST5" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "5A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1 or 5A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5, 1" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "Up to 15VA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Summation CT" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "Multi-Circuit Metering" }
+    },
+    features: [
+      { en: "Combines multiple CT outputs into one", tr: "Birden fazla CT çıkışını birleştirir" },
+      { en: "Reduces metering equipment costs", tr: "Ölçüm ekipmanı maliyetlerini azaltır" },
+      { en: "Suitable for feeder summation applications", tr: "Besleme toplama uygulamaları için uygun" },
+      { en: "High accuracy for billing purposes", tr: "Faturalama amaçları için yüksek doğruluk" }
+    ],
+    datasheet: ""
+  },
+  "VTOR": {
+    name: { en: "VTOR Core Balance Current Transformer", tr: "VTOR Çekirdek Denge Akım Trafosu" },
+    category: "transformers",
+    description: { en: "Core balance current transformer (CBCT) for earth leakage protection. Available in 1000A or 500A primary current ratings with 1A secondary output and 0.5 accuracy class. Designed for ground fault detection in electrical systems.", tr: "Toprak kaçağı koruması için çekirdek denge akım trafosu (CBCT). 1000A veya 500A birincil akım değerlerinde, 1A ikincil çıkış ve 0.5 doğruluk sınıfı ile mevcut. Elektrik sistemlerinde toprak arızası tespiti için tasarlanmıştır." },
+    reference: "REF: VTOR-1000/1-0.5",
+    images: ["/vtekeimg/Current Transformers/VTOR.png", "/vtekeimg/Current Transformers/DK125.jpg"],
+    specs: {
+      "series": { label: { en: "Series", tr: "Seri" }, value: "Vtor" },
+      "ct_ratio": { label: { en: "CT Ratio", tr: "CT Oranı" }, value: "1000 or 500A" },
+      "secondary_current": { label: { en: "Secondary Current", tr: "İkincil Akım" }, value: "1A" },
+      "accuracy_class": { label: { en: "Accuracy Class", tr: "Doğruluk Sınıfı" }, value: "0.5" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "NA" },
+      "ct_type": { label: { en: "CT Type", tr: "CT Tipi" }, value: "Core Balance Current Transformer" },
+      "application": { label: { en: "Application", tr: "Uygulama" }, value: "Earth Leakage Protection" }
+    },
+    features: [
+      { en: "Detects earth leakage currents", tr: "Toprak kaçak akımlarını tespit eder" },
+      { en: "Provides ground fault protection", tr: "Toprak arızası koruması sağlar" },
+      { en: "Suitable for residual current devices", tr: "Artık akım cihazları için uygun" },
+      { en: "Essential for electrical safety systems", tr: "Elektrik güvenlik sistemleri için gerekli" }
+    ],
+    datasheet: ""
+  },
+  "VK-A72": {
+    name: { en: "VK-A72 Compact Digital Ammeter (68x68mm)", tr: "VK-A72 Kompakt Dijital Ampermetre (68x68mm)" },
+    category: "meters",
+    description: { en: "Compact digital ammeter with current measurement range (50mA-5.5A for CT 5/5A to 5000/5A). Operates on dual voltage 85-230V AC/DC with low power consumption &lt;6VA. Features compact 68x68mm panel size ideal for space-constrained control panels. Perfect for current monitoring in applications where panel space is limited.", tr: "Akım ölçüm aralığı (CT 5/5A ile 5000/5A için 50mA-5.5A) ile kompakt dijital ampermetre. 6VA altında düşük güç tüketimi ile çift gerilim 85-230V AC/DC'de çalışır. Alan kısıtlı kontrol panoları için ideal kompakt 68x68mm pano boyutu özellikleri. Pano alanının sınırlı olduğu uygulamalarda akım izleme için mükemmel." },
+    reference: "REF: VK-A72",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-A72" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "NA" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "50mA-5.5A (for CT 5/5A to 5000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "NA" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "NA" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "68x68mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Compact 68x68mm size saves panel space", tr: "Kompakt 68x68mm boyut pano alanı tasarrufu sağlar" },
+      { en: "Wide current range with CT support", tr: "CT desteği ile geniş akım aralığı" },
+      { en: "Compatible with CT 5/5A to 5000/5A", tr: "CT 5/5A ile 5000/5A ile uyumlu" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Ideal for space-constrained installations", tr: "Alan kısıtlı montajlar için ideal" }
+    ],
+    datasheet: ""
+  },
+  "VK-A96-T": {
+    name: { en: "VK-A96-T Digital Ammeter with Transformer Input (91x91mm)", tr: "VK-A96-T Transformatör Girişli Dijital Ampermetre (91x91mm)" },
+    category: "meters",
+    description: { en: "Digital ammeter with transformer input for current measurement range (50mA-5.5A for CT 5/5A to 5000/5A). Operates on dual voltage 85-230V AC/DC with low power consumption &lt;6VA. Features standard 91x91mm panel size for easy installation in control panels. Ideal for industrial current monitoring applications requiring transformer isolation and accurate current measurement.", tr: "Akım ölçüm aralığı (CT 5/5A ile 5000/5A için 50mA-5.5A) için transformatör girişli dijital ampermetre. 6VA altında düşük güç tüketimi ile çift gerilim 85-230V AC/DC'de çalışır. Kontrol panolarına kolay montaj için standart 91x91mm pano boyutu özellikleri. Transformatör izolasyonu ve hassas akım ölçümü gerektiren endüstriyel akım izleme uygulamaları için idealdir." },
+    reference: "REF: VK-A96-T",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-A96-T" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "NA" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "50mA-5.5A (for CT 5/5A to 5000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "NA" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "NA" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Transformer input for electrical isolation", tr: "Elektrik izolasyonu için transformatör girişi" },
+      { en: "Wide current range with CT support", tr: "CT desteği ile geniş akım aralığı" },
+      { en: "Compatible with CT 5/5A to 5000/5A", tr: "CT 5/5A ile 5000/5A ile uyumlu" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Standard 91x91mm panel mounting", tr: "Standart 91x91mm pano montajı" }
+    ],
+    datasheet: ""
+  },
+  "VK-A96": {
+    name: { en: "VK-A96 Digital Ammeter (91x91mm)", tr: "VK-A96 Dijital Ampermetre (91x91mm)" },
+    category: "meters",
+    description: { en: "Digital ammeter with current measurement range (50mA-5.5A for CT 5/5A to 5000/5A). Operates on dual voltage 85-230V AC/DC with low power consumption &lt;6VA. Features standard 91x91mm panel size for easy installation in control panels. Ideal for precise current monitoring in electrical distribution systems and industrial applications with current transformers.", tr: "Akım ölçüm aralığı (CT 5/5A ile 5000/5A için 50mA-5.5A) ile dijital ampermetre. 6VA altında düşük güç tüketimi ile çift gerilim 85-230V AC/DC'de çalışır. Kontrol panolarına kolay montaj için standart 91x91mm pano boyutu özellikleri. Akım transformatörlü elektrik dağıtım sistemleri ve endüstriyel uygulamalarda hassas akım izleme için idealdir." },
+    reference: "REF: VK-A96",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-A96" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "NA" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "50mA-5.5A (for CT 5/5A to 5000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "NA" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "NA" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Wide current range with CT support", tr: "CT desteği ile geniş akım aralığı" },
+      { en: "Compatible with CT 5/5A to 5000/5A", tr: "CT 5/5A ile 5000/5A ile uyumlu" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Standard 91x91mm panel mounting", tr: "Standart 91x91mm pano montajı" }
+    ],
+    datasheet: ""
+  },
+  "VK-M96-C": {
+    name: { en: "VK-M96-C Multi-Function Digital Meter with RTU RS485 Communication", tr: "VK-M96-C RTU RS485 İletişimli Çok Fonksiyonlu Dijital Ölçer" },
+    category: "meters",
+    description: { en: "Advanced multi-function digital meter with comprehensive voltage measurement (5V-330kV), current measurement (50mA-5.5A), and energy monitoring (kWh). Features RTU RS485 communication protocol for remote monitoring and data acquisition. Operates on 85-230V AC with low power consumption &lt;10VA. Ideal for comprehensive power monitoring in industrial and commercial applications requiring communication capabilities.", tr: "Kapsamlı gerilim ölçümü (5V-330kV), akım ölçümü (50mA-5.5A) ve enerji izleme (kWh) özelliklerine sahip gelişmiş çok fonksiyonlu dijital ölçer. Uzaktan izleme ve veri toplama için RTU RS485 iletişim protokolü özellikleri. 10VA altında düşük güç tüketimi ile 85-230V AC'de çalışır. İletişim yetenekleri gerektiren endüstriyel ve ticari uygulamalarda kapsamlı güç izleme için idealdir." },
+    reference: "REF: VK-M96-C",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-M96-C" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;10VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "5V-330kV" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "50mA-5.5A (for CT 5/5A to 2000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "kWh" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "RTU RS485" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Multi-function measurement (Voltage, Current, Energy)", tr: "Çok fonksiyonlu ölçüm (Gerilim, Akım, Enerji)" },
+      { en: "RTU RS485 communication for remote monitoring", tr: "Uzaktan izleme için RTU RS485 iletişim" },
+      { en: "Wide voltage range 5V-330kV", tr: "Geniş gerilim aralığı 5V-330kV" },
+      { en: "Energy monitoring in kWh", tr: "kWh cinsinden enerji izleme" },
+      { en: "Standard 91x91mm panel size", tr: "Standart 91x91mm pano boyutu" }
+    ],
+    datasheet: ""
+  },
+  "VK-M96S": {
+    name: { en: "VK-M96S Multi-Function Digital Meter (91x91mm)", tr: "VK-M96S Çok Fonksiyonlu Dijital Ölçer (91x91mm)" },
+    category: "meters",
+    description: { en: "Versatile multi-function digital meter with voltage measurement (1-300VAC L-N, 1-500VAC L-L) and current measurement (50mA-5.5A for CT 5/5A to 5000/5A). Operates on dual voltage 85-230V AC/DC with low power consumption &lt;6VA. Features standard 91x91mm panel size for easy installation in control panels. Perfect for comprehensive power monitoring in industrial and commercial applications.", tr: "Gerilim ölçümü (1-300VAC L-N, 1-500VAC L-L) ve akım ölçümü (CT 5/5A ile 5000/5A için 50mA-5.5A) özelliklerine sahip çok yönlü çok fonksiyonlu dijital ölçer. 6VA altında düşük güç tüketimi ile çift gerilim 85-230V AC/DC'de çalışır. Kontrol panolarına kolay montaj için standart 91x91mm pano boyutu özellikleri. Endüstriyel ve ticari uygulamalarda kapsamlı güç izleme için mükemmel." },
+    reference: "REF: VK-M96S",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-M96S" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "1-300VAC (L-N), 1-500VAC (L-L)" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "50mA-5.5A (for CT 5/5A to 5000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "NA" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "NA" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Dual voltage and current measurement", tr: "Çift gerilim ve akım ölçümü" },
+      { en: "Wide voltage range L-N and L-L", tr: "L-N ve L-L geniş gerilim aralığı" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Standard 91x91mm panel mounting", tr: "Standart 91x91mm pano montajı" }
+    ],
+    datasheet: ""
+  },
+  "VK-V72": {
+    name: { en: "VK-V72 Compact Digital Voltmeter (68x68mm)", tr: "VK-V72 Kompakt Dijital Voltmetre (68x68mm)" },
+    category: "meters",
+    description: { en: "Compact digital voltmeter with voltage measurement range (1-300VAC L-N, 1-500VAC L-L). Operates on dual voltage 85-230V AC/DC with low power consumption &lt;6VA. Features compact 68x68mm panel size ideal for space-constrained control panels. Perfect for voltage monitoring in applications where panel space is limited.", tr: "Gerilim ölçüm aralığı (1-300VAC L-N, 1-500VAC L-L) ile kompakt dijital voltmetre. 6VA altında düşük güç tüketimi ile çift gerilim 85-230V AC/DC'de çalışır. Alan kısıtlı kontrol panoları için ideal kompakt 68x68mm pano boyutu özellikleri. Pano alanının sınırlı olduğu uygulamalarda gerilim izleme için mükemmel." },
+    reference: "REF: VK-V72",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-V72" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "1-300VAC (L-N), 1-500VAC (L-L)" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "NA" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "NA" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "NA" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "68x68mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Compact 68x68mm size saves panel space", tr: "Kompakt 68x68mm boyut pano alanı tasarrufu sağlar" },
+      { en: "Wide voltage range L-N and L-L", tr: "L-N ve L-L geniş gerilim aralığı" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Ideal for space-constrained installations", tr: "Alan kısıtlı montajlar için ideal" }
+    ],
+    datasheet: ""
+  },
+  "VK-V96-T2": {
+    name: { en: "VK-V96-T2 Digital Voltmeter with Dual Display (91x91mm)", tr: "VK-V96-T2 Çift Ekranlı Dijital Voltmetre (91x91mm)" },
+    category: "meters",
+    description: { en: "Advanced digital voltmeter with dual display capability for comprehensive voltage monitoring. Features voltage measurement range (1-300VAC L-N, 1-500VAC L-L). Operates on dual voltage 85-230V AC/DC with low power consumption &lt;6VA. Standard 91x91mm panel size for easy installation. Perfect for applications requiring simultaneous monitoring of multiple voltage parameters.", tr: "Kapsamlı gerilim izleme için çift ekran özelliğine sahip gelişmiş dijital voltmetre. Gerilim ölçüm aralığı (1-300VAC L-N, 1-500VAC L-L) özellikleri. 6VA altında düşük güç tüketimi ile çift gerilim 85-230V AC/DC'de çalışır. Kolay montaj için standart 91x91mm pano boyutu. Birden fazla gerilim parametresinin eşzamanlı izlenmesini gerektiren uygulamalar için mükemmel." },
+    reference: "REF: VK-V96-T2",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-V96-T2" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "1-300VAC (L-N), 1-500VAC (L-L)" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "NA" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "NA" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "NA" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Dual Digital LED Display" }
+    },
+    features: [
+      { en: "Dual display for simultaneous monitoring", tr: "Eşzamanlı izleme için çift ekran" },
+      { en: "Wide voltage range L-N and L-L", tr: "L-N ve L-L geniş gerilim aralığı" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Standard 91x91mm panel mounting", tr: "Standart 91x91mm pano montajı" }
+    ],
+    datasheet: ""
+  },
+  "VK-V96": {
+    name: { en: "VK-V96 Digital Voltmeter (91x91mm)", tr: "VK-V96 Dijital Voltmetre (91x91mm)" },
+    category: "meters",
+    description: { en: "Digital voltmeter with wide voltage measurement range (1-300VAC L-N, 1-500VAC L-L). Operates on dual voltage 85-230V AC/DC with low power consumption &lt;6VA. Features standard 91x91mm panel size for easy installation in control panels. Ideal for precise voltage monitoring in electrical distribution systems and industrial control applications.", tr: "Geniş gerilim ölçüm aralığına (1-300VAC L-N, 1-500VAC L-L) sahip dijital voltmetre. 6VA altında düşük güç tüketimi ile çift gerilim 85-230V AC/DC'de çalışır. Kontrol panolarına kolay montaj için standart 91x91mm pano boyutu özellikleri. Elektrik dağıtım sistemleri ve endüstriyel kontrol uygulamalarında hassas gerilim izleme için idealdir." },
+    reference: "REF: VK-V96",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VK-V96" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "1-300VAC (L-N), 1-500VAC (L-L)" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "NA" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "NA" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "NA" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Wide voltage range L-N and L-L", tr: "L-N ve L-L geniş gerilim aralığı" },
+      { en: "Dual voltage operation AC/DC", tr: "Çift gerilim çalışma AC/DC" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Standard 91x91mm panel mounting", tr: "Standart 91x91mm pano montajı" },
+      { en: "Clear digital LED display", tr: "Net dijital LED ekran" }
+    ],
+    datasheet: ""
+  },
+  "EA-4DIN": {
+    name: { en: "EA-4DIN DIN Rail Energy Analyzer", tr: "EA-4DIN DIN Ray Enerji Analizörü" },
+    category: "analyzers",
+    description: { en: "Compact DIN rail mounted energy analyzer with comprehensive monitoring capabilities including voltage measurement (5V-330kV), current measurement (10mA-5.5A for CT 5/5A to 50000/5A), energy monitoring (kWh), power factor analysis, and harmonics detection. Features RTU RS485 communication for remote monitoring. Operates on 85-230V AC/DC with low power consumption &lt;10VA. Perfect for distribution boards, control panels, and space-constrained installations requiring full power quality monitoring.", tr: "Gerilim ölçümü (5V-330kV), akım ölçümü (CT 5/5A ile 50000/5A için 10mA-5.5A), enerji izleme (kWh), güç faktörü analizi ve harmonik algılama dahil kapsamlı izleme yeteneklerine sahip kompakt DIN ray montajlı enerji analizörü. Uzaktan izleme için RTU RS485 iletişim özellikleri. 10VA altında düşük güç tüketimi ile 85-230V AC/DC'de çalışır. Tam güç kalitesi izleme gerektiren dağıtım tabloları, kontrol panoları ve alan kısıtlı montajlar için mükemmel." },
+    reference: "REF: EA-4DIN",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "EA-4DIN" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;10VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "5V-330kV" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "10mA-5.5A (for CT 5/5A to 50000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "YES (kWh)" },
+      "power_factor_(pf)": { label: { en: "Power Factor (PF)", tr: "Güç Faktörü" }, value: "Yes" },
+      "harmonics": { label: { en: "Harmonics", tr: "Harmonikler" }, value: "Yes" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "RTU RS485" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "Din Rail" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Compact DIN rail mounting saves panel space", tr: "Kompakt DIN ray montajı pano alanı tasarrufu sağlar" },
+      { en: "Full power quality monitoring capabilities", tr: "Tam güç kalitesi izleme yetenekleri" },
+      { en: "Wide CT ratio support up to 50000/5A", tr: "50000/5A'ya kadar geniş CT oranı desteği" },
+      { en: "RTU RS485 for SCADA integration", tr: "SCADA entegrasyonu için RTU RS485" },
+      { en: "Ideal for distribution boards and control panels", tr: "Dağıtım tabloları ve kontrol panoları için ideal" }
+    ],
+    datasheet: ""
+  },
+  "EA-C1": {
+    name: { en: "EA-C1 Energy Analyzer with Communication (91x91mm)", tr: "EA-C1 İletişimli Enerji Analizörü (91x91mm)" },
+    category: "analyzers",
+    description: { en: "Advanced energy analyzer with comprehensive monitoring capabilities including voltage measurement (5V-330kV), current measurement (10mA-5.5A for CT 5/5A to 10000/5A), energy measurement (kWh), power factor analysis, and harmonics detection. Features RTU RS485 communication protocol for remote monitoring and data acquisition. Operates on 85-230V AC/DC with low power consumption &lt;10VA. Ideal for industrial power quality monitoring and energy management systems.", tr: "Gerilim ölçümü (5V-330kV), akım ölçümü (CT 5/5A ile 10000/5A için 10mA-5.5A), enerji ölçümü (kWh), güç faktörü analizi ve harmonik algılama dahil kapsamlı izleme yeteneklerine sahip gelişmiş enerji analizörü. Uzaktan izleme ve veri toplama için RTU RS485 iletişim protokolü özellikleri. 10VA altında düşük güç tüketimi ile 85-230V AC/DC'de çalışır. Endüstriyel güç kalitesi izleme ve enerji yönetim sistemleri için idealdir." },
+    reference: "REF: EA-C1",
+    images: ["/vtekeimg/Energy Analyzer/EA-C1.jpg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "EA-C1" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;10VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "5V-330kV" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "10mA-5.5A (for CT 5/5A to 10000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "YES (kWh)" },
+      "power_factor_(pf)": { label: { en: "Power Factor (PF)", tr: "Güç Faktörü" }, value: "Yes" },
+      "harmonics": { label: { en: "Harmonics", tr: "Harmonikler" }, value: "Yes" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "RTU RS485" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Comprehensive energy monitoring (kWh)", tr: "Kapsamlı enerji izleme (kWh)" },
+      { en: "Power factor analysis for efficiency optimization", tr: "Verimlilik optimizasyonu için güç faktörü analizi" },
+      { en: "Harmonics detection for power quality", tr: "Güç kalitesi için harmonik algılama" },
+      { en: "RTU RS485 communication for remote monitoring", tr: "Uzaktan izleme için RTU RS485 iletişim" },
+      { en: "Standard 91x91mm panel mounting", tr: "Standart 91x91mm pano montajı" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Energy Analyzer/EA-C1.pdf"
+  },
+  "EA-C4": {
+    name: { en: "EA-C4 Advanced Energy Analyzer (91x91mm)", tr: "EA-C4 Gelişmiş Enerji Analizörü (91x91mm)" },
+    category: "analyzers",
+    description: { en: "High-precision advanced energy analyzer with extended current measurement range (1mA-5.5A for CT 5/5A to 50000/5A). Features voltage measurement (5V-330kV), energy monitoring (kWh), power factor analysis, harmonics detection, and RTU RS485 communication. Operates on 85-230V AC/DC with low power consumption &lt;10VA. Perfect for large-scale industrial applications requiring wide CT ratio support and comprehensive power quality monitoring.", tr: "Genişletilmiş akım ölçüm aralığına (CT 5/5A ile 50000/5A için 1mA-5.5A) sahip yüksek hassasiyetli gelişmiş enerji analizörü. Gerilim ölçümü (5V-330kV), enerji izleme (kWh), güç faktörü analizi, harmonik algılama ve RTU RS485 iletişim özellikleri. 10VA altında düşük güç tüketimi ile 85-230V AC/DC'de çalışır. Geniş CT oranı desteği ve kapsamlı güç kalitesi izleme gerektiren büyük ölçekli endüstriyel uygulamalar için mükemmel." },
+    reference: "REF: EA-C4",
+    images: ["/vtekeimg/Energy Analyzer/EA-C4.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "EA-C4" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;10VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "5V-330kV" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "1mA-5.5A (for CT 5/5A to 50000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "YES (kWh)" },
+      "power_factor_(pf)": { label: { en: "Power Factor (PF)", tr: "Güç Faktörü" }, value: "Yes" },
+      "harmonics": { label: { en: "Harmonics", tr: "Harmonikler" }, value: "Yes" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "RTU RS485" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Extended current range up to 50000/5A CT", tr: "50000/5A CT'ye kadar genişletilmiş akım aralığı" },
+      { en: "High-precision energy measurement", tr: "Yüksek hassasiyetli enerji ölçümü" },
+      { en: "Comprehensive harmonics analysis", tr: "Kapsamlı harmonik analizi" },
+      { en: "RTU RS485 communication for SCADA integration", tr: "SCADA entegrasyonu için RTU RS485 iletişim" },
+      { en: "Ideal for large-scale industrial facilities", tr: "Büyük ölçekli endüstriyel tesisler için ideal" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Energy Analyzer/EA-C4.pdf"
+  },
+  "EA-C5": {
+    name: { en: "EA-C5 Premium Energy Analyzer (91x91mm)", tr: "EA-C5 Premium Enerji Analizörü (91x91mm)" },
+    category: "analyzers",
+    description: { en: "Premium energy analyzer with extended voltage measurement range (1V-600kV) and wide current measurement (1mA-5.5A for CT 5/5A to 50000/5A). Features comprehensive energy monitoring (kWh), power factor analysis, harmonics detection, and RTU RS485 communication. Operates on 85-230V AC/DC with low power consumption &lt;10VA. Ideal for high-voltage applications, substations, and critical power monitoring requiring maximum measurement range and precision.", tr: "Genişletilmiş gerilim ölçüm aralığı (1V-600kV) ve geniş akım ölçümü (CT 5/5A ile 50000/5A için 1mA-5.5A) ile premium enerji analizörü. Kapsamlı enerji izleme (kWh), güç faktörü analizi, harmonik algılama ve RTU RS485 iletişim özellikleri. 10VA altında düşük güç tüketimi ile 85-230V AC/DC'de çalışır. Maksimum ölçüm aralığı ve hassasiyet gerektiren yüksek gerilim uygulamaları, trafo merkezleri ve kritik güç izleme için idealdir." },
+    reference: "REF: EA-C5",
+    images: ["/vtekeimg/Energy Analyzer/EA-C5.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "EA-C5" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "85-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;10VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "1V-600kV" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "1mA-5.5A (for CT 5/5A to 50000/5A)" },
+      "energy": { label: { en: "Energy", tr: "Enerji" }, value: "YES (kWh)" },
+      "power_factor_(pf)": { label: { en: "Power Factor (PF)", tr: "Güç Faktörü" }, value: "Yes" },
+      "harmonics": { label: { en: "Harmonics", tr: "Harmonikler" }, value: "Yes" },
+      "communication": { label: { en: "Communication", tr: "İletişim" }, value: "RTU RS485" },
+      "panel_hole": { label: { en: "Panel Hole", tr: "Pano Deliği" }, value: "91x91mm" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" }
+    },
+    features: [
+      { en: "Extended voltage range up to 600kV", tr: "600kV'ye kadar genişletilmiş gerilim aralığı" },
+      { en: "Premium precision for critical applications", tr: "Kritik uygulamalar için premium hassasiyet" },
+      { en: "Wide CT ratio support up to 50000/5A", tr: "50000/5A'ya kadar geniş CT oranı desteği" },
+      { en: "Complete power quality analysis", tr: "Eksiksiz güç kalitesi analizi" },
+      { en: "Ideal for substations and HV applications", tr: "Trafo merkezleri ve YG uygulamaları için ideal" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Energy Analyzer/EA-C5.pdf"
+  },
+  "PFC-07": {
+    name: { en: "PFC-07 Power Factor Controller (7 Programs)", tr: "PFC-07 Güç Faktörü Kontrol Cihazı (7 Program)" },
+    category: "analyzers",
+    description: { en: "Advanced power factor controller with 7 programmable steps for automatic capacitor bank control. Features voltage measurement (10V-300V), current measurement (80mA-5.5A for CT 5/5A to 10000/5A), and operates on 160V-260V AC with low power consumption &lt;10VA. Ideal for optimizing power factor in industrial and commercial electrical systems, reducing energy costs, and improving electrical system efficiency.", tr: "Otomatik kondansatör bankası kontrolü için 7 programlanabilir adımla gelişmiş güç faktörü kontrol cihazı. Gerilim ölçümü (10V-300V), akım ölçümü (CT 5/5A ile 10000/5A için 80mA-5.5A) özellikleri ve 10VA altında düşük güç tüketimi ile 160V-260V AC'de çalışır. Endüstriyel ve ticari elektrik sistemlerinde güç faktörünü optimize etmek, enerji maliyetlerini azaltmak ve elektrik sistemi verimliliğini artırmak için idealdir." },
+    reference: "REF: PFC-07",
+    images: ["/vtekeimg/Power Factor/PFC-07.jpg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PFC-07" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "160V-260V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;10VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "10V-300V" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "80mA-5.5A (for CT 5/5A to 10000/5A)" },
+      "programs": { label: { en: "Programs", tr: "Programlar" }, value: "7 Steps" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Automatic Capacitor Bank Control" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "Panel Mount" }
+    },
+    features: [
+      { en: "7 programmable steps for capacitor control", tr: "Kondansatör kontrolü için 7 programlanabilir adım" },
+      { en: "Automatic power factor correction", tr: "Otomatik güç faktörü düzeltme" },
+      { en: "Wide CT ratio support up to 10000/5A", tr: "10000/5A'ya kadar geniş CT oranı desteği" },
+      { en: "Reduces energy costs and penalties", tr: "Enerji maliyetlerini ve cezaları azaltır" },
+      { en: "Improves electrical system efficiency", tr: "Elektrik sistemi verimliliğini artırır" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Power Factor/FPC-07.pdf"
+  },
+  "PFC-12S": {
+    name: { en: "PFC-12S Advanced Power Factor Controller (12 Programs)", tr: "PFC-12S Gelişmiş Güç Faktörü Kontrol Cihazı (12 Program)" },
+    category: "analyzers",
+    description: { en: "Advanced power factor controller with 12 programmable steps for comprehensive capacitor bank control. Features voltage measurement (10V-300V), current measurement (10mA-5.5A for CT 5/5A to 10000/5A), and operates on 100-300VAC with low power consumption &lt;10VA. Perfect for large-scale industrial applications requiring extensive power factor correction, multiple capacitor stages, and precise reactive power management.", tr: "Kapsamlı kondansatör bankası kontrolü için 12 programlanabilir adımla gelişmiş güç faktörü kontrol cihazı. Gerilim ölçümü (10V-300V), akım ölçümü (CT 5/5A ile 10000/5A için 10mA-5.5A) özellikleri ve 10VA altında düşük güç tüketimi ile 100-300VAC'de çalışır. Kapsamlı güç faktörü düzeltmesi, çoklu kondansatör kademeleri ve hassas reaktif güç yönetimi gerektiren büyük ölçekli endüstriyel uygulamalar için mükemmel." },
+    reference: "REF: PFC-12S",
+    images: ["/vtekeimg/Power Factor/PFC-12S.jpg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PFC-12S" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "100-300VAC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;10VA" },
+      "voltage_measuring_range": { label: { en: "Voltage Measuring Range", tr: "Gerilim Ölçüm Aralığı" }, value: "10V-300V" },
+      "current_measuring_range": { label: { en: "Current Measuring Range", tr: "Akım Ölçüm Aralığı" }, value: "10mA-5.5A (for CT 5/5A to 10000/5A)" },
+      "programs": { label: { en: "Programs", tr: "Programlar" }, value: "12 Steps" },
+      "control_type": { label: { en: "Control Type", tr: "Kontrol Tipi" }, value: "Automatic Capacitor Bank Control" },
+      "display_type": { label: { en: "Display Type", tr: "Ekran Tipi" }, value: "Digital LED Display" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "Panel Mount" }
+    },
+    features: [
+      { en: "12 programmable steps for precise control", tr: "Hassas kontrol için 12 programlanabilir adım" },
+      { en: "Advanced power factor correction algorithm", tr: "Gelişmiş güç faktörü düzeltme algoritması" },
+      { en: "Wide operating voltage range 100-300VAC", tr: "Geniş çalışma gerilim aralığı 100-300VAC" },
+      { en: "Ideal for large capacitor banks", tr: "Büyük kondansatör bankaları için ideal" },
+      { en: "Maximizes energy efficiency and cost savings", tr: "Enerji verimliliğini ve maliyet tasarrufunu maksimize eder" }
+    ],
+    datasheet: "/vtekeimg/DataSheet/Power Factor/PFC-12S.pdf"
+  },
+  "PSU-2403": {
+    name: { en: "PSU-2403 24V DC 3A Switching Power Supply (70W)", tr: "PSU-2403 24V DC 3A Anahtarlamalı Güç Kaynağı (70W)" },
+    category: "power",
+    description: { en: "Compact switching power supply delivering 24V DC at 3A (70W output). Features wide input voltage range (85-265VAC / 120-400VDC) for universal operation worldwide. Perfect for control panels, PLC systems, sensors, actuators, and industrial automation applications requiring stable and reliable DC power supply. Energy-efficient design with comprehensive protection features.", tr: "3A (70W çıkış) ile 24V DC sağlayan kompakt anahtarlamalı güç kaynağı. Dünya çapında evrensel çalışma için geniş giriş gerilim aralığı (85-265VAC / 120-400VDC) özellikleri. Kontrol panoları, PLC sistemleri, sensörler, aktüatörler ve kararlı ve güvenilir DC güç kaynağı gerektiren endüstriyel otomasyon uygulamaları için mükemmel. Kapsamlı koruma özellikleri ile enerji verimli tasarım." },
+    reference: "REF: PSU-2403",
+    images: ["/vtekeimg/Power Supply/PSU-2403.png"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PSU-2403" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "85-265VAC / 120-400VDC" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "24V DC" },
+      "output_current": { label: { en: "Output Current", tr: "Çıkış Akımı" }, value: "3A" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "70W" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;83%" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-20°C to +70°C" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Overload, Over-Voltage, Short Circuit" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail / Panel Mount" },
+      "dimensions": { label: { en: "Dimensions", tr: "Boyutlar" }, value: "Compact Design" }
+    },
+    features: [
+      { en: "Compact 70W power supply (24V DC, 3A)", tr: "Kompakt 70W güç kaynağı (24V DC, 3A)" },
+      { en: "Universal input voltage range", tr: "Evrensel giriş gerilim aralığı" },
+      { en: "High efficiency &gt;83%", tr: "Yüksek verimlilik &gt;83%" },
+      { en: "Ideal for PLC and control systems", tr: "PLC ve kontrol sistemleri için ideal" },
+      { en: "Complete protection suite", tr: "Eksiksiz koruma paketi" }
+    ],
+    datasheet: ""
+  },
+  "PSU-2406": {
+    name: { en: "PSU-2406 24V DC 6A Switching Power Supply (140W)", tr: "PSU-2406 24V DC 6A Anahtarlamalı Güç Kaynağı (140W)" },
+    category: "power",
+    description: { en: "High-power switching power supply delivering 24V DC at 6A (140W output). Features wide input voltage range (85-265VAC / 120-400VDC) for global compatibility and universal operation. Designed for industrial control systems, automation equipment, PLC systems, and applications requiring reliable and stable DC power. Compact design with efficient heat dissipation and protection features.", tr: "6A (140W çıkış) ile 24V DC sağlayan yüksek güçlü anahtarlamalı güç kaynağı. Küresel uyumluluk ve evrensel çalışma için geniş giriş gerilim aralığı (85-265VAC / 120-400VDC) özellikleri. Endüstriyel kontrol sistemleri, otomasyon ekipmanları, PLC sistemleri ve güvenilir ve kararlı DC güç gerektiren uygulamalar için tasarlanmıştır. Verimli ısı dağıtımı ve koruma özellikleri ile kompakt tasarım." },
+    reference: "REF: PSU-2406",
+    images: ["/vtekeimg/Power Supply/PSU-2406.jpg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PSU-2406" },
+      "input_voltage": { label: { en: "Input Voltage", tr: "Giriş Gerilimi" }, value: "85-265VAC / 120-400VDC" },
+      "output_voltage": { label: { en: "Output Voltage", tr: "Çıkış Gerilimi" }, value: "24V DC" },
+      "output_current": { label: { en: "Output Current", tr: "Çıkış Akımı" }, value: "6A" },
+      "output_power": { label: { en: "Output Power", tr: "Çıkış Gücü" }, value: "140W" },
+      "efficiency": { label: { en: "Efficiency", tr: "Verimlilik" }, value: "&gt;85%" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-20°C to +70°C" },
+      "protection_features": { label: { en: "Protection Features", tr: "Koruma Özellikleri" }, value: "Overload, Over-Voltage, Short Circuit" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail / Panel Mount" },
+      "dimensions": { label: { en: "Dimensions", tr: "Boyutlar" }, value: "Compact Design" }
+    },
+    features: [
+      { en: "High power output 140W (24V DC, 6A)", tr: "Yüksek güç çıkışı 140W (24V DC, 6A)" },
+      { en: "Wide input voltage range for global use", tr: "Küresel kullanım için geniş giriş gerilim aralığı" },
+      { en: "High efficiency &gt;85% for energy savings", tr: "Enerji tasarrufu için yüksek verimlilik &gt;85%" },
+      { en: "Multiple protection features for safety", tr: "Güvenlik için çoklu koruma özellikleri" },
+      { en: "Compact design for easy installation", tr: "Kolay kurulum için kompakt tasarım" }
+    ],
+    datasheet: ""
+  },
+  "DOR": {
+    name: { en: "Technical Specifications", tr: "Teknik Özellikler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: DOR-100A",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "Dor" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Asymmetry 50%, Over Current: 25A, 50A, 100A, 200A, 400A" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "0.1s-20s (Adjustable)" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "NA" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Multiple current ratings 25A to 400A", tr: "25A-400A çoklu akım değerleri" },
+      { en: "50% asymmetry protection for phase balance", tr: "Faz dengesi için %50 asimetri koruması" },
+      { en: "Adjustable delay time 0.1s-20s", tr: "0.1s-20s ayarlanabilir gecikme süresi" },
+      { en: "Ideal for motor overload protection", tr: "Motor aşırı yük koruması için ideal" }
+    ],
+    datasheet: ""
+  },
+  "DVC-01": {
+    name: { en: "Technical Specifications", tr: "Teknik Özellikler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: DVC-01",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "DVC-01" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Over Voltage: 230V-280V AC, Under Voltage: 150V-210V AC" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "NA" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-10s (Adjustable)" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Single-phase 230V AC voltage monitoring", tr: "Tek fazlı 230V AC gerilim izleme" },
+      { en: "Over voltage protection 230V-280V AC range", tr: "230V-280V AC aralığında aşırı gerilim koruması" },
+      { en: "Under voltage protection 150V-210V AC range", tr: "150V-210V AC aralığında düşük gerilim koruması" },
+      { en: "Adjustable reset time 0.1s-10s", tr: "0.1s-10s ayarlanabilir sıfırlama süresi" }
+    ],
+    datasheet: ""
+  },
+  "DVC-04": {
+    name: { en: "DVC-04 3-Phase 380V Voltage Control Relay", tr: "DVC-04 3-Faz 380V Gerilim Kontrol Rölesi" },
+    category: "relays",
+    description: { en: "Robust three-phase voltage control relay for 3x380V AC industrial systems with comprehensive voltage monitoring. Features over voltage protection range of 400V-460V AC and under voltage protection range of 230V-360V AC. Adjustable reset time from 0.1s to 10s with energy-efficient operation below 6VA. Perfect for protecting three-phase motors, compressors, and industrial equipment from voltage fluctuations.", tr: "Kapsamlı gerilim izlemeli 3x380V AC endüstriyel sistemler için sağlam üç fazlı gerilim kontrol rölesi. 400V-460V AC aşırı gerilim koruma aralığı ve 230V-360V AC düşük gerilim koruma aralığı özellikleri. 6VA altında enerji verimli çalışma ile 0.1s-10s ayarlanabilir sıfırlama süresi. Üç fazlı motorları, kompresörleri ve endüstriyel ekipmanları gerilim dalgalanmalarından korumak için mükemmel." },
+    reference: "REF: DVC-04",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "DVC-04" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "3x380V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Over Voltage: 400V-460V AC, Under Voltage: 230V-360V AC" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "NA" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-10s (Adjustable)" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Three-phase 3x380V AC voltage monitoring", tr: "Üç fazlı 3x380V AC gerilim izleme" },
+      { en: "Over voltage protection 400V-460V AC", tr: "400V-460V AC aşırı gerilim koruması" },
+      { en: "Under voltage protection 230V-360V AC", tr: "230V-360V AC düşük gerilim koruması" },
+      { en: "Protects motors from voltage damage", tr: "Motorları gerilim hasarından korur" }
+    ],
+    datasheet: ""
+  },
+  "DVC-04F": {
+    name: { en: "Technical Specifications", tr: "Teknik Özellikler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: DVC-04F",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "DVC-04F" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "3x380V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Over Voltage: 400V-460V AC, Under Voltage: 230V-360V AC, Phase Sequence" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "NA" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-10s (Adjustable)" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Phase sequence protection prevents motor reversal", tr: "Faz sırası koruması motor ters dönmesini önler" },
+      { en: "Over voltage protection 400V-460V AC", tr: "400V-460V AC aşırı gerilim koruması" },
+      { en: "Under voltage protection 230V-360V AC", tr: "230V-360V AC düşük gerilim koruması" },
+      { en: "Adjustable reset time for flexible operation", tr: "Esnek çalışma için ayarlanabilir sıfırlama süresi" }
+    ],
+    datasheet: ""
+  },
+  "ELR-V2": {
+    name: { en: "Technical Specifications", tr: "Teknik Özellikler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: ELR-V2",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "ELR-V2" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Earth Leakage Current" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "0.1s-20s (Adjustable)" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "NA" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Earth leakage current detection and protection", tr: "Toprak kaçak akım algılama ve koruma" },
+      { en: "Prevents electrical shock hazards", tr: "Elektrik çarpması tehlikelerini önler" },
+      { en: "Adjustable delay time 0.1s-20s", tr: "0.1s-20s ayarlanabilir gecikme süresi" },
+      { en: "Essential for electrical safety compliance", tr: "Elektrik güvenlik uyumluluğu için gerekli" }
+    ],
+    datasheet: ""
+  },
+  "PPR-03N": {
+    name: { en: "PPR-03N — VTEKE Product", tr: "PPR-03N — VTEKE Product" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "",
+    images: [],
+    specs: {
+
+    },
+    features: [
+
+    ],
+    datasheet: ""
+  },
+  "PPR-05F": {
+    name: { en: "PPR-05F — VTEKE Product", tr: "PPR-05F — VTEKE Product" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: PPR-05F",
+    images: [],
+    specs: {
+
+    },
+    features: [
+
+    ],
+    datasheet: ""
+  },
+  "PPR-06F": {
+    name: { en: "Related Products", tr: "İlgili Ürünler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: PPR-06F",
+    images: [],
+    specs: {
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "0.1s-20s (Adjustable)" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-20s" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+
+    ],
+    datasheet: ""
+  },
+  "PPR-14": {
+    name: { en: "Technical Specifications", tr: "Teknik Özellikler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PPR-14" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "3x380V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Phase Absence, Asymmetry: 30%, Phase Sequence" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "NA" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "NA" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Phase absence detection and protection", tr: "Faz yokluğu algılama ve koruma" },
+      { en: "Phase sequence monitoring and correction", tr: "Faz sırası izleme ve düzeltme" },
+      { en: "30% asymmetry protection threshold", tr: "%30 asimetri koruma eşiği" },
+      { en: "Energy efficient operation under 6VA", tr: "6VA altında enerji verimli çalışma" }
+    ],
+    datasheet: ""
+  },
+  "PPR-24F": {
+    name: { en: "Related Products", tr: "İlgili Ürünler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "",
+    images: [],
+    specs: {
+
+    },
+    features: [
+
+    ],
+    datasheet: ""
+  },
+  "PPR-24FN": {
+    name: { en: "PPR-24FN 230V Over/Under Voltage & Phase Protection Relay", tr: "PPR-24FN 230V Aşırı/Düşük Gerilim ve Faz Koruma Rölesi" },
+    category: "relays",
+    description: { en: "Specialized protection relay for 3x230V AC systems with comprehensive voltage monitoring capabilities. Features over voltage protection at 300V AC, under voltage protection at 140V AC, 11% asymmetry detection, and phase sequence monitoring. Energy-efficient design with less than 6VA power consumption.", tr: "Kapsamlı gerilim izleme yeteneklerine sahip 3x230V AC sistemler için özelleştirilmiş koruma rölesi. 300V AC'de aşırı gerilim koruması, 140V AC'de düşük gerilim koruması, %11 asimetri algılama ve faz sırası izleme özellikleri. 6VA'dan az güç tüketimi ile enerji verimli tasarım." },
+    reference: "REF: PPR-24FN",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "PPR-24FN" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "3x230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Asymmetry: 11%, Over Voltage: 300V AC, Under Voltage: 140V AC, Phase Sequence" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "NA" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "NA" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Optimized for 3x230V AC systems", tr: "3x230V AC sistemleri için optimize edilmiş" },
+      { en: "Over voltage protection at 300V AC", tr: "300V AC'de aşırı gerilim koruması" },
+      { en: "Under voltage protection at 140V AC", tr: "140V AC'de düşük gerilim koruması" },
+      { en: "11% asymmetry and phase sequence protection", tr: "%11 asimetri ve faz sırası koruması" }
+    ],
+    datasheet: ""
+  },
+  "VCR-02": {
+    name: { en: "VCR-02 3-Phase Voltage Control Relay with Neutral Protection", tr: "VCR-02 Nötr Korumalı 3-Faz Gerilim Kontrol Rölesi" },
+    category: "relays",
+    description: { en: "Robust three-phase voltage control relay for 3x230V AC systems featuring over voltage protection (230V-300V AC), under voltage protection (140V-210V AC), and neutral absence detection. With adjustable delay time from 0.1s to 20s and low power consumption under 6VA, this relay is perfect for protecting sensitive equipment in commercial and industrial three-phase installations.", tr: "Aşırı gerilim koruması (230V-300V AC), düşük gerilim koruması (140V-210V AC) ve nötr yokluğu algılama özellikli 3x230V AC sistemler için sağlam üç fazlı gerilim kontrol rölesi. 0.1s-20s ayarlanabilir gecikme süresi ve 6VA altında düşük güç tüketimi ile bu röle, ticari ve endüstriyel üç fazlı tesisatlarda hassas ekipmanları korumak için mükemmeldir." },
+    reference: "REF: VCR-02",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VCR-02" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "3x230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Over Voltage: 230V-300V AC, Under Voltage: 140V-210V AC, Neutral Absence" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "0.1s-20s (Adjustable)" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-20s" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Three-phase voltage monitoring 3x230V AC", tr: "Üç fazlı gerilim izleme 3x230V AC" },
+      { en: "Neutral absence detection for enhanced safety", tr: "Gelişmiş güvenlik için nötr yokluğu algılama" },
+      { en: "Adjustable voltage thresholds for flexibility", tr: "Esneklik için ayarlanabilir gerilim eşikleri" },
+      { en: "Energy efficient operation below 6VA", tr: "6VA altında enerji verimli çalışma" }
+    ],
+    datasheet: ""
+  },
+  "VCR-02F": {
+    name: { en: "Key Features", tr: "Temel Özellikler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: VCR-02F",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VCR-02F" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "3x230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Over Voltage: 230V-300V AC, Under Voltage: 140V-210V AC, Phase Sequence, Neutral Absence" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "0.1s-20s (Adjustable)" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-20s" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Three-phase voltage monitoring and control", tr: "Üç fazlı gerilim izleme ve kontrol" },
+      { en: "Phase sequence protection prevents motor damage", tr: "Faz sırası koruması motor hasarını önler" },
+      { en: "Neutral absence detection for safety", tr: "Güvenlik için nötr yokluğu algılama" },
+      { en: "Fully adjustable timing parameters", tr: "Tam ayarlanabilir zamanlama parametreleri" }
+    ],
+    datasheet: ""
+  },
+  "VCR-03F": {
+    name: { en: "VCR-03F 380V 3-Phase Voltage Control & Sequence Protection Relay", tr: "VCR-03F 380V 3-Faz Gerilim Kontrol ve Sıra Koruma Rölesi" },
+    category: "relays",
+    description: { en: "High-performance three-phase voltage control relay for 3x380V AC industrial systems. Features comprehensive protection with over voltage range (400V-510V AC), under voltage range (260V-370V AC), phase sequence monitoring, and phase absence detection. Adjustable delay time from 0.1s to 20s provides flexibility for various industrial applications while maintaining IP20 protection class.", tr: "3x380V AC endüstriyel sistemler için yüksek performanslı üç fazlı gerilim kontrol rölesi. Aşırı gerilim aralığı (400V-510V AC), düşük gerilim aralığı (260V-370V AC), faz sırası izleme ve faz yokluğu algılama ile kapsamlı koruma özellikleri. IP20 koruma sınıfını korurken 0.1s-20s ayarlanabilir gecikme süresi çeşitli endüstriyel uygulamalar için esneklik sağlar." },
+    reference: "REF: VCR-03F",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VCR-03F" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "3x380V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Over Voltage: 400V-510V AC, Under Voltage: 260V-370V AC, Phase Sequence, Phase Absence" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "0.1s-20s (Adjustable)" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-20s" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+      { en: "Optimized for 3x380V AC three-phase systems", tr: "3x380V AC üç fazlı sistemler için optimize edilmiş" },
+      { en: "High over voltage protection up to 510V AC", tr: "510V AC'ye kadar yüksek aşırı gerilim koruması" },
+      { en: "Phase sequence protection for motor safety", tr: "Motor güvenliği için faz sırası koruması" },
+      { en: "Phase absence detection prevents equipment damage", tr: "Ekipman hasarını önleyen faz yokluğu algılama" }
+    ],
+    datasheet: ""
+  },
+  "VCR-11": {
+    name: { en: "VCR-11 — VTEKE Product", tr: "VCR-11 — VTEKE Product" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "VCR-11" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "protection_function": { label: { en: "Protection Function", tr: "Koruma Fonksiyonu" }, value: "Over Voltage: 230V-300V AC, Under Voltage: 140V-210V AC" },
+      "delay_time": { label: { en: "Delay Time", tr: "Gecikme Süresi" }, value: "0.1s-20s (Adjustable)" },
+      "reset_time": { label: { en: "Reset Time", tr: "Sıfırlama Süresi" }, value: "0.1s-20s" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" }
+    },
+    features: [
+
+    ],
+    datasheet: ""
+  },
+  "DTR-03M": {
+    name: { en: "DTR-03M On/Off Delay Timer (0.1s-3min)", tr: "DTR-03M Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-3dk)" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: DTR-03M",
+    images: ["/vtekeimg/Timer/ll.jpeg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "DTR-03M" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC and 24V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "On Delay Or Off Delay" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-3min" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "Extended time range up to 3 minutes", tr: "3 dakikaya kadar genişletilmiş zaman aralığı" },
+      { en: "Dual voltage operation for flexibility", tr: "Esneklik için çift gerilim çalışma" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Ideal for HVAC and process control", tr: "HVAC ve proses kontrolü için ideal" },
+      { en: "Easy DIN rail mounting", tr: "Kolay DIN ray montajı" }
+    ],
+    datasheet: ""
+  },
+  "DTR-30": {
+    name: { en: "DTR-30 On/Off Delay Timer (0.1s-30s)", tr: "DTR-30 Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-30s)" },
+    category: "relays",
+    description: { en: "Versatile on-delay or off-delay timer with adjustable time range from 0.1 seconds to 30 seconds. Operates on dual voltage 230V AC and 24V AC/DC with low power consumption less than 6VA. Features IP20 protection class for reliable operation in industrial control panels. Ideal for motor control, conveyor systems, and automation applications requiring precise timing control.", tr: "0.1 saniye ile 30 saniye arasında ayarlanabilir zaman aralığına sahip çok yönlü açık/kapalı gecikme zamanlayıcısı. 6VA'dan düşük güç tüketimi ile çift gerilim 230V AC ve 24V AC/DC'de çalışır. Endüstriyel kontrol panolarında güvenilir çalışma için IP20 koruma sınıfı özellikleri. Hassas zamanlama kontrolü gerektiren motor kontrolü, konveyör sistemleri ve otomasyon uygulamaları için idealdir." },
+    reference: "REF: DTR-30",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "DTR-30" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC and 24V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "On Delay Or Off Delay" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-30s" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "Dual voltage operation (230V AC / 24V AC/DC)", tr: "Çift gerilim çalışma (230V AC / 24V AC/DC)" },
+      { en: "Adjustable time range 0.1 to 30 seconds", tr: "0.1-30 saniye ayarlanabilir zaman aralığı" },
+      { en: "Low power consumption less than 6VA", tr: "6VA'dan düşük güç tüketimi" },
+      { en: "On-delay and off-delay modes", tr: "Açık gecikme ve kapalı gecikme modları" },
+      { en: "DIN rail mounting for easy installation", tr: "Kolay montaj için DIN ray montajı" }
+    ],
+    datasheet: ""
+  },
+  "DTR-60": {
+    name: { en: "DTR-60 On/Off Delay Timer (0.1s-60s)", tr: "DTR-60 Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-60s)" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: DTR-60",
+    images: ["/vteke/mm.jpeg"],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "DTR-60" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC and 24V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "On Delay Or Off Delay" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-60s" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "Extended time range up to 60 seconds", tr: "60 saniyeye kadar genişletilmiş zaman aralığı" },
+      { en: "Dual voltage compatibility", tr: "Çift gerilim uyumluluğu" },
+      { en: "Energy efficient operation under 6VA", tr: "6VA altında enerji verimli çalışma" },
+      { en: "Flexible on-delay and off-delay modes", tr: "Esnek açık gecikme ve kapalı gecikme modları" },
+      { en: "Reliable for sequential control applications", tr: "Sıralı kontrol uygulamaları için güvenilir" }
+    ],
+    datasheet: ""
+  },
+  "DTR-SC": {
+    name: { en: "DTR-SC Staircase Timer for Lighting Control", tr: "DTR-SC Aydınlatma Kontrolü için Merdiven Zamanlayıcısı" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: DTR-SC",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "Dtr-sc" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "180-230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Staircase" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "1s-20min" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "trigger_input": { label: { en: "Trigger Input", tr: "Tetik Girişi" }, value: "Push Button / Switch" }
+    },
+    features: [
+      { en: "Automatic light shutoff saves energy", tr: "Otomatik ışık kapatma enerji tasarrufu sağlar" },
+      { en: "Adjustable time range 1s-20min", tr: "Ayarlanabilir zaman aralığı 1s-20dk" },
+      { en: "Ideal for stairwells and corridors", tr: "Merdiven boşlukları ve koridorlar için ideal" },
+      { en: "Reduces electricity costs", tr: "Elektrik maliyetlerini azaltır" },
+      { en: "Easy installation with push button trigger", tr: "Buton tetikleyici ile kolay kurulum" }
+    ],
+    datasheet: ""
+  },
+  "DTR-SD": {
+    name: { en: "DTR-SD Star-Delta Timer for Motor Starting", tr: "DTR-SD Motor Başlatma için Yıldız-Üçgen Zamanlayıcısı" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: DTR-SD",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "Dtr-sd" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "180-230V AC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Star-Delta" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "Star: 0.1s-30s, Waiting: 1ms-500ms" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contacts": { label: { en: "Output Contacts", tr: "Çıkış Kontakları" }, value: "Multiple (Star/Delta/Transition)" }
+    },
+    features: [
+      { en: "Reduces motor inrush current by 60-70%", tr: "Motor ani akımını %60-70 azaltır" },
+      { en: "Adjustable star time 0.1s-30s", tr: "Ayarlanabilir yıldız süresi 0.1s-30s" },
+      { en: "Waiting time for smooth transition 1ms-500ms", tr: "Sorunsuz geçiş için bekleme süresi 1ms-500ms" },
+      { en: "Extends motor lifespan", tr: "Motor ömrünü uzatır" },
+      { en: "Essential for large motor installations", tr: "Büyük motor tesisleri için gerekli" }
+    ],
+    datasheet: ""
+  },
+  "FTR-07": {
+    name: { en: "FTR-07 Right-Left Alternating Timer (0.1s-100min)", tr: "FTR-07 Sağ-Sol Alternatif Zamanlayıcı (0.1s-100dk)" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: FTR-07",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "FTR-07" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "12-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Right Left (Alternating)" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-100min" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contacts": { label: { en: "Output Contacts", tr: "Çıkış Kontakları" }, value: "Dual Output (Alternating)" }
+    },
+    features: [
+      { en: "Universal voltage 12-230V AC/DC", tr: "Evrensel gerilim 12-230V AC/DC" },
+      { en: "Wide time range 0.1s-100min", tr: "Geniş zaman aralığı 0.1s-100dk" },
+      { en: "Automatic alternating between two loads", tr: "İki yük arasında otomatik alternatif" },
+      { en: "Extends equipment lifespan through equal usage", tr: "Eşit kullanım ile ekipman ömrünü uzatır" },
+      { en: "Perfect for pump alternation systems", tr: "Pompa alternatif sistemleri için mükemmel" }
+    ],
+    datasheet: ""
+  },
+  "FTR-08": {
+    name: { en: "FTR-08 On/Off Delay Timer (0.1s-100h)", tr: "FTR-08 Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-100s)" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: FTR-08",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "FTR-08" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "230V AC and 24V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "On Delay Or Off Delay" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-100h" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "Extended time range up to 100 hours", tr: "100 saate kadar genişletilmiş zaman aralığı" },
+      { en: "Dual voltage operation for flexibility", tr: "Esneklik için çift gerilim çalışma" },
+      { en: "Ideal for long-duration processes", tr: "Uzun süreli prosesler için ideal" },
+      { en: "Energy efficient under 6VA", tr: "6VA altında enerji verimli" },
+      { en: "Reliable for industrial automation", tr: "Endüstriyel otomasyon için güvenilir" }
+    ],
+    datasheet: ""
+  },
+  "FTR-08M": {
+    name: { en: "FTR-08M Universal On/Off Delay Timer (0.1s-100h)", tr: "FTR-08M Evrensel Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-100s)" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: FTR-08M",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "FTR-08M" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "12-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "On Delay Or Off Delay" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-100h" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "Universal voltage 12-230V AC/DC", tr: "Evrensel gerilim 12-230V AC/DC" },
+      { en: "Extended time range up to 100 hours", tr: "100 saate kadar genişletilmiş zaman aralığı" },
+      { en: "Versatile for multiple applications", tr: "Çoklu uygulamalar için çok yönlü" },
+      { en: "Low power consumption under 6VA", tr: "6VA altında düşük güç tüketimi" },
+      { en: "Ideal for complex automation systems", tr: "Karmaşık otomasyon sistemleri için ideal" }
+    ],
+    datasheet: ""
+  },
+  "FTR-08MS": {
+    name: { en: "Key Features", tr: "Teknik Özellikler" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: FTR-08MS",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "FTR-08MS" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "12-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Delay/Flasher (Adjustable)" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-100h" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "Multi-function delay and flasher modes", tr: "Çok fonksiyonlu gecikme ve flaşör modları" },
+      { en: "Universal voltage 12-230V AC/DC", tr: "Evrensel gerilim 12-230V AC/DC" },
+      { en: "Extended time range 0.1s-100h", tr: "Genişletilmiş zaman aralığı 0.1s-100s" },
+      { en: "Adjustable function selection", tr: "Ayarlanabilir fonksiyon seçimi" },
+      { en: "Ideal for signaling and timing applications", tr: "Sinyalizasyon ve zamanlama uygulamaları için ideal" }
+    ],
+    datasheet: ""
+  },
+  "FTR-09": {
+    name: { en: "FTR-09 Flasher Timer (0.1s-100min)", tr: "FTR-09 Flaşör Zamanlayıcı (0.1s-100dk)" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: FTR-09",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "FTR-09" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "12-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "Flasher" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-100min" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "Dedicated flasher function for signaling", tr: "Sinyalizasyon için özel flaşör fonksiyonu" },
+      { en: "Universal voltage 12-230V AC/DC", tr: "Evrensel gerilim 12-230V AC/DC" },
+      { en: "Adjustable flash rate 0.1s-100min", tr: "Ayarlanabilir flaş hızı 0.1s-100dk" },
+      { en: "LED indicator for status monitoring", tr: "Durum izleme için LED göstergesi" },
+      { en: "Ideal for alarm and warning systems", tr: "Alarm ve uyarı sistemleri için ideal" }
+    ],
+    datasheet: ""
+  },
+  "FTR-10": {
+    name: { en: "FTR-10 10-Function Multi-Mode Timer (0.1s-30hr)", tr: "FTR-10 10-Fonksiyonlu Çok Modlu Zamanlayıcı (0.1s-30s)" },
+    category: "relays",
+    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    reference: "REF: FTR-10",
+    images: [],
+    specs: {
+      "product_model": { label: { en: "Product Model", tr: "Ürün Modeli" }, value: "FTR-10" },
+      "operating_voltage": { label: { en: "Operating Voltage", tr: "Çalışma Gerilimi" }, value: "12-230V AC/DC" },
+      "operating_frequency": { label: { en: "Operating Frequency", tr: "Çalışma Frekansı" }, value: "50/60Hz" },
+      "operating_power": { label: { en: "Operating Power", tr: "Çalışma Gücü" }, value: "&lt;6VA" },
+      "function": { label: { en: "Function", tr: "Fonksiyon" }, value: "10-Functions (Multi-Mode)" },
+      "time_range": { label: { en: "Time Range", tr: "Zaman Aralığı" }, value: "0.1s-30hr" },
+      "protection_class": { label: { en: "Protection Class", tr: "Koruma Sınıfı" }, value: "IP20" },
+      "mounting_type": { label: { en: "Mounting Type", tr: "Montaj Tipi" }, value: "DIN Rail Mount" },
+      "operating_temperature": { label: { en: "Operating Temperature", tr: "Çalışma Sıcaklığı" }, value: "-10°C to +50°C" },
+      "output_contact": { label: { en: "Output Contact", tr: "Çıkış Kontağı" }, value: "SPDT (Changeover)" }
+    },
+    features: [
+      { en: "10 different operating modes", tr: "10 farklı çalışma modu" },
+      { en: "Universal voltage 12-230V AC/DC", tr: "Evrensel gerilim 12-230V AC/DC" },
+      { en: "Extended time range up to 30 hours", tr: "30 saate kadar genişletilmiş zaman aralığı" },
+      { en: "Replaces multiple single-function timers", tr: "Çoklu tek fonksiyonlu zamanlayıcıların yerini alır" },
+      { en: "Cost-effective comprehensive solution", tr: "Uygun maliyetli kapsamlı çözüm" }
+    ],
+    datasheet: ""
+  },
+};
