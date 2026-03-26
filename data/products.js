@@ -1587,7 +1587,7 @@ const PRODUCTS = {
   "DTR-03M": {
     name: {"en": "DTR-03M On/Off Delay Timer (0.1s-3min)", "tr": "DTR-03M Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-3dk)"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "On/Off delay timer relay for 230V AC and 24V AC/DC systems with a time range of 0.1s to 3 minutes. Selectable on delay or off delay function for versatile timing control in industrial automation applications.", "tr": "0.1s ile 3 dakika zaman aralığıyla 230V AC ve 24V AC/DC sistemler için açık/kapalı gecikme zamanlayıcı rölesi. Endüstriyel otomasyon uygulamalarında çok yönlü zamanlama kontrolü için seçilebilir açık gecikme veya kapalı gecikme fonksiyonu."},
     reference: "REF: DTR-03M",
     images: ["/vtekeimg/Timer/ll.jpeg"],
     specs: {
@@ -1627,7 +1627,7 @@ const PRODUCTS = {
   "DTR-60": {
     name: {"en": "DTR-60 On/Off Delay Timer (0.1s-60s)", "tr": "DTR-60 Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-60s)"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "On/Off delay timer relay for 230V AC and 24V AC/DC systems with a time range of 0.1s to 60 seconds. Provides selectable on delay or off delay function ideal for sequential control and automation circuits.", "tr": "0.1s ile 60 saniye zaman aralığıyla 230V AC ve 24V AC/DC sistemler için açık/kapalı gecikme zamanlayıcı rölesi. Sıralı kontrol ve otomasyon devreleri için ideal seçilebilir açık gecikme veya kapalı gecikme fonksiyonu sağlar."},
     reference: "REF: DTR-60",
     images: ["/vteke/mm.jpeg"],
     specs: {
@@ -1647,7 +1647,7 @@ const PRODUCTS = {
   "DTR-SC": {
     name: {"en": "DTR-SC Staircase Timer for Lighting Control", "tr": "DTR-SC Aydınlatma Kontrolü için Merdiven Zamanlayıcısı"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Staircase timer relay for 180-230V AC lighting control applications with a time range of 1 second to 20 minutes. Automatically switches off lights after a set delay, ideal for staircase, corridor, and hallway lighting automation.", "tr": "1 saniye ile 20 dakika zaman aralığıyla 180-230V AC aydınlatma kontrol uygulamaları için merdiven zamanlayıcı rölesi. Belirlenen gecikmeden sonra ışıkları otomatik olarak kapatır, merdiven, koridor ve hol aydınlatma otomasyonu için idealdir."},
     reference: "REF: DTR-SC",
     images: [""],
     specs: {
@@ -1667,7 +1667,7 @@ const PRODUCTS = {
   "DTR-SD": {
     name: {"en": "DTR-SD Star-Delta Timer for Motor Starting", "tr": "DTR-SD Motor Başlatma için Yıldız-Üçgen Zamanlayıcısı"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Star-Delta timer relay for 180-230V AC motor starting applications. Controls the star to delta switching sequence for smooth motor start-up. Star timing range 0.1s-30s with 1ms-500ms waiting period for reliable commutation.", "tr": "Motor başlatma uygulamaları için 180-230V AC yıldız-üçgen zamanlayıcı rölesi. Sorunsuz motor başlatma için yıldızdan üçgene geçiş sırasını kontrol eder. Güvenilir komütasyon için 1ms-500ms bekleme süresi ile 0.1s-30s yıldız zamanlama aralığı."},
     reference: "REF: DTR-SD",
     images: [""],
     specs: {
@@ -1687,7 +1687,7 @@ const PRODUCTS = {
   "FTR-07": {
     name: {"en": "FTR-07 Right-Left Alternating Timer (0.1s-100min)", "tr": "FTR-07 Sağ-Sol Alternatif Zamanlayıcı (0.1s-100dk)"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Right-Left alternating (flasher) timer relay for 12-230V AC/DC systems with a time range of 0.1s to 100 minutes. Provides alternating output control for indicator lights, signaling systems, and dual-channel automation applications.", "tr": "0.1s ile 100 dakika zaman aralığıyla 12-230V AC/DC sistemler için sağ-sol alternatif (flaşör) zamanlayıcı rölesi. Gösterge ışıkları, sinyal sistemleri ve çift kanallı otomasyon uygulamaları için alternatif çıkış kontrolü sağlar."},
     reference: "REF: FTR-07",
     images: [""],
     specs: {
@@ -1707,7 +1707,7 @@ const PRODUCTS = {
   "FTR-08": {
     name: {"en": "FTR-08 On/Off Delay Timer (0.1s-100h)", "tr": "FTR-08 Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-100s)"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "On/Off delay timer relay for 230V AC and 24V AC/DC systems with an extended time range of 0.1s to 100 hours. Selectable on delay or off delay function for long-duration industrial timing and process control applications.", "tr": "0.1s ile 100 saat genişletilmiş zaman aralığıyla 230V AC ve 24V AC/DC sistemler için açık/kapalı gecikme zamanlayıcı rölesi. Uzun süreli endüstriyel zamanlama ve proses kontrol uygulamaları için seçilebilir açık gecikme veya kapalı gecikme fonksiyonu."},
     reference: "REF: FTR-08",
     images: [""],
     specs: {
@@ -1727,7 +1727,7 @@ const PRODUCTS = {
   "FTR-08M": {
     name: {"en": "FTR-08M Universal On/Off Delay Timer (0.1s-100h)", "tr": "FTR-08M Evrensel Açık/Kapalı Gecikme Zamanlayıcısı (0.1s-100s)"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Universal on/off delay timer relay for 12-230V AC/DC systems with a wide time range of 0.1s to 100 hours. Universal voltage input makes it ideal for diverse industrial environments requiring flexible timing control.", "tr": "0.1s ile 100 saat geniş zaman aralığıyla 12-230V AC/DC sistemler için evrensel açık/kapalı gecikme zamanlayıcı rölesi. Evrensel gerilim girişi, esnek zamanlama kontrolü gerektiren çeşitli endüstriyel ortamlar için idealdir."},
     reference: "REF: FTR-08M",
     images: [""],
     specs: {
@@ -1767,7 +1767,7 @@ const PRODUCTS = {
   "FTR-09": {
     name: {"en": "FTR-09 Flasher Timer (0.1s-100min)", "tr": "FTR-09 Flaşör Zamanlayıcı (0.1s-100dk)"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Multi-function timer relay for 12-230V AC/DC systems with a time range of 0.1s to 100 hours. Offers multiple timing functions including on delay, off delay, interval, and flasher modes for complex industrial automation.", "tr": "0.1s ile 100 saat zaman aralığıyla 12-230V AC/DC sistemler için çok fonksiyonlu zamanlayıcı rölesi. Karmaşık endüstriyel otomasyon için açık gecikme, kapalı gecikme, aralık ve flaşör modları dahil çoklu zamanlama fonksiyonları sunar."},
     reference: "REF: FTR-09",
     images: [""],
     specs: {
@@ -1787,7 +1787,7 @@ const PRODUCTS = {
   "FTR-10": {
     name: {"en": "FTR-10 10-Function Multi-Mode Timer (0.1s-30hr)", "tr": "FTR-10 10-Fonksiyonlu Çok Modlu Zamanlayıcı (0.1s-30s)"},
     category: "relays",
-    description: {"en": "", "tr": ""},
+    description: {"en": "Advanced multi-function timer relay for 12-230V AC/DC systems with a time range of 0.1s to 100 hours. Features additional timing modes for sophisticated industrial timing, process control, and sequential automation applications.", "tr": "0.1s ile 100 saat zaman aralığıyla 12-230V AC/DC sistemler için gelişmiş çok fonksiyonlu zamanlayıcı rölesi. Sofistike endüstriyel zamanlama, proses kontrolü ve sıralı otomasyon uygulamaları için ek zamanlama modları özellikleri."},
     reference: "REF: FTR-10",
     images: [""],
     specs: {
