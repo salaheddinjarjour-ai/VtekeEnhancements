@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Products | VTEKE Electric</title>
+  <meta name="description" id="page-desc" content="VTEKE industrial electrical products">
+  <link rel="icon" type="image/png" href="/vtekeimg/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/vteke-header-styles.css">
+  <link rel="stylesheet" href="/vteke-footer.css">
+  <link rel="stylesheet" href="/ProductsSubPage.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/vteke-typography.css">
+  <style>
+    /* ── Breadcrumb ─────────────────────────────── */
+    .vteke-breadcrumb {
+      background: #ffffff;
+      border-bottom: 1px solid #ebebeb;
+      padding: 12px 0;
+      font-size: 0.82rem;
+      color: #888;
+    }
+    .vteke-breadcrumb-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .vteke-breadcrumb a { color: #555; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    .vteke-breadcrumb a:hover { color: #E10600; }
+    .vteke-breadcrumb-sep { color: #ccc; }
+    .vteke-breadcrumb-current { color: #E10600; font-weight: 600; }
+
+    /* ── Empty state ─────────────────────────────── */
+    .category-empty {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: #888;
+    }
+    .category-empty h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+    .category-empty a { color: #E10600; font-weight: 600; text-decoration: none; }
+
+    /* ── Product count badge ──────────────────────── */
+    .category-count-badge {
+      display: inline-block;
+      background: #E10600;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────── -->
+<header class="vteke-pro-header-main-container">
+<div class="vteke-pro-header-inner-container">
+<div class="vteke-pro-logo-main-wrapper">
+  <div class="vteke-pro-logo-glow-effect"></div>
+  <a href="/index.html" class="vteke-pro-logo-3d-transform" aria-label="VTEKE Home">
+    <img src="/vtekeimg/VTEKE1.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="VTEKE Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+    <span style="display:none; font-weight:800; font-size:32px; color:#E10600;">Vteke</span>
+  </a>
+</div>
+<button class="vteke-pro-mobile-menu-toggle-btn vteke-touch-optimized-element" id="vtekeMenuToggleBtn" aria-label="Open main menu"><span>☰</span></button>
+<div class="vteke-pro-navigation-container">
+<nav aria-label="Main navigation">
+<ul class="vteke-pro-main-navigation-list">
+  <li class="vteke-pro-nav-list-item"><a href="/index.html" class="vteke-pro-nav-link-element" data-lang-en="Home" data-lang-tr="ANA SAYFA">Home</a></li>
+  <li class="vteke-pro-nav-list-item"><a href="/aboutus.html" class="vteke-pro-nav-link-element" data-lang-en="About Us" data-lang-tr="HAKKIMIZDA">About Us</a></li>
+  <li class="vteke-pro-nav-list-item"><a href="/News.html" class="vteke-pro-nav-link-element" data-lang-en="News" data-lang-tr="HABERLER">News</a></li>
+  <li class="vteke-pro-nav-list-item"><a href="/Catalog.html" class="vteke-pro-nav-link-element" data-lang-en="Catalog" data-lang-tr="KATALOG">Catalog</a></li>
+  <li class="vteke-pro-nav-list-item vteke-pro-dropdown-container" style="position:relative;">
+    <a href="/Products.html" class="vteke-pro-nav-link-element vteke-pro-dropdown-toggle-indicator" data-lang-en="Products" data-lang-tr="ÜRÜNLER">Products</a>
+    <div class="vteke-pro-mega-dropdown-container">
+      <ul class="vteke-pro-dropdown-links-list">
+        <li><a href="/category.html?category=transformers" class="vteke-pro-dropdown-link-item" data-lang-en="Current Transformers" data-lang-tr="Akım Transformatörleri">Current Transformers</a></li>
+        <li><a href="/category.html?category=relays" class="vteke-pro-dropdown-link-item" data-lang-en="Protection Relays" data-lang-tr="Koruma Röleleri">Protection Relays</a></li>
+        <li><a href="/category.html?category=meters" class="vteke-pro-dropdown-link-item" data-lang-en="Meters &amp; Transducers" data-lang-tr="Sayaçlar ve Transdüserler">Meters &amp; Transducers</a></li>
+        <li><a href="/category.html?category=power" class="vteke-pro-dropdown-link-item" data-lang-en="Power Products" data-lang-tr="Güç Ürünleri">Power Products</a></li>
+        <li><a href="/category.html?category=analyzers" class="vteke-pro-dropdown-link-item" data-lang-en="Energy Analyzers" data-lang-tr="Enerji Analizörleri">Energy Analyzers</a></li>
+      </ul>
+    </div>
+  </li>
+  <li class="vteke-pro-nav-list-item"><a href="/Certificates.html" class="vteke-pro-nav-link-element" data-lang-en="Certificates" data-lang-tr="SERTİFİKALAR">Certificates</a></li>
+  <li class="vteke-pro-nav-list-item"><a href="/ContactUs.html" class="vteke-pro-nav-link-element" data-lang-en="Contact" data-lang-tr="İLETİŞİM">Contact</a></li>
+</ul>
+</nav>
+<!-- Language Switcher - Desktop -->
+<div class="lang-dropdown-wrapper" id="langDropdown">
+<button class="lang-dropdown-btn" onclick="toggleLangDropdown()" aria-label="Switch Language" aria-expanded="false">
+  <span class="language-flag" id="currentLangFlag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="14" style="display:inline-block;vertical-align:middle;border-radius:2px"><clipPath id="vtek-a"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="vtek-b"><path d="M30 15h30v15zM30 15H0v15zM30 15h30V0zM30 15H0V0z"/></clipPath><g clip-path="url(#vtek-a)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#vtek-b)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>
+  <span class="language-text" id="currentLangText">EN</span>
+  <i class="bi bi-chevron-down"></i>
+</button>
+<div class="lang-dropdown-menu" role="menu">
+  <button class="lang-dropdown-item active" onclick="setCategoryLang('en')" role="menuitem">
+    <span class="language-flag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="14" style="display:inline-block;vertical-align:middle;border-radius:2px"><g><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></span> English
+  </button>
+  <button class="lang-dropdown-item" onclick="setCategoryLang('tr')" role="menuitem">
+    <span class="language-flag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="20" height="14" style="display:inline-block;vertical-align:middle;border-radius:2px"><rect width="30" height="20" fill="#E30A17"/><circle cx="10" cy="10" r="6" fill="#fff"/><circle cx="11.5" cy="10" r="4.8" fill="#E30A17"/><polygon points="16.5,10 18.6,10.7 17.3,8.8 17.3,11.2 18.6,9.3" fill="#fff"/></svg></span> Türkçe
+  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vteke-pro-mobile-menu-overlay-bg" id="vtekeMobileMenuOverlay" aria-hidden="true"></div>
+<div class="vteke-pro-mobile-menu-sliding-container" id="vtekeMobileMenuContainer" aria-hidden="true" role="dialog">
+<div class="vteke-pro-mobile-menu-header-section">
+  <div class="vteke-pro-mobile-logo-container">
+    <img src="/vtekeimg/VTEKE1.png" alt="VTEKE Logo" class="vteke-pro-site-logo-image" width="200" height="60">
+  </div>
+  <button type="button" class="vteke-pro-close-mobile-menu-btn vteke-touch-optimized-element" id="vtekeCloseMenuBtn" aria-label="Close menu">×</button>
+</div>
+<div class="vteke-pro-mobile-language-container">
+  <button class="vteke-pro-mobile-language-btn active" id="mobileLangEN" onclick="setCategoryLang('en')"><span class="language-text">English</span></button>
+  <button class="vteke-pro-mobile-language-btn" id="mobileLangTR" onclick="setCategoryLang('tr')"><span class="language-text">Türkçe</span></button>
+</div>
+<nav class="vteke-pro-mobile-navigation-container">
+  <div class="vteke-pro-mobile-nav-item"><a href="/index.html" class="vteke-pro-mobile-nav-link" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a></div>
+  <div class="vteke-pro-mobile-nav-item"><a href="/aboutus.html" class="vteke-pro-mobile-nav-link" data-lang-en="About Us" data-lang-tr="Hakkımızda">About Us</a></div>
+  <div class="vteke-pro-mobile-nav-item"><a href="/News.html" class="vteke-pro-mobile-nav-link" data-lang-en="News" data-lang-tr="Haberler">News</a></div>
+  <div class="vteke-pro-mobile-nav-item"><a href="/Products.html" class="vteke-pro-mobile-nav-link" data-lang-en="Products" data-lang-tr="Ürünler">Products</a></div>
+  <div class="vteke-pro-mobile-nav-item"><a href="/Certificates.html" class="vteke-pro-mobile-nav-link" data-lang-en="Certificates" data-lang-tr="Sertifikalar">Certificates</a></div>
+  <div class="vteke-pro-mobile-nav-item"><a href="/ContactUs.html" class="vteke-pro-mobile-nav-link" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a></div>
+</nav>
+</div>
+</header>
+
+<!-- Breadcrumb -->
+<nav class="vteke-breadcrumb" aria-label="Breadcrumb">
+  <div class="vteke-breadcrumb-inner">
+    <a href="/index.html" id="bc-home">Home</a>
+    <span class="vteke-breadcrumb-sep">›</span>
+    <a href="/Products.html" id="bc-products">Products</a>
+    <span class="vteke-breadcrumb-sep">›</span>
+    <span class="vteke-breadcrumb-current" id="bc-category">—</span>
+  </div>
+</nav>
+
+<div class="vteke-header-space-reserver"></div>
+<script src="/vteke-header.js"></script>
+
+<!-- Hero (dynamically updated) -->
+<div class="hero">
+  <h1 class="hero-title" id="cat-title"> </h1>
+  <p class="hero-subtitle" id="cat-subtitle"> </p>
+</div>
+
+<!-- Products Grid (injected by JS) -->
+<div class="products-grid" id="category-products-grid"></div>
+
+<!-- Footer -->
+<footer class="vteke-footer-main-container">
+<div class="vteke-footer-grid-container">
+<div class="vteke-footer-grid-inner">
+  <div class="vteke-footer-column-wrapper">
+    <div class="vteke-footer-company-info">
+      <img src="/vtekeimg/VTEKE1.png" alt="VTEKE Logo" class="vteke-footer-company-logo">
+      <p class="vteke-footer-company-desc" id="footer-desc">Leading provider of innovative electrical solutions with excellence in quality.</p>
+    </div>
+  </div>
+  <div class="vteke-footer-column-wrapper">
+    <h4 class="vteke-footer-column-title" id="footer-links-title">Useful Links</h4>
+    <ul class="vteke-footer-links-list">
+      <li class="vteke-footer-link-item"><a href="/index.html" class="vteke-footer-link-anchor" id="footer-home">Home</a></li>
+      <li class="vteke-footer-link-item"><a href="/aboutus.html" class="vteke-footer-link-anchor" id="footer-about">About Us</a></li>
+      <li class="vteke-footer-link-item"><a href="/ContactUs.html" class="vteke-footer-link-anchor" id="footer-contact">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="vteke-footer-column-wrapper">
+    <h4 class="vteke-footer-column-title">Products &amp; News</h4>
+    <ul class="vteke-footer-links-list">
+      <li class="vteke-footer-link-item"><a href="/News.html" class="vteke-footer-link-anchor">News</a></li>
+      <li class="vteke-footer-link-item"><a href="/Products.html" class="vteke-footer-link-anchor">Products</a></li>
+      <li class="vteke-footer-link-item"><a href="/Certificates.html" class="vteke-footer-link-anchor">Certificates</a></li>
+    </ul>
+  </div>
+  <div class="vteke-footer-column-wrapper">
+    <h4 class="vteke-footer-column-title">Contact &amp; Support</h4>
+    <div class="vteke-footer-contact-container">
+      <div class="vteke-footer-contact-item"><div class="vteke-footer-contact-text-box"><a href="tel:+902125440004" class="vteke-footer-contact-link">+90 2125440004</a></div></div>
+      <div class="vteke-footer-contact-item"><div class="vteke-footer-contact-text-box"><a href="mailto:Info@vteke.com.tr" class="vteke-footer-contact-link">Info@vteke.com.tr</a></div></div>
+      <div class="vteke-footer-contact-item"><div class="vteke-footer-contact-text-box"><span class="vteke-footer-contact-text">Istanbul Turkey</span></div></div>
+    </div>
+  </div>
+</div>
+<div class="vteke-footer-copyright-box">
+  <p class="vteke-footer-copyright-text">© 2026 Vteke. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<!-- ── Data + Logic ─────────────────────────────────── -->
+<script src="/data/products.js"></script>
+<script>
+// ============================================================
+// CATEGORY PAGE ENGINE
+// ============================================================
+
+const CATEGORY_META = {
+  "transformers": {
+    en: { name: "Current Transformers", desc: "Premium current transformers for measurement and protection applications. IEC 61869 certified with accuracy classes from 0.2 to 5P20." },
+    tr: { name: "Akım Transformatörleri", desc: "Ölçüm ve koruma uygulamaları için premium akım transformatörleri. 0.2'den 5P20'a kadar doğruluk sınıflarıyla IEC 61869 sertifikalı." }
+  },
+  "relays": {
+    en: { name: "Protection Relays & Timers", desc: "Advanced protection relays, control relays, and timer solutions for industrial automation and electrical protection." },
+    tr: { name: "Koruma Röleleri ve Zamanlayıcılar", desc: "Endüstriyel otomasyon ve elektriksel koruma için gelişmiş koruma röleleri, kontrol röleleri ve zamanlayıcı çözümleri." }
+  },
+  "meters": {
+    en: { name: "Meters & Transducers", desc: "Digital and analog meters, energy analyzers, and transducers for precise electrical measurement and monitoring." },
+    tr: { name: "Sayaçlar ve Transdüserler", desc: "Hassas elektrik ölçümü ve izleme için dijital ve analog sayaçlar, enerji analizörleri ve transdüserler." }
+  },
+  "power": {
+    en: { name: "Power Products", desc: "Power factor controllers, battery chargers, and power supply solutions engineered for demanding industrial environments." },
+    tr: { name: "Güç Ürünleri", desc: "Zorlu endüstriyel ortamlar için tasarlanmış güç faktörü kontrolörleri, akü şarj cihazları ve güç kaynakları." }
+  },
+  "analyzers": {
+    en: { name: "Energy Analyzers", desc: "Comprehensive energy analysis solutions for monitoring, auditing, and optimizing power consumption in industrial systems." },
+    tr: { name: "Enerji Analizörleri", desc: "Endüstriyel sistemlerde güç tüketimini izlemek, denetlemek ve optimize etmek için kapsamlı enerji analizi çözümleri." }
+  }
+};
+
+const LABELS = {
+  en: { viewDetails: "View Details", home: "Home", products: "Products", noProducts: "No products found in this category.", backToProducts: "← View All Products" },
+  tr: { viewDetails: "Detayları Gör", home: "Ana Sayfa", products: "Ürünler", noProducts: "Bu kategoride ürün bulunamadı.", backToProducts: "← Tüm Ürünleri Görüntüle" }
+};
+
+let currentLang = localStorage.getItem('vteke_language') || 'en';
+let currentCategoryId = new URLSearchParams(window.location.search).get('category') || '';
+
+// ── Language switcher ────────────────────────────────────────
+function setCategoryLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('vteke_language', lang);
+
+  const textEl = document.getElementById('currentLangText');
+  if (textEl) textEl.textContent = lang.toUpperCase();
+
+  document.getElementById('mobileLangEN')?.classList.toggle('active', lang === 'en');
+  document.getElementById('mobileLangTR')?.classList.toggle('active', lang === 'tr');
+  document.querySelectorAll('.lang-dropdown-item').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('onclick')?.includes(`'${lang}'`));
+  });
+  document.getElementById('langDropdown')?.classList.remove('active');
+
+  renderCategory(currentCategoryId, lang);
+  if (window.setLanguage) window.setLanguage(lang);
+}
+
+function toggleLangDropdown() {
+  document.getElementById('langDropdown')?.classList.toggle('active');
+}
+
+// ── Render ───────────────────────────────────────────────────
+function renderCategory(categoryId, lang) {
+  const L = LABELS[lang] || LABELS.en;
+  const meta = CATEGORY_META[categoryId] || {
+    en: { name: categoryId, desc: '' },
+    tr: { name: categoryId, desc: '' }
+  };
+  const m = meta[lang] || meta.en;
+
+  // Page title + meta
+  document.title = `${m.name} | VTEKE Electric`;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', m.desc);
+
+  // Hero
+  const titleEl = document.getElementById('cat-title');
+  const subtitleEl = document.getElementById('cat-subtitle');
+  if (titleEl) titleEl.textContent = m.name;
+  if (subtitleEl) subtitleEl.textContent = m.desc;
+
+  // Breadcrumb
+  const bcHome = document.getElementById('bc-home');
+  const bcProducts = document.getElementById('bc-products');
+  const bcCat = document.getElementById('bc-category');
+  if (bcHome) bcHome.textContent = L.home;
+  if (bcProducts) bcProducts.textContent = L.products;
+  if (bcCat) bcCat.textContent = m.name;
+
+  // Filter products
+  const filtered = Object.entries(PRODUCTS).filter(([, p]) => p.category === categoryId);
+
+  const grid = document.getElementById('category-products-grid');
+  if (!grid) return;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div class="category-empty">
+        <h2>${L.noProducts}</h2>
+        <a href="/Products.html">${L.backToProducts}</a>
+      </div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(([id, product]) => {
+    const name = product.name[lang] || product.name.en || id;
+    const desc = product.description[lang] || product.description.en || '';
+    const img = (product.images && product.images[0]) ? product.images[0] : '/vtekeimg/favicon.png';
+    return `
+  <a href="/product.html?id=${id}" class="product-link">
+    <div class="product-row">
+      <div class="product-image-container">
+        <div class="product-image">
+          <img src="${img}" alt="${name}" class="product-real-image"
+               onerror="this.src='/vtekeimg/favicon.png'; this.style.padding='1.5rem'; this.style.objectFit='contain'">
+        </div>
+      </div>
+      <div class="product-info">
+        <h2 class="product-name">${name}</h2>
+        <p class="product-desc">${desc}</p>
+        <button class="view-btn">
+          <i class="fas fa-arrow-right"></i>
+          ${L.viewDetails}
+        </button>
+      </div>
+    </div>
+  </a>`;
+  }).join('');
+
+  // Staggered entrance animation
+  requestAnimationFrame(() => {
+    const rows = grid.querySelectorAll('.product-row');
+    rows.forEach((row, i) => {
+      setTimeout(() => row.classList.add('visible'), 100 + i * 120);
+    });
+  });
+}
+
+// ── Dropdown close on outside click ─────────────────────────
+document.addEventListener('click', e => {
+  const dd = document.getElementById('langDropdown');
+  if (dd && !dd.contains(e.target)) dd.classList.remove('active');
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('langDropdown')?.classList.remove('active');
+});
+
+// ── Init ─────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  // Sync mobile lang buttons
+  document.getElementById('mobileLangEN')?.classList.toggle('active', currentLang === 'en');
+  document.getElementById('mobileLangTR')?.classList.toggle('active', currentLang === 'tr');
+
+  renderCategory(currentCategoryId, currentLang);
+
+  // Apply global translation.js for nav elements
+  if (window.setLanguage && currentLang !== 'en') window.setLanguage(currentLang);
+});
+</script>
+<script src="/translations/translation.js"></script>
+</body>
+</html>
