@@ -58,6 +58,56 @@
       margin-left: 10px;
       vertical-align: middle;
     }
+    /* ── Image Lightbox ──────────────────────────────── */
+    #cat-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      animation: lbFadeIn 0.2s ease;
+    }
+    #cat-lightbox.open { display: flex; }
+    @keyframes lbFadeIn { from { opacity:0 } to { opacity:1 } }
+    #cat-lightbox img {
+      max-width: 88vw;
+      max-height: 84vh;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.55);
+      animation: lbZoomIn 0.22s ease;
+    }
+    @keyframes lbZoomIn { from { transform:scale(0.9); opacity:0 } to { transform:scale(1); opacity:1 } }
+    #cat-lightbox-close {
+      position: absolute;
+      top: 20px; right: 24px;
+      width: 40px; height: 40px;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1.4rem;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #cat-lightbox-close:hover { background: #E10600; }
+    /* Make product images show a zoom cursor */
+    .product-real-image.zoomable {
+      cursor: zoom-in;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product-real-image.zoomable:hover {
+      transform: scale(1.04);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
   </style>
 </head>
 <body>
@@ -160,6 +210,12 @@
 
 <!-- Products Grid (injected by JS) -->
 <div class="products-grid" id="category-products-grid"></div>
+
+<!-- Image Lightbox -->
+<div id="cat-lightbox" role="dialog" aria-modal="true" aria-label="Product image">
+  <button id="cat-lightbox-close" onclick="closeCatLightbox()" aria-label="Close">×</button>
+  <img id="cat-lightbox-img" src="" alt="Product image">
+</div>
 
 <!-- Footer -->
 <footer class="vteke-footer-main-container">
@@ -314,7 +370,8 @@ function renderCategory(categoryId, lang) {
     <div class="product-row">
       <div class="product-image-container">
         <div class="product-image">
-          <img src="${img}" alt="${name}" class="product-real-image"
+          <img src="${img}" alt="${name}" class="product-real-image zoomable"
+               onclick="event.preventDefault(); event.stopPropagation(); openCatLightbox('${img.replace(/'/g, "\\'")}')"
                onerror="this.src='/vtekeimg/favicon.png'; this.style.padding='1.5rem'; this.style.objectFit='contain'">
         </div>
       </div>
@@ -345,7 +402,29 @@ document.addEventListener('click', e => {
   if (dd && !dd.contains(e.target)) dd.classList.remove('active');
 });
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') document.getElementById('langDropdown')?.classList.remove('active');
+  if (e.key === 'Escape') {
+    document.getElementById('langDropdown')?.classList.remove('active');
+    closeCatLightbox();
+  }
+});
+
+// ── Image Lightbox ───────────────────────────────────────────
+function openCatLightbox(src) {
+  const lb = document.getElementById('cat-lightbox');
+  const img = document.getElementById('cat-lightbox-img');
+  if (lb && img) {
+    img.src = src;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeCatLightbox() {
+  const lb = document.getElementById('cat-lightbox');
+  if (lb) { lb.classList.remove('open'); document.body.style.overflow = ''; }
+}
+// Close on backdrop click
+document.getElementById('cat-lightbox')?.addEventListener('click', function(e) {
+  if (e.target === this) closeCatLightbox();
 });
 
 // ── Init ─────────────────────────────────────────────────────
