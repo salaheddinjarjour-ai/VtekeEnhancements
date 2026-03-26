@@ -109,15 +109,15 @@ LANGUAGE SWITCHER STYLES (MODIFIED)
   <ul class="vteke-pro-dropdown-links-list">
     <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Current Transformers" data-lang-tr="Akım Transformatörleri">Current Transformers</a></li>
     <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Protection Relays" data-lang-tr="Koruma Röleleri">Protection Relays</a></li>
-    <li><a href="timers.html" class="vteke-pro-dropdown-link-item" data-lang-en="Timers" data-lang-tr="Zamanlayıcılar">Timers</a></li>
-    <li><a href="digital meters.html" class="vteke-pro-dropdown-link-item" data-lang-en="Digital Meters" data-lang-tr="Dijital Sayaçlar">Digital Meters</a></li>
+    <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Timers" data-lang-tr="Zamanlayıcılar">Timers</a></li>
+    <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Digital Meters" data-lang-tr="Dijital Sayaçlar">Digital Meters</a></li>
     <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Analog Meters" data-lang-tr="Analog Sayaçlar">Analog Meters</a></li>
     <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Energy Analyzers" data-lang-tr="Enerji Analizörleri">Energy Analyzers</a></li>
-    <li><a href="power factor controller.html" class="vteke-pro-dropdown-link-item" data-lang-en="Power Factor Controllers" data-lang-tr="Güç Faktörü Kontrolörleri">Power Factor Controllers</a></li>
-    <li><a href="control relay.html" class="vteke-pro-dropdown-link-item" data-lang-en="Control Relays" data-lang-tr="Kontrol Röleleri">Control Relays</a></li>
-    <li><a href="battery charger.html" class="vteke-pro-dropdown-link-item" data-lang-en="Battery Chargers" data-lang-tr="Akü Şarj Cihazları">Battery Chargers</a></li>
+    <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Power Factor Controllers" data-lang-tr="Güç Faktörü Kontrolörleri">Power Factor Controllers</a></li>
+    <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Control Relays" data-lang-tr="Kontrol Röleleri">Control Relays</a></li>
+    <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Battery Chargers" data-lang-tr="Akü Şarj Cihazları">Battery Chargers</a></li>
     <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Power Supplies" data-lang-tr="Güç Kaynakları">Power Supplies</a></li>
-    <li><a href="ampere transducer.html" class="vteke-pro-dropdown-link-item" data-lang-en="Ampere Transducers" data-lang-tr="Ampermetre Transdüserleri">Ampere Transducers</a></li>
+    <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Ampere Transducers" data-lang-tr="Ampermetre Transdüserleri">Ampere Transducers</a></li>
     <li><a href="Products.html" class="vteke-pro-dropdown-link-item" data-lang-en="Volt Transducers" data-lang-tr="Voltmetre Transdüserleri">Volt Transducers</a></li>
   </ul>
 </div>
@@ -440,8 +440,8 @@ PRODUCT SLIDER STYLES
 .product-card:hover { transform: scale(1.02); box-shadow: var(--ps-shadow-xl); }
 .product-card.active { transform: scale(1.02); box-shadow: var(--ps-shadow-xl); z-index: 10; }
 .product-image { height: 400px; background: linear-gradient(180deg, #fafafa 0%, #f2f2f2 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-.product-image::before { content: ''; position: absolute; width: 200%; height: 200%; background: radial-gradient(circle, rgba(200, 13, 44, 0.1) 0%, rgba(255,255,255,0) 70%); top: -50%; left: -50%; transform: scale(0.8); transition: transform 0.7s var(--ps-transition-ease); }
-.product-card:hover .product-image::before { transform: scale(1.2); }
+.product-image::before { content: ''; position: absolute; width: 0; height: 0; background: none; }
+
 .product-image img { width: 100%; height: 100%; object-fit: cover; padding: 0; transition: transform 0.7s var(--ps-transition-ease); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; }
 .product-card:hover .product-image img { transform: scale(1.08); }
 .product-content { padding: var(--ps-spacing-lg); padding-top: var(--ps-spacing-xl); padding-bottom: var(--ps-spacing-xl); background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.85)); text-align: center; }
@@ -473,17 +473,17 @@ PRODUCT SLIDER STYLES
 <div class="product-slider" role="region" aria-label="Product slider">
 <div class="slider-track" id="slider-track">
 <a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/ALL.png" alt="VTEKE Current Transformers - Industrial Grade" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Current Transformer" data-lang-tr="Akım Transformatörü">Current Transformer</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
-<a href="timers.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Timers - Precision Control" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Timers" data-lang-tr="Zamanlayıcılar">Timers</h3><a href="timers.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
+<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Timers - Precision Control" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Timers" data-lang-tr="Zamanlayıcılar">Timers</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
 <a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Protection Relays - Safety Systems" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Protection Relay" data-lang-tr="Koruma Rölesi">Protection Relay</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
-<a href="control relay.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/electronic relays/pcr-04.jpg" alt="VTEKE Control Relays - Automation" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Control Relay" data-lang-tr="Kontrol Rölesi">Control Relay</h3><a href="control_relay.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
-<a href="digital meters.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Digital Meters - Accurate Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Digital Meters" data-lang-tr="Dijital Sayaçlar">Digital Meters</h3><a href="digital_meters.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
-<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Analog Meters/AK-V96-500.jpg" alt="VTEKE Analog Meters - Classic Design" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Analog Meters" data-lang-tr="Analog Sayaçlar">Analog Meters</h3><a href="analog_meters.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
-<a href="power factor controller.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Power Factor/PFC-12S.jpg" alt="VTEKE Power Factor Controllers - Energy Efficiency" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Power Factor Controller" data-lang-tr="Güç Faktörü Kontrolörü">Power Factor Controller</h3><a href="power factor controller.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
+<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/electronic relays/pcr-04.jpg" alt="VTEKE Control Relays - Automation" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Control Relay" data-lang-tr="Kontrol Rölesi">Control Relay</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
+<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Digital Meters - Accurate Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Digital Meters" data-lang-tr="Dijital Sayaçlar">Digital Meters</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
+<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Analog Meters/AK-V96-500.jpg" alt="VTEKE Analog Meters - Classic Design" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Analog Meters" data-lang-tr="Analog Sayaçlar">Analog Meters</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
+<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Power Factor/PFC-12S.jpg" alt="VTEKE Power Factor Controllers - Energy Efficiency" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Power Factor Controller" data-lang-tr="Güç Faktörü Kontrolörü">Power Factor Controller</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
 <a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Energy Analyzer/ALL.png" alt="VTEKE Energy Analyzers - Power Monitoring" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Energy Analyzer" data-lang-tr="Enerji Analizörü">Energy Analyzer</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
-<a href="battery charger.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Battery Charger/VBC-1205.png" alt="VTEKE Battery Chargers - Reliable Power" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Battery Charger" data-lang-tr="Akü Şarj Cihazı">Battery Charger</h3><a href="battery charger.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
+<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Battery Charger/VBC-1205.png" alt="VTEKE Battery Chargers - Reliable Power" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Battery Charger" data-lang-tr="Akü Şarj Cihazı">Battery Charger</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
 <a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Power Supply/PSU-2406.jpg" alt="VTEKE Power Supplies - Stable Output" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Power Supply" data-lang-tr="Güç Kaynağı">Power Supply</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
 <a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Volt Transducers - Voltage Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Volt Transducer" data-lang-tr="Voltmetre Transdüseri">Volt Transducer</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
-<a href="ampere transducer.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Ampere Transducers - Current Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Ampere Transducer" data-lang-tr="Ampermetre Transdüseri">Ampere Transducer</h3><a href="ampere transducer.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
+<a href="Products.html"><div class="product-item"><div class="product-card"><div class="product-image"><img src="/vtekeimg/Current Transformers/TK30N.png" alt="VTEKE Ampere Transducers - Current Measurement" loading="lazy" width="480" height="400"></div><div class="product-content"><h3 class="product-title" data-lang-en="Ampere Transducer" data-lang-tr="Ampermetre Transdüseri">Ampere Transducer</h3><a href="Products.html" class="view-specs-btn" data-lang-en="More Details" data-lang-tr="Daha Fazla Detay">More Details</a></div></div></div></a>
 </div>
 <button class="slider-btn prev" aria-label="Previous product"><span class="visually-hidden">Previous product</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
 <button class="slider-btn next" aria-label="Next product"><span class="visually-hidden">Next product</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
@@ -867,7 +867,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="5-6000A" data-lang-tr="5-6000A">5-6000A</span>
 <span class="vp-tech-tag" data-lang-en="Iec 61869" data-lang-tr="IEC 61869">IEC 61869</span>
 </div>
-<a href="ProductsPages/CurrentTransformer/TK30N-Current-Transformer.html" class="vp-industrial-btn">
+<a href="product.html?id=TK30N" class="vp-industrial-btn">
 <span data-lang-en="More Details" data-lang-tr="TEKNİK ÖZELLİKLER">More Details</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
@@ -885,7 +885,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="24-240V" data-lang-tr="24-240V">24-240V</span>
 <span class="vp-tech-tag" data-lang-en="DIN Rail" data-lang-tr="DIN Ray">DIN Rail</span>
 </div>
-<a href="ProductsPages/Timers/DTR-60.html" class="vp-industrial-btn">
+<a href="product.html?id=DTR-60" class="vp-industrial-btn">
 <span data-lang-en="More Details" data-lang-tr="TEKNİK ÖZELLİKLER">More Details</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
@@ -903,7 +903,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="0.1-10A" data-lang-tr="0.1-10A">0.1-10A</span>
 <span class="vp-tech-tag" data-lang-en="CE Certified" data-lang-tr="CE Sertifikalı">CE Certified</span>
 </div>
-<a href="ProductsPages/ProtectionRelay/VCR-03F.html" class="vp-industrial-btn">
+<a href="product.html?id=VCR-03F" class="vp-industrial-btn">
 <span data-lang-en="More Details" data-lang-tr="TEKNİK ÖZELLİKLER">More Details</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
@@ -921,7 +921,7 @@ filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 <span class="vp-tech-tag" data-lang-en="RS-485" data-lang-tr="RS-485">RS-485</span>
 <span class="vp-tech-tag" data-lang-en="Modbus" data-lang-tr="Modbus">Modbus</span>
 </div>
-<a href="ProductsPages/DigitalMeters/VK-M96S.html" class="vp-industrial-btn">
+<a href="product.html?id=VK-M96S" class="vp-industrial-btn">
 <span data-lang-en="More Details" data-lang-tr="TEKNİK ÖZELLİKLER">More Details</span>
 <span class="vp-industrial-arrow">→</span>
 </a>
