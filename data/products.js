@@ -791,9 +791,9 @@ const PRODUCTS = {
     datasheet: "/vtekeimg/DataSheet/Current Transformer/BK1C.pdf"
   },
   "CK20": {
-    name: { en: "CK20 — VTEKE Product", tr: "CK20 — VTEKE Product" },
+    name: { en: "CK20 Series Window Type Current Transformer", tr: "CK20 Seri Pencere Tipi Akım Transformatörü" },
     category: "transformers",
-    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    description: { en: "Compact window-type current transformer designed for cable conductors with 20mm window diameter. Suitable for primary currents from 30A to 300A AC with high accuracy measurement.", tr: "20mm pencere çapı ile kablo iletkenleri için tasarlanmış kompakt pencere tipi akım trafosu. 30A ile 300A AC arasındaki birincil akımlar için yüksek doğrulukta ölçüm sağlar." },
     reference: "",
     images: ["/vtekeimg/Current Transformers/CK20.jpg", "/vtekeimg/Current Transformers/CK20.png"],
     specs: {
@@ -1114,9 +1114,9 @@ const PRODUCTS = {
     datasheet: "/vtekeimg/DataSheet/Current Transformer/TK30A.pdf"
   },
   "TK30N": {
-    name: { en: "TK30N — VTEKE Product", tr: "TK30N — VTEKE Product" },
+    name: { en: "TK30N Series Window Type Current Transformer", tr: "TK30N Seri Pencere Tipi Akım Transformatörü" },
     category: "transformers",
-    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    description: { en: "Window-type current transformer with single screw terminal design, suitable for primary currents from 40A to 600A AC. Features sealable terminal cover for safety.", tr: "40A ile 600A AC arasındaki birincil akımlar için uygun, tek vidalı terminal tasarımına sahip pencere tipi akım transformatörü. Güvenlik için kapatılabilir terminal kapağı." },
     reference: "",
     images: ["/vtekeimg/Current Transformers/TK30N.png", "/vtekeimg/Current Transformers/DK125.jpg"],
     specs: {
@@ -1849,9 +1849,9 @@ const PRODUCTS = {
     datasheet: ""
   },
   "PPR-03N": {
-    name: { en: "PPR-03N — VTEKE Product", tr: "PPR-03N — VTEKE Product" },
+    name: { en: "PPR-03N Phase Asymmetry Protection Relay", tr: "PPR-03N Faz Asimetrisi Koruma Rölesi" },
     category: "relays",
-    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    description: { en: "Compact phase protection relay designed for three-phase systems with 3x380V AC operating voltage. Provides reliable asymmetry protection at 30% threshold with low power consumption less than 6VA. Ideal for motor protection and phase monitoring applications.", tr: "3x380V AC çalışma gerilimli üç fazlı sistemler için tasarlanmış kompakt faz koruma rölesi. 6VA'dan düşük güç tüketimi ile %30 eşikte güvenilir asimetri koruması sağlar. Motor koruma ve faz izleme uygulamaları için idealdir." },
     reference: "",
     images: [],
     specs: {
@@ -1863,9 +1863,9 @@ const PRODUCTS = {
     datasheet: ""
   },
   "PPR-05F": {
-    name: { en: "PPR-05F — VTEKE Product", tr: "PPR-05F — VTEKE Product" },
+    name: { en: "PPR-05F Multi-Function Phase & Voltage Protection Relay", tr: "PPR-05F Çok Fonksiyonlu Faz ve Gerilim Koruma Rölesi" },
     category: "relays",
-    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    description: { en: "Advanced multi-function protection relay for 3x230V AC systems with comprehensive protection features. Provides adjustable delay time (0.1s-20s), 5%-25% asymmetry protection, over voltage (300V AC), under voltage (140V AC), phase absence, neutral absence, and phase sequence monitoring. Ideal for complex industrial applications requiring customizable protection parameters.", tr: "Kapsamlı koruma özelliklerine sahip 3x230V AC sistemler için gelişmiş çok fonksiyonlu koruma rölesi. Ayarlanabilir gecikme süresi (0.1s-20s), %5-%25 asimetri koruması, aşırı gerilim (300V AC), düşük gerilim (140V AC), faz yokluğu, nötr yokluğu ve faz sırası izleme sağlar. Özelleştirilebilir koruma parametreleri gerektiren karmaşık endüstriyel uygulamalar için idealdir." },
     reference: "REF: PPR-05F",
     images: [],
     specs: {
@@ -1979,9 +1979,9 @@ const PRODUCTS = {
     datasheet: ""
   },
   "VCR-02F": {
-    name: { en: "Key Features", tr: "Temel Özellikler" },
+    name: { en: "VCR-02F 3-Phase Voltage Control & Protection Relay", tr: "VCR-02F 3-Faz Gerilim Kontrol ve Koruma Rölesi" },
     category: "relays",
-    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    description: { en: "Comprehensive three-phase voltage control relay for 3x230V AC systems with advanced protection features. Provides over voltage protection (230V-300V AC), under voltage protection (140V-210V AC), phase sequence monitoring, and neutral absence detection. Features adjustable delay and reset time from 0.1s to 20s for optimal protection customization in industrial environments.", tr: "Gelişmiş koruma özelliklerine sahip 3x230V AC sistemler için kapsamlı üç fazlı gerilim kontrol rölesi. Aşırı gerilim koruması (230V-300V AC), düşük gerilim koruması (140V-210V AC), faz sırası izleme ve nötr yokluğu algılama sağlar. Endüstriyel ortamlarda optimal koruma özelleştirmesi için 0.1s-20s arası ayarlanabilir gecikme ve sıfırlama süresi." },
     reference: "REF: VCR-02F",
     images: [],
     specs: {
@@ -2027,9 +2027,9 @@ const PRODUCTS = {
     datasheet: ""
   },
   "VCR-11": {
-    name: { en: "VCR-11 — VTEKE Product", tr: "VCR-11 — VTEKE Product" },
+    name: { en: "VCR-11 Single Phase Voltage Control Relay", tr: "VCR-11 Tek Faz Gerilim Kontrol Rölesi" },
     category: "relays",
-    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    description: { en: "Reliable single-phase voltage control relay for 230V AC systems with adjustable over and under voltage protection. Features over voltage range of 230V-300V AC and under voltage range of 140V-210V AC with adjustable delay time from 0.1s to 20s. Low power consumption below 6VA makes it ideal for residential and light commercial applications.", tr: "Ayarlanabilir aşırı ve düşük gerilim korumalı 230V AC sistemler için güvenilir tek fazlı gerilim kontrol rölesi. 0.1s-20s arası ayarlanabilir gecikme süresi ile 230V-300V AC aşırı gerilim aralığı ve 140V-210V AC düşük gerilim aralığı özellikleri. 6VA altında düşük güç tüketimi konut ve hafif ticari uygulamalar için idealdir." },
     reference: "",
     images: [],
     specs: {
@@ -2264,9 +2264,9 @@ const PRODUCTS = {
     datasheet: ""
   },
   "FTR-08MS": {
-    name: { en: "Key Features", tr: "Teknik Özellikler" },
+    name: { en: "FTR-08MS Adjustable Delay/Flasher Timer (0.1s-100h)", tr: "FTR-08MS Ayarlanabilir Gecikme/Flaşör Zamanlayıcı (0.1s-100s)" },
     category: "relays",
-    description: { en: "High-precision industrial electrical equipment.", tr: "High-precision industrial electrical equipment." },
+    description: { en: "Multi-function timer with adjustable delay and flasher functions. Extended time range from 0.1 seconds to 100 hours with universal voltage 12-230V AC/DC compatibility. Features IP20 protection class for versatile applications. Versatile solution for complex timing and flashing applications requiring multiple functions in one device with extended time range precision.", tr: "Ayarlanabilir gecikme ve flaşör fonksiyonlarına sahip çok fonksiyonlu zamanlayıcı. Evrensel gerilim 12-230V AC/DC uyumluluğu ile 0.1 saniye ile 100 saat arasında genişletilmiş zaman aralığı. Çok yönlü uygulamalar için IP20 koruma sınıfı özellikleri. Genişletilmiş zaman aralığı hassasiyeti ile tek cihazda çoklu fonksiyon gerektiren karmaşık zamanlama ve flaş uygulamaları için çok yönlü çözüm." },
     reference: "REF: FTR-08MS",
     images: [],
     specs: {
