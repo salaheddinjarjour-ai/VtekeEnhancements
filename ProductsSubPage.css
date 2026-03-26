@@ -95,8 +95,10 @@ body {
 }
 
 .product-row {
-    display: flex;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0;
     padding: 0;
     border-bottom: 1px solid #f0f0f0;
     opacity: 0;
@@ -104,12 +106,10 @@ body {
     transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.4s ease;
     position: relative;
     width: 100%;
-    height: 400px;
+    min-height: 280px;
 }
 
-.product-link:nth-child(odd) .product-row {
-    flex-direction: row-reverse;
-}
+/* No alternating — all cards: image left, text right for maximum consistency */
 
 .product-row::before {
     content: '';
@@ -135,17 +135,18 @@ body {
 
 /* Product Image Container - تم التكبير */
 .product-image-container {
-    flex: 0 0 55%; /* تم زيادة العرض من 45% إلى 55% */
-    max-width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 2;
     padding: 2rem;
-    height: 100%;
-    background: #ffffff;
+    min-height: 260px;
+    background: #f8f9fa;
+    border-right: 1px solid #f0f0f0;
 }
+
+/* Even rows: same direction — no border swap needed */
 
 /* Product Image Box — standardized */
 .product-image {
@@ -180,23 +181,13 @@ body {
 
 /* Product Info */
 .product-info {
-    flex: 1;
-    min-width: 320px;
-    padding: 2rem 2.5rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     z-index: 2;
     background: var(--white);
-}
-.product-link:nth-child(odd) .product-info {
-    padding-left: 2.5rem;
-    padding-right: 2rem;
-}
-.product-link:nth-child(even) .product-info {
-    padding-right: 2.5rem;
-    padding-left: 2rem;
 }
 
 .product-name {
@@ -228,6 +219,7 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    line-clamp: 3;
     overflow: hidden;
 }
 
@@ -283,16 +275,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .product-row {
-        height: 380px;
-    }
     .product-image-container {
-        flex: 0 0 55%;
-        max-width: 55%;
-        padding: 1.8rem;
+        padding: 1.5rem;
     }
     .product-info {
-        min-width: 280px;
         padding: 1.8rem;
     }
     .product-name {
@@ -302,18 +288,21 @@ body {
 
 @media (max-width: 900px) {
     .product-row {
-        flex-direction: column !important;
-        height: auto;
+        grid-template-columns: 1fr !important;
+        direction: ltr !important;
     }
-    .product-image-container { 
-        flex: 0 0 auto; 
-        width: 100%; 
-        max-width: 100%;
-        height: 320px; /* تم زيادة الارتفاع */
+    .product-row > * {
+        direction: ltr !important;
+    }
+    .product-image-container {
+        width: 100%;
+        min-height: 280px;
         padding: 2rem;
+        border-right: none !important;
+        border-left: none !important;
+        border-bottom: 1px solid #f0f0f0;
     }
     .product-info {
-        min-width: 100%;
         padding: 2rem !important;
     }
     .product-name {
@@ -411,16 +400,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Product Image - Zoom cursor hint */
-.product-real-image {
-    cursor: zoom-in;
-    transition: transform 0.3s ease;
-}
-
-.product-real-image:hover {
-    transform: scale(1.03);
-}
-
+/* Product Image - Zoom cursor hint — applied once only */
 /* Mobile touch optimization */
 @media (max-width: 768px) {
     .lightbox-content {
