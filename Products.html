@@ -2165,7 +2165,7 @@ const categoriesConfig = [
         desc_en: 'High-accuracy window, split-core & busbar CTs for industrial metering.',
         desc_tr: 'Endüstriyel ölçüm için yüksek hassasiyetli pencere tipi, açılır-kapanır ve bara tipi akım trafoları.',
         image: '/vtekeimg/Current Transformers/TK30N.png',
-        href: '#'
+        href: '/category.html?category=transformers'
     },
     {
         key: 'protection-relays',
@@ -2174,7 +2174,7 @@ const categoriesConfig = [
         desc_en: 'Voltage, phase sequence, overcurrent and asymmetry protection relays.',
         desc_tr: 'Gerilim, faz sırası, aşırı akım ve asimetri koruma röleleri.',
         image: '/vtekeimg/electronic relays/pcr-04.jpg',
-        href: '#'
+        href: '/category.html?category=relays'
     },
     {
         key: 'timers',
@@ -2183,7 +2183,7 @@ const categoriesConfig = [
         desc_en: 'Delay timers, star-delta timers, staircase timers and multifunction timers.',
         desc_tr: 'Gecikme zamanlayıcıları, yıldız-üçgen zamanlayıcılar, merdiven zamanlayıcıları ve çok fonksiyonlu zamanlayıcılar.',
         image: '/vtekeimg/electronic relays/pcr-04.jpg',
-        href: 'Products.html'
+        href: '/category.html?category=relays'
     },
     {
         key: 'control-relays',
@@ -2192,7 +2192,7 @@ const categoriesConfig = [
         desc_en: 'Pump alternation, liquid level, photocell and hydrophore control relays.',
         desc_tr: 'Pompa alternasyonu, sıvı seviye, fotoselli ve hidrofor kontrol röleleri.',
         image: '/vtekeimg/electronic relays/pcr-04.jpg',
-        href: '#'
+        href: '/category.html?category=relays'
     },
     {
         key: 'analog-meters',
@@ -2201,7 +2201,7 @@ const categoriesConfig = [
         desc_en: 'Analog voltmeters, ammeters, and frequency meters in various sizes.',
         desc_tr: 'Çeşitli boyutlarda analog voltmetreler, ampermetreler ve frekansmetreler.',
         image: '/vtekeimg/Analog Meters/AK-V96-500.jpg',
-        href: '#'
+        href: '/category.html?category=meters'
     },
     {
         key: 'digital-meters',
@@ -2210,7 +2210,7 @@ const categoriesConfig = [
         desc_en: 'Digital voltmeters, ammeters and multifunction power meters.',
         desc_tr: 'Dijital voltmetreler, ampermetreler ve çok fonksiyonlu güç ölçerler.',
         image: '/vtekeimg/electronic relays/pcr-04.jpg',
-        href: '#'
+        href: '/category.html?category=meters'
     },
     {
         key: 'analyzers',
@@ -2219,7 +2219,7 @@ const categoriesConfig = [
         desc_en: 'Panel-mount power analyzers with Modbus communication.',
         desc_tr: 'Modbus iletişimli panel tipi güç analizörleri.',
         image: '/vtekeimg/Energy Analyzer/EA-C1.png',
-        href: '#'
+        href: '/category.html?category=analyzers'
     },
     {
         key: 'power-factor',
@@ -2228,7 +2228,7 @@ const categoriesConfig = [
         desc_en: 'Automatic power factor correction controllers for industrial applications.',
         desc_tr: 'Endüstriyel uygulamalar için otomatik güç faktörü düzeltme kontrolörleri.',
         image: '/vtekeimg/Power Factor/PFC-07.jpg',
-        href: 'Products.html'
+        href: '/category.html?category=power'
     },
     {
         key: 'battery-chargers',
@@ -2237,7 +2237,7 @@ const categoriesConfig = [
         desc_en: '12V/24V industrial battery chargers with various current ratings.',
         desc_tr: 'Çeşitli akım değerlerinde 12V/24V endüstriyel akü şarj cihazları.',
         image: '/vtekeimg/Battery Charger/VBC-1205.png',
-        href: 'Products.html'
+        href: '/category.html?category=power'
     },
     {
         key: 'power-supplies',
@@ -2246,7 +2246,7 @@ const categoriesConfig = [
         desc_en: '24V DC switching power supplies for industrial automation.',
         desc_tr: 'Endüstriyel otomasyon için 24V DC anahtarlamalı güç kaynakları.',
         image: '/vtekeimg/Power Supply/PSU-2406.jpg',
-        href: 'Products.html'
+        href: '/category.html?category=power'
     },
     {
         key: 'volt-transducer',
@@ -2255,7 +2255,7 @@ const categoriesConfig = [
         desc_en: 'Voltage transducers for signal conversion and isolation in industrial automation.',
         desc_tr: 'Endüstriyel otomasyonda sinyal dönüşümü ve izolasyon için gerilim transdüserleri.',
         image: '/vtekeimg/favicon.png',
-        href: '#'
+        href: '/category.html?category=meters'
     },
     {
         key: 'ampere-transducer',
@@ -2264,7 +2264,7 @@ const categoriesConfig = [
         desc_en: 'Current transducers for accurate current measurement and signal conversion.',
         desc_tr: 'Hassas akım ölçümü ve sinyal dönüşümü için akım transdüserleri.',
         image: '/vtekeimg/favicon.png',
-        href: '#'
+        href: '/category.html?category=meters'
     }
 ];
 
@@ -2300,7 +2300,7 @@ function renderCategories() {
     
     grid.className = 'category-grid';
     grid.innerHTML = categoriesConfig.map(cat => `
-        <a class="category-card" href="#" onclick="event.preventDefault(); filterProducts('${cat.key}')">
+        <a class="category-card" href="${cat.href}" style="cursor:pointer;">
             <div class="category-card-image">
                 <img src="${cat.image}" alt="${isTurkish ? cat.label_tr : cat.label_en}"
                      onerror="this.src='/vtekeimg/favicon.png'; this.style.objectFit='contain'; this.style.padding='1.5rem';">
